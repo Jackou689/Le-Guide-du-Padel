@@ -1,13 +1,36 @@
+/* ==========================================================================
+   LE GUIDE DU PADEL - STYLE GLOBAL
+   ========================================================================== */
+
+/* --- RESET & VARIABLES --- */
+:root {
+    --color-primary: #1a365d;       
+    --color-accent: #d3e230;        
+    --color-link: #2b6cb0;          
+    
+    --color-bg-body: #ffffff;       
+    --color-bg-box: #f8fafc;        
+    
+    --color-text-main: #2d3748;     
+    --color-text-muted: #718096;    
+    --color-border: #e2e8f0;        
+
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-serif: "Georgia", "Times New Roman", serif;
+}
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f7fafc; 
-    color: #2d3748;
+    padding: 0;
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
-    color: #2b6cb0;
+    color: var(--color-link);
     text-decoration: none;
 }
 
@@ -15,49 +38,61 @@ a:hover {
     text-decoration: underline;
 }
 
-.header-content, 
+/* --- STRUCTURE PRINCIPALE --- */
 .container {
-    max-width: 1100px !important;
-    margin: 0 auto !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 
-header, .header {
-    background-color: #1a365d; 
-    color: #ffffff;
-    padding: 20px 0;
-    border-bottom: 5px solid #d3e230; 
+/* --- EN-TÊTE --- */
+.header {
+    background-color: var(--color-primary);
+    padding: 22px 0;
+    border-bottom: 5px solid var(--color-accent);
 }
 
 .header-content {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.header-content .logo, 
-header .logo {
+.header-content .logo {
     color: #ffffff;
-    font-weight: 800 !important;
-    font-family: "Georgia", "Times New Roman", serif !important;
+    font-family: var(--font-serif);
+    font-weight: 800;
     font-size: 1.6rem;
     text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.header-content .logo:hover {
+    text-decoration: none;
+    color: #e2e8f0; /* Assombrit légèrement au survol */
 }
 
 .nav-links a {
     color: #ffffff;
-    margin-left: 25px;
-    font-weight: 500;
+    margin-left: 35px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: var(--font-sans);
 }
 
 .nav-links a:hover {
-    color: #d3e230;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
+/* --- GRILLE DE MISE EN PAGE --- */
 .layout-grid {
     display: grid;
     grid-template-columns: 1fr; 
@@ -66,77 +101,195 @@ header .logo {
     margin-bottom: 60px;
 }
 
-
 @media (min-width: 900px) {
     .layout-grid {
         grid-template-columns: 2.5fr 1fr;
     }
 }
 
-.sidebar {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
-    height: fit-content;
-    position: sticky;
-    top: 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+/* --- CONTENU ARTICLE --- */
+.article-content {
+    max-width: 100%;
 }
 
-.sidebar h3 {
+.article-content h1 {
+    color: var(--color-primary);
     margin-top: 0;
-    color: #1a365d;
-    font-size: 1.2rem;
-    border-bottom: 2px solid #edf2f7;
-    padding-bottom: 10px;
+    font-size: 2.2rem;
+    line-height: 1.2;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+.article-content h2 { 
+    margin-top: 40px; 
+    color: var(--color-primary); 
+    border-bottom: 2px solid var(--color-border); 
+    padding-bottom: 10px; 
 }
 
-.sidebar li {
+.article-content h3 { 
+    margin-top: 30px; 
+    color: var(--color-link); 
+}
+
+.article-content ul, .article-content ol { 
+    line-height: 1.8; 
+    margin-bottom: 20px; 
+    padding-left: 20px; 
+}
+
+/* --- DESIGN PAGES SIMPLES (Contact, À propos) --- */
+.page-contact, .page-simple {
+    max-width: 750px; 
+    margin: 60px auto 80px auto;
+    padding: 0 40px; 
+}
+
+.page-contact h1, .page-simple h1 {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.page-simple h2 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-top: 40px;
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
-.sidebar a {
-    color: #2b6cb0;
-    font-weight: 600;
+.page-contact > p, .page-simple p {
+    font-size: 1.05rem;
+    color: var(--color-text-main);
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.ad-sidebar-placeholder {
-    background-color: #edf2f7;
-    border: 2px dashed #a0aec0;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #718096;
-    font-weight: bold;
-    margin-top: 20px;
+.contact-box {
+    background-color: var(--color-bg-box);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 50px 20px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.footer {
+.contact-box p {
+    margin: 0;
+}
+
+.contact-box p:first-child {
+    color: var(--color-text-main);
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+}
+
+.contact-email {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 25px !important;
+}
+
+.contact-delay {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.back-link-container {
     text-align: center;
-    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.back-link {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--color-link);
+}
+
+/* --- ACCUEIL (INDEX) --- */
+.home-intro {
+    font-size: 1.1rem;
+    color: var(--color-text-main);
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.guide-card {
     background-color: #ffffff;
-    border-top: 1px solid #e2e8f0;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-links a {
-    color: #718096;
-    margin: 0 15px;
-    font-size: 0.9em;
-    font-weight: 500;
+.guide-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    text-decoration: none;
+}
+
+.guide-card h3 {
+    color: var(--color-link);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.15rem;
+}
+
+.guide-card p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* --- ÉLÉMENTS VISUELS & ENCARTS --- */
+.article-img-container { margin: 25px 0; text-align: center; }
+.article-img-container img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.img-caption { font-size: 0.85em; color: var(--color-text-muted); margin-top: 8px; font-style: italic; }
+
+.schema-box { background-color: #ffffff; border: 1px solid var(--color-border); border-radius: 8px; padding: 20px; text-align: center; margin: 25px 0; }
+.schema-box img { max-width: 100%; height: auto; mix-blend-mode: multiply; }
+
+.astuce-box { background-color: #ebf8fa; border-left: 4px solid #319795; padding: 20px; margin: 25px 0; border-radius: 0 8px 8px 0; }
+.astuce-box h4 { margin-top: 0; color: #234e52; font-size: 1.1em; }
+
+.erreur-box { background-color: #fff5f5; border-left: 4px solid #e53e3e; padding: 20px; margin: 25px 0; border-radius: 0 8px 8px 0; }
+.erreur-box h4 { margin-top: 0; color: #742a2a; font-size: 1.1em; }
+
+.coach-tip-box { background-color: #f0fff4; border-left: 4px solid #38a169; padding: 20px; margin: 25px 0; border-radius: 0 8px 8px 0; }
+.coach-tip-box h4 { margin-top: 0; color: #22543d; font-size: 1.1em; }
+
+/* --- CARTES PRODUITS & AFFILIATION --- */
+.product-card { 
+    border: 1px solid var(--color-border); 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin: 30px 0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    background: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
 }
 
 .btn-affiliation {
     display: inline-block;
-    background-color: #d3e230; 
-    color: #1a365d; 
+    background-color: var(--color-accent); 
+    color: var(--color-primary); 
     padding: 12px 24px;
     border-radius: 6px;
     font-weight: bold;
@@ -150,12 +303,405 @@ header .logo {
     text-decoration: none;
     transform: translateY(-2px);
 }
+
 .disclaimer-affiliation {
     font-size: 0.85em;
-    color: #718096;
+    color: var(--color-text-muted);
     font-style: italic;
     background-color: #edf2f7;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 25px;
+}
+
+/* --- SIDEBAR & WIDGETS --- */
+.sidebar {
+    background-color: #ffffff;
+    padding: 0;
+    height: fit-content;
+}
+
+.sidebar-widget {
+    margin-bottom: 35px;
+}
+
+.sidebar-widget h3 {
+    margin-top: 0;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar-widget p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: var(--color-text-main);
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-links li {
+    margin-bottom: 12px;
+}
+
+.sidebar-links a {
+    color: var(--color-link);
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+/* --- PUBLICITÉS (ADSENSE) --- */
+.ad-banner-top {
+    background-color: #f8fafc;
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a0aec0;
+    font-size: 0.85rem;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 728px;
+    height: 90px;
+    margin: 0 auto 40px auto;
+}
+
+/* NOUVEAU : Encart publicitaire au milieu du texte */
+.ad-in-content {
+    background-color: #f8fafc;
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a0aec0;
+    font-size: 0.85rem;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    height: 250px;
+    margin: 40px 0;
+}
+
+/* NOUVEAU : Encart publicitaire en fin d'article */
+.ad-banner-bottom {
+    background-color: #f8fafc;
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a0aec0;
+    font-size: 0.85rem;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    height: 90px;
+    margin: 40px 0 20px 0;
+}
+
+.ad-sidebar-placeholder {
+    background-color: #f8fafc;
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a0aec0;
+    font-size: 0.85rem;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 35px; /* Espace sous la pub */
+}
+
+/* Formats spécifiques Sidebar */
+.ad-sidebar-medium { height: 250px; } /* 300x250 */
+.ad-sidebar-large { height: 600px; }  /* 300x600 */
+
+/* --- FOOTER --- */
+.footer {
+    padding: 40px 20px 60px 20px;
+    background-color: transparent;
+    margin-top: 60px;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #4a5568; 
+    font-size: 0.9em;
+    font-weight: 500; 
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+/* Supprime les marges et force l'image à occuper 100% de la largeur de la carte sans espace */
+.article-card img, .card img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0; /* Si tu veux que les coins épousent la carte, ou garde un border-radius uniquement en haut */
+    object-fit: cover; /* Recadre proprement l'image pour qu'elle épouse l'encart sans déformation */
+    object-position: center; /* Centre le sujet de l'image dans le cadre */
+}
+
+/* Si la carte elle-même a un padding interne qui crée ce gris, on le supprime pour l'image */
+.article-card {
+    overflow: hidden; /* Empêche l'image de dépasser des bords arrondis de la carte */
+    padding: 0 !important; /* Si la carte avait un padding global */
+}
+
+/* ==========================================================================
+   MODE SOMBRE GLOBAL (DARK MODE)
+   ========================================================================== */
+
+/* ==========================================================================
+   MODE SOMBRE GLOBAL - CONTRASTES AMÉLIORÉS
+   ========================================================================== */
+
+/* Fond et textes principaux plus lumineux */
+body.dark-mode { 
+    background-color: #0f172a; /* Un bleu-nuit plus profond et moderne */
+    color: #f1f5f9; /* Texte blanc cassé très lisible */
+}
+
+/* ==========================================================================
+   CORRECTION DU CONTRASTE DES TITRES EN MODE SOMBRE
+   ========================================================================== */
+
+body.dark-mode .article-content h1 {
+    color: #ffffff !important; /* Blanc éclatant maximal */
+    font-weight: 800;
+}
+
+body.dark-mode .article-content h2 { 
+    color: #f8fafc !important; /* Blanc très lumineux */
+    border-bottom-color: #475569 !important; /* Ligne de séparation plus visible */
+}
+
+body.dark-mode .article-content h3 { 
+    color: #38bdf8 !important; /* Bleu cyan lumineux pour les sous-parties */
+    font-weight: 700;
+}
+body.dark-mode a { 
+    color: #38bdf8; 
+}
+
+body.dark-mode p, 
+body.dark-mode li { 
+    color: #cbd5e1; /* Gris clair bien contrasté sur le fond sombre */
+}
+
+body.dark-mode .img-caption, 
+body.dark-mode .schema-caption { 
+    color: #94a3b8; 
+}
+
+/* Header, Footer et Navigation */
+body.dark-mode .header { background-color: #112240; border-bottom: 1px solid #2d3748; }
+body.dark-mode .footer { background-color: #112240; border-top: 1px solid #2d3748; }
+body.dark-mode .logo,
+body.dark-mode .nav-links a,
+body.dark-mode .footer-links a { color: #f7fafc; }
+
+/* Bouton bascule de thème premium */
+/* Positionnement et design du bouton thème dans le header */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espace propre entre les liens et le bouton */
+}
+
+.theme-toggle-btn { 
+    background: rgba(255, 255, 255, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    font-size: 1.1rem; 
+    cursor: pointer; 
+    width: 38px;
+    height: 38px;
+    border-radius: 50%; /* Bouton parfaitement rond */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; 
+    padding: 0;
+    margin-left: 5px;
+}
+
+.theme-toggle-btn:hover { 
+    background: rgba(255, 255, 255, 0.35); 
+    transform: scale(1.05); 
+}
+
+body.dark-mode .theme-toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Ajustement pour le mode sombre s'il y a besoin */
+body.dark-mode .theme-toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sidebar et Widgets */
+body.dark-mode .sidebar-widget { background: #2d3748 !important; border-color: #4a5568 !important; }
+body.dark-mode .sidebar-widget h3 { color: #f7fafc !important; }
+body.dark-mode .sidebar-widget p { color: #a0aec0 !important; }
+body.dark-mode .sidebar-links a { color: #63b3ed !important; }
+
+/* Blocs publicitaires (Placeholders) */
+body.dark-mode .ad-banner-top, 
+body.dark-mode .ad-banner-bottom, 
+body.dark-mode .ad-in-content,
+body.dark-mode .ad-sidebar-placeholder { background: #2d3748 !important; border-color: #4a5568 !important; color: #a0aec0 !important; }
+
+/* Encadrés spécifiques (Erreur, Astuce, Récap) */
+body.dark-mode .erreur-box { background: linear-gradient(145deg, #4a1515 0%, #2d0e0e 100%); border-left-color: #fc8181; }
+body.dark-mode .erreur-box h4 { color: #fed7d7; }
+body.dark-mode .erreur-box p { color: #feb2b2; }
+
+body.dark-mode .astuce-box { background: linear-gradient(145deg, #1c4532 0%, #122b1f 100%); border-left-color: #68d391; }
+body.dark-mode .astuce-box h4 { color: #c6f6d5; }
+body.dark-mode .astuce-box p { color: #9ae6b4; }
+
+body.dark-mode .recap-box { background: #3c2a1e; border-left-color: #ed8936; }
+body.dark-mode .recap-box h3 { color: #fbd38d; }
+body.dark-mode .recap-box p { color: #f6ad55; }
+
+body.dark-mode .next-step-box { background: #2a4365; border-color: #2b6cb0; }
+body.dark-mode .next-step-box h3 { color: #90cdf4; }
+body.dark-mode .next-step-box p { color: #e2e8f0; }
+
+/* Cartes Produits, Grille Entrée de gamme et Schémas */
+body.dark-mode .entry-card { background: #2d3748; border-color: #4a5568; }
+body.dark-mode .entry-card h4 { color: #f7fafc; }
+body.dark-mode .entry-card p { color: #a0aec0; }
+body.dark-mode .tag-foam, body.dark-mode .tag-chevron { background: #4a5568; color: #f7fafc; }
+body.dark-mode .tag-round, body.dark-mode .tag-mixte { background: #22543d; color: #c6f6d5; }
+body.dark-mode .tag-light, body.dark-mode .tag-omni { background: #7b341e; color: #fbd38d; }
+
+body.dark-mode .product-card { background: #2d3748; border-color: #2b6cb0; }
+body.dark-mode .product-title { color: #f7fafc; }
+body.dark-mode .product-desc { color: #a0aec0; }
+
+body.dark-mode .schema-container { background: #2d3748; border-color: #4a5568; }
+body.dark-mode .schema-svg { background: #1a202c; border-color: #4a5568; }
+body.dark-mode .schema-svg text { fill: #e2e8f0; }
+body.dark-mode .schema-svg line { stroke: #4a5568; }
+body.dark-mode .img-caption, body.dark-mode .schema-caption { color: #a0aec0; }
+body.dark-mode .disclaimer-affiliation { background: #2d3748; border-color: #4a5568; color: #a0aec0; }
+
+/* ==========================================================================
+   CORRECTION DES ÉCARTS BLANCS DE LA SIDEBAR EN MODE SOMBRE
+   ========================================================================== */
+
+/* Uniformiser la sidebar et tous ses éléments enfants en mode sombre */
+body.dark-mode .sidebar {
+    background-color: transparent !important;
+}
+
+/* Forcer les widgets et les emplacements de pubs de la sidebar à adopter le fond sombre */
+body.dark-mode .sidebar-widget,
+body.dark-mode .ad-sidebar-placeholder,
+body.dark-mode div[style*="background:#f0f4f8"],
+body.dark-mode div[style*="background: #f0f4f8"] {
+    background-color: #1e293b !important; /* Fond sombre cohérent avec le thème */
+    border-color: #334155 !important;      /* Bordure subtile et sombre */
+    color: #94a3b8 !important;             /* Texte gris clair pour les pubs */
+}
+
+/* Harmoniser les titres et textes internes de la sidebar */
+body.dark-mode .sidebar-widget h3 {
+    color: #f8fafc !important;
+    border-bottom: 2px solid #334155 !important;
+    padding-bottom: 10px;
+}
+
+body.dark-mode .sidebar-widget p {
+    color: #cbd5e1 !important;
+}
+
+/* ==========================================================================
+   CORRECTION DES CARTES PRODUITS ET CONTENEURS "KIT DE SURVIE" EN MODE SOMBRE
+   ========================================================================== */
+
+/* 1. Le grand conteneur global (fond beige/blanc -> fond sombre élégant) */
+body.dark-mode .product-card-container, 
+body.dark-mode div[style*="background: #fffaf0"], 
+body.dark-mode div[style*="background:#fffaf0"],
+body.dark-mode div[style*="background: #fdf8f6"],
+body.dark-mode .kit-container {
+    background-color: #1e293b !important; /* Même fond sombre harmonisé que la sidebar */
+    border-color: #334155 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 2. Le texte descriptif général à l'intérieur du conteneur */
+body.dark-mode .product-card-container p,
+body.dark-mode .kit-container p {
+    color: #cbd5e1 !important; /* Texte gris clair bien lisible */
+}
+
+body.dark-mode .product-card-container h3,
+body.dark-mode .kit-container h3 {
+    color: #f8fafc !important; /* Titre en blanc pur */
+}
+
+/* 3. Les petites cartes individuelles à l'intérieur (fond blanc -> fond sombre) */
+body.dark-mode .entry-card,
+body.dark-mode .product-sub-card,
+body.dark-mode div[style*="background: #fff"],
+body.dark-mode div[style*="background:#fff"] {
+    background-color: #0f172a !important; /* Fond plus foncé pour contraster avec le conteneur */
+    border-color: #334155 !important;
+    color: #f8fafc !important;
+}
+
+/* 4. Les textes et titres à l'intérieur de ces petites cartes */
+body.dark-mode .entry-card h4,
+body.dark-mode .product-sub-card h4 {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .entry-card p,
+body.dark-mode .product-sub-card p {
+    color: #94a3b8 !important;
+}
+
+/* ==========================================================================
+   ÉLARGISSEMENT DE LA MISE EN PAGE POUR PLUS D'ESPACE
+   ========================================================================== */
+
+/* Augmente la largeur maximale du conteneur principal (passe de 1100px/1200px à 1300px par exemple) */
+.container, 
+.main-container, 
+.site-container,
+.wrapper {
+    max-width: 1350px !important; /* Ajuste cette valeur selon tes préférences (ex: 1300px ou 1400px) */
+    width: 100% !important;
+    margin: 10 auto;
 }
