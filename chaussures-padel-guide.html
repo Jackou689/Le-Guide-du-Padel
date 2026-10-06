@@ -3,18 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jouer au padel avec des chaussures de running est dangereux. Découvrez comment choisir les bonnes semelles (chevron, omni) pour glisser sans vous blesser.">
+    <meta name="description" content="Jouer au padel avec des chaussures de running est dangereux. Découvrez comment choisir les bonnes semelles (chevron, omni) et nos recommandations de chaussures.">
     <title>Chaussures de Padel : Guide d'achat et erreurs à éviter - Le Guide du Padel</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .article-content h2 { margin-top: 40px; color: #1a365d; border-bottom: 2px solid #edf2f7; padding-bottom: 10px; }
-        .article-content h3 { margin-top: 30px; color: #2b6cb0; }
-        .article-content ul { line-height: 1.8; margin-bottom: 20px; }
-        .astuce-box { background-color: #ebf8fa; border-left: 4px solid #319795; padding: 20px; margin: 25px 0; border-radius: 0 8px 8px 0; }
-        .astuce-box h4 { margin-top: 0; color: #234e52; font-size: 1.1em; }
-        .erreur-box { background-color: #fff5f5; border-left: 4px solid #e53e3e; padding: 20px; margin: 25px 0; border-radius: 0 8px 8px 0; }
-        .erreur-box h4 { margin-top: 0; color: #742a2a; font-size: 1.1em; }
-        .product-card { border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; margin: 30px 0; display: flex; flex-direction: column; align-items: center; text-align: center; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        /* Styles éditoriaux spécifiques pour garantir la cohérence avec les autres guides */
+        .article-content { max-width: 75ch; margin: 0 auto; color: #2d3748; font-size: 1.05rem; line-height: 1.8; }
+        .article-content h1 { font-size: 2.3rem; line-height: 1.2; color: #1a202c; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+        .article-content h2 { margin-top: 3.5rem; color: #1a202c; font-size: 1.7rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; }
+        .article-content h3 { margin-top: 2.5rem; color: #2b6cb0; font-size: 1.35rem; font-weight: 600; }
+        .article-content ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-content li { margin-bottom: 0.75rem; }
+        
+        .disclaimer-affiliation { font-size: 0.85rem; color: #718096; background: #f8fafc; padding: 10px 15px; border-radius: 6px; border: 1px solid #e2e8f0; margin-bottom: 2rem; }
+
+        .article-img-container { margin: 2.5rem 0; text-align: center; }
+        .article-img-container img { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); display: block; margin: 0 auto; max-height: 420px; object-fit: cover; }
+        .img-caption { font-size: 0.85em; color: #718096; margin-top: 12px; font-style: italic; }
+
+        .erreur-box { background: linear-gradient(145deg, #fff5f5 0%, #fed7d7 100%); border-left: 4px solid #e53e3e; padding: 1.5rem 2rem; margin: 2.5rem 0; border-radius: 0 12px 12px 0; box-shadow: 0 4px 15px rgba(229, 62, 62, 0.08); }
+        .erreur-box h4 { color: #742a2a; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+        .erreur-box p { margin-bottom: 0; color: #9b2c2c; font-size: 1rem; line-height: 1.6; }
+
+        .astuce-box { background: linear-gradient(145deg, #f0fff4 0%, #c6f6d5 100%); border-left: 4px solid #38a169; padding: 1.5rem 2rem; margin: 2.5rem 0; border-radius: 0 12px 12px 0; box-shadow: 0 4px 15px rgba(56, 161, 105, 0.08); }
+        .astuce-box h4 { color: #22543d; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+        .astuce-box p { margin-bottom: 0; color: #276749; font-size: 1rem; line-height: 1.6; }
+
+        .schema-container { text-align: center; margin: 3rem 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02); }
+        .schema-svg { width: 100%; max-width: 520px; background: #fff; border-radius: 8px; padding: 15px; border: 1px solid #cbd5e0; box-shadow: 0 4px 6px rgba(0,0,0,0.03); }
+        .schema-caption { font-size: 0.9em; color: #4a5568; margin-top: 12px; font-style: italic; font-weight: 500; }
+
+        /* Styles pour la grille d'entrée de gamme */
+        .entry-level-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin: 2rem 0; }
+        .entry-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.04); display: flex; flex-direction: column; transition: transform 0.2s; }
+        .entry-card:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.08); }
+        .entry-tag { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; align-self: flex-start; }
+        .tag-chevron { background: #fed7d7; color: #9b2c2c; }
+        .tag-omni { background: #feebc8; color: #c05621; }
+        .tag-mixte { background: #c6f6d5; color: #276749; }
+        .entry-card h4 { color: #1a365d; margin-top: 0; margin-bottom: 10px; font-size: 1.15rem; }
+        .entry-card p { font-size: 0.9rem; color: #4a5568; line-height: 1.5; flex-grow: 1; margin-bottom: 20px; }
+        .btn-amazon-small { display: block; background: #ff9900; color: #111; text-align: center; padding: 10px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 0.95rem; transition: background 0.2s; }
+        .btn-amazon-small:hover { background: #e88b00; }
+
+        /* Style Premium pour le bloc d'affiliation Asics */
+        .product-card { display: flex; flex-direction: column; background: #fff; border: 2px solid #3182ce; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(49, 130, 206, 0.15); margin: 3rem 0; transition: transform 0.2s ease; }
+        .product-card:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(49, 130, 206, 0.25); }
+        .product-header { background: #3182ce; color: white; padding: 12px 20px; font-weight: bold; font-size: 1.1rem; text-align: center; text-transform: uppercase; letter-spacing: 0.05em; }
+        .product-body { padding: 25px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+        .product-image { width: 100%; max-width: 280px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); object-fit: contain; }
+        .product-title { color: #1a365d; font-size: 1.5rem; margin: 0; font-weight: 800; }
+        .product-desc { color: #4a5568; font-size: 1rem; line-height: 1.6; margin: 0; }
+        .btn-amazon-full { display: block; background: #ff9900; color: #111; text-align: center; padding: 14px 25px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; text-decoration: none; width: 100%; box-sizing: border-box; transition: background 0.2s; box-shadow: 0 4px 10px rgba(255, 153, 0, 0.25); }
+        .btn-amazon-full:hover { background: #e88b00; }
+
+        /* Bloc d'étape suivante */
+        .next-step-box { background: #ebf8ff; border: 1px solid #bee3f8; border-radius: 12px; padding: 25px; margin: 3rem 0; text-align: center; }
+        .next-step-box h3 { color: #2b6cb0; margin-top: 0; font-size: 1.3rem; }
     </style>
 </head>
 <body>
@@ -25,85 +70,184 @@
                 <a href="index.html">Articles</a>
                 <a href="a-propos.html">À propos</a>
                 <a href="contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Activer le mode sombre" title="Basculer le thème">
+                </button>
             </nav>
         </div>
     </header>
 
     <div class="container layout-grid">
         <main class="article-content">
+            <div class="ad-banner-top" style="background:#f0f4f8; padding:15px; color:#718096; border:1px dashed #cbd5e0; border-radius:6px; margin-bottom:20px; text-align:center;">Emplacement Publicitaire (AdSense 728x90)</div>
+
             <h1>Pourquoi jouer au padel avec des chaussures de running est une (très) mauvaise idée</h1>
-            <p><em>Publié par la Rédaction du Guide du Padel</em></p>
+            <p style="color: #718096; font-size: 0.95rem; margin-bottom: 1rem;"><em>Publié par la Rédaction du Guide du Padel</em></p>
             
             <div class="disclaimer-affiliation">
-                Transparence : Cet article contient des liens d'affiliation. Vos achats via ces liens soutiennent notre média indépendant, sans surcoût pour vous.
+                <strong>Transparence :</strong> Cet article contient des liens d'affiliation Amazon. Si vous choisissez de vous équiper via ces liens, cela soutient notre média indépendant sans le moindre surcoût pour vous.
             </div>
 
-            <p>Quand on débute, on pense souvent à investir dans une <a href="guide-raquette-padel-debutant.html">bonne raquette</a>, mais on néglige ce qui nous relie au sol. Au padel, les déplacements sont courts, explosifs, remplis de rotations et de freinages brusques sur un gazon synthétique souvent sablé.</p>
+            <div class="article-img-container">
+                <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Détail de chaussures de sport sur un terrain">
+                <div class="img-caption">Les appuis au padel exigent une chaussure pensée pour les glissades latérales et les freinages secs.</div>
+            </div>
+
+            <p>Quand on débute, on pense souvent et logiquement à investir dans une <a href="guide-raquette-padel-debutant.html" style="color: #2b6cb0; font-weight: bold;">bonne raquette de padel</a>, mais on néglige ce qui nous relie au sol. Au padel, les déplacements sont courts, explosifs, remplis de rotations et de freinages brusques sur un gazon synthétique souvent sablé.</p>
             
             <div class="erreur-box">
                 <h4>❌ L'entorse assurée : Le piège du running</h4>
-                <p>Les baskets de course (running) sont conçues pour un mouvement linéaire (vers l'avant) et ont des semelles lisses ou épaisses. Au padel, porter des running bloque littéralement le pied dans le sable lors des changements de direction latéraux. Résultat : le pied s'arrête, mais le genou et la cheville continuent de tourner. C'est la cause numéro un des ruptures des ligaments croisés chez les débutants.</p>
+                <p>Les baskets de course (running) sont conçues exclusivement pour un mouvement linéaire vers l'avant. Leurs semelles sont lisses ou équipées de crampons épais pour la terre. Au padel, porter des running bloque littéralement le bord du pied dans le gazon synthétique lors d'un changement de direction latéral. Résultat : la chaussure s'arrête, mais votre genou et votre cheville continuent de tourner par inertie. <strong>C'est la cause numéro un des entorses et des ruptures des ligaments croisés chez les joueurs amateurs.</strong></p>
             </div>
 
+            <div class="ad-in-content" style="background:#f0f4f8; padding:15px; color:#718096; border:1px dashed #cbd5e0; border-radius:6px; margin:25px 0; text-align:center;">Emplacement Pub In-Content (AdSense Responsive)</div>
+
             <h2>Le secret réside dans la semelle</h2>
-            <p>Il existe aujourd'hui trois grands types de semelles adaptées aux terrains de padel. Le choix dépend de la quantité de sable présente sur les courts de votre club.</p>
+            <p>Il existe aujourd'hui trois grands types de semelles adaptées aux terrains de padel. Le choix dépend énormément de la quantité de sable présente en surface sur les courts de votre club habituel.</p>
+
+            <!-- SCHÉMA EXPLICATIF DES SEMELLES -->
+            <div class="schema-container">
+                <svg class="schema-svg" viewBox="0 0 500 200">
+                    <!-- Semelle Chevron -->
+                    <rect x="30" y="30" width="120" height="120" fill="#ebf8ff" stroke="#3182ce" stroke-width="3" rx="10"/>
+                    <path d="M40,60 L90,90 L140,60 M40,90 L90,120 L140,90 M40,120 L90,150 L140,120" fill="none" stroke="#2b6cb0" stroke-width="6" stroke-linejoin="round"/>
+                    <text x="90" y="175" fill="#2d3748" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Chevron (Clay)</text>
+                    
+                    <!-- Semelle Omni -->
+                    <rect x="190" y="30" width="120" height="120" fill="#ebf8ff" stroke="#3182ce" stroke-width="3" rx="10"/>
+                    <circle cx="210" cy="50" r="5" fill="#2b6cb0"/><circle cx="250" cy="50" r="5" fill="#2b6cb0"/><circle cx="290" cy="50" r="5" fill="#2b6cb0"/>
+                    <circle cx="210" cy="90" r="5" fill="#2b6cb0"/><circle cx="250" cy="90" r="5" fill="#2b6cb0"/><circle cx="290" cy="90" r="5" fill="#2b6cb0"/>
+                    <circle cx="210" cy="130" r="5" fill="#2b6cb0"/><circle cx="250" cy="130" r="5" fill="#2b6cb0"/><circle cx="290" cy="130" r="5" fill="#2b6cb0"/>
+                    <text x="250" y="175" fill="#2d3748" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Omni (Picots)</text>
+                    
+                    <!-- Semelle Mixte -->
+                    <rect x="350" y="30" width="120" height="120" fill="#ebf8ff" stroke="#3182ce" stroke-width="3" rx="10"/>
+                    <!-- Picots en haut -->
+                    <circle cx="370" cy="50" r="4" fill="#2b6cb0"/><circle cx="410" cy="50" r="4" fill="#2b6cb0"/><circle cx="450" cy="50" r="4" fill="#2b6cb0"/>
+                    <!-- Pivot -->
+                    <circle cx="410" cy="90" r="15" fill="none" stroke="#e53e3e" stroke-width="4"/>
+                    <circle cx="410" cy="90" r="4" fill="#e53e3e"/>
+                    <!-- Chevron en bas -->
+                    <path d="M360,125 L410,140 L460,125" fill="none" stroke="#2b6cb0" stroke-width="4" stroke-linejoin="round"/>
+                    <text x="410" y="175" fill="#2d3748" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Semelle Mixte</text>
+                </svg>
+                <p class="schema-caption">Schéma : Les 3 grands types de semelles utilisés au padel.</p>
+            </div>
 
             <h3>1. La semelle Chevron (Clay) : L'adhérence maximale</h3>
-            <p>Empruntée aux chaussures de tennis sur terre battue, c'est la semelle la plus vendue. Elle est composée de profonds motifs en zig-zag. Elle évacue parfaitement le sable et permet de glisser en contrôle sans jamais déraper de manière incontrôlée.</p>
+            <p>Empruntée directement aux chaussures de tennis sur terre battue, c'est historiquement la semelle la plus vendue. Elle est composée de profonds motifs en zig-zag. Elle évacue parfaitement le sable et permet de <strong>glisser en contrôle</strong> sans jamais déraper de manière incontrôlée ni se bloquer net.</p>
             <ul>
-                <li><strong>Idéal pour :</strong> Les terrains dits "anciens" (très sablés en surface).</li>
+                <li><strong>Idéal pour :</strong> Les terrains dits "anciens" (très sablés en surface, souvent extérieurs).</li>
             </ul>
 
             <h3>2. La semelle Omni (Picots) : La mobilité explosive</h3>
-            <p>Cette semelle est recouverte de multiples petits points (picots). Elle offre une accroche ultra-mordante sur les terrains modernes (le fameux gazon synthétique "WPT" sans sable apparent). En revanche, sur un terrain classique, elle glissera davantage.</p>
+            <p>Cette semelle est recouverte de multiples petits points (picots) très denses. Elle offre une accroche ultra-mordante sur les terrains modernes (le fameux gazon synthétique style "World Padel Tour" sans sable apparent en surface). En revanche, sur un terrain classique rempli de sable, elle glissera un peu trop.</p>
             <ul>
-                <li><strong>Idéal pour :</strong> Les moquettes de nouvelle génération.</li>
+                <li><strong>Idéal pour :</strong> Les moquettes de nouvelle génération très adhérentes (souvent en indoor).</li>
             </ul>
 
-            <h3>3. La semelle Mixte : Le compromis parfait</h3>
-            <p>De nombreuses marques proposent désormais des semelles combinant des chevrons sur les zones de poussée et des picots sur les zones de rotation, intégrant souvent des points de pivot circulaires pour faciliter les tours sur soi-même, très fréquents avec l'utilisation des vitres.</p>
+            <h3>3. La semelle Mixte : Le compromis parfait et moderne</h3>
+            <p>De nombreuses marques spécialisées proposent désormais des semelles combinant intelligemment les deux mondes : des chevrons sur les zones de poussée arrière, et des picots sur les zones de rotation avant. Elles intègrent presque toujours <strong>des points de pivot circulaires</strong> pour faciliter les tours sur soi-même, un mouvement indispensable au padel pour jouer avec <a href="regles-du-padel.html" style="color: #2b6cb0; font-weight: bold;">le rebond des vitres</a>.</p>
 
             <div class="astuce-box">
-                <h4>💡 Le critère de la durabilité</h4>
-                <p>Le padel use énormément l'intérieur de la chaussure (au niveau du gros orteil) à cause des glissades et des freinages. Vérifiez toujours que le modèle choisi possède des renforts en caoutchouc ou en plastique sur la pointe et les côtés intérieurs.</p>
+                <h4>💡 L'astuce longévité : Protéger l'intérieur du pied</h4>
+                <p>Le padel use énormément l'intérieur de la chaussure (au niveau du gros orteil de votre pied d'appui) à cause des glissades répétées lors des défenses basses. Vérifiez toujours que le modèle choisi possède un renfort épais en caoutchouc ou en plastique dur sur la pointe et le côté intérieur pour éviter de les trouer en un mois !</p>
             </div>
 
-            <h2>Notre recommandation pour démarrer</h2>
+            <!-- NOUVELLE SECTION ENTRÉE DE GAMME -->
+            <h2>Nos 3 recommandations "Entrée de gamme" à petit prix</h2>
+            <p>Pas besoin de vous ruiner pour débuter en toute sécurité. Voici les meilleurs rapports qualité/prix du marché classés par type de semelle :</p>
+            
+            <div class="entry-level-grid">
+                <!-- Carte 1 -->
+                <div class="entry-card">
+                    <span class="entry-tag tag-chevron">Semelle Chevron</span>
+                    <h4>Asics Gel-Dedicate Clay</h4>
+                    <p>L'entrée de gamme increvable d'Asics. Idéale pour les terrains très sablés grâce à ses chevrons profonds. Un maintien sécurisant pour vos chevilles.</p>
+                    <a href="https://www.amazon.fr/s?k=Asics+Gel-Dedicate+Clay+padel&tag=leguidedupade-21" target="_blank" rel="nofollow sponsored" class="btn-amazon-small">
+                        🛒 Voir sur Amazon
+                    </a>
+                </div>
+                <!-- Carte 2 -->
+                <div class="entry-card">
+                    <span class="entry-tag tag-omni">Semelle Omni</span>
+                    <h4>Bullpadel Beker</h4>
+                    <p>Le savoir-faire de la marque 100% padel à petit prix. Une semelle à picots parfaite pour accrocher solidement sur les moquettes modernes sans sable.</p>
+                    <a href="https://www.amazon.fr/s?k=Bullpadel+Beker+chaussures&tag=leguidedupade-21" target="_blank" rel="nofollow sponsored" class="btn-amazon-small">
+                        🛒 Voir sur Amazon
+                    </a>
+                </div>
+                <!-- Carte 3 -->
+                <div class="entry-card">
+                    <span class="entry-tag tag-mixte">Semelle Mixte</span>
+                    <h4>Head Revolt Court</h4>
+                    <p>Un excellent compromis hybride doté d'une tige respirante. Idéale pour les joueurs polyvalents évoluant sur différents types de terrains.</p>
+                    <a href="https://www.amazon.fr/s?k=Head+Revolt+Court+padel&tag=leguidedupade-21" target="_blank" rel="nofollow sponsored" class="btn-amazon-small">
+                        🛒 Voir sur Amazon
+                    </a>
+                </div>
+            </div>
+
+            <h2>L'investissement Premium pour vos articulations</h2>
 
             <div class="product-card">
-                <h3>Asics Gel-Resolution Padel</h3>
-                <p>Une référence absolue. Un amorti exceptionnel pour soulager les articulations après les sauts, et une semelle mixte intégrant des points de pivot pour tourner autour de la balle sans forcer sur les genoux.</p>
-                <a href="#" target="_blank" rel="nofollow sponsored" class="btn-affiliation">Voir le modèle Asics sur Decathlon</a>
+                <div class="product-header">Le choix ultime de la rédaction</div>
+                <div class="product-body">
+                    <!-- Image intégrée en remplacement du placeholder -->
+                    <img src="images/asicsgel.jpg" alt="Chaussures de Padel Asics Gel-Resolution" class="product-image">
+                    
+                    <h3 class="product-title">Asics Gel-Resolution Padel</h3>
+                    <p class="product-desc">C'est LA référence absolue sur le marché. Elle offre un amorti en gel exceptionnel pour soulager vos genoux et vos lombaires après les sauts répétés. Sa semelle mixte intègre d'excellents points de pivot pour tourner autour de la balle en toute sécurité. Une vraie assurance vie pour vos chevilles.</p>
+                    <a href="https://www.amazon.fr/dp/B0D79WSRDW?tag=leguidedupade-21" target="_blank" rel="nofollow sponsored" class="btn-amazon-full">
+                        🛒 Voir les tailles et les prix sur Amazon
+                    </a>
+                </div>
             </div>
 
+            <div class="next-step-box">
+                <h3>Étape suivante : Sécuriser votre pratique</h3>
+                <p>Maintenant que vous avez les bons appuis pour éviter les entorses, assurez-vous d'avoir l'équipement adapté pour protéger le reste de votre corps :</p>
+                <div style="margin-top: 15px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <a href="guide-raquette-padel-debutant.html" style="background: #2b6cb0; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">⚡ Guide : Choisir sa Raquette</a>
+                    <a href="raquette-padel-tendinite.html" style="background: #e53e3e; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">🛡️ Prévention : Éviter la Tendinite</a>
+                </div>
+            </div>
+
+            <div class="ad-banner-bottom" style="background:#f0f4f8; padding:15px; color:#718096; border:1px dashed #cbd5e0; border-radius:6px; margin-top:30px; text-align:center;">Emplacement Publicitaire (AdSense 728x90)</div>
         </main>
 
         <aside class="sidebar">
-            <h3>À propos</h3>
-            <p style="font-size: 0.9em; line-height: 1.5; color: #4a5568;">
-                Le Guide du Padel est votre média indépendant pour bien débuter, comprendre les règles et choisir le meilleur matériel.
-            </p>
-            
-            <h3 style="margin-top: 30px;">Nos guides</h3>
-            <ul style="list-style: none; padding: 0; line-height: 1.5; font-size: 0.9em;">
-                <li style="margin-bottom: 15px;">👉 <a href="regles-du-padel.html">Les règles pour débuter</a></li>
-                <li style="margin-bottom: 15px;">👉 <a href="guide-raquette-padel-debutant.html">Choisir sa première raquette</a></li>
-                <li style="margin-bottom: 15px;">👉 <a href="raquette-padel-tendinite.html">Raquette anti-tendinite (Coude)</a></li>
-                <li style="margin-bottom: 15px;">👉 <a href="chaussures-padel-guide.html">Pourquoi acheter des chaussures de padel ?</a></li>
-            </ul>
-
-            <div class="ad-sidebar-placeholder">
-                Emplacement Pub Premium<br>(Format 300x600)
+            <div class="sidebar-widget" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                <h3 style="color: #1a365d; margin-top: 0;">À propos</h3>
+                <p style="font-size: 0.95rem; color: #4a5568;">Le Guide du Padel est votre média indépendant pour bien débuter, comprendre les règles et choisir le meilleur matériel.</p>
             </div>
+            
+            <div class="ad-sidebar-placeholder ad-sidebar-medium" style="background:#f0f4f8; padding:30px; text-align:center; color:#718096; border:1px dashed #cbd5e0; border-radius:8px; margin-bottom: 20px;">Emplacement Pub<br>(AdSense 300x250)</div>
+
+            <!-- MENU DE NAVIGATION UNIFIÉ -->
+            <div class="sidebar-widget" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                <h3 style="color: #1a365d; margin-top: 0;">Découvrez nos guides</h3>
+                <ul class="sidebar-links" style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 8px;"><a href="guide-raquette-padel-debutant.html" style="color: #2b6cb0; text-decoration: none;">⚡ Choisir sa 1ère raquette</a></li>
+                    <li style="margin-bottom: 8px;"><a href="regles-du-padel.html" style="color: #2b6cb0; text-decoration: none;">📖 Les règles du jeu</a></li>
+                    <li style="margin-bottom: 8px;"><a href="chaussures-padel-guide.html" style="color: #2b6cb0; text-decoration: none;">👟 Le guide des chaussures</a></li>
+                    <li style="margin-bottom: 8px;"><a href="coups-techniques-padel.html" style="color: #2b6cb0; text-decoration: none;">🎯 Les coups techniques</a></li>
+                    <li style="margin-bottom: 8px;"><a href="tactique-filet-padel.html" style="color: #2b6cb0; text-decoration: none;">⚔️ Dominer le filet</a></li>
+                    <li style="margin-bottom: 8px;"><a href="balles-padel-guide.html" style="color: #2b6cb0; text-decoration: none;">🎾 Guide des balles</a></li>
+                    <li style="margin-bottom: 8px;"><a href="echauffement-padel.html" style="color: #2b6cb0; text-decoration: none;">🔥 L'échauffement 10 min</a></li>
+                    <li style="margin-bottom: 0;"><a href="raquette-padel-tendinite.html" style="color: #2b6cb0; text-decoration: none;">🛡️ Prévention tendinite</a></li>
+                </ul>
+            </div>
+
+            <div class="ad-sidebar-placeholder ad-sidebar-large" style="background:#f0f4f8; padding:60px 20px; text-align:center; color:#718096; border:1px dashed #cbd5e0; border-radius:8px;">Emplacement Pub Premium<br>(AdSense 300x600)</div>
         </aside>
     </div>
 
     <footer class="footer">
-        <hr>
         <div class="footer-links">
             <a href="mentions-legales.html">Mentions légales</a>
             <a href="confidentialite.html">Confidentialité</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
