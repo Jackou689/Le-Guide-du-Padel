@@ -3,33 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - Le Guide du Padel</title>
+    <title>Le Guide du Padel - Actualités, Règles et Matériel</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .articles-grid {
-            display: grid;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .article-card {
-            border: 1px solid #e2e8f0;
-            padding: 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            color: inherit;
-            transition: box-shadow 0.3s;
-        }
-        .article-card:hover {
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .article-card h2 {
-            color: #1a365d;
-            margin-top: 0;
-            font-size: 1.5rem;
-        }
-        .article-card p {
+        .category-btn {
+            background: #e2e8f0;
             color: #4a5568;
-            margin-bottom: 0;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+        .category-btn.active, .category-btn:hover {
+            background: #2b6cb0;
+            color: white;
         }
     </style>
 </head>
@@ -41,58 +31,263 @@
                 <a href="index.html">Articles</a>
                 <a href="a-propos.html">À propos</a>
                 <a href="contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Activer le mode sombre" title="Basculer le thème">
+                </button>
             </nav>
         </div>
     </header>
+
+    <!-- PUB HAUT DE PAGE -->
+    <div style="max-width: 1200px; margin: 20px auto; text-align: center;">
+        <div class="ad-banner-top" style="background:#f0f4f8; padding:15px; color:#718096; border:1px dashed #cbd5e0; border-radius:6px;">Emplacement Publicitaire (AdSense 728x90)</div>
+    </div>
+
     <div class="container layout-grid">
-        
-        <main class="article-content">
-            <h1>Nos derniers articles</h1>
-            <p>Découvrez tous nos guides, conseils et astuces pour progresser au padel.</p>
+        <main>
+            <section class="hero-section" style="background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); color: white; padding: 40px; border-radius: 12px; margin-bottom: 30px;">
+                <h1 style="color: white; margin-top: 0; font-size: 2.2rem;">Bienvenue sur Le Guide du Padel</h1>
+                <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.9;">Votre source indépendante de référence pour tout comprendre sur ce sport. Que vous cherchiez à assimiler les <a href="regles-du-padel.html" style="color: #f6ad55; text-decoration: underline;">règles officielles du padel</a>, à trouver votre <a href="guide-raquette-padel-debutant.html" style="color: #f6ad55; text-decoration: underline;">première raquette</a> ou à dominer le jeu, vous êtes au bon endroit.</p>
+            </section>
 
-            <div class="articles-grid">
+            <!-- CATÉGORIES D'ARTICLES AVEC FILTRE ACTIF -->
+            <div class="categories-filter" style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
+                <button class="category-btn active" data-filter="all">Tous</button>
+                <button class="category-btn" data-filter="materiel">Matériel</button>
+                <button class="category-btn" data-filter="regles">Règles & Tactique</button>
+                <button class="category-btn" data-filter="sante">Santé & Blessures</button>
+            </div>
 
-<a href="regles-du-padel.html" class="article-card">
-    <h2>Comment jouer au padel ? Règles, histoire et astuces</h2>
-    <p>Découvrez les bases indispensables, de la règle d'or du rebond au service à la cuillère.</p>
-</a>
+            <h2 style="color: #1a365d; margin-bottom: 25px; border-bottom: 2px solid #edf2f7; padding-bottom: 10px;">Tous nos articles et guides pratiques</h2>
 
-<a href="guide-raquette-padel-debutant.html" class="article-card">
-    <h2>Guide d'achat : Choisir sa raquette quand on débute</h2>
-    <p>Forme ronde, goutte d'eau ou diamant ? Apprenez à décrypter les caractéristiques techniques.</p>
-</a>
+            <div class="articles-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                
+                <!-- Raquette -->
+                <article class="article-card" data-category="materiel" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="height: 160px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold;">  
+                       	 <div class="article-img-container">
+               				 <img src="images/raquette-exemple.jpg" alt="Choisir sa raquette">
+       
+          				</div>
+					</div>
+                        <div style="padding: 20px;">
+                            <span style="font-size: 0.75rem; background: #feebc8; color: #744210; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Matériel</span>
+                            <h3 style="margin-top: 10px; color: #1a365d; font-size: 1.2rem;"><a href="guide-raquette-padel-debutant.html" style="color: inherit; text-decoration: none;">Comment choisir sa raquette de padel quand on débute</a></h3>
+                            <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5;">Formes, poids, mousse souple : découvrez tous les critères pour sélectionner la raquette idéale sans vous blesser.</p>
+                        </div>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <a href="guide-raquette-padel-debutant.html" style="display: inline-block; background: #2b6cb0; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Lire le guide →</a>
+                    </div>
+                </article>
 
-<a href="raquette-padel-tendinite.html" class="article-card">
-    <h2>Tendinite au Padel : Quelle raquette pour protéger son coude ?</h2>
-    <p>Épicondylite ? Découvrez les critères essentiels (poids, gomme, forme) pour soulager votre bras.</p>
-</a>
+                <!-- Règles -->
+                <article class="article-card" data-category="regles" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="height: 160px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold;">
+                        	<div class="article-img-container">
+               				 <img src="images/regles.png" alt="Règle du padel">
+       
+          				</div>
+          			</div>
+                        <div style="padding: 20px;">
+                            <span style="font-size: 0.75rem; background: #e2e8f0; color: #2d3748; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Règles & Tactique</span>
+                            <h3 style="margin-top: 10px; color: #1a365d; font-size: 1.2rem;"><a href="regles-du-padel.html" style="color: inherit; text-decoration: none;">Les Règles du Padel et Comment Jouer : Le Guide Complet</a></h3>
+                            <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5;">Dimensions du terrain, service à la cuillère, comptage des points et gestion des vitres : tout est expliqué.</p>
+                        </div>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <a href="regles-du-padel.html" style="display: inline-block; background: #2b6cb0; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Lire le guide →</a>
+                    </div>
+                </article>
 
-<a href="chaussures-padel-guide.html" class="article-card">
-    <h2>Chaussures de Padel : Le guide pour ne pas se blesser</h2>
-    <p>Pourquoi jouer en running est une erreur fatale ? Découvrez comment choisir vos semelles pour adhérer sans abîmer vos genoux.</p>
-</a>
+                <!-- Chaussures -->
+                <article class="article-card" data-category="materiel" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="height: 160px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold;"><div class="article-img-container">
+               				 <img src="images/chaussures.jpg" 
+               				 alt="Chaussure de présentation">
+       
+          				</div>
+          			</div>
+                        <div style="padding: 20px;">
+                            <span style="font-size: 0.75rem; background: #feebc8; color: #744210; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Matériel</span>
+                            <h3 style="margin-top: 10px; color: #1a365d; font-size: 1.2rem;"><a href="chaussures-padel-guide.html" style="color: inherit; text-decoration: none;">Chaussures de Padel : Évitez les erreurs de débutant</a></h3>
+                            <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5;">Pourquoi ne pas jouer en baskets de running ? Semelles à chevrons et maintien de cheville indispensables.</p>
+                        </div>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <a href="chaussures-padel-guide.html" style="display: inline-block; background: #2b6cb0; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Lire le guide →</a>
+                    </div>
+                </article>
+
+                <!-- Coups Techniques -->
+                <article class="article-card" data-category="regles" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="height: 160px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold;">
+                        <div class="article-img-container">
+               				 <img src="images/bandeja.png" alt="Règle du padel">
+       
+          				</div>
+                       </div>
+                        <div style="padding: 20px;">
+                            <span style="font-size: 0.75rem; background: #e2e8f0; color: #2d3748; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Règles & Tactique</span>
+                            <h3 style="margin-top: 10px; color: #1a365d; font-size: 1.2rem;"><a href="coups-techniques-padel.html" style="color: inherit; text-decoration: none;">Les Coups Techniques au Padel : Bandeja, Vibora et Chiquita</a></h3>
+                            <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5;">Le dictionnaire indispensable pour comprendre le vocabulaire et maîtriser les coups spécifiques de ce sport.</p>
+                        </div>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <a href="coups-techniques-padel.html" style="display: inline-block; background: #2b6cb0; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Lire le guide →</a>
+                    </div>
+                </article>
+
+                <!-- Tactique Filet -->
+                <article class="article-card" data-category="regles" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="height: 160px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold;">
+                        <div class="article-img-container">
+               				 <img src="images/double.png" 
+               				 alt="Jouer en double de manière optimale">
+       
+          				</div>
+          			</div>
+                        <div style="padding: 20px;">
+                            <span style="font-size: 0.75rem; background: #e2e8f0; color: #2d3748; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Règles & Tactique</span>
+                            <h3 style="margin-top: 10px; color: #1a365d; font-size: 1.2rem;"><a href="tactique-filet-padel.html" style="color: inherit; text-decoration: none;">Tactique de double : Comment dominer le filet au padel</a></h3>
+                            <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5;">Maîtrisez les volées, l'occupation de l'espace et la prise de filet pour asphyxier vos adversaires en match.</p>
+                        </div>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <a href="tactique-filet-padel.html" style="display: inline-block; background: #2b6cb0; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Lire le guide →</a>
+                    </div>
+                </article>
+
+                <!-- Balles de padel -->
+                <article class="article-card" data-category="materiel" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="height: 160px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold;"> 
+                        <div class="article-img-container">
+               				 <img src="images/balle.jpg" 
+               				 alt="Choisir ses balles sans se tromper">
+       
+          				</div>
+                        </div>
+                        <div style="padding: 20px;">
+                            <span style="font-size: 0.75rem; background: #feebc8; color: #744210; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Matériel</span>
+                            <h3 style="margin-top: 10px; color: #1a365d; font-size: 1.2rem;"><a href="balles-padel-guide.html" style="color: inherit; text-decoration: none;">Balles de padel : Comment choisir et quand les changer ?</a></h3>
+                            <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5;">Différences avec le tennis, pression interne, durée de vie utile et astuces pour prolonger leur rebond.</p>
+                        </div>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <a href="balles-padel-guide.html" style="display: inline-block; background: #2b6cb0; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Lire le guide →</a>
+                    </div>
+                </article>
+
+                <!-- Échauffement -->
+                <article class="article-card" data-category="sante" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="height: 160px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold;">
+                        <div class="article-img-container">
+               				 <img src="images/echauffement.jpg" 
+               				 alt="Éviter les blessures">
+       
+          				</div>
+          			</div>
+                        <div style="padding: 20px;">
+                            <span style="font-size: 0.75rem; background: #fed7d7; color: #c53030; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Santé & Blessures</span>
+                            <h3 style="margin-top: 10px; color: #1a365d; font-size: 1.2rem;"><a href="echauffement-padel.html" style="color: inherit; text-decoration: none;">S'échauffer au Padel : La routine de 10 minutes avant un match</a></h3>
+                            <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5;">Réveil articulaire, élastiques et prévention des blessures pour entrer sur le terrain en pleine forme.</p>
+                        </div>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <a href="echauffement-padel.html" style="display: inline-block; background: #2b6cb0; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Lire le guide →</a>
+                    </div>
+                </article>
+
+                <!-- Raquette Tendinite -->
+                <article class="article-card" data-category="sante" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="height: 160px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold;">
+                         <div class="article-img-container">
+               				 <img src="images/epicondylite.webp" 
+               				 alt="Éviter les blessures">
+       
+          				</div>
+                     </div>
+                        <div style="padding: 20px;">
+                            <span style="font-size: 0.75rem; background: #fed7d7; color: #c53030; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Santé & Blessures</span>
+                            <h3 style="margin-top: 10px; color: #1a365d; font-size: 1.2rem;"><a href="raquette-padel-tendinite.html" style="color: inherit; text-decoration: none;">Tendinite et Padel : Quelle raquette choisir pour son coude ?</a></h3>
+                            <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5;">Épicondylite, gommes souples et raquettes anti-vibrations pour soulager durablement vos articulations.</p>
+                        </div>
+                    </div>
+                    <div style="padding: 0 20px 20px 20px;">
+                        <a href="raquette-padel-tendinite.html" style="display: inline-block; background: #2b6cb0; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Lire le guide →</a>
+                    </div>
+                </article>
+
             </div>
         </main>
 
         <aside class="sidebar">
-            <h3>À propos</h3>
-            <p style="font-size: 0.9em; line-height: 1.5; color: #4a5568;">
-                Le Guide du Padel est votre média indépendant pour bien débuter, comprendre les règles et choisir le meilleur matériel.
-            </p>
-            
-            <div class="ad-sidebar-placeholder">
-                Emplacement Pub Premium<br>(Format 300x600)
+            <div class="sidebar-widget" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                <h3 style="color: #1a365d; margin-top: 0;">À propos</h3>
+                <p style="font-size: 0.95rem; color: #4a5568;">Le Guide du Padel est votre média indépendant pour bien débuter, comprendre les <a href="regles-du-padel.html">règles</a> et choisir le meilleur matériel.</p>
             </div>
-        </aside>
+            
+            <div class="ad-sidebar-placeholder ad-sidebar-medium" style="background:#f0f4f8; padding:30px; text-align:center; color:#718096; border:1px dashed #cbd5e0; border-radius:8px; margin-bottom: 20px;">Emplacement Pub<br>(AdSense 300x250)</div>
 
+            <!-- MENU DE NAVIGATION RAPIDE COMPLÉTÉ -->
+            <div class="sidebar-widget" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                <h3 style="color: #1a365d; margin-top: 0;">Navigation rapide</h3>
+                <ul class="sidebar-links" style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 8px;"><a href="guide-raquette-padel-debutant.html" style="color: #2b6cb0; text-decoration: none;">⚡ Choisir sa 1ère raquette</a></li>
+                    <li style="margin-bottom: 8px;"><a href="regles-du-padel.html" style="color: #2b6cb0; text-decoration: none;">📖 Les règles du jeu</a></li>
+                    <li style="margin-bottom: 8px;"><a href="chaussures-padel-guide.html" style="color: #2b6cb0; text-decoration: none;">👟 Le guide des chaussures</a></li>
+                    <li style="margin-bottom: 8px;"><a href="coups-techniques-padel.html" style="color: #2b6cb0; text-decoration: none;">🎯 Les coups techniques</a></li>
+                    <li style="margin-bottom: 8px;"><a href="tactique-filet-padel.html" style="color: #2b6cb0; text-decoration: none;">⚔️ Dominer le filet</a></li>
+                    <li style="margin-bottom: 8px;"><a href="balles-padel-guide.html" style="color: #2b6cb0; text-decoration: none;">🎾 Guide des balles</a></li>
+                    <li style="margin-bottom: 8px;"><a href="echauffement-padel.html" style="color: #2b6cb0; text-decoration: none;">🔥 L'échauffement 10 min</a></li>
+                    <li style="margin-bottom: 0;"><a href="raquette-padel-tendinite.html" style="color: #2b6cb0; text-decoration: none;">🛡️ Prévention tendinite</a></li>
+                </ul>
+            </div>
+
+            <div class="ad-sidebar-placeholder ad-sidebar-large" style="background:#f0f4f8; padding:60px 20px; text-align:center; color:#718096; border:1px dashed #cbd5e0; border-radius:8px;">Emplacement Pub Premium<br>(AdSense 300x600)</div>
+        </aside>
     </div>
 
     <footer class="footer">
-        <hr>
         <div class="footer-links">
             <a href="mentions-legales.html">Mentions légales</a>
             <a href="confidentialite.html">Confidentialité</a>
         </div>
     </footer>
+
+    <!-- SCRIPT DE FILTRAGE DES CATÉGORIES -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.category-btn');
+            const cards = document.querySelectorAll('.article-card');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Gestion de la classe active
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    cards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        if (filter === 'all' || category === filter) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
