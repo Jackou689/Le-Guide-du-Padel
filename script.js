@@ -33,3 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded',()=>{const o=document.getElementById('mobile-menu-toggle'),c=document.getElementById('mobile-menu-close'),m=document.getElementById('mobile-menu'),v=document.getElementById('mobile-menu-overlay');if(!o||!c||!m||!v)return;let last=null;const close=()=>{m.classList.remove('is-open');v.classList.remove('is-open');m.setAttribute('aria-hidden','true');o.setAttribute('aria-expanded','false');o.setAttribute('aria-label','Ouvrir le menu');document.documentElement.classList.remove('mobile-menu-open');document.body.classList.remove('mobile-menu-open');setTimeout(()=>{v.hidden=true;if(last)last.focus()},200)},open=()=>{last=document.activeElement;v.hidden=false;m.classList.add('is-open');v.classList.add('is-open');m.setAttribute('aria-hidden','false');o.setAttribute('aria-expanded','true');o.setAttribute('aria-label','Fermer le menu');document.documentElement.classList.add('mobile-menu-open');document.body.classList.add('mobile-menu-open');requestAnimationFrame(()=>c.focus())};o.addEventListener('click',()=>m.classList.contains('is-open')?close():open());c.addEventListener('click',close);v.addEventListener('click',close);m.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('keydown',e=>{if(!m.classList.contains('is-open'))return;if(e.key==='Escape'){e.preventDefault();close()}if(e.key==='Tab'){const q=[...m.querySelectorAll('a[href],button:not([disabled])')],f=q[0],l=q[q.length-1];if(e.shiftKey&&document.activeElement===f){e.preventDefault();l.focus()}else if(!e.shiftKey&&document.activeElement===l){e.preventDefault();f.focus()}}});window.addEventListener('resize',()=>{if(innerWidth>=768&&m.classList.contains('is-open'))close()})});
+
+// Affiche les emplacements publicitaires de test uniquement en preview ou en local.
+document.addEventListener('DOMContentLoaded', () => {
+    const hostname = window.location.hostname;
+    const isPreview = hostname === 'localhost' || hostname === '127.0.0.1' || hostname.endsWith('.workers.dev');
+    document.body.classList.toggle('preview-mode', isPreview);
+});

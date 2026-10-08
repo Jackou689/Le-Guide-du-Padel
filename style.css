@@ -811,3 +811,209 @@ body.dark-mode .link-accent-strong { color: #7dd3fc; }
 body.dark-mode .tag-rules { background: #334155; color: #f8fafc; }
 body.dark-mode .tag-material { background: #78350f; color: #fef3c7; }
 body.dark-mode .tag-health { background: #7f1d1d; color: #fee2e2; }
+
+/* ==========================================================================
+   LOT 8A : TRANSPARENCE, SANTE ET ENVIRONNEMENT DE PREVISUALISATION
+   ========================================================================== */
+.affiliate-disclosure,
+.health-disclaimer {
+    margin: 20px 0;
+    padding: 16px 18px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+.affiliate-disclosure {
+    background: #fffaf0;
+    border-left: 4px solid #d69e2e;
+    color: #744210;
+}
+.health-disclaimer {
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    color: #1e3a5f;
+}
+.health-sources {
+    margin: 32px 0;
+    padding: 18px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: #f8fafc;
+}
+.health-sources h2 { margin-top: 0; font-size: 1.15rem; }
+.health-sources ul { margin-bottom: 0; }
+body.dark-mode .affiliate-disclosure { background: #422006; border-color: #f59e0b; color: #fef3c7; }
+body.dark-mode .health-disclaimer { background: #172554; border-color: #60a5fa; color: #dbeafe; }
+body.dark-mode .health-sources { background: #1e293b; border-color: #334155; }
+
+/* Les maquettes publicitaires sont visibles uniquement en preview/local. */
+.ad-placeholder { display: none !important; }
+body.preview-mode .ad-placeholder { display: flex !important; }
+
+/* ==========================================================================
+   LOT 8A.1 : CORRECTIFS VISUELS ISOLES
+   ========================================================================== */
+/* Pages simples : le fond et le texte suivent ensemble le mode sombre. */
+body.dark-mode .page-simple,
+body.dark-mode .page-contact {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #e2e8f0 !important;
+}
+body.dark-mode .page-simple h1,
+body.dark-mode .page-simple h2,
+body.dark-mode .page-simple h3,
+body.dark-mode .page-contact h1,
+body.dark-mode .page-contact h2,
+body.dark-mode .page-contact h3 {
+    color: #f8fafc !important;
+}
+body.dark-mode .page-simple p,
+body.dark-mode .page-simple li,
+body.dark-mode .page-contact p,
+body.dark-mode .page-contact li {
+    color: #cbd5e1 !important;
+}
+body.dark-mode .page-simple a,
+body.dark-mode .page-contact a {
+    color: #7dd3fc !important;
+}
+body.dark-mode .page-simple code,
+body.dark-mode .page-contact code {
+    color: #f8fafc;
+    background: #0f172a;
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+}
+
+/* Les tailles des encadres d'erreur ne doivent pas heriter des grands h2 d'article. */
+.erreur-box,
+body.dark-mode .erreur-box {
+    padding: 18px 20px;
+    margin: 25px 0;
+}
+.article-content .erreur-box h2,
+.article-content .erreur-box h3,
+.article-content .erreur-box h4,
+body.dark-mode .article-content .erreur-box h2,
+body.dark-mode .article-content .erreur-box h3,
+body.dark-mode .article-content .erreur-box h4 {
+    margin: 0 0 12px;
+    padding: 0;
+    border: 0;
+    font-size: 1.1rem !important;
+    line-height: 1.4;
+}
+.article-content .erreur-box p,
+body.dark-mode .article-content .erreur-box p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+/* Une seule etiquette de carte avait un titre disproportionne. */
+.entry-card .entry-card-title-compact,
+body.dark-mode .entry-card .entry-card-title-compact {
+    font-size: 1.25rem !important;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+/* LOT 8A.2 : divulgation horizontale et titres de cartes uniformes */
+.affiliate-disclosure {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 18px 0 20px;
+    padding: 12px 16px;
+    line-height: 1.5;
+}
+.entry-level-grid > .affiliate-disclosure {
+    grid-column: 1 / -1;
+}
+
+/* ==========================================================================
+   LOT 8A.3 : VERROUILLAGE DU RENDU MOBILE
+   ========================================================================== */
+@media (max-width: 767px) {
+    .entry-level-grid,
+    .products-grid,
+    .starter-pack-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 16px !important;
+        width: 100%;
+    }
+    .entry-card,
+    .product-card,
+    .affiliate-disclosure,
+    .health-disclaimer,
+    .health-sources,
+    .erreur-box,
+    .astuce-box,
+    .coach-tip-box,
+    .next-step-box {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+    }
+    .affiliate-disclosure {
+        margin: 16px 0 18px;
+        padding: 12px 14px;
+        font-size: 0.94rem;
+        overflow-wrap: anywhere;
+    }
+    .entry-card h4,
+    .product-title {
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+    .btn-amazon-full,
+    .btn-amazon-small,
+    .btn-affiliation,
+    .home-card-cta,
+    .related-action-primary,
+    .audited-style-01,
+    .audited-style-02 {
+        display: block;
+        width: 100%;
+        min-height: 44px;
+        box-sizing: border-box;
+        white-space: normal;
+        text-align: center;
+    }
+    .article-content img,
+    .page-simple img,
+    .page-contact img,
+    svg {
+        max-width: 100%;
+        height: auto;
+    }
+    .article-content pre,
+    .page-simple pre,
+    .page-contact pre {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .affiliate-disclosure,
+    .health-disclaimer,
+    .health-sources,
+    .erreur-box,
+    .astuce-box,
+    .coach-tip-box,
+    .next-step-box {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .article-content h2 {
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+    .article-content h3 {
+        font-size: 1.15rem;
+        line-height: 1.35;
+    }
+}
