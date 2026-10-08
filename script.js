@@ -1,41 +1,33 @@
-// script.js - Gestion globale du site Le Guide du Padel
-
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-    
-    // Si la page n'a pas le bouton, on ne fait rien
     if (!themeToggleBtn) return;
 
-    // Fonction pour mettre à jour l'icône (Soleil/Lune)
-    const updateIcon = () => {
-        if (body.classList.contains('dark-mode')) {
-            themeToggleBtn.innerHTML = '☀️'; // Soleil éclatant quand il fait sombre
-        } else {
-            themeToggleBtn.innerHTML = '🌙'; // Lune jaune quand il fait jour
-        }
+    const setThemeButtonState = (isDark) => {
+        const nextAction = isDark ? 'Activer le mode clair' : 'Activer le mode sombre';
+        themeToggleBtn.setAttribute('aria-label', nextAction);
+        themeToggleBtn.setAttribute('title', nextAction);
+        themeToggleBtn.setAttribute('aria-pressed', String(isDark));
+        themeToggleBtn.innerHTML = `<span aria-hidden="true">${isDark ? '☀️' : '🌙'}</span>`;
     };
 
-    // 1. Appliquer le thème mémorisé lors du chargement de la page
-    if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark-mode');
+    let savedTheme = null;
+    try {
+        savedTheme = localStorage.getItem('theme');
+    } catch (error) {
+        console.warn('La préférence de thème ne peut pas être lue.', error);
     }
-    
-    // Mettre la bonne icône dès le chargement
-    updateIcon();
 
-    // 2. Écouter le clic sur le bouton de thème
+    const isInitiallyDark = savedTheme === 'dark';
+    document.body.classList.toggle('dark-mode', isInitiallyDark);
+    setThemeButtonState(isInitiallyDark);
+
     themeToggleBtn.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        
-        // Mettre à jour l'icône immédiatement après le clic
-        updateIcon();
-        
-        // 3. Sauvegarder le nouveau choix
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
-        } else {
-            localStorage.setItem('theme', 'light');
+        const isDark = document.body.classList.toggle('dark-mode');
+        setThemeButtonState(isDark);
+        try {
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        } catch (error) {
+            console.warn('La préférence de thème ne peut pas être enregistrée.', error);
         }
     });
 });

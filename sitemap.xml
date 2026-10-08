@@ -1,1 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://leguidedupadel.fr/</loc></url><url><loc>https://leguidedupadel.fr/guide-raquette-padel-debutant.html</loc></url><url><loc>https://leguidedupadel.fr/a-propos.html</loc></url><url><loc>https://leguidedupadel.fr/contact.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://leguidedupadel.fr/</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/a-propos.html</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/balles-padel-guide.html</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/chaussures-padel-guide.html</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/coups-techniques-padel.html</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/echauffement-padel.html</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/guide-raquette-padel-debutant.html</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/raquette-padel-tendinite.html</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/regles-du-padel.html</loc>
+  </url>
+  <url>
+    <loc>https://leguidedupadel.fr/tactique-filet-padel.html</loc>
+  </url>
+</urlset>
