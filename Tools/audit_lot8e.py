@@ -39,13 +39,15 @@ if "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com" not
 wr=json.loads(Path('wrangler.jsonc').read_text())
 if wr.get('assets',{}).get('html_handling')!='auto-trailing-slash': errors.append('html_handling absent')
 if wr.get('assets',{}).get('not_found_handling')!='404-page': errors.append('404 handling absent')
-# Lot 8E.1: table contrast selector must be isolated.
-sb=BeautifulSoup(Path('guide-raquette-padel-debutant.html').read_text(),'html.parser')
-if len(sb.select('table.racket-shape-table')) != 1:
-    errors.append('table racket-shape-table absente ou non unique')
+# Lot 8E.2: prevent global layout regression and verify targeted contrast.
 css=Path('style.css').read_text()
-if 'body.dark-mode .racket-shape-table tbody td' not in css:
-    errors.append('correctif contraste tableau absent')
+if 'max-width: 75ch' in css:
+    errors.append('regression largeur: max-width 75ch')
+sb=BeautifulSoup(Path('guide-raquette-padel-debutant.html').read_text(),'html.parser')
+if len(sb.select('body.page-racket-beginner table.racket-shape-table')) != 1:
+    errors.append('hook tableau debutant absent ou non unique')
+if 'body.dark-mode.page-racket-beginner .racket-shape-table tbody td' not in css:
+    errors.append('correctif contraste cible absent')
 errors += missing+broken+amazon_bad
 print(f'Pages: {len(pages)}; styles locaux: {style_tags}; attributs style: {style_attrs}; scripts fonctionnels inline: {func_inline}')
 print(f'Canoniques: {len(canon)} uniques: {len(set(canon))}; beacons: {beacons}')
