@@ -1080,7 +1080,7 @@ body.dark-mode .privacy-table code { background: #0f172a; color: #f8fafc; paddin
 .error-guides li { margin: 8px 0; }
 body.dark-mode .error-code { color: #1e3a5f; }
 
-/* LOT 8E.5 RESTAURATION VISUELLE COMPLETE PAR PAGE */
+/* LOT 8E.6 RESTAURATION VISUELLE */
 body.page-home .category-btn {
             background: #e2e8f0;
             color: #4a5568;
@@ -1263,242 +1263,1751 @@ body.page-privacy .page-simple p { line-height: 1.7; color: #2d3748; margin-bott
 body.page-privacy .back-link-container { margin-top: 30px; text-align: center; }
 body.page-privacy .back-link { color: #2b6cb0; text-decoration: none; font-weight: bold; }
 body.page-privacy .back-link:hover { text-decoration: underline; }
-/* LOT 8E.5 PRIORITE FINALE DU MODE SOMBRE 8D */
-body.dark-mode { 
+/* PRIORITE SOMBRE GENERALE */
+body.dark-mode.page-home,
+body.dark-mode.page-shoes-guide,
+body.dark-mode.page-racket-beginner,
+body.dark-mode.page-racket-tendinitis,
+body.dark-mode.page-rules-guide,
+body.dark-mode.page-privacy { 
     background-color: #0f172a; 
     color: #f1f5f9; 
 }
-body.dark-mode .article-content h1 {
+body.dark-mode.page-home .article-content h1,
+body.dark-mode.page-shoes-guide .article-content h1,
+body.dark-mode.page-racket-beginner .article-content h1,
+body.dark-mode.page-racket-tendinitis .article-content h1,
+body.dark-mode.page-rules-guide .article-content h1,
+body.dark-mode.page-privacy .article-content h1 {
     color: #ffffff !important; 
     font-weight: 800;
 }
-body.dark-mode .article-content h2 { 
+body.dark-mode.page-home .article-content h2,
+body.dark-mode.page-shoes-guide .article-content h2,
+body.dark-mode.page-racket-beginner .article-content h2,
+body.dark-mode.page-racket-tendinitis .article-content h2,
+body.dark-mode.page-rules-guide .article-content h2,
+body.dark-mode.page-privacy .article-content h2 { 
     color: #f8fafc !important; 
     border-bottom-color: #475569 !important; 
 }
-body.dark-mode .article-content h3 { 
+body.dark-mode.page-home .article-content h3,
+body.dark-mode.page-shoes-guide .article-content h3,
+body.dark-mode.page-racket-beginner .article-content h3,
+body.dark-mode.page-racket-tendinitis .article-content h3,
+body.dark-mode.page-rules-guide .article-content h3,
+body.dark-mode.page-privacy .article-content h3 { 
     color: #38bdf8 !important; 
     font-weight: 700;
 }
-body.dark-mode a { 
+body.dark-mode.page-home a,
+body.dark-mode.page-shoes-guide a,
+body.dark-mode.page-racket-beginner a,
+body.dark-mode.page-racket-tendinitis a,
+body.dark-mode.page-rules-guide a,
+body.dark-mode.page-privacy a { 
     color: #38bdf8; 
 }
-body.dark-mode p,
-body.dark-mode li { 
+body.dark-mode.page-home p,
+body.dark-mode.page-shoes-guide p,
+body.dark-mode.page-racket-beginner p,
+body.dark-mode.page-racket-tendinitis p,
+body.dark-mode.page-rules-guide p,
+body.dark-mode.page-privacy p,
+body.dark-mode.page-home li,
+body.dark-mode.page-shoes-guide li,
+body.dark-mode.page-racket-beginner li,
+body.dark-mode.page-racket-tendinitis li,
+body.dark-mode.page-rules-guide li,
+body.dark-mode.page-privacy li { 
     color: #cbd5e1; 
 }
-body.dark-mode .img-caption,
-body.dark-mode .schema-caption { 
+body.dark-mode.page-home .img-caption,
+body.dark-mode.page-shoes-guide .img-caption,
+body.dark-mode.page-racket-beginner .img-caption,
+body.dark-mode.page-racket-tendinitis .img-caption,
+body.dark-mode.page-rules-guide .img-caption,
+body.dark-mode.page-privacy .img-caption,
+body.dark-mode.page-home .schema-caption,
+body.dark-mode.page-shoes-guide .schema-caption,
+body.dark-mode.page-racket-beginner .schema-caption,
+body.dark-mode.page-racket-tendinitis .schema-caption,
+body.dark-mode.page-rules-guide .schema-caption,
+body.dark-mode.page-privacy .schema-caption { 
     color: #94a3b8; 
 }
-body.dark-mode .header { background-color: #112240; border-bottom: 1px solid #2d3748; }
-body.dark-mode .footer { background-color: #112240; border-top: 1px solid #2d3748; }
-body.dark-mode .logo,
-body.dark-mode .nav-links a,
-body.dark-mode .footer-links a { color: #f7fafc; }
-body.dark-mode .theme-toggle-btn {
+body.dark-mode.page-home .header,
+body.dark-mode.page-shoes-guide .header,
+body.dark-mode.page-racket-beginner .header,
+body.dark-mode.page-racket-tendinitis .header,
+body.dark-mode.page-rules-guide .header,
+body.dark-mode.page-privacy .header { background-color: #112240; border-bottom: 1px solid #2d3748; }
+body.dark-mode.page-home .footer,
+body.dark-mode.page-shoes-guide .footer,
+body.dark-mode.page-racket-beginner .footer,
+body.dark-mode.page-racket-tendinitis .footer,
+body.dark-mode.page-rules-guide .footer,
+body.dark-mode.page-privacy .footer { background-color: #112240; border-top: 1px solid #2d3748; }
+body.dark-mode.page-home .logo,
+body.dark-mode.page-shoes-guide .logo,
+body.dark-mode.page-racket-beginner .logo,
+body.dark-mode.page-racket-tendinitis .logo,
+body.dark-mode.page-rules-guide .logo,
+body.dark-mode.page-privacy .logo,
+body.dark-mode.page-home .nav-links a,
+body.dark-mode.page-shoes-guide .nav-links a,
+body.dark-mode.page-racket-beginner .nav-links a,
+body.dark-mode.page-racket-tendinitis .nav-links a,
+body.dark-mode.page-rules-guide .nav-links a,
+body.dark-mode.page-privacy .nav-links a,
+body.dark-mode.page-home .footer-links a,
+body.dark-mode.page-shoes-guide .footer-links a,
+body.dark-mode.page-racket-beginner .footer-links a,
+body.dark-mode.page-racket-tendinitis .footer-links a,
+body.dark-mode.page-rules-guide .footer-links a,
+body.dark-mode.page-privacy .footer-links a { color: #f7fafc; }
+body.dark-mode.page-home .theme-toggle-btn,
+body.dark-mode.page-shoes-guide .theme-toggle-btn,
+body.dark-mode.page-racket-beginner .theme-toggle-btn,
+body.dark-mode.page-racket-tendinitis .theme-toggle-btn,
+body.dark-mode.page-rules-guide .theme-toggle-btn,
+body.dark-mode.page-privacy .theme-toggle-btn {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
 }
-body.dark-mode .sidebar-links a { color: #63b3ed !important; }
-body.dark-mode .ad-banner-top,
-body.dark-mode .ad-banner-bottom,
-body.dark-mode .ad-in-content,
-body.dark-mode .ad-sidebar-placeholder { background: #2d3748 !important; border-color: #4a5568 !important; color: #a0aec0 !important; }
-body.dark-mode .erreur-box { background: linear-gradient(145deg, #4a1515 0%, #2d0e0e 100%); border-left-color: #fc8181; }
-body.dark-mode .erreur-box h2,
-.erreur-box h3,
-.erreur-box h4 { color: #fed7d7; }
-body.dark-mode .erreur-box p { color: #feb2b2; }
-body.dark-mode .astuce-box { background: linear-gradient(145deg, #1c4532 0%, #122b1f 100%); border-left-color: #68d391; }
-body.dark-mode .astuce-box h2,
-.astuce-box h3,
-.astuce-box h4 { color: #c6f6d5; }
-body.dark-mode .astuce-box p { color: #9ae6b4; }
-body.dark-mode .recap-box { background: #3c2a1e; border-left-color: #ed8936; }
-body.dark-mode .recap-box h3 { color: #fbd38d; }
-body.dark-mode .recap-box p { color: #f6ad55; }
-body.dark-mode .next-step-box { background: #2a4365; border-color: #2b6cb0; }
-body.dark-mode .next-step-box h3 { color: #90cdf4; }
-body.dark-mode .next-step-box p { color: #e2e8f0; }
-body.dark-mode .entry-card { background: #2d3748; border-color: #4a5568; }
-body.dark-mode .entry-card h4 { color: #f7fafc; }
-body.dark-mode .entry-card p { color: #a0aec0; }
-body.dark-mode .tag-foam,
-body.dark-mode .tag-chevron { background: #4a5568; color: #f7fafc; }
-body.dark-mode .tag-round,
-body.dark-mode .tag-mixte { background: #22543d; color: #c6f6d5; }
-body.dark-mode .tag-light,
-body.dark-mode .tag-omni { background: #7b341e; color: #fbd38d; }
-body.dark-mode .product-card { background: #2d3748; border-color: #2b6cb0; }
-body.dark-mode .product-title { color: #f7fafc; }
-body.dark-mode .product-desc { color: #a0aec0; }
-body.dark-mode .schema-container { background: #2d3748; border-color: #4a5568; }
-body.dark-mode .schema-svg { background: #1a202c; border-color: #4a5568; }
-body.dark-mode .schema-svg text { fill: #e2e8f0; }
-body.dark-mode .schema-svg line { stroke: #4a5568; }
-body.dark-mode .img-caption,
-body.dark-mode .schema-caption { color: #a0aec0; }
-body.dark-mode .disclaimer-affiliation { background: #2d3748; border-color: #4a5568; color: #a0aec0; }
-body.dark-mode .sidebar {
+body.dark-mode.page-home .sidebar-links a,
+body.dark-mode.page-shoes-guide .sidebar-links a,
+body.dark-mode.page-racket-beginner .sidebar-links a,
+body.dark-mode.page-racket-tendinitis .sidebar-links a,
+body.dark-mode.page-rules-guide .sidebar-links a,
+body.dark-mode.page-privacy .sidebar-links a { color: #63b3ed !important; }
+body.dark-mode.page-home .ad-banner-top,
+body.dark-mode.page-shoes-guide .ad-banner-top,
+body.dark-mode.page-racket-beginner .ad-banner-top,
+body.dark-mode.page-racket-tendinitis .ad-banner-top,
+body.dark-mode.page-rules-guide .ad-banner-top,
+body.dark-mode.page-privacy .ad-banner-top,
+body.dark-mode.page-home .ad-banner-bottom,
+body.dark-mode.page-shoes-guide .ad-banner-bottom,
+body.dark-mode.page-racket-beginner .ad-banner-bottom,
+body.dark-mode.page-racket-tendinitis .ad-banner-bottom,
+body.dark-mode.page-rules-guide .ad-banner-bottom,
+body.dark-mode.page-privacy .ad-banner-bottom,
+body.dark-mode.page-home .ad-in-content,
+body.dark-mode.page-shoes-guide .ad-in-content,
+body.dark-mode.page-racket-beginner .ad-in-content,
+body.dark-mode.page-racket-tendinitis .ad-in-content,
+body.dark-mode.page-rules-guide .ad-in-content,
+body.dark-mode.page-privacy .ad-in-content,
+body.dark-mode.page-home .ad-sidebar-placeholder,
+body.dark-mode.page-shoes-guide .ad-sidebar-placeholder,
+body.dark-mode.page-racket-beginner .ad-sidebar-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-sidebar-placeholder,
+body.dark-mode.page-rules-guide .ad-sidebar-placeholder,
+body.dark-mode.page-privacy .ad-sidebar-placeholder { background: #2d3748 !important; border-color: #4a5568 !important; color: #a0aec0 !important; }
+body.dark-mode.page-home .erreur-box,
+body.dark-mode.page-shoes-guide .erreur-box,
+body.dark-mode.page-racket-beginner .erreur-box,
+body.dark-mode.page-racket-tendinitis .erreur-box,
+body.dark-mode.page-rules-guide .erreur-box,
+body.dark-mode.page-privacy .erreur-box { background: linear-gradient(145deg, #4a1515 0%, #2d0e0e 100%); border-left-color: #fc8181; }
+body.dark-mode.page-home .erreur-box h2,
+body.dark-mode.page-shoes-guide .erreur-box h2,
+body.dark-mode.page-racket-beginner .erreur-box h2,
+body.dark-mode.page-racket-tendinitis .erreur-box h2,
+body.dark-mode.page-rules-guide .erreur-box h2,
+body.dark-mode.page-privacy .erreur-box h2 { color: #fed7d7; }
+body.dark-mode.page-home .erreur-box p,
+body.dark-mode.page-shoes-guide .erreur-box p,
+body.dark-mode.page-racket-beginner .erreur-box p,
+body.dark-mode.page-racket-tendinitis .erreur-box p,
+body.dark-mode.page-rules-guide .erreur-box p,
+body.dark-mode.page-privacy .erreur-box p { color: #feb2b2; }
+body.dark-mode.page-home .astuce-box,
+body.dark-mode.page-shoes-guide .astuce-box,
+body.dark-mode.page-racket-beginner .astuce-box,
+body.dark-mode.page-racket-tendinitis .astuce-box,
+body.dark-mode.page-rules-guide .astuce-box,
+body.dark-mode.page-privacy .astuce-box { background: linear-gradient(145deg, #1c4532 0%, #122b1f 100%); border-left-color: #68d391; }
+body.dark-mode.page-home .astuce-box h2,
+body.dark-mode.page-shoes-guide .astuce-box h2,
+body.dark-mode.page-racket-beginner .astuce-box h2,
+body.dark-mode.page-racket-tendinitis .astuce-box h2,
+body.dark-mode.page-rules-guide .astuce-box h2,
+body.dark-mode.page-privacy .astuce-box h2 { color: #c6f6d5; }
+body.dark-mode.page-home .astuce-box p,
+body.dark-mode.page-shoes-guide .astuce-box p,
+body.dark-mode.page-racket-beginner .astuce-box p,
+body.dark-mode.page-racket-tendinitis .astuce-box p,
+body.dark-mode.page-rules-guide .astuce-box p,
+body.dark-mode.page-privacy .astuce-box p { color: #9ae6b4; }
+body.dark-mode.page-home .recap-box,
+body.dark-mode.page-shoes-guide .recap-box,
+body.dark-mode.page-racket-beginner .recap-box,
+body.dark-mode.page-racket-tendinitis .recap-box,
+body.dark-mode.page-rules-guide .recap-box,
+body.dark-mode.page-privacy .recap-box { background: #3c2a1e; border-left-color: #ed8936; }
+body.dark-mode.page-home .recap-box h3,
+body.dark-mode.page-shoes-guide .recap-box h3,
+body.dark-mode.page-racket-beginner .recap-box h3,
+body.dark-mode.page-racket-tendinitis .recap-box h3,
+body.dark-mode.page-rules-guide .recap-box h3,
+body.dark-mode.page-privacy .recap-box h3 { color: #fbd38d; }
+body.dark-mode.page-home .recap-box p,
+body.dark-mode.page-shoes-guide .recap-box p,
+body.dark-mode.page-racket-beginner .recap-box p,
+body.dark-mode.page-racket-tendinitis .recap-box p,
+body.dark-mode.page-rules-guide .recap-box p,
+body.dark-mode.page-privacy .recap-box p { color: #f6ad55; }
+body.dark-mode.page-home .next-step-box,
+body.dark-mode.page-shoes-guide .next-step-box,
+body.dark-mode.page-racket-beginner .next-step-box,
+body.dark-mode.page-racket-tendinitis .next-step-box,
+body.dark-mode.page-rules-guide .next-step-box,
+body.dark-mode.page-privacy .next-step-box { background: #2a4365; border-color: #2b6cb0; }
+body.dark-mode.page-home .next-step-box h3,
+body.dark-mode.page-shoes-guide .next-step-box h3,
+body.dark-mode.page-racket-beginner .next-step-box h3,
+body.dark-mode.page-racket-tendinitis .next-step-box h3,
+body.dark-mode.page-rules-guide .next-step-box h3,
+body.dark-mode.page-privacy .next-step-box h3 { color: #90cdf4; }
+body.dark-mode.page-home .next-step-box p,
+body.dark-mode.page-shoes-guide .next-step-box p,
+body.dark-mode.page-racket-beginner .next-step-box p,
+body.dark-mode.page-racket-tendinitis .next-step-box p,
+body.dark-mode.page-rules-guide .next-step-box p,
+body.dark-mode.page-privacy .next-step-box p { color: #e2e8f0; }
+body.dark-mode.page-home .entry-card,
+body.dark-mode.page-shoes-guide .entry-card,
+body.dark-mode.page-racket-beginner .entry-card,
+body.dark-mode.page-racket-tendinitis .entry-card,
+body.dark-mode.page-rules-guide .entry-card,
+body.dark-mode.page-privacy .entry-card { background: #2d3748; border-color: #4a5568; }
+body.dark-mode.page-home .entry-card h4,
+body.dark-mode.page-shoes-guide .entry-card h4,
+body.dark-mode.page-racket-beginner .entry-card h4,
+body.dark-mode.page-racket-tendinitis .entry-card h4,
+body.dark-mode.page-rules-guide .entry-card h4,
+body.dark-mode.page-privacy .entry-card h4 { color: #f7fafc; }
+body.dark-mode.page-home .entry-card p,
+body.dark-mode.page-shoes-guide .entry-card p,
+body.dark-mode.page-racket-beginner .entry-card p,
+body.dark-mode.page-racket-tendinitis .entry-card p,
+body.dark-mode.page-rules-guide .entry-card p,
+body.dark-mode.page-privacy .entry-card p { color: #a0aec0; }
+body.dark-mode.page-home .tag-foam,
+body.dark-mode.page-shoes-guide .tag-foam,
+body.dark-mode.page-racket-beginner .tag-foam,
+body.dark-mode.page-racket-tendinitis .tag-foam,
+body.dark-mode.page-rules-guide .tag-foam,
+body.dark-mode.page-privacy .tag-foam,
+body.dark-mode.page-home .tag-chevron,
+body.dark-mode.page-shoes-guide .tag-chevron,
+body.dark-mode.page-racket-beginner .tag-chevron,
+body.dark-mode.page-racket-tendinitis .tag-chevron,
+body.dark-mode.page-rules-guide .tag-chevron,
+body.dark-mode.page-privacy .tag-chevron { background: #4a5568; color: #f7fafc; }
+body.dark-mode.page-home .tag-round,
+body.dark-mode.page-shoes-guide .tag-round,
+body.dark-mode.page-racket-beginner .tag-round,
+body.dark-mode.page-racket-tendinitis .tag-round,
+body.dark-mode.page-rules-guide .tag-round,
+body.dark-mode.page-privacy .tag-round,
+body.dark-mode.page-home .tag-mixte,
+body.dark-mode.page-shoes-guide .tag-mixte,
+body.dark-mode.page-racket-beginner .tag-mixte,
+body.dark-mode.page-racket-tendinitis .tag-mixte,
+body.dark-mode.page-rules-guide .tag-mixte,
+body.dark-mode.page-privacy .tag-mixte { background: #22543d; color: #c6f6d5; }
+body.dark-mode.page-home .tag-light,
+body.dark-mode.page-shoes-guide .tag-light,
+body.dark-mode.page-racket-beginner .tag-light,
+body.dark-mode.page-racket-tendinitis .tag-light,
+body.dark-mode.page-rules-guide .tag-light,
+body.dark-mode.page-privacy .tag-light,
+body.dark-mode.page-home .tag-omni,
+body.dark-mode.page-shoes-guide .tag-omni,
+body.dark-mode.page-racket-beginner .tag-omni,
+body.dark-mode.page-racket-tendinitis .tag-omni,
+body.dark-mode.page-rules-guide .tag-omni,
+body.dark-mode.page-privacy .tag-omni { background: #7b341e; color: #fbd38d; }
+body.dark-mode.page-home .product-card,
+body.dark-mode.page-shoes-guide .product-card,
+body.dark-mode.page-racket-beginner .product-card,
+body.dark-mode.page-racket-tendinitis .product-card,
+body.dark-mode.page-rules-guide .product-card,
+body.dark-mode.page-privacy .product-card { background: #2d3748; border-color: #2b6cb0; }
+body.dark-mode.page-home .product-title,
+body.dark-mode.page-shoes-guide .product-title,
+body.dark-mode.page-racket-beginner .product-title,
+body.dark-mode.page-racket-tendinitis .product-title,
+body.dark-mode.page-rules-guide .product-title,
+body.dark-mode.page-privacy .product-title { color: #f7fafc; }
+body.dark-mode.page-home .product-desc,
+body.dark-mode.page-shoes-guide .product-desc,
+body.dark-mode.page-racket-beginner .product-desc,
+body.dark-mode.page-racket-tendinitis .product-desc,
+body.dark-mode.page-rules-guide .product-desc,
+body.dark-mode.page-privacy .product-desc { color: #a0aec0; }
+body.dark-mode.page-home .schema-container,
+body.dark-mode.page-shoes-guide .schema-container,
+body.dark-mode.page-racket-beginner .schema-container,
+body.dark-mode.page-racket-tendinitis .schema-container,
+body.dark-mode.page-rules-guide .schema-container,
+body.dark-mode.page-privacy .schema-container { background: #2d3748; border-color: #4a5568; }
+body.dark-mode.page-home .schema-svg,
+body.dark-mode.page-shoes-guide .schema-svg,
+body.dark-mode.page-racket-beginner .schema-svg,
+body.dark-mode.page-racket-tendinitis .schema-svg,
+body.dark-mode.page-rules-guide .schema-svg,
+body.dark-mode.page-privacy .schema-svg { background: #1a202c; border-color: #4a5568; }
+body.dark-mode.page-home .schema-svg text,
+body.dark-mode.page-shoes-guide .schema-svg text,
+body.dark-mode.page-racket-beginner .schema-svg text,
+body.dark-mode.page-racket-tendinitis .schema-svg text,
+body.dark-mode.page-rules-guide .schema-svg text,
+body.dark-mode.page-privacy .schema-svg text { fill: #e2e8f0; }
+body.dark-mode.page-home .schema-svg line,
+body.dark-mode.page-shoes-guide .schema-svg line,
+body.dark-mode.page-racket-beginner .schema-svg line,
+body.dark-mode.page-racket-tendinitis .schema-svg line,
+body.dark-mode.page-rules-guide .schema-svg line,
+body.dark-mode.page-privacy .schema-svg line { stroke: #4a5568; }
+body.dark-mode.page-home .img-caption,
+body.dark-mode.page-shoes-guide .img-caption,
+body.dark-mode.page-racket-beginner .img-caption,
+body.dark-mode.page-racket-tendinitis .img-caption,
+body.dark-mode.page-rules-guide .img-caption,
+body.dark-mode.page-privacy .img-caption,
+body.dark-mode.page-home .schema-caption,
+body.dark-mode.page-shoes-guide .schema-caption,
+body.dark-mode.page-racket-beginner .schema-caption,
+body.dark-mode.page-racket-tendinitis .schema-caption,
+body.dark-mode.page-rules-guide .schema-caption,
+body.dark-mode.page-privacy .schema-caption { color: #a0aec0; }
+body.dark-mode.page-home .disclaimer-affiliation,
+body.dark-mode.page-shoes-guide .disclaimer-affiliation,
+body.dark-mode.page-racket-beginner .disclaimer-affiliation,
+body.dark-mode.page-racket-tendinitis .disclaimer-affiliation,
+body.dark-mode.page-rules-guide .disclaimer-affiliation,
+body.dark-mode.page-privacy .disclaimer-affiliation { background: #2d3748; border-color: #4a5568; color: #a0aec0; }
+body.dark-mode.page-home .sidebar,
+body.dark-mode.page-shoes-guide .sidebar,
+body.dark-mode.page-racket-beginner .sidebar,
+body.dark-mode.page-racket-tendinitis .sidebar,
+body.dark-mode.page-rules-guide .sidebar,
+body.dark-mode.page-privacy .sidebar {
     background-color: transparent !important;
 }
-body.dark-mode .sidebar-widget,
-body.dark-mode .ad-sidebar-placeholder,
-body.dark-mode div[style*="background:#f0f4f8"],
-body.dark-mode div[style*="background: #f0f4f8"] {
+body.dark-mode.page-home .sidebar-widget,
+body.dark-mode.page-shoes-guide .sidebar-widget,
+body.dark-mode.page-racket-beginner .sidebar-widget,
+body.dark-mode.page-racket-tendinitis .sidebar-widget,
+body.dark-mode.page-rules-guide .sidebar-widget,
+body.dark-mode.page-privacy .sidebar-widget,
+body.dark-mode.page-home .ad-sidebar-placeholder,
+body.dark-mode.page-shoes-guide .ad-sidebar-placeholder,
+body.dark-mode.page-racket-beginner .ad-sidebar-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-sidebar-placeholder,
+body.dark-mode.page-rules-guide .ad-sidebar-placeholder,
+body.dark-mode.page-privacy .ad-sidebar-placeholder,
+body.dark-mode.page-home div[style*="background:#f0f4f8"],
+body.dark-mode.page-shoes-guide div[style*="background:#f0f4f8"],
+body.dark-mode.page-racket-beginner div[style*="background:#f0f4f8"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#f0f4f8"],
+body.dark-mode.page-rules-guide div[style*="background:#f0f4f8"],
+body.dark-mode.page-privacy div[style*="background:#f0f4f8"],
+body.dark-mode.page-home div[style*="background: #f0f4f8"],
+body.dark-mode.page-shoes-guide div[style*="background: #f0f4f8"],
+body.dark-mode.page-racket-beginner div[style*="background: #f0f4f8"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #f0f4f8"],
+body.dark-mode.page-rules-guide div[style*="background: #f0f4f8"],
+body.dark-mode.page-privacy div[style*="background: #f0f4f8"] {
     background-color: #1e293b !important; 
     border-color: #334155 !important;      
     color: #94a3b8 !important;             
 }
-body.dark-mode .sidebar-widget h3 {
+body.dark-mode.page-home .sidebar-widget h3,
+body.dark-mode.page-shoes-guide .sidebar-widget h3,
+body.dark-mode.page-racket-beginner .sidebar-widget h3,
+body.dark-mode.page-racket-tendinitis .sidebar-widget h3,
+body.dark-mode.page-rules-guide .sidebar-widget h3,
+body.dark-mode.page-privacy .sidebar-widget h3 {
     color: #f8fafc !important;
     border-bottom: 2px solid #334155 !important;
     padding-bottom: 10px;
 }
-body.dark-mode .sidebar-widget p {
+body.dark-mode.page-home .sidebar-widget p,
+body.dark-mode.page-shoes-guide .sidebar-widget p,
+body.dark-mode.page-racket-beginner .sidebar-widget p,
+body.dark-mode.page-racket-tendinitis .sidebar-widget p,
+body.dark-mode.page-rules-guide .sidebar-widget p,
+body.dark-mode.page-privacy .sidebar-widget p {
     color: #cbd5e1 !important;
 }
-body.dark-mode div[style*="background: #fffaf0"],
-body.dark-mode div[style*="background:#fffaf0"],
-body.dark-mode div[style*="background: #fdf8f6"] {
+body.dark-mode.page-home div[style*="background: #fffaf0"],
+body.dark-mode.page-shoes-guide div[style*="background: #fffaf0"],
+body.dark-mode.page-racket-beginner div[style*="background: #fffaf0"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fffaf0"],
+body.dark-mode.page-rules-guide div[style*="background: #fffaf0"],
+body.dark-mode.page-privacy div[style*="background: #fffaf0"],
+body.dark-mode.page-home div[style*="background:#fffaf0"],
+body.dark-mode.page-shoes-guide div[style*="background:#fffaf0"],
+body.dark-mode.page-racket-beginner div[style*="background:#fffaf0"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#fffaf0"],
+body.dark-mode.page-rules-guide div[style*="background:#fffaf0"],
+body.dark-mode.page-privacy div[style*="background:#fffaf0"],
+body.dark-mode.page-home div[style*="background: #fdf8f6"],
+body.dark-mode.page-shoes-guide div[style*="background: #fdf8f6"],
+body.dark-mode.page-racket-beginner div[style*="background: #fdf8f6"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fdf8f6"],
+body.dark-mode.page-rules-guide div[style*="background: #fdf8f6"],
+body.dark-mode.page-privacy div[style*="background: #fdf8f6"] {
     background-color: #1e293b !important; 
     border-color: #334155 !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
 }
-body.dark-mode .entry-card,
-body.dark-mode div[style*="background: #fff"],
-body.dark-mode div[style*="background:#fff"] {
+body.dark-mode.page-home .entry-card,
+body.dark-mode.page-shoes-guide .entry-card,
+body.dark-mode.page-racket-beginner .entry-card,
+body.dark-mode.page-racket-tendinitis .entry-card,
+body.dark-mode.page-rules-guide .entry-card,
+body.dark-mode.page-privacy .entry-card,
+body.dark-mode.page-home div[style*="background: #fff"],
+body.dark-mode.page-shoes-guide div[style*="background: #fff"],
+body.dark-mode.page-racket-beginner div[style*="background: #fff"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fff"],
+body.dark-mode.page-rules-guide div[style*="background: #fff"],
+body.dark-mode.page-privacy div[style*="background: #fff"],
+body.dark-mode.page-home div[style*="background:#fff"],
+body.dark-mode.page-shoes-guide div[style*="background:#fff"],
+body.dark-mode.page-racket-beginner div[style*="background:#fff"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#fff"],
+body.dark-mode.page-rules-guide div[style*="background:#fff"],
+body.dark-mode.page-privacy div[style*="background:#fff"] {
     background-color: #0f172a !important; 
     border-color: #334155 !important;
     color: #f8fafc !important;
 }
-body.dark-mode .entry-card h4 {
+body.dark-mode.page-home .entry-card h4,
+body.dark-mode.page-shoes-guide .entry-card h4,
+body.dark-mode.page-racket-beginner .entry-card h4,
+body.dark-mode.page-racket-tendinitis .entry-card h4,
+body.dark-mode.page-rules-guide .entry-card h4,
+body.dark-mode.page-privacy .entry-card h4 {
     color: #f8fafc !important;
 }
-body.dark-mode .entry-card p {
+body.dark-mode.page-home .entry-card p,
+body.dark-mode.page-shoes-guide .entry-card p,
+body.dark-mode.page-racket-beginner .entry-card p,
+body.dark-mode.page-racket-tendinitis .entry-card p,
+body.dark-mode.page-rules-guide .entry-card p,
+body.dark-mode.page-privacy .entry-card p {
     color: #94a3b8 !important;
 }
-body.dark-mode .breadcrumb { color: #cbd5e1; }
-body.dark-mode .breadcrumb a { color: #7dd3fc; }
-body.dark-mode .u-panel-white { background-color: #1e293b !important; border-color: #334155 !important; color: #cbd5e1; }
-body.dark-mode .u-heading-primary { color: #f8fafc !important; }
-body.dark-mode .u-link-blue-clean { color: #63b3ed !important; }
-body.dark-mode .home-card { background: #1e293b; border-color: #334155; }
-body.dark-mode .home-card-media { background: #334155; color: #cbd5e1; }
-body.dark-mode .home-card-title { color: #f8fafc; }
-body.dark-mode .home-card-text { color: #cbd5e1; }
-body.dark-mode .home-card-cta { background: #2563eb; color: #fff; }
-body.dark-mode .ad-placeholder { background: #1e293b !important; border-color: #334155 !important; color: #94a3b8 !important; }
-@media (max-width:767px){body.dark-mode .mobile-menu {background:#0f172a;color:#e2e8f0}
-body.dark-mode .mobile-menu-header {border-color:#334155}
-body.dark-mode .mobile-menu-header strong,body.dark-mode .mobile-menu h2,body.dark-mode .mobile-menu-list a,body.dark-mode .mobile-guide-list a {color:#f8fafc}}
-body.dark-mode .article-byline, body.dark-mode .article-byline-spaced, body.dark-mode .text-secondary-sm { color: #cbd5e1; }
-body.dark-mode .link-accent-strong { color: #7dd3fc; }
-body.dark-mode .tag-rules { background: #334155; color: #f8fafc; }
-body.dark-mode .tag-material { background: #78350f; color: #fef3c7; }
-body.dark-mode .tag-health { background: #7f1d1d; color: #fee2e2; }
-body.dark-mode .affiliate-disclosure { background: #422006; border-color: #f59e0b; color: #fef3c7; }
-body.dark-mode .health-disclaimer { background: #172554; border-color: #60a5fa; color: #dbeafe; }
-body.dark-mode .health-sources { background: #1e293b; border-color: #334155; }
-body.dark-mode .page-simple,
-body.dark-mode .page-contact {
+body.dark-mode.page-home .breadcrumb,
+body.dark-mode.page-shoes-guide .breadcrumb,
+body.dark-mode.page-racket-beginner .breadcrumb,
+body.dark-mode.page-racket-tendinitis .breadcrumb,
+body.dark-mode.page-rules-guide .breadcrumb,
+body.dark-mode.page-privacy .breadcrumb { color: #cbd5e1; }
+body.dark-mode.page-home .breadcrumb a,
+body.dark-mode.page-shoes-guide .breadcrumb a,
+body.dark-mode.page-racket-beginner .breadcrumb a,
+body.dark-mode.page-racket-tendinitis .breadcrumb a,
+body.dark-mode.page-rules-guide .breadcrumb a,
+body.dark-mode.page-privacy .breadcrumb a { color: #7dd3fc; }
+body.dark-mode.page-home .u-panel-white,
+body.dark-mode.page-shoes-guide .u-panel-white,
+body.dark-mode.page-racket-beginner .u-panel-white,
+body.dark-mode.page-racket-tendinitis .u-panel-white,
+body.dark-mode.page-rules-guide .u-panel-white,
+body.dark-mode.page-privacy .u-panel-white { background-color: #1e293b !important; border-color: #334155 !important; color: #cbd5e1; }
+body.dark-mode.page-home .u-heading-primary,
+body.dark-mode.page-shoes-guide .u-heading-primary,
+body.dark-mode.page-racket-beginner .u-heading-primary,
+body.dark-mode.page-racket-tendinitis .u-heading-primary,
+body.dark-mode.page-rules-guide .u-heading-primary,
+body.dark-mode.page-privacy .u-heading-primary { color: #f8fafc !important; }
+body.dark-mode.page-home .u-link-blue-clean,
+body.dark-mode.page-shoes-guide .u-link-blue-clean,
+body.dark-mode.page-racket-beginner .u-link-blue-clean,
+body.dark-mode.page-racket-tendinitis .u-link-blue-clean,
+body.dark-mode.page-rules-guide .u-link-blue-clean,
+body.dark-mode.page-privacy .u-link-blue-clean { color: #63b3ed !important; }
+body.dark-mode.page-home .home-card,
+body.dark-mode.page-shoes-guide .home-card,
+body.dark-mode.page-racket-beginner .home-card,
+body.dark-mode.page-racket-tendinitis .home-card,
+body.dark-mode.page-rules-guide .home-card,
+body.dark-mode.page-privacy .home-card { background: #1e293b; border-color: #334155; }
+body.dark-mode.page-home .home-card-media,
+body.dark-mode.page-shoes-guide .home-card-media,
+body.dark-mode.page-racket-beginner .home-card-media,
+body.dark-mode.page-racket-tendinitis .home-card-media,
+body.dark-mode.page-rules-guide .home-card-media,
+body.dark-mode.page-privacy .home-card-media { background: #334155; color: #cbd5e1; }
+body.dark-mode.page-home .home-card-title,
+body.dark-mode.page-shoes-guide .home-card-title,
+body.dark-mode.page-racket-beginner .home-card-title,
+body.dark-mode.page-racket-tendinitis .home-card-title,
+body.dark-mode.page-rules-guide .home-card-title,
+body.dark-mode.page-privacy .home-card-title { color: #f8fafc; }
+body.dark-mode.page-home .home-card-text,
+body.dark-mode.page-shoes-guide .home-card-text,
+body.dark-mode.page-racket-beginner .home-card-text,
+body.dark-mode.page-racket-tendinitis .home-card-text,
+body.dark-mode.page-rules-guide .home-card-text,
+body.dark-mode.page-privacy .home-card-text { color: #cbd5e1; }
+body.dark-mode.page-home .home-card-cta,
+body.dark-mode.page-shoes-guide .home-card-cta,
+body.dark-mode.page-racket-beginner .home-card-cta,
+body.dark-mode.page-racket-tendinitis .home-card-cta,
+body.dark-mode.page-rules-guide .home-card-cta,
+body.dark-mode.page-privacy .home-card-cta { background: #2563eb; color: #fff; }
+body.dark-mode.page-home .ad-placeholder,
+body.dark-mode.page-shoes-guide .ad-placeholder,
+body.dark-mode.page-racket-beginner .ad-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-placeholder,
+body.dark-mode.page-rules-guide .ad-placeholder,
+body.dark-mode.page-privacy .ad-placeholder { background: #1e293b !important; border-color: #334155 !important; color: #94a3b8 !important; }
+body.dark-mode.page-home .article-byline,
+body.dark-mode.page-shoes-guide .article-byline,
+body.dark-mode.page-racket-beginner .article-byline,
+body.dark-mode.page-racket-tendinitis .article-byline,
+body.dark-mode.page-rules-guide .article-byline,
+body.dark-mode.page-privacy .article-byline,
+body.dark-mode.page-home .article-byline-spaced,
+body.dark-mode.page-shoes-guide .article-byline-spaced,
+body.dark-mode.page-racket-beginner .article-byline-spaced,
+body.dark-mode.page-racket-tendinitis .article-byline-spaced,
+body.dark-mode.page-rules-guide .article-byline-spaced,
+body.dark-mode.page-privacy .article-byline-spaced,
+body.dark-mode.page-home .text-secondary-sm,
+body.dark-mode.page-shoes-guide .text-secondary-sm,
+body.dark-mode.page-racket-beginner .text-secondary-sm,
+body.dark-mode.page-racket-tendinitis .text-secondary-sm,
+body.dark-mode.page-rules-guide .text-secondary-sm,
+body.dark-mode.page-privacy .text-secondary-sm { color: #cbd5e1; }
+body.dark-mode.page-home .link-accent-strong,
+body.dark-mode.page-shoes-guide .link-accent-strong,
+body.dark-mode.page-racket-beginner .link-accent-strong,
+body.dark-mode.page-racket-tendinitis .link-accent-strong,
+body.dark-mode.page-rules-guide .link-accent-strong,
+body.dark-mode.page-privacy .link-accent-strong { color: #7dd3fc; }
+body.dark-mode.page-home .tag-rules,
+body.dark-mode.page-shoes-guide .tag-rules,
+body.dark-mode.page-racket-beginner .tag-rules,
+body.dark-mode.page-racket-tendinitis .tag-rules,
+body.dark-mode.page-rules-guide .tag-rules,
+body.dark-mode.page-privacy .tag-rules { background: #334155; color: #f8fafc; }
+body.dark-mode.page-home .tag-material,
+body.dark-mode.page-shoes-guide .tag-material,
+body.dark-mode.page-racket-beginner .tag-material,
+body.dark-mode.page-racket-tendinitis .tag-material,
+body.dark-mode.page-rules-guide .tag-material,
+body.dark-mode.page-privacy .tag-material { background: #78350f; color: #fef3c7; }
+body.dark-mode.page-home .tag-health,
+body.dark-mode.page-shoes-guide .tag-health,
+body.dark-mode.page-racket-beginner .tag-health,
+body.dark-mode.page-racket-tendinitis .tag-health,
+body.dark-mode.page-rules-guide .tag-health,
+body.dark-mode.page-privacy .tag-health { background: #7f1d1d; color: #fee2e2; }
+body.dark-mode.page-home .affiliate-disclosure,
+body.dark-mode.page-shoes-guide .affiliate-disclosure,
+body.dark-mode.page-racket-beginner .affiliate-disclosure,
+body.dark-mode.page-racket-tendinitis .affiliate-disclosure,
+body.dark-mode.page-rules-guide .affiliate-disclosure,
+body.dark-mode.page-privacy .affiliate-disclosure { background: #422006; border-color: #f59e0b; color: #fef3c7; }
+body.dark-mode.page-home .health-disclaimer,
+body.dark-mode.page-shoes-guide .health-disclaimer,
+body.dark-mode.page-racket-beginner .health-disclaimer,
+body.dark-mode.page-racket-tendinitis .health-disclaimer,
+body.dark-mode.page-rules-guide .health-disclaimer,
+body.dark-mode.page-privacy .health-disclaimer { background: #172554; border-color: #60a5fa; color: #dbeafe; }
+body.dark-mode.page-home .health-sources,
+body.dark-mode.page-shoes-guide .health-sources,
+body.dark-mode.page-racket-beginner .health-sources,
+body.dark-mode.page-racket-tendinitis .health-sources,
+body.dark-mode.page-rules-guide .health-sources,
+body.dark-mode.page-privacy .health-sources { background: #1e293b; border-color: #334155; }
+body.dark-mode.page-home .page-simple,
+body.dark-mode.page-shoes-guide .page-simple,
+body.dark-mode.page-racket-beginner .page-simple,
+body.dark-mode.page-racket-tendinitis .page-simple,
+body.dark-mode.page-rules-guide .page-simple,
+body.dark-mode.page-privacy .page-simple,
+body.dark-mode.page-home .page-contact,
+body.dark-mode.page-shoes-guide .page-contact,
+body.dark-mode.page-racket-beginner .page-contact,
+body.dark-mode.page-racket-tendinitis .page-contact,
+body.dark-mode.page-rules-guide .page-contact,
+body.dark-mode.page-privacy .page-contact {
     background: #1e293b !important;
     border-color: #334155 !important;
     color: #e2e8f0 !important;
 }
-body.dark-mode .page-simple h1,
-body.dark-mode .page-simple h2,
-body.dark-mode .page-simple h3,
-body.dark-mode .page-contact h1,
-body.dark-mode .page-contact h2,
-body.dark-mode .page-contact h3 {
+body.dark-mode.page-home .page-simple h1,
+body.dark-mode.page-shoes-guide .page-simple h1,
+body.dark-mode.page-racket-beginner .page-simple h1,
+body.dark-mode.page-racket-tendinitis .page-simple h1,
+body.dark-mode.page-rules-guide .page-simple h1,
+body.dark-mode.page-privacy .page-simple h1,
+body.dark-mode.page-home .page-simple h2,
+body.dark-mode.page-shoes-guide .page-simple h2,
+body.dark-mode.page-racket-beginner .page-simple h2,
+body.dark-mode.page-racket-tendinitis .page-simple h2,
+body.dark-mode.page-rules-guide .page-simple h2,
+body.dark-mode.page-privacy .page-simple h2,
+body.dark-mode.page-home .page-simple h3,
+body.dark-mode.page-shoes-guide .page-simple h3,
+body.dark-mode.page-racket-beginner .page-simple h3,
+body.dark-mode.page-racket-tendinitis .page-simple h3,
+body.dark-mode.page-rules-guide .page-simple h3,
+body.dark-mode.page-privacy .page-simple h3,
+body.dark-mode.page-home .page-contact h1,
+body.dark-mode.page-shoes-guide .page-contact h1,
+body.dark-mode.page-racket-beginner .page-contact h1,
+body.dark-mode.page-racket-tendinitis .page-contact h1,
+body.dark-mode.page-rules-guide .page-contact h1,
+body.dark-mode.page-privacy .page-contact h1,
+body.dark-mode.page-home .page-contact h2,
+body.dark-mode.page-shoes-guide .page-contact h2,
+body.dark-mode.page-racket-beginner .page-contact h2,
+body.dark-mode.page-racket-tendinitis .page-contact h2,
+body.dark-mode.page-rules-guide .page-contact h2,
+body.dark-mode.page-privacy .page-contact h2,
+body.dark-mode.page-home .page-contact h3,
+body.dark-mode.page-shoes-guide .page-contact h3,
+body.dark-mode.page-racket-beginner .page-contact h3,
+body.dark-mode.page-racket-tendinitis .page-contact h3,
+body.dark-mode.page-rules-guide .page-contact h3,
+body.dark-mode.page-privacy .page-contact h3 {
     color: #f8fafc !important;
 }
-body.dark-mode .page-simple p,
-body.dark-mode .page-simple li,
-body.dark-mode .page-contact p,
-body.dark-mode .page-contact li {
+body.dark-mode.page-home .page-simple p,
+body.dark-mode.page-shoes-guide .page-simple p,
+body.dark-mode.page-racket-beginner .page-simple p,
+body.dark-mode.page-racket-tendinitis .page-simple p,
+body.dark-mode.page-rules-guide .page-simple p,
+body.dark-mode.page-privacy .page-simple p,
+body.dark-mode.page-home .page-simple li,
+body.dark-mode.page-shoes-guide .page-simple li,
+body.dark-mode.page-racket-beginner .page-simple li,
+body.dark-mode.page-racket-tendinitis .page-simple li,
+body.dark-mode.page-rules-guide .page-simple li,
+body.dark-mode.page-privacy .page-simple li,
+body.dark-mode.page-home .page-contact p,
+body.dark-mode.page-shoes-guide .page-contact p,
+body.dark-mode.page-racket-beginner .page-contact p,
+body.dark-mode.page-racket-tendinitis .page-contact p,
+body.dark-mode.page-rules-guide .page-contact p,
+body.dark-mode.page-privacy .page-contact p,
+body.dark-mode.page-home .page-contact li,
+body.dark-mode.page-shoes-guide .page-contact li,
+body.dark-mode.page-racket-beginner .page-contact li,
+body.dark-mode.page-racket-tendinitis .page-contact li,
+body.dark-mode.page-rules-guide .page-contact li,
+body.dark-mode.page-privacy .page-contact li {
     color: #cbd5e1 !important;
 }
-body.dark-mode .page-simple a,
-body.dark-mode .page-contact a {
+body.dark-mode.page-home .page-simple a,
+body.dark-mode.page-shoes-guide .page-simple a,
+body.dark-mode.page-racket-beginner .page-simple a,
+body.dark-mode.page-racket-tendinitis .page-simple a,
+body.dark-mode.page-rules-guide .page-simple a,
+body.dark-mode.page-privacy .page-simple a,
+body.dark-mode.page-home .page-contact a,
+body.dark-mode.page-shoes-guide .page-contact a,
+body.dark-mode.page-racket-beginner .page-contact a,
+body.dark-mode.page-racket-tendinitis .page-contact a,
+body.dark-mode.page-rules-guide .page-contact a,
+body.dark-mode.page-privacy .page-contact a {
     color: #7dd3fc !important;
 }
-body.dark-mode .page-simple code,
-body.dark-mode .page-contact code {
+body.dark-mode.page-home .page-simple code,
+body.dark-mode.page-shoes-guide .page-simple code,
+body.dark-mode.page-racket-beginner .page-simple code,
+body.dark-mode.page-racket-tendinitis .page-simple code,
+body.dark-mode.page-rules-guide .page-simple code,
+body.dark-mode.page-privacy .page-simple code,
+body.dark-mode.page-home .page-contact code,
+body.dark-mode.page-shoes-guide .page-contact code,
+body.dark-mode.page-racket-beginner .page-contact code,
+body.dark-mode.page-racket-tendinitis .page-contact code,
+body.dark-mode.page-rules-guide .page-contact code,
+body.dark-mode.page-privacy .page-contact code {
     color: #f8fafc;
     background: #0f172a;
     padding: 0.1em 0.35em;
     border-radius: 4px;
 }
-.erreur-box,
-body.dark-mode .erreur-box {
+body.dark-mode.page-home .erreur-box,
+body.dark-mode.page-shoes-guide .erreur-box,
+body.dark-mode.page-racket-beginner .erreur-box,
+body.dark-mode.page-racket-tendinitis .erreur-box,
+body.dark-mode.page-rules-guide .erreur-box,
+body.dark-mode.page-privacy .erreur-box {
     padding: 18px 20px;
     margin: 25px 0;
 }
-.article-content .erreur-box h2,
-.article-content .erreur-box h3,
-.article-content .erreur-box h4,
-body.dark-mode .article-content .erreur-box h2,
-body.dark-mode .article-content .erreur-box h3,
-body.dark-mode .article-content .erreur-box h4 {
+body.dark-mode.page-home .article-content .erreur-box h2,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h2,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h2,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h2,
+body.dark-mode.page-rules-guide .article-content .erreur-box h2,
+body.dark-mode.page-privacy .article-content .erreur-box h2,
+body.dark-mode.page-home .article-content .erreur-box h3,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h3,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h3,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h3,
+body.dark-mode.page-rules-guide .article-content .erreur-box h3,
+body.dark-mode.page-privacy .article-content .erreur-box h3,
+body.dark-mode.page-home .article-content .erreur-box h4,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h4,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h4,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h4,
+body.dark-mode.page-rules-guide .article-content .erreur-box h4,
+body.dark-mode.page-privacy .article-content .erreur-box h4 {
     margin: 0 0 12px;
     padding: 0;
     border: 0;
     font-size: 1.1rem !important;
     line-height: 1.4;
 }
-.article-content .erreur-box p,
-body.dark-mode .article-content .erreur-box p {
+body.dark-mode.page-home .article-content .erreur-box p,
+body.dark-mode.page-shoes-guide .article-content .erreur-box p,
+body.dark-mode.page-racket-beginner .article-content .erreur-box p,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box p,
+body.dark-mode.page-rules-guide .article-content .erreur-box p,
+body.dark-mode.page-privacy .article-content .erreur-box p {
     margin: 0;
     font-size: 1rem;
     line-height: 1.65;
 }
-.entry-card .entry-card-title-compact,
-body.dark-mode .entry-card .entry-card-title-compact {
+body.dark-mode.page-home .entry-card .entry-card-title-compact,
+body.dark-mode.page-shoes-guide .entry-card .entry-card-title-compact,
+body.dark-mode.page-racket-beginner .entry-card .entry-card-title-compact,
+body.dark-mode.page-racket-tendinitis .entry-card .entry-card-title-compact,
+body.dark-mode.page-rules-guide .entry-card .entry-card-title-compact,
+body.dark-mode.page-privacy .entry-card .entry-card-title-compact {
     font-size: 1.25rem !important;
     line-height: 1.35;
     overflow-wrap: anywhere;
 }
-body.dark-mode .affiliate-box {
+body.dark-mode.page-home .affiliate-box,
+body.dark-mode.page-shoes-guide .affiliate-box,
+body.dark-mode.page-racket-beginner .affiliate-box,
+body.dark-mode.page-racket-tendinitis .affiliate-box,
+body.dark-mode.page-rules-guide .affiliate-box,
+body.dark-mode.page-privacy .affiliate-box {
     background: linear-gradient(135deg, #172033 0%, #111827 100%) !important;
     border-color: #d97706 !important;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28) !important;
 }
-body.dark-mode .affiliate-box h3,
-body.dark-mode .affiliate-box p {
+body.dark-mode.page-home .affiliate-box h3,
+body.dark-mode.page-shoes-guide .affiliate-box h3,
+body.dark-mode.page-racket-beginner .affiliate-box h3,
+body.dark-mode.page-racket-tendinitis .affiliate-box h3,
+body.dark-mode.page-rules-guide .affiliate-box h3,
+body.dark-mode.page-privacy .affiliate-box h3,
+body.dark-mode.page-home .affiliate-box p,
+body.dark-mode.page-shoes-guide .affiliate-box p,
+body.dark-mode.page-racket-beginner .affiliate-box p,
+body.dark-mode.page-racket-tendinitis .affiliate-box p,
+body.dark-mode.page-rules-guide .affiliate-box p,
+body.dark-mode.page-privacy .affiliate-box p {
     color: #f8fafc !important;
 }
-body.dark-mode .affiliate-box .product-card {
+body.dark-mode.page-home .affiliate-box .product-card,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card,
+body.dark-mode.page-rules-guide .affiliate-box .product-card,
+body.dark-mode.page-privacy .affiliate-box .product-card {
     background: #1e293b !important;
     border-color: #475569 !important;
     color: #e2e8f0 !important;
 }
-body.dark-mode .affiliate-box .product-name,
-body.dark-mode .affiliate-box .product-name:link,
-body.dark-mode .affiliate-box .product-name:visited {
+body.dark-mode.page-home .affiliate-box .product-name,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name,
+body.dark-mode.page-rules-guide .affiliate-box .product-name,
+body.dark-mode.page-privacy .affiliate-box .product-name,
+body.dark-mode.page-home .affiliate-box .product-name:link,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name:link,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name:link,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name:link,
+body.dark-mode.page-rules-guide .affiliate-box .product-name:link,
+body.dark-mode.page-privacy .affiliate-box .product-name:link,
+body.dark-mode.page-home .affiliate-box .product-name:visited,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name:visited,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name:visited,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name:visited,
+body.dark-mode.page-rules-guide .affiliate-box .product-name:visited,
+body.dark-mode.page-privacy .affiliate-box .product-name:visited {
     color: #f8fafc !important;
     text-decoration-color: #94a3b8 !important;
 }
-body.dark-mode .affiliate-box .product-price {
+body.dark-mode.page-home .affiliate-box .product-price,
+body.dark-mode.page-shoes-guide .affiliate-box .product-price,
+body.dark-mode.page-racket-beginner .affiliate-box .product-price,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-price,
+body.dark-mode.page-rules-guide .affiliate-box .product-price,
+body.dark-mode.page-privacy .affiliate-box .product-price {
     color: #fca5a5 !important;
 }
-body.dark-mode .affiliate-box .btn-amazon-small,
-body.dark-mode .affiliate-box .btn-amazon,
-body.dark-mode .affiliate-box a.btn-amazon {
+body.dark-mode.page-home .affiliate-box .btn-amazon-small,
+body.dark-mode.page-shoes-guide .affiliate-box .btn-amazon-small,
+body.dark-mode.page-racket-beginner .affiliate-box .btn-amazon-small,
+body.dark-mode.page-racket-tendinitis .affiliate-box .btn-amazon-small,
+body.dark-mode.page-rules-guide .affiliate-box .btn-amazon-small,
+body.dark-mode.page-privacy .affiliate-box .btn-amazon-small,
+body.dark-mode.page-home .affiliate-box .btn-amazon,
+body.dark-mode.page-shoes-guide .affiliate-box .btn-amazon,
+body.dark-mode.page-racket-beginner .affiliate-box .btn-amazon,
+body.dark-mode.page-racket-tendinitis .affiliate-box .btn-amazon,
+body.dark-mode.page-rules-guide .affiliate-box .btn-amazon,
+body.dark-mode.page-privacy .affiliate-box .btn-amazon,
+body.dark-mode.page-home .affiliate-box a.btn-amazon,
+body.dark-mode.page-shoes-guide .affiliate-box a.btn-amazon,
+body.dark-mode.page-racket-beginner .affiliate-box a.btn-amazon,
+body.dark-mode.page-racket-tendinitis .affiliate-box a.btn-amazon,
+body.dark-mode.page-rules-guide .affiliate-box a.btn-amazon,
+body.dark-mode.page-privacy .affiliate-box a.btn-amazon {
     color: #111827 !important;
 }
-body.dark-mode .affiliate-box .product-card:hover,
-body.dark-mode .affiliate-box .product-card:focus-visible {
+body.dark-mode.page-home .affiliate-box .product-card:hover,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card:hover,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card:hover,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card:hover,
+body.dark-mode.page-rules-guide .affiliate-box .product-card:hover,
+body.dark-mode.page-privacy .affiliate-box .product-card:hover,
+body.dark-mode.page-home .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-rules-guide .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-privacy .affiliate-box .product-card:focus-visible {
     border-color: #60a5fa !important;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
 }
-body.dark-mode .privacy-update { color: #cbd5e1; }
-body.dark-mode .privacy-table th { background: #1e293b; color: #f8fafc; border-color: #475569; }
-body.dark-mode .privacy-table td { color: #cbd5e1; border-color: #475569; }
-body.dark-mode .privacy-table code { background: #0f172a; color: #f8fafc; padding: .1em .35em; border-radius: 4px; }
-body.dark-mode .error-code { color: #1e3a5f; }
-body.dark-mode.page-racket-beginner .racket-shape-table tbody td{background:#0f172a;border-color:#cbd5e1;color:#e2e8f0!important}body.dark-mode.page-racket-beginner .racket-shape-table tbody td:first-child{color:#f8fafc!important;font-weight:700}body.dark-mode.page-racket-beginner .racket-shape-table .shape-icon{background:#f8fafc;border-color:#60a5fa}.is-filtered-out{display:none!important}
-/* Alias attendu par l'audit 8E.1, limite au tableau nomme */
-body.dark-mode .racket-shape-table tbody td { background-color:#0f172a; border-color:#cbd5e1; color:#e2e8f0 !important; }
+body.dark-mode.page-home .privacy-update,
+body.dark-mode.page-shoes-guide .privacy-update,
+body.dark-mode.page-racket-beginner .privacy-update,
+body.dark-mode.page-racket-tendinitis .privacy-update,
+body.dark-mode.page-rules-guide .privacy-update,
+body.dark-mode.page-privacy .privacy-update { color: #cbd5e1; }
+body.dark-mode.page-home .privacy-table th,
+body.dark-mode.page-shoes-guide .privacy-table th,
+body.dark-mode.page-racket-beginner .privacy-table th,
+body.dark-mode.page-racket-tendinitis .privacy-table th,
+body.dark-mode.page-rules-guide .privacy-table th,
+body.dark-mode.page-privacy .privacy-table th { background: #1e293b; color: #f8fafc; border-color: #475569; }
+body.dark-mode.page-home .privacy-table td,
+body.dark-mode.page-shoes-guide .privacy-table td,
+body.dark-mode.page-racket-beginner .privacy-table td,
+body.dark-mode.page-racket-tendinitis .privacy-table td,
+body.dark-mode.page-rules-guide .privacy-table td,
+body.dark-mode.page-privacy .privacy-table td { color: #cbd5e1; border-color: #475569; }
+body.dark-mode.page-home .privacy-table code,
+body.dark-mode.page-shoes-guide .privacy-table code,
+body.dark-mode.page-racket-beginner .privacy-table code,
+body.dark-mode.page-racket-tendinitis .privacy-table code,
+body.dark-mode.page-rules-guide .privacy-table code,
+body.dark-mode.page-privacy .privacy-table code { background: #0f172a; color: #f8fafc; padding: .1em .35em; border-radius: 4px; }
+body.dark-mode.page-home .error-code,
+body.dark-mode.page-shoes-guide .error-code,
+body.dark-mode.page-racket-beginner .error-code,
+body.dark-mode.page-racket-tendinitis .error-code,
+body.dark-mode.page-rules-guide .error-code,
+body.dark-mode.page-privacy .error-code { color: #1e3a5f; }
+body.dark-mode.page-home,
+body.dark-mode.page-shoes-guide,
+body.dark-mode.page-racket-beginner,
+body.dark-mode.page-racket-tendinitis,
+body.dark-mode.page-rules-guide,
+body.dark-mode.page-privacy { 
+    background-color: #0f172a; 
+    color: #f1f5f9; 
+}
+body.dark-mode.page-home .article-content h1,
+body.dark-mode.page-shoes-guide .article-content h1,
+body.dark-mode.page-racket-beginner .article-content h1,
+body.dark-mode.page-racket-tendinitis .article-content h1,
+body.dark-mode.page-rules-guide .article-content h1,
+body.dark-mode.page-privacy .article-content h1 {
+    color: #ffffff !important; 
+    font-weight: 800;
+}
+body.dark-mode.page-home .article-content h2,
+body.dark-mode.page-shoes-guide .article-content h2,
+body.dark-mode.page-racket-beginner .article-content h2,
+body.dark-mode.page-racket-tendinitis .article-content h2,
+body.dark-mode.page-rules-guide .article-content h2,
+body.dark-mode.page-privacy .article-content h2 { 
+    color: #f8fafc !important; 
+    border-bottom-color: #475569 !important; 
+}
+body.dark-mode.page-home .article-content h3,
+body.dark-mode.page-shoes-guide .article-content h3,
+body.dark-mode.page-racket-beginner .article-content h3,
+body.dark-mode.page-racket-tendinitis .article-content h3,
+body.dark-mode.page-rules-guide .article-content h3,
+body.dark-mode.page-privacy .article-content h3 { 
+    color: #38bdf8 !important; 
+    font-weight: 700;
+}
+body.dark-mode.page-home a,
+body.dark-mode.page-shoes-guide a,
+body.dark-mode.page-racket-beginner a,
+body.dark-mode.page-racket-tendinitis a,
+body.dark-mode.page-rules-guide a,
+body.dark-mode.page-privacy a { 
+    color: #38bdf8; 
+}
+body.dark-mode.page-home p,
+body.dark-mode.page-shoes-guide p,
+body.dark-mode.page-racket-beginner p,
+body.dark-mode.page-racket-tendinitis p,
+body.dark-mode.page-rules-guide p,
+body.dark-mode.page-privacy p,
+body.dark-mode.page-home li,
+body.dark-mode.page-shoes-guide li,
+body.dark-mode.page-racket-beginner li,
+body.dark-mode.page-racket-tendinitis li,
+body.dark-mode.page-rules-guide li,
+body.dark-mode.page-privacy li { 
+    color: #cbd5e1; 
+}
+body.dark-mode.page-home .img-caption,
+body.dark-mode.page-shoes-guide .img-caption,
+body.dark-mode.page-racket-beginner .img-caption,
+body.dark-mode.page-racket-tendinitis .img-caption,
+body.dark-mode.page-rules-guide .img-caption,
+body.dark-mode.page-privacy .img-caption,
+body.dark-mode.page-home .schema-caption,
+body.dark-mode.page-shoes-guide .schema-caption,
+body.dark-mode.page-racket-beginner .schema-caption,
+body.dark-mode.page-racket-tendinitis .schema-caption,
+body.dark-mode.page-rules-guide .schema-caption,
+body.dark-mode.page-privacy .schema-caption { 
+    color: #94a3b8; 
+}
+body.dark-mode.page-home .header,
+body.dark-mode.page-shoes-guide .header,
+body.dark-mode.page-racket-beginner .header,
+body.dark-mode.page-racket-tendinitis .header,
+body.dark-mode.page-rules-guide .header,
+body.dark-mode.page-privacy .header { background-color: #112240; border-bottom: 1px solid #2d3748; }
+body.dark-mode.page-home .footer,
+body.dark-mode.page-shoes-guide .footer,
+body.dark-mode.page-racket-beginner .footer,
+body.dark-mode.page-racket-tendinitis .footer,
+body.dark-mode.page-rules-guide .footer,
+body.dark-mode.page-privacy .footer { background-color: #112240; border-top: 1px solid #2d3748; }
+body.dark-mode.page-home .logo,
+body.dark-mode.page-shoes-guide .logo,
+body.dark-mode.page-racket-beginner .logo,
+body.dark-mode.page-racket-tendinitis .logo,
+body.dark-mode.page-rules-guide .logo,
+body.dark-mode.page-privacy .logo,
+body.dark-mode.page-home .nav-links a,
+body.dark-mode.page-shoes-guide .nav-links a,
+body.dark-mode.page-racket-beginner .nav-links a,
+body.dark-mode.page-racket-tendinitis .nav-links a,
+body.dark-mode.page-rules-guide .nav-links a,
+body.dark-mode.page-privacy .nav-links a,
+body.dark-mode.page-home .footer-links a,
+body.dark-mode.page-shoes-guide .footer-links a,
+body.dark-mode.page-racket-beginner .footer-links a,
+body.dark-mode.page-racket-tendinitis .footer-links a,
+body.dark-mode.page-rules-guide .footer-links a,
+body.dark-mode.page-privacy .footer-links a { color: #f7fafc; }
+body.dark-mode.page-home .theme-toggle-btn,
+body.dark-mode.page-shoes-guide .theme-toggle-btn,
+body.dark-mode.page-racket-beginner .theme-toggle-btn,
+body.dark-mode.page-racket-tendinitis .theme-toggle-btn,
+body.dark-mode.page-rules-guide .theme-toggle-btn,
+body.dark-mode.page-privacy .theme-toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode.page-home .sidebar-links a,
+body.dark-mode.page-shoes-guide .sidebar-links a,
+body.dark-mode.page-racket-beginner .sidebar-links a,
+body.dark-mode.page-racket-tendinitis .sidebar-links a,
+body.dark-mode.page-rules-guide .sidebar-links a,
+body.dark-mode.page-privacy .sidebar-links a { color: #63b3ed !important; }
+body.dark-mode.page-home .ad-banner-top,
+body.dark-mode.page-shoes-guide .ad-banner-top,
+body.dark-mode.page-racket-beginner .ad-banner-top,
+body.dark-mode.page-racket-tendinitis .ad-banner-top,
+body.dark-mode.page-rules-guide .ad-banner-top,
+body.dark-mode.page-privacy .ad-banner-top,
+body.dark-mode.page-home .ad-banner-bottom,
+body.dark-mode.page-shoes-guide .ad-banner-bottom,
+body.dark-mode.page-racket-beginner .ad-banner-bottom,
+body.dark-mode.page-racket-tendinitis .ad-banner-bottom,
+body.dark-mode.page-rules-guide .ad-banner-bottom,
+body.dark-mode.page-privacy .ad-banner-bottom,
+body.dark-mode.page-home .ad-in-content,
+body.dark-mode.page-shoes-guide .ad-in-content,
+body.dark-mode.page-racket-beginner .ad-in-content,
+body.dark-mode.page-racket-tendinitis .ad-in-content,
+body.dark-mode.page-rules-guide .ad-in-content,
+body.dark-mode.page-privacy .ad-in-content,
+body.dark-mode.page-home .ad-sidebar-placeholder,
+body.dark-mode.page-shoes-guide .ad-sidebar-placeholder,
+body.dark-mode.page-racket-beginner .ad-sidebar-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-sidebar-placeholder,
+body.dark-mode.page-rules-guide .ad-sidebar-placeholder,
+body.dark-mode.page-privacy .ad-sidebar-placeholder { background: #2d3748 !important; border-color: #4a5568 !important; color: #a0aec0 !important; }
+body.dark-mode.page-home .erreur-box,
+body.dark-mode.page-shoes-guide .erreur-box,
+body.dark-mode.page-racket-beginner .erreur-box,
+body.dark-mode.page-racket-tendinitis .erreur-box,
+body.dark-mode.page-rules-guide .erreur-box,
+body.dark-mode.page-privacy .erreur-box { background: linear-gradient(145deg, #4a1515 0%, #2d0e0e 100%); border-left-color: #fc8181; }
+body.dark-mode.page-home .erreur-box h2,
+body.dark-mode.page-shoes-guide .erreur-box h2,
+body.dark-mode.page-racket-beginner .erreur-box h2,
+body.dark-mode.page-racket-tendinitis .erreur-box h2,
+body.dark-mode.page-rules-guide .erreur-box h2,
+body.dark-mode.page-privacy .erreur-box h2 { color: #fed7d7; }
+body.dark-mode.page-home .erreur-box p,
+body.dark-mode.page-shoes-guide .erreur-box p,
+body.dark-mode.page-racket-beginner .erreur-box p,
+body.dark-mode.page-racket-tendinitis .erreur-box p,
+body.dark-mode.page-rules-guide .erreur-box p,
+body.dark-mode.page-privacy .erreur-box p { color: #feb2b2; }
+body.dark-mode.page-home .astuce-box,
+body.dark-mode.page-shoes-guide .astuce-box,
+body.dark-mode.page-racket-beginner .astuce-box,
+body.dark-mode.page-racket-tendinitis .astuce-box,
+body.dark-mode.page-rules-guide .astuce-box,
+body.dark-mode.page-privacy .astuce-box { background: linear-gradient(145deg, #1c4532 0%, #122b1f 100%); border-left-color: #68d391; }
+body.dark-mode.page-home .astuce-box h2,
+body.dark-mode.page-shoes-guide .astuce-box h2,
+body.dark-mode.page-racket-beginner .astuce-box h2,
+body.dark-mode.page-racket-tendinitis .astuce-box h2,
+body.dark-mode.page-rules-guide .astuce-box h2,
+body.dark-mode.page-privacy .astuce-box h2 { color: #c6f6d5; }
+body.dark-mode.page-home .astuce-box p,
+body.dark-mode.page-shoes-guide .astuce-box p,
+body.dark-mode.page-racket-beginner .astuce-box p,
+body.dark-mode.page-racket-tendinitis .astuce-box p,
+body.dark-mode.page-rules-guide .astuce-box p,
+body.dark-mode.page-privacy .astuce-box p { color: #9ae6b4; }
+body.dark-mode.page-home .recap-box,
+body.dark-mode.page-shoes-guide .recap-box,
+body.dark-mode.page-racket-beginner .recap-box,
+body.dark-mode.page-racket-tendinitis .recap-box,
+body.dark-mode.page-rules-guide .recap-box,
+body.dark-mode.page-privacy .recap-box { background: #3c2a1e; border-left-color: #ed8936; }
+body.dark-mode.page-home .recap-box h3,
+body.dark-mode.page-shoes-guide .recap-box h3,
+body.dark-mode.page-racket-beginner .recap-box h3,
+body.dark-mode.page-racket-tendinitis .recap-box h3,
+body.dark-mode.page-rules-guide .recap-box h3,
+body.dark-mode.page-privacy .recap-box h3 { color: #fbd38d; }
+body.dark-mode.page-home .recap-box p,
+body.dark-mode.page-shoes-guide .recap-box p,
+body.dark-mode.page-racket-beginner .recap-box p,
+body.dark-mode.page-racket-tendinitis .recap-box p,
+body.dark-mode.page-rules-guide .recap-box p,
+body.dark-mode.page-privacy .recap-box p { color: #f6ad55; }
+body.dark-mode.page-home .next-step-box,
+body.dark-mode.page-shoes-guide .next-step-box,
+body.dark-mode.page-racket-beginner .next-step-box,
+body.dark-mode.page-racket-tendinitis .next-step-box,
+body.dark-mode.page-rules-guide .next-step-box,
+body.dark-mode.page-privacy .next-step-box { background: #2a4365; border-color: #2b6cb0; }
+body.dark-mode.page-home .next-step-box h3,
+body.dark-mode.page-shoes-guide .next-step-box h3,
+body.dark-mode.page-racket-beginner .next-step-box h3,
+body.dark-mode.page-racket-tendinitis .next-step-box h3,
+body.dark-mode.page-rules-guide .next-step-box h3,
+body.dark-mode.page-privacy .next-step-box h3 { color: #90cdf4; }
+body.dark-mode.page-home .next-step-box p,
+body.dark-mode.page-shoes-guide .next-step-box p,
+body.dark-mode.page-racket-beginner .next-step-box p,
+body.dark-mode.page-racket-tendinitis .next-step-box p,
+body.dark-mode.page-rules-guide .next-step-box p,
+body.dark-mode.page-privacy .next-step-box p { color: #e2e8f0; }
+body.dark-mode.page-home .entry-card,
+body.dark-mode.page-shoes-guide .entry-card,
+body.dark-mode.page-racket-beginner .entry-card,
+body.dark-mode.page-racket-tendinitis .entry-card,
+body.dark-mode.page-rules-guide .entry-card,
+body.dark-mode.page-privacy .entry-card { background: #2d3748; border-color: #4a5568; }
+body.dark-mode.page-home .entry-card h4,
+body.dark-mode.page-shoes-guide .entry-card h4,
+body.dark-mode.page-racket-beginner .entry-card h4,
+body.dark-mode.page-racket-tendinitis .entry-card h4,
+body.dark-mode.page-rules-guide .entry-card h4,
+body.dark-mode.page-privacy .entry-card h4 { color: #f7fafc; }
+body.dark-mode.page-home .entry-card p,
+body.dark-mode.page-shoes-guide .entry-card p,
+body.dark-mode.page-racket-beginner .entry-card p,
+body.dark-mode.page-racket-tendinitis .entry-card p,
+body.dark-mode.page-rules-guide .entry-card p,
+body.dark-mode.page-privacy .entry-card p { color: #a0aec0; }
+body.dark-mode.page-home .tag-foam,
+body.dark-mode.page-shoes-guide .tag-foam,
+body.dark-mode.page-racket-beginner .tag-foam,
+body.dark-mode.page-racket-tendinitis .tag-foam,
+body.dark-mode.page-rules-guide .tag-foam,
+body.dark-mode.page-privacy .tag-foam,
+body.dark-mode.page-home .tag-chevron,
+body.dark-mode.page-shoes-guide .tag-chevron,
+body.dark-mode.page-racket-beginner .tag-chevron,
+body.dark-mode.page-racket-tendinitis .tag-chevron,
+body.dark-mode.page-rules-guide .tag-chevron,
+body.dark-mode.page-privacy .tag-chevron { background: #4a5568; color: #f7fafc; }
+body.dark-mode.page-home .tag-round,
+body.dark-mode.page-shoes-guide .tag-round,
+body.dark-mode.page-racket-beginner .tag-round,
+body.dark-mode.page-racket-tendinitis .tag-round,
+body.dark-mode.page-rules-guide .tag-round,
+body.dark-mode.page-privacy .tag-round,
+body.dark-mode.page-home .tag-mixte,
+body.dark-mode.page-shoes-guide .tag-mixte,
+body.dark-mode.page-racket-beginner .tag-mixte,
+body.dark-mode.page-racket-tendinitis .tag-mixte,
+body.dark-mode.page-rules-guide .tag-mixte,
+body.dark-mode.page-privacy .tag-mixte { background: #22543d; color: #c6f6d5; }
+body.dark-mode.page-home .tag-light,
+body.dark-mode.page-shoes-guide .tag-light,
+body.dark-mode.page-racket-beginner .tag-light,
+body.dark-mode.page-racket-tendinitis .tag-light,
+body.dark-mode.page-rules-guide .tag-light,
+body.dark-mode.page-privacy .tag-light,
+body.dark-mode.page-home .tag-omni,
+body.dark-mode.page-shoes-guide .tag-omni,
+body.dark-mode.page-racket-beginner .tag-omni,
+body.dark-mode.page-racket-tendinitis .tag-omni,
+body.dark-mode.page-rules-guide .tag-omni,
+body.dark-mode.page-privacy .tag-omni { background: #7b341e; color: #fbd38d; }
+body.dark-mode.page-home .product-card,
+body.dark-mode.page-shoes-guide .product-card,
+body.dark-mode.page-racket-beginner .product-card,
+body.dark-mode.page-racket-tendinitis .product-card,
+body.dark-mode.page-rules-guide .product-card,
+body.dark-mode.page-privacy .product-card { background: #2d3748; border-color: #2b6cb0; }
+body.dark-mode.page-home .product-title,
+body.dark-mode.page-shoes-guide .product-title,
+body.dark-mode.page-racket-beginner .product-title,
+body.dark-mode.page-racket-tendinitis .product-title,
+body.dark-mode.page-rules-guide .product-title,
+body.dark-mode.page-privacy .product-title { color: #f7fafc; }
+body.dark-mode.page-home .product-desc,
+body.dark-mode.page-shoes-guide .product-desc,
+body.dark-mode.page-racket-beginner .product-desc,
+body.dark-mode.page-racket-tendinitis .product-desc,
+body.dark-mode.page-rules-guide .product-desc,
+body.dark-mode.page-privacy .product-desc { color: #a0aec0; }
+body.dark-mode.page-home .schema-container,
+body.dark-mode.page-shoes-guide .schema-container,
+body.dark-mode.page-racket-beginner .schema-container,
+body.dark-mode.page-racket-tendinitis .schema-container,
+body.dark-mode.page-rules-guide .schema-container,
+body.dark-mode.page-privacy .schema-container { background: #2d3748; border-color: #4a5568; }
+body.dark-mode.page-home .schema-svg,
+body.dark-mode.page-shoes-guide .schema-svg,
+body.dark-mode.page-racket-beginner .schema-svg,
+body.dark-mode.page-racket-tendinitis .schema-svg,
+body.dark-mode.page-rules-guide .schema-svg,
+body.dark-mode.page-privacy .schema-svg { background: #1a202c; border-color: #4a5568; }
+body.dark-mode.page-home .schema-svg text,
+body.dark-mode.page-shoes-guide .schema-svg text,
+body.dark-mode.page-racket-beginner .schema-svg text,
+body.dark-mode.page-racket-tendinitis .schema-svg text,
+body.dark-mode.page-rules-guide .schema-svg text,
+body.dark-mode.page-privacy .schema-svg text { fill: #e2e8f0; }
+body.dark-mode.page-home .schema-svg line,
+body.dark-mode.page-shoes-guide .schema-svg line,
+body.dark-mode.page-racket-beginner .schema-svg line,
+body.dark-mode.page-racket-tendinitis .schema-svg line,
+body.dark-mode.page-rules-guide .schema-svg line,
+body.dark-mode.page-privacy .schema-svg line { stroke: #4a5568; }
+body.dark-mode.page-home .img-caption,
+body.dark-mode.page-shoes-guide .img-caption,
+body.dark-mode.page-racket-beginner .img-caption,
+body.dark-mode.page-racket-tendinitis .img-caption,
+body.dark-mode.page-rules-guide .img-caption,
+body.dark-mode.page-privacy .img-caption,
+body.dark-mode.page-home .schema-caption,
+body.dark-mode.page-shoes-guide .schema-caption,
+body.dark-mode.page-racket-beginner .schema-caption,
+body.dark-mode.page-racket-tendinitis .schema-caption,
+body.dark-mode.page-rules-guide .schema-caption,
+body.dark-mode.page-privacy .schema-caption { color: #a0aec0; }
+body.dark-mode.page-home .disclaimer-affiliation,
+body.dark-mode.page-shoes-guide .disclaimer-affiliation,
+body.dark-mode.page-racket-beginner .disclaimer-affiliation,
+body.dark-mode.page-racket-tendinitis .disclaimer-affiliation,
+body.dark-mode.page-rules-guide .disclaimer-affiliation,
+body.dark-mode.page-privacy .disclaimer-affiliation { background: #2d3748; border-color: #4a5568; color: #a0aec0; }
+body.dark-mode.page-home .sidebar,
+body.dark-mode.page-shoes-guide .sidebar,
+body.dark-mode.page-racket-beginner .sidebar,
+body.dark-mode.page-racket-tendinitis .sidebar,
+body.dark-mode.page-rules-guide .sidebar,
+body.dark-mode.page-privacy .sidebar {
+    background-color: transparent !important;
+}
+body.dark-mode.page-home .sidebar-widget,
+body.dark-mode.page-shoes-guide .sidebar-widget,
+body.dark-mode.page-racket-beginner .sidebar-widget,
+body.dark-mode.page-racket-tendinitis .sidebar-widget,
+body.dark-mode.page-rules-guide .sidebar-widget,
+body.dark-mode.page-privacy .sidebar-widget,
+body.dark-mode.page-home .ad-sidebar-placeholder,
+body.dark-mode.page-shoes-guide .ad-sidebar-placeholder,
+body.dark-mode.page-racket-beginner .ad-sidebar-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-sidebar-placeholder,
+body.dark-mode.page-rules-guide .ad-sidebar-placeholder,
+body.dark-mode.page-privacy .ad-sidebar-placeholder,
+body.dark-mode.page-home div[style*="background:#f0f4f8"],
+body.dark-mode.page-shoes-guide div[style*="background:#f0f4f8"],
+body.dark-mode.page-racket-beginner div[style*="background:#f0f4f8"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#f0f4f8"],
+body.dark-mode.page-rules-guide div[style*="background:#f0f4f8"],
+body.dark-mode.page-privacy div[style*="background:#f0f4f8"],
+body.dark-mode.page-home div[style*="background: #f0f4f8"],
+body.dark-mode.page-shoes-guide div[style*="background: #f0f4f8"],
+body.dark-mode.page-racket-beginner div[style*="background: #f0f4f8"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #f0f4f8"],
+body.dark-mode.page-rules-guide div[style*="background: #f0f4f8"],
+body.dark-mode.page-privacy div[style*="background: #f0f4f8"] {
+    background-color: #1e293b !important; 
+    border-color: #334155 !important;      
+    color: #94a3b8 !important;             
+}
+body.dark-mode.page-home .sidebar-widget h3,
+body.dark-mode.page-shoes-guide .sidebar-widget h3,
+body.dark-mode.page-racket-beginner .sidebar-widget h3,
+body.dark-mode.page-racket-tendinitis .sidebar-widget h3,
+body.dark-mode.page-rules-guide .sidebar-widget h3,
+body.dark-mode.page-privacy .sidebar-widget h3 {
+    color: #f8fafc !important;
+    border-bottom: 2px solid #334155 !important;
+    padding-bottom: 10px;
+}
+body.dark-mode.page-home .sidebar-widget p,
+body.dark-mode.page-shoes-guide .sidebar-widget p,
+body.dark-mode.page-racket-beginner .sidebar-widget p,
+body.dark-mode.page-racket-tendinitis .sidebar-widget p,
+body.dark-mode.page-rules-guide .sidebar-widget p,
+body.dark-mode.page-privacy .sidebar-widget p {
+    color: #cbd5e1 !important;
+}
+body.dark-mode.page-home div[style*="background: #fffaf0"],
+body.dark-mode.page-shoes-guide div[style*="background: #fffaf0"],
+body.dark-mode.page-racket-beginner div[style*="background: #fffaf0"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fffaf0"],
+body.dark-mode.page-rules-guide div[style*="background: #fffaf0"],
+body.dark-mode.page-privacy div[style*="background: #fffaf0"],
+body.dark-mode.page-home div[style*="background:#fffaf0"],
+body.dark-mode.page-shoes-guide div[style*="background:#fffaf0"],
+body.dark-mode.page-racket-beginner div[style*="background:#fffaf0"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#fffaf0"],
+body.dark-mode.page-rules-guide div[style*="background:#fffaf0"],
+body.dark-mode.page-privacy div[style*="background:#fffaf0"],
+body.dark-mode.page-home div[style*="background: #fdf8f6"],
+body.dark-mode.page-shoes-guide div[style*="background: #fdf8f6"],
+body.dark-mode.page-racket-beginner div[style*="background: #fdf8f6"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fdf8f6"],
+body.dark-mode.page-rules-guide div[style*="background: #fdf8f6"],
+body.dark-mode.page-privacy div[style*="background: #fdf8f6"] {
+    background-color: #1e293b !important; 
+    border-color: #334155 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+body.dark-mode.page-home .entry-card,
+body.dark-mode.page-shoes-guide .entry-card,
+body.dark-mode.page-racket-beginner .entry-card,
+body.dark-mode.page-racket-tendinitis .entry-card,
+body.dark-mode.page-rules-guide .entry-card,
+body.dark-mode.page-privacy .entry-card,
+body.dark-mode.page-home div[style*="background: #fff"],
+body.dark-mode.page-shoes-guide div[style*="background: #fff"],
+body.dark-mode.page-racket-beginner div[style*="background: #fff"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fff"],
+body.dark-mode.page-rules-guide div[style*="background: #fff"],
+body.dark-mode.page-privacy div[style*="background: #fff"],
+body.dark-mode.page-home div[style*="background:#fff"],
+body.dark-mode.page-shoes-guide div[style*="background:#fff"],
+body.dark-mode.page-racket-beginner div[style*="background:#fff"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#fff"],
+body.dark-mode.page-rules-guide div[style*="background:#fff"],
+body.dark-mode.page-privacy div[style*="background:#fff"] {
+    background-color: #0f172a !important; 
+    border-color: #334155 !important;
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .entry-card h4,
+body.dark-mode.page-shoes-guide .entry-card h4,
+body.dark-mode.page-racket-beginner .entry-card h4,
+body.dark-mode.page-racket-tendinitis .entry-card h4,
+body.dark-mode.page-rules-guide .entry-card h4,
+body.dark-mode.page-privacy .entry-card h4 {
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .entry-card p,
+body.dark-mode.page-shoes-guide .entry-card p,
+body.dark-mode.page-racket-beginner .entry-card p,
+body.dark-mode.page-racket-tendinitis .entry-card p,
+body.dark-mode.page-rules-guide .entry-card p,
+body.dark-mode.page-privacy .entry-card p {
+    color: #94a3b8 !important;
+}
+body.dark-mode.page-home .breadcrumb,
+body.dark-mode.page-shoes-guide .breadcrumb,
+body.dark-mode.page-racket-beginner .breadcrumb,
+body.dark-mode.page-racket-tendinitis .breadcrumb,
+body.dark-mode.page-rules-guide .breadcrumb,
+body.dark-mode.page-privacy .breadcrumb { color: #cbd5e1; }
+body.dark-mode.page-home .breadcrumb a,
+body.dark-mode.page-shoes-guide .breadcrumb a,
+body.dark-mode.page-racket-beginner .breadcrumb a,
+body.dark-mode.page-racket-tendinitis .breadcrumb a,
+body.dark-mode.page-rules-guide .breadcrumb a,
+body.dark-mode.page-privacy .breadcrumb a { color: #7dd3fc; }
+body.dark-mode.page-home .u-panel-white,
+body.dark-mode.page-shoes-guide .u-panel-white,
+body.dark-mode.page-racket-beginner .u-panel-white,
+body.dark-mode.page-racket-tendinitis .u-panel-white,
+body.dark-mode.page-rules-guide .u-panel-white,
+body.dark-mode.page-privacy .u-panel-white { background-color: #1e293b !important; border-color: #334155 !important; color: #cbd5e1; }
+body.dark-mode.page-home .u-heading-primary,
+body.dark-mode.page-shoes-guide .u-heading-primary,
+body.dark-mode.page-racket-beginner .u-heading-primary,
+body.dark-mode.page-racket-tendinitis .u-heading-primary,
+body.dark-mode.page-rules-guide .u-heading-primary,
+body.dark-mode.page-privacy .u-heading-primary { color: #f8fafc !important; }
+body.dark-mode.page-home .u-link-blue-clean,
+body.dark-mode.page-shoes-guide .u-link-blue-clean,
+body.dark-mode.page-racket-beginner .u-link-blue-clean,
+body.dark-mode.page-racket-tendinitis .u-link-blue-clean,
+body.dark-mode.page-rules-guide .u-link-blue-clean,
+body.dark-mode.page-privacy .u-link-blue-clean { color: #63b3ed !important; }
+body.dark-mode.page-home .home-card,
+body.dark-mode.page-shoes-guide .home-card,
+body.dark-mode.page-racket-beginner .home-card,
+body.dark-mode.page-racket-tendinitis .home-card,
+body.dark-mode.page-rules-guide .home-card,
+body.dark-mode.page-privacy .home-card { background: #1e293b; border-color: #334155; }
+body.dark-mode.page-home .home-card-media,
+body.dark-mode.page-shoes-guide .home-card-media,
+body.dark-mode.page-racket-beginner .home-card-media,
+body.dark-mode.page-racket-tendinitis .home-card-media,
+body.dark-mode.page-rules-guide .home-card-media,
+body.dark-mode.page-privacy .home-card-media { background: #334155; color: #cbd5e1; }
+body.dark-mode.page-home .home-card-title,
+body.dark-mode.page-shoes-guide .home-card-title,
+body.dark-mode.page-racket-beginner .home-card-title,
+body.dark-mode.page-racket-tendinitis .home-card-title,
+body.dark-mode.page-rules-guide .home-card-title,
+body.dark-mode.page-privacy .home-card-title { color: #f8fafc; }
+body.dark-mode.page-home .home-card-text,
+body.dark-mode.page-shoes-guide .home-card-text,
+body.dark-mode.page-racket-beginner .home-card-text,
+body.dark-mode.page-racket-tendinitis .home-card-text,
+body.dark-mode.page-rules-guide .home-card-text,
+body.dark-mode.page-privacy .home-card-text { color: #cbd5e1; }
+body.dark-mode.page-home .home-card-cta,
+body.dark-mode.page-shoes-guide .home-card-cta,
+body.dark-mode.page-racket-beginner .home-card-cta,
+body.dark-mode.page-racket-tendinitis .home-card-cta,
+body.dark-mode.page-rules-guide .home-card-cta,
+body.dark-mode.page-privacy .home-card-cta { background: #2563eb; color: #fff; }
+body.dark-mode.page-home .ad-placeholder,
+body.dark-mode.page-shoes-guide .ad-placeholder,
+body.dark-mode.page-racket-beginner .ad-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-placeholder,
+body.dark-mode.page-rules-guide .ad-placeholder,
+body.dark-mode.page-privacy .ad-placeholder { background: #1e293b !important; border-color: #334155 !important; color: #94a3b8 !important; }
+body.dark-mode.page-home .article-byline,
+body.dark-mode.page-shoes-guide .article-byline,
+body.dark-mode.page-racket-beginner .article-byline,
+body.dark-mode.page-racket-tendinitis .article-byline,
+body.dark-mode.page-rules-guide .article-byline,
+body.dark-mode.page-privacy .article-byline,
+body.dark-mode.page-home .article-byline-spaced,
+body.dark-mode.page-shoes-guide .article-byline-spaced,
+body.dark-mode.page-racket-beginner .article-byline-spaced,
+body.dark-mode.page-racket-tendinitis .article-byline-spaced,
+body.dark-mode.page-rules-guide .article-byline-spaced,
+body.dark-mode.page-privacy .article-byline-spaced,
+body.dark-mode.page-home .text-secondary-sm,
+body.dark-mode.page-shoes-guide .text-secondary-sm,
+body.dark-mode.page-racket-beginner .text-secondary-sm,
+body.dark-mode.page-racket-tendinitis .text-secondary-sm,
+body.dark-mode.page-rules-guide .text-secondary-sm,
+body.dark-mode.page-privacy .text-secondary-sm { color: #cbd5e1; }
+body.dark-mode.page-home .link-accent-strong,
+body.dark-mode.page-shoes-guide .link-accent-strong,
+body.dark-mode.page-racket-beginner .link-accent-strong,
+body.dark-mode.page-racket-tendinitis .link-accent-strong,
+body.dark-mode.page-rules-guide .link-accent-strong,
+body.dark-mode.page-privacy .link-accent-strong { color: #7dd3fc; }
+body.dark-mode.page-home .tag-rules,
+body.dark-mode.page-shoes-guide .tag-rules,
+body.dark-mode.page-racket-beginner .tag-rules,
+body.dark-mode.page-racket-tendinitis .tag-rules,
+body.dark-mode.page-rules-guide .tag-rules,
+body.dark-mode.page-privacy .tag-rules { background: #334155; color: #f8fafc; }
+body.dark-mode.page-home .tag-material,
+body.dark-mode.page-shoes-guide .tag-material,
+body.dark-mode.page-racket-beginner .tag-material,
+body.dark-mode.page-racket-tendinitis .tag-material,
+body.dark-mode.page-rules-guide .tag-material,
+body.dark-mode.page-privacy .tag-material { background: #78350f; color: #fef3c7; }
+body.dark-mode.page-home .tag-health,
+body.dark-mode.page-shoes-guide .tag-health,
+body.dark-mode.page-racket-beginner .tag-health,
+body.dark-mode.page-racket-tendinitis .tag-health,
+body.dark-mode.page-rules-guide .tag-health,
+body.dark-mode.page-privacy .tag-health { background: #7f1d1d; color: #fee2e2; }
+body.dark-mode.page-home .affiliate-disclosure,
+body.dark-mode.page-shoes-guide .affiliate-disclosure,
+body.dark-mode.page-racket-beginner .affiliate-disclosure,
+body.dark-mode.page-racket-tendinitis .affiliate-disclosure,
+body.dark-mode.page-rules-guide .affiliate-disclosure,
+body.dark-mode.page-privacy .affiliate-disclosure { background: #422006; border-color: #f59e0b; color: #fef3c7; }
+body.dark-mode.page-home .health-disclaimer,
+body.dark-mode.page-shoes-guide .health-disclaimer,
+body.dark-mode.page-racket-beginner .health-disclaimer,
+body.dark-mode.page-racket-tendinitis .health-disclaimer,
+body.dark-mode.page-rules-guide .health-disclaimer,
+body.dark-mode.page-privacy .health-disclaimer { background: #172554; border-color: #60a5fa; color: #dbeafe; }
+body.dark-mode.page-home .health-sources,
+body.dark-mode.page-shoes-guide .health-sources,
+body.dark-mode.page-racket-beginner .health-sources,
+body.dark-mode.page-racket-tendinitis .health-sources,
+body.dark-mode.page-rules-guide .health-sources,
+body.dark-mode.page-privacy .health-sources { background: #1e293b; border-color: #334155; }
+body.dark-mode.page-home .page-simple,
+body.dark-mode.page-shoes-guide .page-simple,
+body.dark-mode.page-racket-beginner .page-simple,
+body.dark-mode.page-racket-tendinitis .page-simple,
+body.dark-mode.page-rules-guide .page-simple,
+body.dark-mode.page-privacy .page-simple,
+body.dark-mode.page-home .page-contact,
+body.dark-mode.page-shoes-guide .page-contact,
+body.dark-mode.page-racket-beginner .page-contact,
+body.dark-mode.page-racket-tendinitis .page-contact,
+body.dark-mode.page-rules-guide .page-contact,
+body.dark-mode.page-privacy .page-contact {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #e2e8f0 !important;
+}
+body.dark-mode.page-home .page-simple h1,
+body.dark-mode.page-shoes-guide .page-simple h1,
+body.dark-mode.page-racket-beginner .page-simple h1,
+body.dark-mode.page-racket-tendinitis .page-simple h1,
+body.dark-mode.page-rules-guide .page-simple h1,
+body.dark-mode.page-privacy .page-simple h1,
+body.dark-mode.page-home .page-simple h2,
+body.dark-mode.page-shoes-guide .page-simple h2,
+body.dark-mode.page-racket-beginner .page-simple h2,
+body.dark-mode.page-racket-tendinitis .page-simple h2,
+body.dark-mode.page-rules-guide .page-simple h2,
+body.dark-mode.page-privacy .page-simple h2,
+body.dark-mode.page-home .page-simple h3,
+body.dark-mode.page-shoes-guide .page-simple h3,
+body.dark-mode.page-racket-beginner .page-simple h3,
+body.dark-mode.page-racket-tendinitis .page-simple h3,
+body.dark-mode.page-rules-guide .page-simple h3,
+body.dark-mode.page-privacy .page-simple h3,
+body.dark-mode.page-home .page-contact h1,
+body.dark-mode.page-shoes-guide .page-contact h1,
+body.dark-mode.page-racket-beginner .page-contact h1,
+body.dark-mode.page-racket-tendinitis .page-contact h1,
+body.dark-mode.page-rules-guide .page-contact h1,
+body.dark-mode.page-privacy .page-contact h1,
+body.dark-mode.page-home .page-contact h2,
+body.dark-mode.page-shoes-guide .page-contact h2,
+body.dark-mode.page-racket-beginner .page-contact h2,
+body.dark-mode.page-racket-tendinitis .page-contact h2,
+body.dark-mode.page-rules-guide .page-contact h2,
+body.dark-mode.page-privacy .page-contact h2,
+body.dark-mode.page-home .page-contact h3,
+body.dark-mode.page-shoes-guide .page-contact h3,
+body.dark-mode.page-racket-beginner .page-contact h3,
+body.dark-mode.page-racket-tendinitis .page-contact h3,
+body.dark-mode.page-rules-guide .page-contact h3,
+body.dark-mode.page-privacy .page-contact h3 {
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .page-simple p,
+body.dark-mode.page-shoes-guide .page-simple p,
+body.dark-mode.page-racket-beginner .page-simple p,
+body.dark-mode.page-racket-tendinitis .page-simple p,
+body.dark-mode.page-rules-guide .page-simple p,
+body.dark-mode.page-privacy .page-simple p,
+body.dark-mode.page-home .page-simple li,
+body.dark-mode.page-shoes-guide .page-simple li,
+body.dark-mode.page-racket-beginner .page-simple li,
+body.dark-mode.page-racket-tendinitis .page-simple li,
+body.dark-mode.page-rules-guide .page-simple li,
+body.dark-mode.page-privacy .page-simple li,
+body.dark-mode.page-home .page-contact p,
+body.dark-mode.page-shoes-guide .page-contact p,
+body.dark-mode.page-racket-beginner .page-contact p,
+body.dark-mode.page-racket-tendinitis .page-contact p,
+body.dark-mode.page-rules-guide .page-contact p,
+body.dark-mode.page-privacy .page-contact p,
+body.dark-mode.page-home .page-contact li,
+body.dark-mode.page-shoes-guide .page-contact li,
+body.dark-mode.page-racket-beginner .page-contact li,
+body.dark-mode.page-racket-tendinitis .page-contact li,
+body.dark-mode.page-rules-guide .page-contact li,
+body.dark-mode.page-privacy .page-contact li {
+    color: #cbd5e1 !important;
+}
+body.dark-mode.page-home .page-simple a,
+body.dark-mode.page-shoes-guide .page-simple a,
+body.dark-mode.page-racket-beginner .page-simple a,
+body.dark-mode.page-racket-tendinitis .page-simple a,
+body.dark-mode.page-rules-guide .page-simple a,
+body.dark-mode.page-privacy .page-simple a,
+body.dark-mode.page-home .page-contact a,
+body.dark-mode.page-shoes-guide .page-contact a,
+body.dark-mode.page-racket-beginner .page-contact a,
+body.dark-mode.page-racket-tendinitis .page-contact a,
+body.dark-mode.page-rules-guide .page-contact a,
+body.dark-mode.page-privacy .page-contact a {
+    color: #7dd3fc !important;
+}
+body.dark-mode.page-home .page-simple code,
+body.dark-mode.page-shoes-guide .page-simple code,
+body.dark-mode.page-racket-beginner .page-simple code,
+body.dark-mode.page-racket-tendinitis .page-simple code,
+body.dark-mode.page-rules-guide .page-simple code,
+body.dark-mode.page-privacy .page-simple code,
+body.dark-mode.page-home .page-contact code,
+body.dark-mode.page-shoes-guide .page-contact code,
+body.dark-mode.page-racket-beginner .page-contact code,
+body.dark-mode.page-racket-tendinitis .page-contact code,
+body.dark-mode.page-rules-guide .page-contact code,
+body.dark-mode.page-privacy .page-contact code {
+    color: #f8fafc;
+    background: #0f172a;
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+}
+body.dark-mode.page-home .erreur-box,
+body.dark-mode.page-shoes-guide .erreur-box,
+body.dark-mode.page-racket-beginner .erreur-box,
+body.dark-mode.page-racket-tendinitis .erreur-box,
+body.dark-mode.page-rules-guide .erreur-box,
+body.dark-mode.page-privacy .erreur-box {
+    padding: 18px 20px;
+    margin: 25px 0;
+}
+body.dark-mode.page-home .article-content .erreur-box h2,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h2,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h2,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h2,
+body.dark-mode.page-rules-guide .article-content .erreur-box h2,
+body.dark-mode.page-privacy .article-content .erreur-box h2,
+body.dark-mode.page-home .article-content .erreur-box h3,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h3,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h3,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h3,
+body.dark-mode.page-rules-guide .article-content .erreur-box h3,
+body.dark-mode.page-privacy .article-content .erreur-box h3,
+body.dark-mode.page-home .article-content .erreur-box h4,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h4,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h4,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h4,
+body.dark-mode.page-rules-guide .article-content .erreur-box h4,
+body.dark-mode.page-privacy .article-content .erreur-box h4 {
+    margin: 0 0 12px;
+    padding: 0;
+    border: 0;
+    font-size: 1.1rem !important;
+    line-height: 1.4;
+}
+body.dark-mode.page-home .article-content .erreur-box p,
+body.dark-mode.page-shoes-guide .article-content .erreur-box p,
+body.dark-mode.page-racket-beginner .article-content .erreur-box p,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box p,
+body.dark-mode.page-rules-guide .article-content .erreur-box p,
+body.dark-mode.page-privacy .article-content .erreur-box p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+body.dark-mode.page-home .entry-card .entry-card-title-compact,
+body.dark-mode.page-shoes-guide .entry-card .entry-card-title-compact,
+body.dark-mode.page-racket-beginner .entry-card .entry-card-title-compact,
+body.dark-mode.page-racket-tendinitis .entry-card .entry-card-title-compact,
+body.dark-mode.page-rules-guide .entry-card .entry-card-title-compact,
+body.dark-mode.page-privacy .entry-card .entry-card-title-compact {
+    font-size: 1.25rem !important;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+body.dark-mode.page-home .affiliate-box,
+body.dark-mode.page-shoes-guide .affiliate-box,
+body.dark-mode.page-racket-beginner .affiliate-box,
+body.dark-mode.page-racket-tendinitis .affiliate-box,
+body.dark-mode.page-rules-guide .affiliate-box,
+body.dark-mode.page-privacy .affiliate-box {
+    background: linear-gradient(135deg, #172033 0%, #111827 100%) !important;
+    border-color: #d97706 !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28) !important;
+}
+body.dark-mode.page-home .affiliate-box h3,
+body.dark-mode.page-shoes-guide .affiliate-box h3,
+body.dark-mode.page-racket-beginner .affiliate-box h3,
+body.dark-mode.page-racket-tendinitis .affiliate-box h3,
+body.dark-mode.page-rules-guide .affiliate-box h3,
+body.dark-mode.page-privacy .affiliate-box h3,
+body.dark-mode.page-home .affiliate-box p,
+body.dark-mode.page-shoes-guide .affiliate-box p,
+body.dark-mode.page-racket-beginner .affiliate-box p,
+body.dark-mode.page-racket-tendinitis .affiliate-box p,
+body.dark-mode.page-rules-guide .affiliate-box p,
+body.dark-mode.page-privacy .affiliate-box p {
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .affiliate-box .product-card,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card,
+body.dark-mode.page-rules-guide .affiliate-box .product-card,
+body.dark-mode.page-privacy .affiliate-box .product-card {
+    background: #1e293b !important;
+    border-color: #475569 !important;
+    color: #e2e8f0 !important;
+}
+body.dark-mode.page-home .affiliate-box .product-name,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name,
+body.dark-mode.page-rules-guide .affiliate-box .product-name,
+body.dark-mode.page-privacy .affiliate-box .product-name,
+body.dark-mode.page-home .affiliate-box .product-name:link,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name:link,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name:link,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name:link,
+body.dark-mode.page-rules-guide .affiliate-box .product-name:link,
+body.dark-mode.page-privacy .affiliate-box .product-name:link,
+body.dark-mode.page-home .affiliate-box .product-name:visited,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name:visited,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name:visited,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name:visited,
+body.dark-mode.page-rules-guide .affiliate-box .product-name:visited,
+body.dark-mode.page-privacy .affiliate-box .product-name:visited {
+    color: #f8fafc !important;
+    text-decoration-color: #94a3b8 !important;
+}
+body.dark-mode.page-home .affiliate-box .product-price,
+body.dark-mode.page-shoes-guide .affiliate-box .product-price,
+body.dark-mode.page-racket-beginner .affiliate-box .product-price,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-price,
+body.dark-mode.page-rules-guide .affiliate-box .product-price,
+body.dark-mode.page-privacy .affiliate-box .product-price {
+    color: #fca5a5 !important;
+}
+body.dark-mode.page-home .affiliate-box .btn-amazon-small,
+body.dark-mode.page-shoes-guide .affiliate-box .btn-amazon-small,
+body.dark-mode.page-racket-beginner .affiliate-box .btn-amazon-small,
+body.dark-mode.page-racket-tendinitis .affiliate-box .btn-amazon-small,
+body.dark-mode.page-rules-guide .affiliate-box .btn-amazon-small,
+body.dark-mode.page-privacy .affiliate-box .btn-amazon-small,
+body.dark-mode.page-home .affiliate-box .btn-amazon,
+body.dark-mode.page-shoes-guide .affiliate-box .btn-amazon,
+body.dark-mode.page-racket-beginner .affiliate-box .btn-amazon,
+body.dark-mode.page-racket-tendinitis .affiliate-box .btn-amazon,
+body.dark-mode.page-rules-guide .affiliate-box .btn-amazon,
+body.dark-mode.page-privacy .affiliate-box .btn-amazon,
+body.dark-mode.page-home .affiliate-box a.btn-amazon,
+body.dark-mode.page-shoes-guide .affiliate-box a.btn-amazon,
+body.dark-mode.page-racket-beginner .affiliate-box a.btn-amazon,
+body.dark-mode.page-racket-tendinitis .affiliate-box a.btn-amazon,
+body.dark-mode.page-rules-guide .affiliate-box a.btn-amazon,
+body.dark-mode.page-privacy .affiliate-box a.btn-amazon {
+    color: #111827 !important;
+}
+body.dark-mode.page-home .affiliate-box .product-card:hover,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card:hover,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card:hover,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card:hover,
+body.dark-mode.page-rules-guide .affiliate-box .product-card:hover,
+body.dark-mode.page-privacy .affiliate-box .product-card:hover,
+body.dark-mode.page-home .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-rules-guide .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-privacy .affiliate-box .product-card:focus-visible {
+    border-color: #60a5fa !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
+}
+body.dark-mode.page-home .privacy-update,
+body.dark-mode.page-shoes-guide .privacy-update,
+body.dark-mode.page-racket-beginner .privacy-update,
+body.dark-mode.page-racket-tendinitis .privacy-update,
+body.dark-mode.page-rules-guide .privacy-update,
+body.dark-mode.page-privacy .privacy-update { color: #cbd5e1; }
+body.dark-mode.page-home .privacy-table th,
+body.dark-mode.page-shoes-guide .privacy-table th,
+body.dark-mode.page-racket-beginner .privacy-table th,
+body.dark-mode.page-racket-tendinitis .privacy-table th,
+body.dark-mode.page-rules-guide .privacy-table th,
+body.dark-mode.page-privacy .privacy-table th { background: #1e293b; color: #f8fafc; border-color: #475569; }
+body.dark-mode.page-home .privacy-table td,
+body.dark-mode.page-shoes-guide .privacy-table td,
+body.dark-mode.page-racket-beginner .privacy-table td,
+body.dark-mode.page-racket-tendinitis .privacy-table td,
+body.dark-mode.page-rules-guide .privacy-table td,
+body.dark-mode.page-privacy .privacy-table td { color: #cbd5e1; border-color: #475569; }
+body.dark-mode.page-home .privacy-table code,
+body.dark-mode.page-shoes-guide .privacy-table code,
+body.dark-mode.page-racket-beginner .privacy-table code,
+body.dark-mode.page-racket-tendinitis .privacy-table code,
+body.dark-mode.page-rules-guide .privacy-table code,
+body.dark-mode.page-privacy .privacy-table code { background: #0f172a; color: #f8fafc; padding: .1em .35em; border-radius: 4px; }
+body.dark-mode.page-home .error-code,
+body.dark-mode.page-shoes-guide .error-code,
+body.dark-mode.page-racket-beginner .error-code,
+body.dark-mode.page-racket-tendinitis .error-code,
+body.dark-mode.page-rules-guide .error-code,
+body.dark-mode.page-privacy .error-code { color: #1e3a5f; }
+
+body.page-racket-beginner .racket-shape-table{border-collapse:collapse!important;border-spacing:0!important;width:100%!important;border:1px solid #cbd5e1!important}
+body.page-racket-beginner .racket-shape-table th,body.page-racket-beginner .racket-shape-table td{border:1px solid #cbd5e1!important}
+body.dark-mode .racket-shape-table tbody td{background:#0f172a;border-color:#64748b!important;color:#e2e8f0!important}
+body.dark-mode.page-racket-beginner .racket-shape-table,body.dark-mode.page-racket-beginner .racket-shape-table th,body.dark-mode.page-racket-beginner .racket-shape-table td{border:1px solid #64748b!important}
+body.dark-mode.page-racket-beginner .racket-shape-table thead th{background:#1e3a5f!important;color:#f8fafc!important}
+.is-filtered-out{display:none!important}
+/* Filet de securite sombre pour les composants locaux sans variante 8D explicite */
+body.dark-mode.page-rules-guide .starter-item,
+body.dark-mode.page-rules-guide .affiliate-box,
+body.dark-mode.page-rules-guide .next-step-box,
+body.dark-mode.page-racket-tendinitis .recap-box,
+body.dark-mode.page-racket-tendinitis .next-step-box,
+body.dark-mode.page-racket-tendinitis .schema-container,
+body.dark-mode.page-racket-tendinitis .product-card,
+body.dark-mode.page-shoes-guide .recap-box,
+body.dark-mode.page-shoes-guide .next-step-box,
+body.dark-mode.page-shoes-guide .schema-container,
+body.dark-mode.page-shoes-guide .product-card,
+body.dark-mode.page-racket-beginner .affiliate-box,
+body.dark-mode.page-racket-beginner .entry-card {
+ background:#1e293b !important; color:#e2e8f0 !important; border-color:#475569 !important;
+}
+body.dark-mode.page-rules-guide .starter-item strong,
+body.dark-mode.page-rules-guide .starter-item span,
+body.dark-mode.page-racket-tendinitis .recap-box p,
+body.dark-mode.page-racket-tendinitis .next-step-box p,
+body.dark-mode.page-shoes-guide .recap-box p,
+body.dark-mode.page-shoes-guide .next-step-box p { color:#e2e8f0 !important; }
