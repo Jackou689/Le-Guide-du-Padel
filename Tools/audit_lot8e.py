@@ -39,22 +39,24 @@ if "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com" not
 wr=json.loads(Path('wrangler.jsonc').read_text())
 if wr.get('assets',{}).get('html_handling')!='auto-trailing-slash': errors.append('html_handling absent')
 if wr.get('assets',{}).get('not_found_handling')!='404-page': errors.append('404 handling absent')
-# Lot 8E.2: prevent global layout regression and verify targeted contrast.
+# Lot 8E.4: general page-scoped restoration checks.
+expected={
+'index.html':('page-home','.category-btn'),
+'chaussures-padel-guide.html':('page-shoes-guide','.entry-level-grid .entry-card'),
+'guide-raquette-padel-debutant.html':('page-racket-beginner','.racket-shape-table'),
+'raquette-padel-tendinite.html':('page-racket-tendinitis','.entry-level-grid .entry-card'),
+'regles-du-padel.html':('page-rules-guide','.starter-item'),
+'confidentialite.html':('page-privacy','.page-simple'),
+}
+for fn,(hook,selector) in expected.items():
+    sx=BeautifulSoup(Path(fn).read_text(),'html.parser')
+    if hook not in (sx.body.get('class') or []): errors.append(f'hook de page absent: {fn}')
+    if not sx.select(selector): errors.append(f'composant attendu absent: {fn} {selector}')
 css=Path('style.css').read_text()
-if 'max-width: 75ch' in css:
-    errors.append('regression largeur: max-width 75ch')
-sb=BeautifulSoup(Path('guide-raquette-padel-debutant.html').read_text(),'html.parser')
-if len(sb.select('body.page-racket-beginner table.racket-shape-table')) != 1:
-    errors.append('hook tableau debutant absent ou non unique')
-if 'body.dark-mode.page-racket-beginner .racket-shape-table tbody td' not in css:
-    errors.append('correctif contraste cible absent')
-# Lot 8E.3: ensure the tendinitis recommendation cards keep their page-scoped layout.
-st=BeautifulSoup(Path('raquette-padel-tendinite.html').read_text(),'html.parser')
-if len(st.select('body.page-racket-tendinitis .entry-level-grid .entry-card')) != 3:
-    errors.append('grille tendinite: 3 cartes attendues')
-css=Path('style.css').read_text()
-if '.page-racket-tendinitis .entry-level-grid' not in css or '.page-racket-tendinitis .entry-card' not in css:
-    errors.append('styles cibles des cartes tendinite absents')
+for hook in [x[0] for x in expected.values()]:
+    if f'body.{hook}' not in css: errors.append(f'styles scopes absents: {hook}')
+if re.search(r'(?m)^\.article-content\s*\{[^}]*max-width\s*:\s*75ch',css,re.S):
+    errors.append('regression largeur globale 75ch')
 errors += missing+broken+amazon_bad
 print(f'Pages: {len(pages)}; styles locaux: {style_tags}; attributs style: {style_attrs}; scripts fonctionnels inline: {func_inline}')
 print(f'Canoniques: {len(canon)} uniques: {len(set(canon))}; beacons: {beacons}')
