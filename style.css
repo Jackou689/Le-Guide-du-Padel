@@ -1325,3 +1325,20 @@ body.dark-mode .error-code { color: #1e3a5f; }
         .next-step-box h3 { color: #2b6cb0; margin-top: 0; font-size: 1.3rem; }
 
 .is-filtered-out { display: none !important; }
+
+/* LOT 8E.1 : contraste isole du tableau des formes de raquette */
+body.dark-mode .racket-shape-table tbody th,
+body.dark-mode .racket-shape-table tbody td {
+    background-color: #111827;
+    border-color: #64748b;
+    color: #dbe4f3 !important;
+}
+body.dark-mode .racket-shape-table tbody td:first-child,
+body.dark-mode .racket-shape-table tbody td:first-child strong {
+    color: #f8fafc !important;
+    font-weight: 700;
+}
+body.dark-mode .racket-shape-table .shape-icon {
+    background: #f8fafc;
+    border-color: #60a5fa;
+}
