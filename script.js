@@ -62,9 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     cards.forEach(card => {
                         const category = card.getAttribute('data-category');
                         if (filter === 'all' || category === filter) {
-                            card.style.display = 'flex';
+                            card.classList.remove('is-filtered-out');
                         } else {
-                            card.style.display = 'none';
+                            card.classList.add('is-filtered-out');
                         }
                     });
                 });
