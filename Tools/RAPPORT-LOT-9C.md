@@ -27,3 +27,11 @@ Renforcement éditorial et transparence, sans compléter les informations juridi
 - TVA et code APE selon les documents officiels ;
 - identité du responsable de publication ;
 - vérification finale des mentions légales avant monétisation.
+
+## Ajustement 9C.1 : ton commercial assumé
+Les formulations éditoriales fortes ont été conservées lorsqu'elles peuvent être présentées honnêtement comme un choix de la rédaction ou immédiatement accompagnées d'une limite explicite :
+- « Le choix ultime de la rédaction » ;
+- « L'erreur numéro un à éviter selon la rédaction » ;
+- « aide à éviter certaines blessures », sans garantie de prévention ;
+- « l'essai est le choix obligatoire selon la rédaction » ;
+- « Le choix confort de la rédaction ».
