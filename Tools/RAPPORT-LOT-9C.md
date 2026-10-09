@@ -35,3 +35,11 @@ Les formulations éditoriales fortes ont été conservées lorsqu'elles peuvent 
 - « aide à éviter certaines blessures », sans garantie de prévention ;
 - « l'essai est le choix obligatoire selon la rédaction » ;
 - « Le choix confort de la rédaction ».
+
+## Ajustement 9C.2 : appels à l'action
+- libellés orientés action, comparaison, disponibilité et bénéfice concret ;
+- CTA spécifiques à chaque recommandation plutôt que « Voir sur Amazon » ;
+- boutons plus visibles avec relief, flèche directionnelle et états survol/pression ;
+- largeur complète sur mobile pour améliorer la zone tactile ;
+- libellés accessibles précisant l'ouverture d'Amazon dans un nouvel onglet ;
+- aucune fausse urgence, remise, disponibilité ou économie inventée.

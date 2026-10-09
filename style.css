@@ -3043,3 +3043,57 @@ body.dark-mode .page-simple li a:not([class]) {
     color: #7dd3fc;
     text-decoration-color: currentColor;
 }
+
+/* LOT 9C.2 - CTA commerciaux renforces */
+.btn-affiliation,
+.btn-amazon,
+.btn-amazon-small,
+.btn-amazon-full {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .55rem;
+    min-height: 48px;
+    font-weight: 800;
+    letter-spacing: .01em;
+    line-height: 1.25;
+    text-align: center;
+    border: 2px solid rgba(17, 24, 39, .18);
+    box-shadow: 0 5px 0 rgba(17, 24, 39, .18), 0 10px 20px rgba(255, 153, 0, .20);
+    transform: translateY(0);
+    transition: transform .16s ease, box-shadow .16s ease, background-color .16s ease;
+}
+.btn-affiliation:hover,
+.btn-amazon:hover,
+.btn-amazon-small:hover,
+.btn-amazon-full:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 0 rgba(17, 24, 39, .18), 0 14px 24px rgba(255, 153, 0, .26);
+}
+.btn-affiliation:active,
+.btn-amazon:active,
+.btn-amazon-small:active,
+.btn-amazon-full:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 rgba(17, 24, 39, .22), 0 5px 12px rgba(255, 153, 0, .18);
+}
+.cta-icon { flex: 0 0 auto; }
+.cta-primary { flex: 0 1 auto; }
+.cta-arrow { flex: 0 0 auto; font-size: 1.2em; transition: transform .16s ease; }
+.btn-affiliation:hover .cta-arrow,
+.btn-amazon:hover .cta-arrow,
+.btn-amazon-small:hover .cta-arrow,
+.btn-amazon-full:hover .cta-arrow { transform: translateX(3px); }
+@media (max-width: 640px) {
+    .btn-affiliation,
+    .btn-amazon,
+    .btn-amazon-full { width: 100%; box-sizing: border-box; }
+    .btn-amazon-small { width: 100%; box-sizing: border-box; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .btn-affiliation,
+    .btn-amazon,
+    .btn-amazon-small,
+    .btn-amazon-full,
+    .cta-arrow { transition: none; }
+}
