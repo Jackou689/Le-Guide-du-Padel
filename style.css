@@ -1017,3 +1017,65 @@ body.dark-mode .entry-card .entry-card-title-compact {
         line-height: 1.35;
     }
 }
+
+/* ==========================================================================
+   LOT 8A.4 : CONTRASTE DU BLOC RAQUETTES DEBUTANT
+   ========================================================================== */
+body.dark-mode .affiliate-box {
+    background: linear-gradient(135deg, #172033 0%, #111827 100%) !important;
+    border-color: #d97706 !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28) !important;
+}
+body.dark-mode .affiliate-box h3,
+body.dark-mode .affiliate-box p {
+    color: #f8fafc !important;
+}
+body.dark-mode .affiliate-box .product-card {
+    background: #1e293b !important;
+    border-color: #475569 !important;
+    color: #e2e8f0 !important;
+}
+body.dark-mode .affiliate-box .product-name,
+body.dark-mode .affiliate-box .product-name:link,
+body.dark-mode .affiliate-box .product-name:visited {
+    color: #f8fafc !important;
+    text-decoration-color: #94a3b8 !important;
+}
+body.dark-mode .affiliate-box .product-price {
+    color: #fca5a5 !important;
+}
+body.dark-mode .affiliate-box .btn-amazon-small,
+body.dark-mode .affiliate-box .btn-amazon,
+body.dark-mode .affiliate-box a.btn-amazon {
+    color: #111827 !important;
+}
+body.dark-mode .affiliate-box .product-card:hover,
+body.dark-mode .affiliate-box .product-card:focus-visible {
+    border-color: #60a5fa !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* ========================================================================== 
+   LOT 8C : CONFIDENTIALITE ET PREPARATION ADSENSE
+   ========================================================================== */
+.privacy-update { color: var(--color-text-muted); }
+.privacy-table-wrap { max-width: 100%; overflow-x: auto; margin: 24px 0; }
+.privacy-table { width: 100%; min-width: 680px; border-collapse: collapse; }
+.privacy-table th, .privacy-table td { padding: 12px; border: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.privacy-table th { background: var(--color-bg-box); color: var(--color-primary); }
+body.dark-mode .privacy-update { color: #cbd5e1; }
+body.dark-mode .privacy-table th { background: #1e293b; color: #f8fafc; border-color: #475569; }
+body.dark-mode .privacy-table td { color: #cbd5e1; border-color: #475569; }
+body.dark-mode .privacy-table code { background: #0f172a; color: #f8fafc; padding: .1em .35em; border-radius: 4px; }
+
+/* ========================================================================== 
+   LOT 8D : PAGE 404
+   ========================================================================== */
+.error-page { text-align: center; min-height: 55vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.error-code { font-size: clamp(5rem, 18vw, 10rem); line-height: .9; font-weight: 900; color: #dbeafe; letter-spacing: -.06em; }
+.error-page h1 { margin-top: 10px; }
+.error-actions { display: flex; gap: 14px; align-items: center; justify-content: center; flex-wrap: wrap; margin: 24px 0 32px; }
+.error-actions a { min-height: 44px; display: inline-flex; align-items: center; padding: 10px 16px; }
+.error-guides { text-align: left; margin: 8px auto 0; }
+.error-guides li { margin: 8px 0; }
+body.dark-mode .error-code { color: #1e3a5f; }

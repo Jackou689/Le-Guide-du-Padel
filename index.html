@@ -284,35 +284,7 @@
 </div>
 </footer>
 <!-- SCRIPT DE FILTRAGE DES CATÉGORIES -->
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('.category-btn');
-            const cards = document.querySelectorAll('.article-card');
 
-            buttons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Gestion de la classe active
-                    buttons.forEach(btn => {
-                        btn.classList.remove('active');
-                        btn.setAttribute('aria-pressed', 'false');
-                    });
-                    this.classList.add('active');
-                    this.setAttribute('aria-pressed', 'true');
-
-                    const filter = this.getAttribute('data-filter');
-
-                    cards.forEach(card => {
-                        const category = card.getAttribute('data-category');
-                        if (filter === 'all' || category === filter) {
-                            card.style.display = 'flex';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 <script src="script.js"></script>
 <script data-cf-beacon='{"token":"e73f652447404adfa9c4ad678725f193"}' src="https://static.cloudflareinsights.com/beacon.min.js" type="module"></script></body>
 </html>

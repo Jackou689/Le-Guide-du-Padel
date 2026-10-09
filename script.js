@@ -40,3 +40,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const isPreview = hostname === 'localhost' || hostname === '127.0.0.1' || hostname.endsWith('.workers.dev');
     document.body.classList.toggle('preview-mode', isPreview);
 });
+
+
+// Lot 8D : filtrage des categories de la page d accueil.
+document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.category-btn');
+            const cards = document.querySelectorAll('.article-card');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Gestion de la classe active
+                    buttons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.setAttribute('aria-pressed', 'false');
+                    });
+                    this.classList.add('active');
+                    this.setAttribute('aria-pressed', 'true');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    cards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        if (filter === 'all' || category === filter) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
