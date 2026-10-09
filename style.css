@@ -3011,3 +3011,35 @@ body.dark-mode.page-racket-tendinitis .recap-box p,
 body.dark-mode.page-racket-tendinitis .next-step-box p,
 body.dark-mode.page-shoes-guide .recap-box p,
 body.dark-mode.page-shoes-guide .next-step-box p { color:#e2e8f0 !important; }
+
+
+/* LOT 9B.1 - Correctifs accessibilite PageSpeed */
+.tag-health {
+    color: #861f1f;
+    border: 1px solid #b42323;
+}
+.text-secondary-sm {
+    color: #4a5568;
+}
+.article-content p a:not([class]),
+.article-content li a:not([class]),
+.intro a:not([class]),
+.sidebar p a:not([class]),
+.page-simple p a:not([class]),
+.page-simple li a:not([class]) {
+    text-decoration: underline;
+    text-decoration-thickness: 0.09em;
+    text-underline-offset: 0.16em;
+}
+body.dark-mode .text-secondary-sm {
+    color: #cbd5e1;
+}
+body.dark-mode .article-content p a:not([class]),
+body.dark-mode .article-content li a:not([class]),
+body.dark-mode .intro a:not([class]),
+body.dark-mode .sidebar p a:not([class]),
+body.dark-mode .page-simple p a:not([class]),
+body.dark-mode .page-simple li a:not([class]) {
+    color: #7dd3fc;
+    text-decoration-color: currentColor;
+}
