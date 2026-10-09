@@ -1,13 +1,2 @@
-/index.html / 301
-/a-propos /a-propos.html 301
-/contact /contact.html 301
-/confidentialite /confidentialite.html 301
-/mentions-legales /mentions-legales.html 301
-/guide-raquette-padel-debutant /guide-raquette-padel-debutant.html 301
-/regles-du-padel /regles-du-padel.html 301
-/chaussures-padel-guide /chaussures-padel-guide.html 301
-/coups-techniques-padel /coups-techniques-padel.html 301
-/tactique-filet-padel /tactique-filet-padel.html 301
-/balles-padel-guide /balles-padel-guide.html 301
-/echauffement-padel /echauffement-padel.html 301
-/raquette-padel-tendinite /raquette-padel-tendinite.html 301
+# Cloudflare Workers Static Assets handles HTML canonicalization automatically.
+# Example: /a-propos.html redirects to /a-propos, which serves a-propos.html.
