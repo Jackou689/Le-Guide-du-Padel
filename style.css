@@ -1079,3 +1079,1935 @@ body.dark-mode .privacy-table code { background: #0f172a; color: #f8fafc; paddin
 .error-guides { text-align: left; margin: 8px auto 0; }
 .error-guides li { margin: 8px 0; }
 body.dark-mode .error-code { color: #1e3a5f; }
+
+/* LOT 8E.6 RESTAURATION VISUELLE */
+body.page-home .category-btn {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+body.page-home .category-btn.active,
+body.page-home .category-btn:hover {
+            background: #2b6cb0;
+            color: white;
+        }
+body.page-shoes-guide .article-content h1 { font-size: 2.3rem; line-height: 1.2; color: #1a202c; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+body.page-shoes-guide .article-content h2 { margin-top: 3.5rem; color: #1a202c; font-size: 1.7rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; }
+body.page-shoes-guide .article-content h3 { margin-top: 2.5rem; color: #2b6cb0; font-size: 1.35rem; font-weight: 600; }
+body.page-shoes-guide .article-content ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+body.page-shoes-guide .article-content li { margin-bottom: 0.75rem; }
+body.page-shoes-guide .disclaimer-affiliation { font-size: 0.85rem; color: #718096; background: #f8fafc; padding: 10px 15px; border-radius: 6px; border: 1px solid #e2e8f0; margin-bottom: 2rem; }
+body.page-shoes-guide .article-img-container { margin: 2.5rem 0; text-align: center; }
+body.page-shoes-guide .article-img-container img { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); display: block; margin: 0 auto; max-height: 420px; object-fit: cover; }
+body.page-shoes-guide .img-caption { font-size: 0.85em; color: #718096; margin-top: 12px; font-style: italic; }
+body.page-shoes-guide .erreur-box { background: linear-gradient(145deg, #fff5f5 0%, #fed7d7 100%); border-left: 4px solid #e53e3e; padding: 1.5rem 2rem; margin: 2.5rem 0; border-radius: 0 12px 12px 0; box-shadow: 0 4px 15px rgba(229, 62, 62, 0.08); }
+body.page-shoes-guide .erreur-box h4 { color: #742a2a; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+body.page-shoes-guide .erreur-box p { margin-bottom: 0; color: #9b2c2c; font-size: 1rem; line-height: 1.6; }
+body.page-shoes-guide .astuce-box { background: linear-gradient(145deg, #f0fff4 0%, #c6f6d5 100%); border-left: 4px solid #38a169; padding: 1.5rem 2rem; margin: 2.5rem 0; border-radius: 0 12px 12px 0; box-shadow: 0 4px 15px rgba(56, 161, 105, 0.08); }
+body.page-shoes-guide .astuce-box h4 { color: #22543d; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+body.page-shoes-guide .astuce-box p { margin-bottom: 0; color: #276749; font-size: 1rem; line-height: 1.6; }
+body.page-shoes-guide .schema-container { text-align: center; margin: 3rem 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02); }
+body.page-shoes-guide .schema-svg { width: 100%; max-width: 520px; background: #fff; border-radius: 8px; padding: 15px; border: 1px solid #cbd5e0; box-shadow: 0 4px 6px rgba(0,0,0,0.03); }
+body.page-shoes-guide .schema-caption { font-size: 0.9em; color: #4a5568; margin-top: 12px; font-style: italic; font-weight: 500; }
+body.page-shoes-guide .entry-level-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin: 2rem 0; }
+body.page-shoes-guide .entry-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.04); display: flex; flex-direction: column; transition: transform 0.2s; }
+body.page-shoes-guide .entry-card:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.08); }
+body.page-shoes-guide .entry-tag { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; align-self: flex-start; }
+body.page-shoes-guide .tag-chevron { background: #fed7d7; color: #9b2c2c; }
+body.page-shoes-guide .tag-omni { background: #feebc8; color: #c05621; }
+body.page-shoes-guide .tag-mixte { background: #c6f6d5; color: #276749; }
+body.page-shoes-guide .entry-card h4 { color: #1a365d; margin-top: 0; margin-bottom: 10px; font-size: 1.15rem; }
+body.page-shoes-guide .entry-card p { font-size: 0.9rem; color: #4a5568; line-height: 1.5; flex-grow: 1; margin-bottom: 20px; }
+body.page-shoes-guide .btn-amazon-small { display: block; background: #ff9900; color: #111; text-align: center; padding: 10px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 0.95rem; transition: background 0.2s; }
+body.page-shoes-guide .btn-amazon-small:hover { background: #e88b00; }
+body.page-shoes-guide .product-card { display: flex; flex-direction: column; background: #fff; border: 2px solid #3182ce; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(49, 130, 206, 0.15); margin: 3rem 0; transition: transform 0.2s ease; }
+body.page-shoes-guide .product-card:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(49, 130, 206, 0.25); }
+body.page-shoes-guide .product-header { background: #3182ce; color: white; padding: 12px 20px; font-weight: bold; font-size: 1.1rem; text-align: center; text-transform: uppercase; letter-spacing: 0.05em; }
+body.page-shoes-guide .product-body { padding: 25px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+body.page-shoes-guide .product-image { width: 100%; max-width: 280px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); object-fit: contain; }
+body.page-shoes-guide .product-title { color: #1a365d; font-size: 1.5rem; margin: 0; font-weight: 800; }
+body.page-shoes-guide .product-desc { color: #4a5568; font-size: 1rem; line-height: 1.6; margin: 0; }
+body.page-shoes-guide .btn-amazon-full { display: block; background: #ff9900; color: #111; text-align: center; padding: 14px 25px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; text-decoration: none; width: 100%; box-sizing: border-box; transition: background 0.2s; box-shadow: 0 4px 10px rgba(255, 153, 0, 0.25); }
+body.page-shoes-guide .btn-amazon-full:hover { background: #e88b00; }
+body.page-shoes-guide .next-step-box { background: #ebf8ff; border: 1px solid #bee3f8; border-radius: 12px; padding: 25px; margin: 3rem 0; text-align: center; }
+body.page-shoes-guide .next-step-box h3 { color: #2b6cb0; margin-top: 0; font-size: 1.3rem; }
+body.page-racket-beginner .article-content h2 { margin-top: 40px; color: #1a365d; border-bottom: 2px solid #edf2f7; padding-bottom: 10px; }
+body.page-racket-beginner .article-content h3 { margin-top: 25px; color: #2d3748; }
+body.page-racket-beginner .article-content table { width: 100%; border-collapse: collapse; margin-top: 20px; margin-bottom: 20px; }
+body.page-racket-beginner .article-content th,
+body.page-racket-beginner .article-content td { border: 1px solid #e2e8f0; padding: 12px; text-align: left; vertical-align: middle; }
+body.page-racket-beginner .article-content th { background-color: #f8fafc; color: #1a365d; }
+body.page-racket-beginner .article-content ul { margin-bottom: 20px; padding-left: 20px; }
+body.page-racket-beginner .article-content li { margin-bottom: 8px; }
+body.page-racket-beginner .article-img-container { margin: 25px 0; text-align: center; }
+body.page-racket-beginner .article-img-container img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+body.page-racket-beginner .img-caption { font-size: 0.85em; color: #718096; margin-top: 8px; font-style: italic; }
+body.page-racket-beginner .affiliate-box {
+            background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%);
+            border: 2px solid #f6ad55;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 35px 0;
+            box-shadow: 0 4px 12px rgba(246, 173, 85, 0.15);
+        }
+body.page-racket-beginner .affiliate-box h3 { margin-top: 0; color: #744210; font-size: 1.15em; text-align: center; margin-bottom: 20px; }
+body.page-racket-beginner .affiliate-box p { margin-bottom: 15px; font-weight: 600; color: #744210; font-size: 1.05em; text-align: center; }
+body.page-racket-beginner .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 15px; }
+body.page-racket-beginner .product-card {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; text-align: center; text-decoration: none; color: inherit; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s, box-shadow 0.2s;
+        }
+body.page-racket-beginner .product-card:hover { transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.1); }
+body.page-racket-beginner .product-card img { max-height: 140px; object-fit: contain; margin-bottom: 10px; }
+body.page-racket-beginner .product-name { font-weight: bold; color: #1a365d; font-size: 0.95em; margin-bottom: 8px; }
+body.page-racket-beginner .product-price { color: #e53e3e; font-weight: bold; font-size: 0.9em; margin-bottom: 12px; }
+body.page-racket-beginner .btn-amazon-small { background: linear-gradient(to bottom, #ffb84d, #ff9900); color: #111; padding: 8px 12px; border-radius: 6px; font-weight: bold; font-size: 0.85em; border: 1px solid #e68a00; display: inline-block; }
+body.page-racket-beginner .btn-amazon {
+            display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(to bottom, #ffb84d, #ff9900); color: #111; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1em; box-shadow: 0 4px 10px rgba(255, 153, 0, 0.3); border: 1px solid #e68a00; width: 100%; box-sizing: border-box;
+        }
+body.page-racket-beginner .btn-amazon:hover { background: linear-gradient(to bottom, #ffa726, #f57c00); }
+body.page-racket-beginner .balance-bars-container { margin: 25px 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; }
+body.page-racket-beginner .balance-row { margin-bottom: 20px; }
+body.page-racket-beginner .balance-label-row { display: flex; justify-content: space-between; font-weight: bold; color: #1a365d; font-size: 0.95em; margin-bottom: 6px; }
+body.page-racket-beginner .balance-track-wrapper { display: flex; align-items: center; gap: 12px; }
+body.page-racket-beginner .balance-axis-label { font-size: 0.8em; color: #718096; font-weight: 600; white-space: nowrap; min-width: 65px; }
+body.page-racket-beginner .balance-track { flex-grow: 1; height: 16px; background: #e2e8f0; border-radius: 8px; position: relative; overflow: hidden; }
+body.page-racket-beginner .balance-fill { height: 100%; border-radius: 8px; background: linear-gradient(90deg, #3182ce, #e53e3e); }
+body.page-racket-beginner .balance-desc { font-size: 0.85em; color: #4a5568; margin-top: 6px; padding-left: 77px; }
+body.page-racket-beginner .shape-icon { width: 35px; height: 45px; margin: 0 auto; border: 2px solid #1a365d; background: #fff; position: relative; }
+body.page-racket-beginner .shape-round { border-radius: 50%; height: 35px; width: 35px; }
+body.page-racket-beginner .shape-teardrop { border-radius: 50% 50% 20% 20%; height: 42px; }
+body.page-racket-beginner .shape-diamond { border-radius: 20% 20% 50% 50%; height: 42px; }
+body.page-racket-beginner .next-step-box { background-color: #ebf8ff; border: 2px solid #bee3f8; border-radius: 8px; padding: 20px; margin-top: 40px; }
+body.page-racket-beginner .next-step-box h3 { color: #2b6cb0; margin-top: 0; margin-bottom: 10px; }
+body.page-racket-tendinitis .article-content h1 { font-size: 2.3rem; line-height: 1.2; color: #1a202c; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+body.page-racket-tendinitis .article-content h2 { margin-top: 3.5rem; color: #1a202c; font-size: 1.7rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; }
+body.page-racket-tendinitis .article-content h3 { margin-top: 2.5rem; color: #2b6cb0; font-size: 1.35rem; font-weight: 600; }
+body.page-racket-tendinitis .article-content ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+body.page-racket-tendinitis .article-content li { margin-bottom: 0.75rem; }
+body.page-racket-tendinitis .disclaimer-affiliation { font-size: 0.85rem; color: #718096; background: #f8fafc; padding: 10px 15px; border-radius: 6px; border: 1px solid #e2e8f0; margin-bottom: 2rem; }
+body.page-racket-tendinitis .article-img-container { margin: 2.5rem 0; text-align: center; }
+body.page-racket-tendinitis .article-img-container img { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); display: block; margin: 0 auto; max-height: 420px; object-fit: cover; }
+body.page-racket-tendinitis .img-caption { font-size: 0.85em; color: #718096; margin-top: 12px; font-style: italic; }
+body.page-racket-tendinitis .erreur-box { background: linear-gradient(145deg, #fff5f5 0%, #fed7d7 100%); border-left: 4px solid #e53e3e; padding: 1.5rem 2rem; margin: 2.5rem 0; border-radius: 0 12px 12px 0; box-shadow: 0 4px 15px rgba(229, 62, 62, 0.08); }
+body.page-racket-tendinitis .erreur-box h4 { color: #742a2a; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+body.page-racket-tendinitis .erreur-box p { margin-bottom: 0; color: #9b2c2c; font-size: 1rem; line-height: 1.6; }
+body.page-racket-tendinitis .astuce-box { background: linear-gradient(145deg, #f0fff4 0%, #c6f6d5 100%); border-left: 4px solid #38a169; padding: 1.5rem 2rem; margin: 2.5rem 0; border-radius: 0 12px 12px 0; box-shadow: 0 4px 15px rgba(56, 161, 105, 0.08); }
+body.page-racket-tendinitis .astuce-box h4 { color: #22543d; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+body.page-racket-tendinitis .astuce-box p { margin-bottom: 0; color: #276749; font-size: 1rem; line-height: 1.6; }
+body.page-racket-tendinitis .schema-container { text-align: center; margin: 3rem 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02); }
+body.page-racket-tendinitis .schema-svg { width: 100%; max-width: 520px; background: #fff; border-radius: 8px; padding: 15px; border: 1px solid #cbd5e0; box-shadow: 0 4px 6px rgba(0,0,0,0.03); }
+body.page-racket-tendinitis .schema-caption { font-size: 0.9em; color: #4a5568; margin-top: 12px; font-style: italic; font-weight: 500; }
+body.page-racket-tendinitis .entry-level-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin: 2rem 0; }
+body.page-racket-tendinitis .entry-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.04); display: flex; flex-direction: column; transition: transform 0.2s; }
+body.page-racket-tendinitis .entry-card:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.08); }
+body.page-racket-tendinitis .entry-tag { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; align-self: flex-start; }
+body.page-racket-tendinitis .tag-foam { background: #e2e8f0; color: #2d3748; }
+body.page-racket-tendinitis .tag-light { background: #feebc8; color: #c05621; }
+body.page-racket-tendinitis .tag-round { background: #c6f6d5; color: #276749; }
+body.page-racket-tendinitis .entry-card h4 { color: #1a365d; margin-top: 0; margin-bottom: 10px; font-size: 1.15rem; }
+body.page-racket-tendinitis .entry-card p { font-size: 0.9rem; color: #4a5568; line-height: 1.5; flex-grow: 1; margin-bottom: 20px; }
+body.page-racket-tendinitis .btn-amazon-small { display: block; background: #ff9900; color: #111; text-align: center; padding: 10px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 0.95rem; transition: background 0.2s; }
+body.page-racket-tendinitis .btn-amazon-small:hover { background: #e88b00; }
+body.page-racket-tendinitis .product-card { display: flex; flex-direction: column; background: #fff; border: 2px solid #3182ce; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(49, 130, 206, 0.15); margin: 3rem 0; transition: transform 0.2s ease; }
+body.page-racket-tendinitis .product-card:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(49, 130, 206, 0.25); }
+body.page-racket-tendinitis .product-header { background: #3182ce; color: white; padding: 12px 20px; font-weight: bold; font-size: 1.1rem; text-align: center; text-transform: uppercase; letter-spacing: 0.05em; }
+body.page-racket-tendinitis .product-body { padding: 25px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+body.page-racket-tendinitis .product-image-placeholder { width: 200px; height: 150px; background: #ebf8ff; border-radius: 8px; border: 1px dashed #90cdf4; display: flex; align-items: center; justify-content: center; color: #3182ce; font-weight: bold; font-size: 0.9rem; text-align: center; padding: 10px; }
+body.page-racket-tendinitis .product-image { width: 100%; max-width: 280px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); object-fit: contain; }
+body.page-racket-tendinitis .product-title { color: #1a365d; font-size: 1.5rem; margin: 0; font-weight: 800; }
+body.page-racket-tendinitis .product-desc { color: #4a5568; font-size: 1rem; line-height: 1.6; margin: 0; }
+body.page-racket-tendinitis .btn-amazon-full { display: block; background: #ff9900; color: #111; text-align: center; padding: 14px 25px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; text-decoration: none; width: 100%; box-sizing: border-box; transition: background 0.2s; box-shadow: 0 4px 10px rgba(255, 153, 0, 0.25); }
+body.page-racket-tendinitis .btn-amazon-full:hover { background: #e88b00; }
+body.page-racket-tendinitis .next-step-box { background: #ebf8ff; border: 1px solid #bee3f8; border-radius: 12px; padding: 25px; margin: 2rem 0 3rem 0; text-align: center; }
+body.page-racket-tendinitis .next-step-box h3 { color: #2b6cb0; margin-top: 0; font-size: 1.3rem; }
+body.page-racket-tendinitis .recap-box { background: #fffaf0; border-left: 4px solid #ed8936; padding: 1.5rem 2rem; margin: 3rem 0 1rem 0; border-radius: 0 8px 8px 0; }
+body.page-racket-tendinitis .recap-box h3 { color: #c05621; margin-top: 0; font-size: 1.25rem; margin-bottom: 10px; }
+body.page-racket-tendinitis .recap-box p { margin: 0; color: #7b341e; font-size: 1.05rem; line-height: 1.6; }
+body.page-rules-guide .article-content h1 { font-size: 2.3rem; line-height: 1.2; color: #1a202c; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+body.page-rules-guide .article-content h2 { margin-top: 3.5rem; color: #1a202c; font-size: 1.7rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; }
+body.page-rules-guide .article-content h3 { margin-top: 2.5rem; color: #2b6cb0; font-size: 1.35rem; font-weight: 600; }
+body.page-rules-guide .article-content ul,
+body.page-rules-guide .article-content ol { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+body.page-rules-guide .article-content li { margin-bottom: 0.75rem; }
+body.page-rules-guide .article-img-container { margin: 2.5rem 0; text-align: center; }
+body.page-rules-guide .article-img-container img { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); display: block; margin: 0 auto; max-height: 420px; object-fit: cover; }
+body.page-rules-guide .img-caption { font-size: 0.85em; color: #718096; margin-top: 12px; font-style: italic; }
+body.page-rules-guide .schema-container { text-align: center; margin: 3rem 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02); }
+body.page-rules-guide .schema-svg { width: 100%; max-width: 520px; background: #fff; border-radius: 8px; padding: 15px; border: 1px solid #cbd5e0; box-shadow: 0 4px 6px rgba(0,0,0,0.03); }
+body.page-rules-guide .schema-caption { font-size: 0.9em; color: #4a5568; margin-top: 12px; font-style: italic; font-weight: 500; }
+body.page-rules-guide .astuce-box { background: linear-gradient(145deg, #f0fff4 0%, #c6f6d5 100%); border-left: 4px solid #38a169; padding: 1.5rem 2rem; margin: 2.5rem 0; border-radius: 0 12px 12px 0; box-shadow: 0 4px 15px rgba(56, 161, 105, 0.08); }
+body.page-rules-guide .astuce-box h4 { color: #22543d; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+body.page-rules-guide .astuce-box p { margin-bottom: 0; color: #276749; font-size: 1rem; line-height: 1.6; }
+body.page-rules-guide .erreur-box { background: linear-gradient(145deg, #fff5f5 0%, #fed7d7 100%); border-left: 4px solid #e53e3e; padding: 1.5rem 2rem; margin: 2.5rem 0; border-radius: 0 12px 12px 0; box-shadow: 0 4px 15px rgba(229, 62, 62, 0.08); }
+body.page-rules-guide .erreur-box h4 { color: #742a2a; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+body.page-rules-guide .erreur-box p { margin-bottom: 0; color: #9b2c2c; font-size: 1rem; line-height: 1.6; }
+body.page-rules-guide .affiliate-box { background: #fffaf0; border: 1px solid #feebc8; border-radius: 12px; padding: 25px; margin: 3rem 0; box-shadow: 0 4px 15px rgba(221, 107, 32, 0.05); }
+body.page-rules-guide .affiliate-box h3 { color: #c05621; margin-top: 0; font-size: 1.35rem; }
+body.page-rules-guide .starter-pack-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+body.page-rules-guide .starter-item { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+body.page-rules-guide .starter-item strong { display: block; color: #2d3748; margin-bottom: 5px; font-size: 0.95rem; }
+body.page-rules-guide .starter-item span { font-size: 0.85rem; color: #718096; line-height: 1.4; display: block; }
+body.page-rules-guide .btn-amazon-full { display: block; background: #ff9900; color: #111; text-align: center; padding: 12px 20px; border-radius: 8px; font-weight: bold; text-decoration: none; margin-top: 20px; box-shadow: 0 4px 10px rgba(255, 153, 0, 0.2); transition: background 0.2s; }
+body.page-rules-guide .btn-amazon-full:hover { background: #e88b00; }
+body.page-rules-guide .next-step-box { background: #ebf8ff; border: 1px solid #bee3f8; border-radius: 12px; padding: 25px; margin: 3rem 0; text-align: center; }
+body.page-rules-guide .next-step-box h3 { color: #2b6cb0; margin-top: 0; font-size: 1.3rem; }
+body.page-privacy .page-simple h1 { color: #1a365d; margin-bottom: 20px; }
+body.page-privacy .page-simple h2 { color: #1a365d; margin-top: 30px; font-size: 1.3rem; }
+body.page-privacy .page-simple p { line-height: 1.7; color: #2d3748; margin-bottom: 15px; }
+body.page-privacy .back-link-container { margin-top: 30px; text-align: center; }
+body.page-privacy .back-link { color: #2b6cb0; text-decoration: none; font-weight: bold; }
+body.page-privacy .back-link:hover { text-decoration: underline; }
+/* PRIORITE SOMBRE GENERALE */
+body.dark-mode.page-home,
+body.dark-mode.page-shoes-guide,
+body.dark-mode.page-racket-beginner,
+body.dark-mode.page-racket-tendinitis,
+body.dark-mode.page-rules-guide,
+body.dark-mode.page-privacy { 
+    background-color: #0f172a; 
+    color: #f1f5f9; 
+}
+body.dark-mode.page-home .article-content h1,
+body.dark-mode.page-shoes-guide .article-content h1,
+body.dark-mode.page-racket-beginner .article-content h1,
+body.dark-mode.page-racket-tendinitis .article-content h1,
+body.dark-mode.page-rules-guide .article-content h1,
+body.dark-mode.page-privacy .article-content h1 {
+    color: #ffffff !important; 
+    font-weight: 800;
+}
+body.dark-mode.page-home .article-content h2,
+body.dark-mode.page-shoes-guide .article-content h2,
+body.dark-mode.page-racket-beginner .article-content h2,
+body.dark-mode.page-racket-tendinitis .article-content h2,
+body.dark-mode.page-rules-guide .article-content h2,
+body.dark-mode.page-privacy .article-content h2 { 
+    color: #f8fafc !important; 
+    border-bottom-color: #475569 !important; 
+}
+body.dark-mode.page-home .article-content h3,
+body.dark-mode.page-shoes-guide .article-content h3,
+body.dark-mode.page-racket-beginner .article-content h3,
+body.dark-mode.page-racket-tendinitis .article-content h3,
+body.dark-mode.page-rules-guide .article-content h3,
+body.dark-mode.page-privacy .article-content h3 { 
+    color: #38bdf8 !important; 
+    font-weight: 700;
+}
+body.dark-mode.page-home a,
+body.dark-mode.page-shoes-guide a,
+body.dark-mode.page-racket-beginner a,
+body.dark-mode.page-racket-tendinitis a,
+body.dark-mode.page-rules-guide a,
+body.dark-mode.page-privacy a { 
+    color: #38bdf8; 
+}
+body.dark-mode.page-home p,
+body.dark-mode.page-shoes-guide p,
+body.dark-mode.page-racket-beginner p,
+body.dark-mode.page-racket-tendinitis p,
+body.dark-mode.page-rules-guide p,
+body.dark-mode.page-privacy p,
+body.dark-mode.page-home li,
+body.dark-mode.page-shoes-guide li,
+body.dark-mode.page-racket-beginner li,
+body.dark-mode.page-racket-tendinitis li,
+body.dark-mode.page-rules-guide li,
+body.dark-mode.page-privacy li { 
+    color: #cbd5e1; 
+}
+body.dark-mode.page-home .img-caption,
+body.dark-mode.page-shoes-guide .img-caption,
+body.dark-mode.page-racket-beginner .img-caption,
+body.dark-mode.page-racket-tendinitis .img-caption,
+body.dark-mode.page-rules-guide .img-caption,
+body.dark-mode.page-privacy .img-caption,
+body.dark-mode.page-home .schema-caption,
+body.dark-mode.page-shoes-guide .schema-caption,
+body.dark-mode.page-racket-beginner .schema-caption,
+body.dark-mode.page-racket-tendinitis .schema-caption,
+body.dark-mode.page-rules-guide .schema-caption,
+body.dark-mode.page-privacy .schema-caption { 
+    color: #94a3b8; 
+}
+body.dark-mode.page-home .header,
+body.dark-mode.page-shoes-guide .header,
+body.dark-mode.page-racket-beginner .header,
+body.dark-mode.page-racket-tendinitis .header,
+body.dark-mode.page-rules-guide .header,
+body.dark-mode.page-privacy .header { background-color: #112240; border-bottom: 1px solid #2d3748; }
+body.dark-mode.page-home .footer,
+body.dark-mode.page-shoes-guide .footer,
+body.dark-mode.page-racket-beginner .footer,
+body.dark-mode.page-racket-tendinitis .footer,
+body.dark-mode.page-rules-guide .footer,
+body.dark-mode.page-privacy .footer { background-color: #112240; border-top: 1px solid #2d3748; }
+body.dark-mode.page-home .logo,
+body.dark-mode.page-shoes-guide .logo,
+body.dark-mode.page-racket-beginner .logo,
+body.dark-mode.page-racket-tendinitis .logo,
+body.dark-mode.page-rules-guide .logo,
+body.dark-mode.page-privacy .logo,
+body.dark-mode.page-home .nav-links a,
+body.dark-mode.page-shoes-guide .nav-links a,
+body.dark-mode.page-racket-beginner .nav-links a,
+body.dark-mode.page-racket-tendinitis .nav-links a,
+body.dark-mode.page-rules-guide .nav-links a,
+body.dark-mode.page-privacy .nav-links a,
+body.dark-mode.page-home .footer-links a,
+body.dark-mode.page-shoes-guide .footer-links a,
+body.dark-mode.page-racket-beginner .footer-links a,
+body.dark-mode.page-racket-tendinitis .footer-links a,
+body.dark-mode.page-rules-guide .footer-links a,
+body.dark-mode.page-privacy .footer-links a { color: #f7fafc; }
+body.dark-mode.page-home .theme-toggle-btn,
+body.dark-mode.page-shoes-guide .theme-toggle-btn,
+body.dark-mode.page-racket-beginner .theme-toggle-btn,
+body.dark-mode.page-racket-tendinitis .theme-toggle-btn,
+body.dark-mode.page-rules-guide .theme-toggle-btn,
+body.dark-mode.page-privacy .theme-toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode.page-home .sidebar-links a,
+body.dark-mode.page-shoes-guide .sidebar-links a,
+body.dark-mode.page-racket-beginner .sidebar-links a,
+body.dark-mode.page-racket-tendinitis .sidebar-links a,
+body.dark-mode.page-rules-guide .sidebar-links a,
+body.dark-mode.page-privacy .sidebar-links a { color: #63b3ed !important; }
+body.dark-mode.page-home .ad-banner-top,
+body.dark-mode.page-shoes-guide .ad-banner-top,
+body.dark-mode.page-racket-beginner .ad-banner-top,
+body.dark-mode.page-racket-tendinitis .ad-banner-top,
+body.dark-mode.page-rules-guide .ad-banner-top,
+body.dark-mode.page-privacy .ad-banner-top,
+body.dark-mode.page-home .ad-banner-bottom,
+body.dark-mode.page-shoes-guide .ad-banner-bottom,
+body.dark-mode.page-racket-beginner .ad-banner-bottom,
+body.dark-mode.page-racket-tendinitis .ad-banner-bottom,
+body.dark-mode.page-rules-guide .ad-banner-bottom,
+body.dark-mode.page-privacy .ad-banner-bottom,
+body.dark-mode.page-home .ad-in-content,
+body.dark-mode.page-shoes-guide .ad-in-content,
+body.dark-mode.page-racket-beginner .ad-in-content,
+body.dark-mode.page-racket-tendinitis .ad-in-content,
+body.dark-mode.page-rules-guide .ad-in-content,
+body.dark-mode.page-privacy .ad-in-content,
+body.dark-mode.page-home .ad-sidebar-placeholder,
+body.dark-mode.page-shoes-guide .ad-sidebar-placeholder,
+body.dark-mode.page-racket-beginner .ad-sidebar-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-sidebar-placeholder,
+body.dark-mode.page-rules-guide .ad-sidebar-placeholder,
+body.dark-mode.page-privacy .ad-sidebar-placeholder { background: #2d3748 !important; border-color: #4a5568 !important; color: #a0aec0 !important; }
+body.dark-mode.page-home .erreur-box,
+body.dark-mode.page-shoes-guide .erreur-box,
+body.dark-mode.page-racket-beginner .erreur-box,
+body.dark-mode.page-racket-tendinitis .erreur-box,
+body.dark-mode.page-rules-guide .erreur-box,
+body.dark-mode.page-privacy .erreur-box { background: linear-gradient(145deg, #4a1515 0%, #2d0e0e 100%); border-left-color: #fc8181; }
+body.dark-mode.page-home .erreur-box h2,
+body.dark-mode.page-shoes-guide .erreur-box h2,
+body.dark-mode.page-racket-beginner .erreur-box h2,
+body.dark-mode.page-racket-tendinitis .erreur-box h2,
+body.dark-mode.page-rules-guide .erreur-box h2,
+body.dark-mode.page-privacy .erreur-box h2 { color: #fed7d7; }
+body.dark-mode.page-home .erreur-box p,
+body.dark-mode.page-shoes-guide .erreur-box p,
+body.dark-mode.page-racket-beginner .erreur-box p,
+body.dark-mode.page-racket-tendinitis .erreur-box p,
+body.dark-mode.page-rules-guide .erreur-box p,
+body.dark-mode.page-privacy .erreur-box p { color: #feb2b2; }
+body.dark-mode.page-home .astuce-box,
+body.dark-mode.page-shoes-guide .astuce-box,
+body.dark-mode.page-racket-beginner .astuce-box,
+body.dark-mode.page-racket-tendinitis .astuce-box,
+body.dark-mode.page-rules-guide .astuce-box,
+body.dark-mode.page-privacy .astuce-box { background: linear-gradient(145deg, #1c4532 0%, #122b1f 100%); border-left-color: #68d391; }
+body.dark-mode.page-home .astuce-box h2,
+body.dark-mode.page-shoes-guide .astuce-box h2,
+body.dark-mode.page-racket-beginner .astuce-box h2,
+body.dark-mode.page-racket-tendinitis .astuce-box h2,
+body.dark-mode.page-rules-guide .astuce-box h2,
+body.dark-mode.page-privacy .astuce-box h2 { color: #c6f6d5; }
+body.dark-mode.page-home .astuce-box p,
+body.dark-mode.page-shoes-guide .astuce-box p,
+body.dark-mode.page-racket-beginner .astuce-box p,
+body.dark-mode.page-racket-tendinitis .astuce-box p,
+body.dark-mode.page-rules-guide .astuce-box p,
+body.dark-mode.page-privacy .astuce-box p { color: #9ae6b4; }
+body.dark-mode.page-home .recap-box,
+body.dark-mode.page-shoes-guide .recap-box,
+body.dark-mode.page-racket-beginner .recap-box,
+body.dark-mode.page-racket-tendinitis .recap-box,
+body.dark-mode.page-rules-guide .recap-box,
+body.dark-mode.page-privacy .recap-box { background: #3c2a1e; border-left-color: #ed8936; }
+body.dark-mode.page-home .recap-box h3,
+body.dark-mode.page-shoes-guide .recap-box h3,
+body.dark-mode.page-racket-beginner .recap-box h3,
+body.dark-mode.page-racket-tendinitis .recap-box h3,
+body.dark-mode.page-rules-guide .recap-box h3,
+body.dark-mode.page-privacy .recap-box h3 { color: #fbd38d; }
+body.dark-mode.page-home .recap-box p,
+body.dark-mode.page-shoes-guide .recap-box p,
+body.dark-mode.page-racket-beginner .recap-box p,
+body.dark-mode.page-racket-tendinitis .recap-box p,
+body.dark-mode.page-rules-guide .recap-box p,
+body.dark-mode.page-privacy .recap-box p { color: #f6ad55; }
+body.dark-mode.page-home .next-step-box,
+body.dark-mode.page-shoes-guide .next-step-box,
+body.dark-mode.page-racket-beginner .next-step-box,
+body.dark-mode.page-racket-tendinitis .next-step-box,
+body.dark-mode.page-rules-guide .next-step-box,
+body.dark-mode.page-privacy .next-step-box { background: #2a4365; border-color: #2b6cb0; }
+body.dark-mode.page-home .next-step-box h3,
+body.dark-mode.page-shoes-guide .next-step-box h3,
+body.dark-mode.page-racket-beginner .next-step-box h3,
+body.dark-mode.page-racket-tendinitis .next-step-box h3,
+body.dark-mode.page-rules-guide .next-step-box h3,
+body.dark-mode.page-privacy .next-step-box h3 { color: #90cdf4; }
+body.dark-mode.page-home .next-step-box p,
+body.dark-mode.page-shoes-guide .next-step-box p,
+body.dark-mode.page-racket-beginner .next-step-box p,
+body.dark-mode.page-racket-tendinitis .next-step-box p,
+body.dark-mode.page-rules-guide .next-step-box p,
+body.dark-mode.page-privacy .next-step-box p { color: #e2e8f0; }
+body.dark-mode.page-home .entry-card,
+body.dark-mode.page-shoes-guide .entry-card,
+body.dark-mode.page-racket-beginner .entry-card,
+body.dark-mode.page-racket-tendinitis .entry-card,
+body.dark-mode.page-rules-guide .entry-card,
+body.dark-mode.page-privacy .entry-card { background: #2d3748; border-color: #4a5568; }
+body.dark-mode.page-home .entry-card h4,
+body.dark-mode.page-shoes-guide .entry-card h4,
+body.dark-mode.page-racket-beginner .entry-card h4,
+body.dark-mode.page-racket-tendinitis .entry-card h4,
+body.dark-mode.page-rules-guide .entry-card h4,
+body.dark-mode.page-privacy .entry-card h4 { color: #f7fafc; }
+body.dark-mode.page-home .entry-card p,
+body.dark-mode.page-shoes-guide .entry-card p,
+body.dark-mode.page-racket-beginner .entry-card p,
+body.dark-mode.page-racket-tendinitis .entry-card p,
+body.dark-mode.page-rules-guide .entry-card p,
+body.dark-mode.page-privacy .entry-card p { color: #a0aec0; }
+body.dark-mode.page-home .tag-foam,
+body.dark-mode.page-shoes-guide .tag-foam,
+body.dark-mode.page-racket-beginner .tag-foam,
+body.dark-mode.page-racket-tendinitis .tag-foam,
+body.dark-mode.page-rules-guide .tag-foam,
+body.dark-mode.page-privacy .tag-foam,
+body.dark-mode.page-home .tag-chevron,
+body.dark-mode.page-shoes-guide .tag-chevron,
+body.dark-mode.page-racket-beginner .tag-chevron,
+body.dark-mode.page-racket-tendinitis .tag-chevron,
+body.dark-mode.page-rules-guide .tag-chevron,
+body.dark-mode.page-privacy .tag-chevron { background: #4a5568; color: #f7fafc; }
+body.dark-mode.page-home .tag-round,
+body.dark-mode.page-shoes-guide .tag-round,
+body.dark-mode.page-racket-beginner .tag-round,
+body.dark-mode.page-racket-tendinitis .tag-round,
+body.dark-mode.page-rules-guide .tag-round,
+body.dark-mode.page-privacy .tag-round,
+body.dark-mode.page-home .tag-mixte,
+body.dark-mode.page-shoes-guide .tag-mixte,
+body.dark-mode.page-racket-beginner .tag-mixte,
+body.dark-mode.page-racket-tendinitis .tag-mixte,
+body.dark-mode.page-rules-guide .tag-mixte,
+body.dark-mode.page-privacy .tag-mixte { background: #22543d; color: #c6f6d5; }
+body.dark-mode.page-home .tag-light,
+body.dark-mode.page-shoes-guide .tag-light,
+body.dark-mode.page-racket-beginner .tag-light,
+body.dark-mode.page-racket-tendinitis .tag-light,
+body.dark-mode.page-rules-guide .tag-light,
+body.dark-mode.page-privacy .tag-light,
+body.dark-mode.page-home .tag-omni,
+body.dark-mode.page-shoes-guide .tag-omni,
+body.dark-mode.page-racket-beginner .tag-omni,
+body.dark-mode.page-racket-tendinitis .tag-omni,
+body.dark-mode.page-rules-guide .tag-omni,
+body.dark-mode.page-privacy .tag-omni { background: #7b341e; color: #fbd38d; }
+body.dark-mode.page-home .product-card,
+body.dark-mode.page-shoes-guide .product-card,
+body.dark-mode.page-racket-beginner .product-card,
+body.dark-mode.page-racket-tendinitis .product-card,
+body.dark-mode.page-rules-guide .product-card,
+body.dark-mode.page-privacy .product-card { background: #2d3748; border-color: #2b6cb0; }
+body.dark-mode.page-home .product-title,
+body.dark-mode.page-shoes-guide .product-title,
+body.dark-mode.page-racket-beginner .product-title,
+body.dark-mode.page-racket-tendinitis .product-title,
+body.dark-mode.page-rules-guide .product-title,
+body.dark-mode.page-privacy .product-title { color: #f7fafc; }
+body.dark-mode.page-home .product-desc,
+body.dark-mode.page-shoes-guide .product-desc,
+body.dark-mode.page-racket-beginner .product-desc,
+body.dark-mode.page-racket-tendinitis .product-desc,
+body.dark-mode.page-rules-guide .product-desc,
+body.dark-mode.page-privacy .product-desc { color: #a0aec0; }
+body.dark-mode.page-home .schema-container,
+body.dark-mode.page-shoes-guide .schema-container,
+body.dark-mode.page-racket-beginner .schema-container,
+body.dark-mode.page-racket-tendinitis .schema-container,
+body.dark-mode.page-rules-guide .schema-container,
+body.dark-mode.page-privacy .schema-container { background: #2d3748; border-color: #4a5568; }
+body.dark-mode.page-home .schema-svg,
+body.dark-mode.page-shoes-guide .schema-svg,
+body.dark-mode.page-racket-beginner .schema-svg,
+body.dark-mode.page-racket-tendinitis .schema-svg,
+body.dark-mode.page-rules-guide .schema-svg,
+body.dark-mode.page-privacy .schema-svg { background: #1a202c; border-color: #4a5568; }
+body.dark-mode.page-home .schema-svg text,
+body.dark-mode.page-shoes-guide .schema-svg text,
+body.dark-mode.page-racket-beginner .schema-svg text,
+body.dark-mode.page-racket-tendinitis .schema-svg text,
+body.dark-mode.page-rules-guide .schema-svg text,
+body.dark-mode.page-privacy .schema-svg text { fill: #e2e8f0; }
+body.dark-mode.page-home .schema-svg line,
+body.dark-mode.page-shoes-guide .schema-svg line,
+body.dark-mode.page-racket-beginner .schema-svg line,
+body.dark-mode.page-racket-tendinitis .schema-svg line,
+body.dark-mode.page-rules-guide .schema-svg line,
+body.dark-mode.page-privacy .schema-svg line { stroke: #4a5568; }
+body.dark-mode.page-home .img-caption,
+body.dark-mode.page-shoes-guide .img-caption,
+body.dark-mode.page-racket-beginner .img-caption,
+body.dark-mode.page-racket-tendinitis .img-caption,
+body.dark-mode.page-rules-guide .img-caption,
+body.dark-mode.page-privacy .img-caption,
+body.dark-mode.page-home .schema-caption,
+body.dark-mode.page-shoes-guide .schema-caption,
+body.dark-mode.page-racket-beginner .schema-caption,
+body.dark-mode.page-racket-tendinitis .schema-caption,
+body.dark-mode.page-rules-guide .schema-caption,
+body.dark-mode.page-privacy .schema-caption { color: #a0aec0; }
+body.dark-mode.page-home .disclaimer-affiliation,
+body.dark-mode.page-shoes-guide .disclaimer-affiliation,
+body.dark-mode.page-racket-beginner .disclaimer-affiliation,
+body.dark-mode.page-racket-tendinitis .disclaimer-affiliation,
+body.dark-mode.page-rules-guide .disclaimer-affiliation,
+body.dark-mode.page-privacy .disclaimer-affiliation { background: #2d3748; border-color: #4a5568; color: #a0aec0; }
+body.dark-mode.page-home .sidebar,
+body.dark-mode.page-shoes-guide .sidebar,
+body.dark-mode.page-racket-beginner .sidebar,
+body.dark-mode.page-racket-tendinitis .sidebar,
+body.dark-mode.page-rules-guide .sidebar,
+body.dark-mode.page-privacy .sidebar {
+    background-color: transparent !important;
+}
+body.dark-mode.page-home .sidebar-widget,
+body.dark-mode.page-shoes-guide .sidebar-widget,
+body.dark-mode.page-racket-beginner .sidebar-widget,
+body.dark-mode.page-racket-tendinitis .sidebar-widget,
+body.dark-mode.page-rules-guide .sidebar-widget,
+body.dark-mode.page-privacy .sidebar-widget,
+body.dark-mode.page-home .ad-sidebar-placeholder,
+body.dark-mode.page-shoes-guide .ad-sidebar-placeholder,
+body.dark-mode.page-racket-beginner .ad-sidebar-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-sidebar-placeholder,
+body.dark-mode.page-rules-guide .ad-sidebar-placeholder,
+body.dark-mode.page-privacy .ad-sidebar-placeholder,
+body.dark-mode.page-home div[style*="background:#f0f4f8"],
+body.dark-mode.page-shoes-guide div[style*="background:#f0f4f8"],
+body.dark-mode.page-racket-beginner div[style*="background:#f0f4f8"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#f0f4f8"],
+body.dark-mode.page-rules-guide div[style*="background:#f0f4f8"],
+body.dark-mode.page-privacy div[style*="background:#f0f4f8"],
+body.dark-mode.page-home div[style*="background: #f0f4f8"],
+body.dark-mode.page-shoes-guide div[style*="background: #f0f4f8"],
+body.dark-mode.page-racket-beginner div[style*="background: #f0f4f8"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #f0f4f8"],
+body.dark-mode.page-rules-guide div[style*="background: #f0f4f8"],
+body.dark-mode.page-privacy div[style*="background: #f0f4f8"] {
+    background-color: #1e293b !important; 
+    border-color: #334155 !important;      
+    color: #94a3b8 !important;             
+}
+body.dark-mode.page-home .sidebar-widget h3,
+body.dark-mode.page-shoes-guide .sidebar-widget h3,
+body.dark-mode.page-racket-beginner .sidebar-widget h3,
+body.dark-mode.page-racket-tendinitis .sidebar-widget h3,
+body.dark-mode.page-rules-guide .sidebar-widget h3,
+body.dark-mode.page-privacy .sidebar-widget h3 {
+    color: #f8fafc !important;
+    border-bottom: 2px solid #334155 !important;
+    padding-bottom: 10px;
+}
+body.dark-mode.page-home .sidebar-widget p,
+body.dark-mode.page-shoes-guide .sidebar-widget p,
+body.dark-mode.page-racket-beginner .sidebar-widget p,
+body.dark-mode.page-racket-tendinitis .sidebar-widget p,
+body.dark-mode.page-rules-guide .sidebar-widget p,
+body.dark-mode.page-privacy .sidebar-widget p {
+    color: #cbd5e1 !important;
+}
+body.dark-mode.page-home div[style*="background: #fffaf0"],
+body.dark-mode.page-shoes-guide div[style*="background: #fffaf0"],
+body.dark-mode.page-racket-beginner div[style*="background: #fffaf0"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fffaf0"],
+body.dark-mode.page-rules-guide div[style*="background: #fffaf0"],
+body.dark-mode.page-privacy div[style*="background: #fffaf0"],
+body.dark-mode.page-home div[style*="background:#fffaf0"],
+body.dark-mode.page-shoes-guide div[style*="background:#fffaf0"],
+body.dark-mode.page-racket-beginner div[style*="background:#fffaf0"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#fffaf0"],
+body.dark-mode.page-rules-guide div[style*="background:#fffaf0"],
+body.dark-mode.page-privacy div[style*="background:#fffaf0"],
+body.dark-mode.page-home div[style*="background: #fdf8f6"],
+body.dark-mode.page-shoes-guide div[style*="background: #fdf8f6"],
+body.dark-mode.page-racket-beginner div[style*="background: #fdf8f6"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fdf8f6"],
+body.dark-mode.page-rules-guide div[style*="background: #fdf8f6"],
+body.dark-mode.page-privacy div[style*="background: #fdf8f6"] {
+    background-color: #1e293b !important; 
+    border-color: #334155 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+body.dark-mode.page-home .entry-card,
+body.dark-mode.page-shoes-guide .entry-card,
+body.dark-mode.page-racket-beginner .entry-card,
+body.dark-mode.page-racket-tendinitis .entry-card,
+body.dark-mode.page-rules-guide .entry-card,
+body.dark-mode.page-privacy .entry-card,
+body.dark-mode.page-home div[style*="background: #fff"],
+body.dark-mode.page-shoes-guide div[style*="background: #fff"],
+body.dark-mode.page-racket-beginner div[style*="background: #fff"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fff"],
+body.dark-mode.page-rules-guide div[style*="background: #fff"],
+body.dark-mode.page-privacy div[style*="background: #fff"],
+body.dark-mode.page-home div[style*="background:#fff"],
+body.dark-mode.page-shoes-guide div[style*="background:#fff"],
+body.dark-mode.page-racket-beginner div[style*="background:#fff"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#fff"],
+body.dark-mode.page-rules-guide div[style*="background:#fff"],
+body.dark-mode.page-privacy div[style*="background:#fff"] {
+    background-color: #0f172a !important; 
+    border-color: #334155 !important;
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .entry-card h4,
+body.dark-mode.page-shoes-guide .entry-card h4,
+body.dark-mode.page-racket-beginner .entry-card h4,
+body.dark-mode.page-racket-tendinitis .entry-card h4,
+body.dark-mode.page-rules-guide .entry-card h4,
+body.dark-mode.page-privacy .entry-card h4 {
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .entry-card p,
+body.dark-mode.page-shoes-guide .entry-card p,
+body.dark-mode.page-racket-beginner .entry-card p,
+body.dark-mode.page-racket-tendinitis .entry-card p,
+body.dark-mode.page-rules-guide .entry-card p,
+body.dark-mode.page-privacy .entry-card p {
+    color: #94a3b8 !important;
+}
+body.dark-mode.page-home .breadcrumb,
+body.dark-mode.page-shoes-guide .breadcrumb,
+body.dark-mode.page-racket-beginner .breadcrumb,
+body.dark-mode.page-racket-tendinitis .breadcrumb,
+body.dark-mode.page-rules-guide .breadcrumb,
+body.dark-mode.page-privacy .breadcrumb { color: #cbd5e1; }
+body.dark-mode.page-home .breadcrumb a,
+body.dark-mode.page-shoes-guide .breadcrumb a,
+body.dark-mode.page-racket-beginner .breadcrumb a,
+body.dark-mode.page-racket-tendinitis .breadcrumb a,
+body.dark-mode.page-rules-guide .breadcrumb a,
+body.dark-mode.page-privacy .breadcrumb a { color: #7dd3fc; }
+body.dark-mode.page-home .u-panel-white,
+body.dark-mode.page-shoes-guide .u-panel-white,
+body.dark-mode.page-racket-beginner .u-panel-white,
+body.dark-mode.page-racket-tendinitis .u-panel-white,
+body.dark-mode.page-rules-guide .u-panel-white,
+body.dark-mode.page-privacy .u-panel-white { background-color: #1e293b !important; border-color: #334155 !important; color: #cbd5e1; }
+body.dark-mode.page-home .u-heading-primary,
+body.dark-mode.page-shoes-guide .u-heading-primary,
+body.dark-mode.page-racket-beginner .u-heading-primary,
+body.dark-mode.page-racket-tendinitis .u-heading-primary,
+body.dark-mode.page-rules-guide .u-heading-primary,
+body.dark-mode.page-privacy .u-heading-primary { color: #f8fafc !important; }
+body.dark-mode.page-home .u-link-blue-clean,
+body.dark-mode.page-shoes-guide .u-link-blue-clean,
+body.dark-mode.page-racket-beginner .u-link-blue-clean,
+body.dark-mode.page-racket-tendinitis .u-link-blue-clean,
+body.dark-mode.page-rules-guide .u-link-blue-clean,
+body.dark-mode.page-privacy .u-link-blue-clean { color: #63b3ed !important; }
+body.dark-mode.page-home .home-card,
+body.dark-mode.page-shoes-guide .home-card,
+body.dark-mode.page-racket-beginner .home-card,
+body.dark-mode.page-racket-tendinitis .home-card,
+body.dark-mode.page-rules-guide .home-card,
+body.dark-mode.page-privacy .home-card { background: #1e293b; border-color: #334155; }
+body.dark-mode.page-home .home-card-media,
+body.dark-mode.page-shoes-guide .home-card-media,
+body.dark-mode.page-racket-beginner .home-card-media,
+body.dark-mode.page-racket-tendinitis .home-card-media,
+body.dark-mode.page-rules-guide .home-card-media,
+body.dark-mode.page-privacy .home-card-media { background: #334155; color: #cbd5e1; }
+body.dark-mode.page-home .home-card-title,
+body.dark-mode.page-shoes-guide .home-card-title,
+body.dark-mode.page-racket-beginner .home-card-title,
+body.dark-mode.page-racket-tendinitis .home-card-title,
+body.dark-mode.page-rules-guide .home-card-title,
+body.dark-mode.page-privacy .home-card-title { color: #f8fafc; }
+body.dark-mode.page-home .home-card-text,
+body.dark-mode.page-shoes-guide .home-card-text,
+body.dark-mode.page-racket-beginner .home-card-text,
+body.dark-mode.page-racket-tendinitis .home-card-text,
+body.dark-mode.page-rules-guide .home-card-text,
+body.dark-mode.page-privacy .home-card-text { color: #cbd5e1; }
+body.dark-mode.page-home .home-card-cta,
+body.dark-mode.page-shoes-guide .home-card-cta,
+body.dark-mode.page-racket-beginner .home-card-cta,
+body.dark-mode.page-racket-tendinitis .home-card-cta,
+body.dark-mode.page-rules-guide .home-card-cta,
+body.dark-mode.page-privacy .home-card-cta { background: #2563eb; color: #fff; }
+body.dark-mode.page-home .ad-placeholder,
+body.dark-mode.page-shoes-guide .ad-placeholder,
+body.dark-mode.page-racket-beginner .ad-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-placeholder,
+body.dark-mode.page-rules-guide .ad-placeholder,
+body.dark-mode.page-privacy .ad-placeholder { background: #1e293b !important; border-color: #334155 !important; color: #94a3b8 !important; }
+body.dark-mode.page-home .article-byline,
+body.dark-mode.page-shoes-guide .article-byline,
+body.dark-mode.page-racket-beginner .article-byline,
+body.dark-mode.page-racket-tendinitis .article-byline,
+body.dark-mode.page-rules-guide .article-byline,
+body.dark-mode.page-privacy .article-byline,
+body.dark-mode.page-home .article-byline-spaced,
+body.dark-mode.page-shoes-guide .article-byline-spaced,
+body.dark-mode.page-racket-beginner .article-byline-spaced,
+body.dark-mode.page-racket-tendinitis .article-byline-spaced,
+body.dark-mode.page-rules-guide .article-byline-spaced,
+body.dark-mode.page-privacy .article-byline-spaced,
+body.dark-mode.page-home .text-secondary-sm,
+body.dark-mode.page-shoes-guide .text-secondary-sm,
+body.dark-mode.page-racket-beginner .text-secondary-sm,
+body.dark-mode.page-racket-tendinitis .text-secondary-sm,
+body.dark-mode.page-rules-guide .text-secondary-sm,
+body.dark-mode.page-privacy .text-secondary-sm { color: #cbd5e1; }
+body.dark-mode.page-home .link-accent-strong,
+body.dark-mode.page-shoes-guide .link-accent-strong,
+body.dark-mode.page-racket-beginner .link-accent-strong,
+body.dark-mode.page-racket-tendinitis .link-accent-strong,
+body.dark-mode.page-rules-guide .link-accent-strong,
+body.dark-mode.page-privacy .link-accent-strong { color: #7dd3fc; }
+body.dark-mode.page-home .tag-rules,
+body.dark-mode.page-shoes-guide .tag-rules,
+body.dark-mode.page-racket-beginner .tag-rules,
+body.dark-mode.page-racket-tendinitis .tag-rules,
+body.dark-mode.page-rules-guide .tag-rules,
+body.dark-mode.page-privacy .tag-rules { background: #334155; color: #f8fafc; }
+body.dark-mode.page-home .tag-material,
+body.dark-mode.page-shoes-guide .tag-material,
+body.dark-mode.page-racket-beginner .tag-material,
+body.dark-mode.page-racket-tendinitis .tag-material,
+body.dark-mode.page-rules-guide .tag-material,
+body.dark-mode.page-privacy .tag-material { background: #78350f; color: #fef3c7; }
+body.dark-mode.page-home .tag-health,
+body.dark-mode.page-shoes-guide .tag-health,
+body.dark-mode.page-racket-beginner .tag-health,
+body.dark-mode.page-racket-tendinitis .tag-health,
+body.dark-mode.page-rules-guide .tag-health,
+body.dark-mode.page-privacy .tag-health { background: #7f1d1d; color: #fee2e2; }
+body.dark-mode.page-home .affiliate-disclosure,
+body.dark-mode.page-shoes-guide .affiliate-disclosure,
+body.dark-mode.page-racket-beginner .affiliate-disclosure,
+body.dark-mode.page-racket-tendinitis .affiliate-disclosure,
+body.dark-mode.page-rules-guide .affiliate-disclosure,
+body.dark-mode.page-privacy .affiliate-disclosure { background: #422006; border-color: #f59e0b; color: #fef3c7; }
+body.dark-mode.page-home .health-disclaimer,
+body.dark-mode.page-shoes-guide .health-disclaimer,
+body.dark-mode.page-racket-beginner .health-disclaimer,
+body.dark-mode.page-racket-tendinitis .health-disclaimer,
+body.dark-mode.page-rules-guide .health-disclaimer,
+body.dark-mode.page-privacy .health-disclaimer { background: #172554; border-color: #60a5fa; color: #dbeafe; }
+body.dark-mode.page-home .health-sources,
+body.dark-mode.page-shoes-guide .health-sources,
+body.dark-mode.page-racket-beginner .health-sources,
+body.dark-mode.page-racket-tendinitis .health-sources,
+body.dark-mode.page-rules-guide .health-sources,
+body.dark-mode.page-privacy .health-sources { background: #1e293b; border-color: #334155; }
+body.dark-mode.page-home .page-simple,
+body.dark-mode.page-shoes-guide .page-simple,
+body.dark-mode.page-racket-beginner .page-simple,
+body.dark-mode.page-racket-tendinitis .page-simple,
+body.dark-mode.page-rules-guide .page-simple,
+body.dark-mode.page-privacy .page-simple,
+body.dark-mode.page-home .page-contact,
+body.dark-mode.page-shoes-guide .page-contact,
+body.dark-mode.page-racket-beginner .page-contact,
+body.dark-mode.page-racket-tendinitis .page-contact,
+body.dark-mode.page-rules-guide .page-contact,
+body.dark-mode.page-privacy .page-contact {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #e2e8f0 !important;
+}
+body.dark-mode.page-home .page-simple h1,
+body.dark-mode.page-shoes-guide .page-simple h1,
+body.dark-mode.page-racket-beginner .page-simple h1,
+body.dark-mode.page-racket-tendinitis .page-simple h1,
+body.dark-mode.page-rules-guide .page-simple h1,
+body.dark-mode.page-privacy .page-simple h1,
+body.dark-mode.page-home .page-simple h2,
+body.dark-mode.page-shoes-guide .page-simple h2,
+body.dark-mode.page-racket-beginner .page-simple h2,
+body.dark-mode.page-racket-tendinitis .page-simple h2,
+body.dark-mode.page-rules-guide .page-simple h2,
+body.dark-mode.page-privacy .page-simple h2,
+body.dark-mode.page-home .page-simple h3,
+body.dark-mode.page-shoes-guide .page-simple h3,
+body.dark-mode.page-racket-beginner .page-simple h3,
+body.dark-mode.page-racket-tendinitis .page-simple h3,
+body.dark-mode.page-rules-guide .page-simple h3,
+body.dark-mode.page-privacy .page-simple h3,
+body.dark-mode.page-home .page-contact h1,
+body.dark-mode.page-shoes-guide .page-contact h1,
+body.dark-mode.page-racket-beginner .page-contact h1,
+body.dark-mode.page-racket-tendinitis .page-contact h1,
+body.dark-mode.page-rules-guide .page-contact h1,
+body.dark-mode.page-privacy .page-contact h1,
+body.dark-mode.page-home .page-contact h2,
+body.dark-mode.page-shoes-guide .page-contact h2,
+body.dark-mode.page-racket-beginner .page-contact h2,
+body.dark-mode.page-racket-tendinitis .page-contact h2,
+body.dark-mode.page-rules-guide .page-contact h2,
+body.dark-mode.page-privacy .page-contact h2,
+body.dark-mode.page-home .page-contact h3,
+body.dark-mode.page-shoes-guide .page-contact h3,
+body.dark-mode.page-racket-beginner .page-contact h3,
+body.dark-mode.page-racket-tendinitis .page-contact h3,
+body.dark-mode.page-rules-guide .page-contact h3,
+body.dark-mode.page-privacy .page-contact h3 {
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .page-simple p,
+body.dark-mode.page-shoes-guide .page-simple p,
+body.dark-mode.page-racket-beginner .page-simple p,
+body.dark-mode.page-racket-tendinitis .page-simple p,
+body.dark-mode.page-rules-guide .page-simple p,
+body.dark-mode.page-privacy .page-simple p,
+body.dark-mode.page-home .page-simple li,
+body.dark-mode.page-shoes-guide .page-simple li,
+body.dark-mode.page-racket-beginner .page-simple li,
+body.dark-mode.page-racket-tendinitis .page-simple li,
+body.dark-mode.page-rules-guide .page-simple li,
+body.dark-mode.page-privacy .page-simple li,
+body.dark-mode.page-home .page-contact p,
+body.dark-mode.page-shoes-guide .page-contact p,
+body.dark-mode.page-racket-beginner .page-contact p,
+body.dark-mode.page-racket-tendinitis .page-contact p,
+body.dark-mode.page-rules-guide .page-contact p,
+body.dark-mode.page-privacy .page-contact p,
+body.dark-mode.page-home .page-contact li,
+body.dark-mode.page-shoes-guide .page-contact li,
+body.dark-mode.page-racket-beginner .page-contact li,
+body.dark-mode.page-racket-tendinitis .page-contact li,
+body.dark-mode.page-rules-guide .page-contact li,
+body.dark-mode.page-privacy .page-contact li {
+    color: #cbd5e1 !important;
+}
+body.dark-mode.page-home .page-simple a,
+body.dark-mode.page-shoes-guide .page-simple a,
+body.dark-mode.page-racket-beginner .page-simple a,
+body.dark-mode.page-racket-tendinitis .page-simple a,
+body.dark-mode.page-rules-guide .page-simple a,
+body.dark-mode.page-privacy .page-simple a,
+body.dark-mode.page-home .page-contact a,
+body.dark-mode.page-shoes-guide .page-contact a,
+body.dark-mode.page-racket-beginner .page-contact a,
+body.dark-mode.page-racket-tendinitis .page-contact a,
+body.dark-mode.page-rules-guide .page-contact a,
+body.dark-mode.page-privacy .page-contact a {
+    color: #7dd3fc !important;
+}
+body.dark-mode.page-home .page-simple code,
+body.dark-mode.page-shoes-guide .page-simple code,
+body.dark-mode.page-racket-beginner .page-simple code,
+body.dark-mode.page-racket-tendinitis .page-simple code,
+body.dark-mode.page-rules-guide .page-simple code,
+body.dark-mode.page-privacy .page-simple code,
+body.dark-mode.page-home .page-contact code,
+body.dark-mode.page-shoes-guide .page-contact code,
+body.dark-mode.page-racket-beginner .page-contact code,
+body.dark-mode.page-racket-tendinitis .page-contact code,
+body.dark-mode.page-rules-guide .page-contact code,
+body.dark-mode.page-privacy .page-contact code {
+    color: #f8fafc;
+    background: #0f172a;
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+}
+body.dark-mode.page-home .erreur-box,
+body.dark-mode.page-shoes-guide .erreur-box,
+body.dark-mode.page-racket-beginner .erreur-box,
+body.dark-mode.page-racket-tendinitis .erreur-box,
+body.dark-mode.page-rules-guide .erreur-box,
+body.dark-mode.page-privacy .erreur-box {
+    padding: 18px 20px;
+    margin: 25px 0;
+}
+body.dark-mode.page-home .article-content .erreur-box h2,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h2,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h2,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h2,
+body.dark-mode.page-rules-guide .article-content .erreur-box h2,
+body.dark-mode.page-privacy .article-content .erreur-box h2,
+body.dark-mode.page-home .article-content .erreur-box h3,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h3,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h3,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h3,
+body.dark-mode.page-rules-guide .article-content .erreur-box h3,
+body.dark-mode.page-privacy .article-content .erreur-box h3,
+body.dark-mode.page-home .article-content .erreur-box h4,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h4,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h4,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h4,
+body.dark-mode.page-rules-guide .article-content .erreur-box h4,
+body.dark-mode.page-privacy .article-content .erreur-box h4 {
+    margin: 0 0 12px;
+    padding: 0;
+    border: 0;
+    font-size: 1.1rem !important;
+    line-height: 1.4;
+}
+body.dark-mode.page-home .article-content .erreur-box p,
+body.dark-mode.page-shoes-guide .article-content .erreur-box p,
+body.dark-mode.page-racket-beginner .article-content .erreur-box p,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box p,
+body.dark-mode.page-rules-guide .article-content .erreur-box p,
+body.dark-mode.page-privacy .article-content .erreur-box p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+body.dark-mode.page-home .entry-card .entry-card-title-compact,
+body.dark-mode.page-shoes-guide .entry-card .entry-card-title-compact,
+body.dark-mode.page-racket-beginner .entry-card .entry-card-title-compact,
+body.dark-mode.page-racket-tendinitis .entry-card .entry-card-title-compact,
+body.dark-mode.page-rules-guide .entry-card .entry-card-title-compact,
+body.dark-mode.page-privacy .entry-card .entry-card-title-compact {
+    font-size: 1.25rem !important;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+body.dark-mode.page-home .affiliate-box,
+body.dark-mode.page-shoes-guide .affiliate-box,
+body.dark-mode.page-racket-beginner .affiliate-box,
+body.dark-mode.page-racket-tendinitis .affiliate-box,
+body.dark-mode.page-rules-guide .affiliate-box,
+body.dark-mode.page-privacy .affiliate-box {
+    background: linear-gradient(135deg, #172033 0%, #111827 100%) !important;
+    border-color: #d97706 !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28) !important;
+}
+body.dark-mode.page-home .affiliate-box h3,
+body.dark-mode.page-shoes-guide .affiliate-box h3,
+body.dark-mode.page-racket-beginner .affiliate-box h3,
+body.dark-mode.page-racket-tendinitis .affiliate-box h3,
+body.dark-mode.page-rules-guide .affiliate-box h3,
+body.dark-mode.page-privacy .affiliate-box h3,
+body.dark-mode.page-home .affiliate-box p,
+body.dark-mode.page-shoes-guide .affiliate-box p,
+body.dark-mode.page-racket-beginner .affiliate-box p,
+body.dark-mode.page-racket-tendinitis .affiliate-box p,
+body.dark-mode.page-rules-guide .affiliate-box p,
+body.dark-mode.page-privacy .affiliate-box p {
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .affiliate-box .product-card,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card,
+body.dark-mode.page-rules-guide .affiliate-box .product-card,
+body.dark-mode.page-privacy .affiliate-box .product-card {
+    background: #1e293b !important;
+    border-color: #475569 !important;
+    color: #e2e8f0 !important;
+}
+body.dark-mode.page-home .affiliate-box .product-name,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name,
+body.dark-mode.page-rules-guide .affiliate-box .product-name,
+body.dark-mode.page-privacy .affiliate-box .product-name,
+body.dark-mode.page-home .affiliate-box .product-name:link,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name:link,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name:link,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name:link,
+body.dark-mode.page-rules-guide .affiliate-box .product-name:link,
+body.dark-mode.page-privacy .affiliate-box .product-name:link,
+body.dark-mode.page-home .affiliate-box .product-name:visited,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name:visited,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name:visited,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name:visited,
+body.dark-mode.page-rules-guide .affiliate-box .product-name:visited,
+body.dark-mode.page-privacy .affiliate-box .product-name:visited {
+    color: #f8fafc !important;
+    text-decoration-color: #94a3b8 !important;
+}
+body.dark-mode.page-home .affiliate-box .product-price,
+body.dark-mode.page-shoes-guide .affiliate-box .product-price,
+body.dark-mode.page-racket-beginner .affiliate-box .product-price,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-price,
+body.dark-mode.page-rules-guide .affiliate-box .product-price,
+body.dark-mode.page-privacy .affiliate-box .product-price {
+    color: #fca5a5 !important;
+}
+body.dark-mode.page-home .affiliate-box .btn-amazon-small,
+body.dark-mode.page-shoes-guide .affiliate-box .btn-amazon-small,
+body.dark-mode.page-racket-beginner .affiliate-box .btn-amazon-small,
+body.dark-mode.page-racket-tendinitis .affiliate-box .btn-amazon-small,
+body.dark-mode.page-rules-guide .affiliate-box .btn-amazon-small,
+body.dark-mode.page-privacy .affiliate-box .btn-amazon-small,
+body.dark-mode.page-home .affiliate-box .btn-amazon,
+body.dark-mode.page-shoes-guide .affiliate-box .btn-amazon,
+body.dark-mode.page-racket-beginner .affiliate-box .btn-amazon,
+body.dark-mode.page-racket-tendinitis .affiliate-box .btn-amazon,
+body.dark-mode.page-rules-guide .affiliate-box .btn-amazon,
+body.dark-mode.page-privacy .affiliate-box .btn-amazon,
+body.dark-mode.page-home .affiliate-box a.btn-amazon,
+body.dark-mode.page-shoes-guide .affiliate-box a.btn-amazon,
+body.dark-mode.page-racket-beginner .affiliate-box a.btn-amazon,
+body.dark-mode.page-racket-tendinitis .affiliate-box a.btn-amazon,
+body.dark-mode.page-rules-guide .affiliate-box a.btn-amazon,
+body.dark-mode.page-privacy .affiliate-box a.btn-amazon {
+    color: #111827 !important;
+}
+body.dark-mode.page-home .affiliate-box .product-card:hover,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card:hover,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card:hover,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card:hover,
+body.dark-mode.page-rules-guide .affiliate-box .product-card:hover,
+body.dark-mode.page-privacy .affiliate-box .product-card:hover,
+body.dark-mode.page-home .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-rules-guide .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-privacy .affiliate-box .product-card:focus-visible {
+    border-color: #60a5fa !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
+}
+body.dark-mode.page-home .privacy-update,
+body.dark-mode.page-shoes-guide .privacy-update,
+body.dark-mode.page-racket-beginner .privacy-update,
+body.dark-mode.page-racket-tendinitis .privacy-update,
+body.dark-mode.page-rules-guide .privacy-update,
+body.dark-mode.page-privacy .privacy-update { color: #cbd5e1; }
+body.dark-mode.page-home .privacy-table th,
+body.dark-mode.page-shoes-guide .privacy-table th,
+body.dark-mode.page-racket-beginner .privacy-table th,
+body.dark-mode.page-racket-tendinitis .privacy-table th,
+body.dark-mode.page-rules-guide .privacy-table th,
+body.dark-mode.page-privacy .privacy-table th { background: #1e293b; color: #f8fafc; border-color: #475569; }
+body.dark-mode.page-home .privacy-table td,
+body.dark-mode.page-shoes-guide .privacy-table td,
+body.dark-mode.page-racket-beginner .privacy-table td,
+body.dark-mode.page-racket-tendinitis .privacy-table td,
+body.dark-mode.page-rules-guide .privacy-table td,
+body.dark-mode.page-privacy .privacy-table td { color: #cbd5e1; border-color: #475569; }
+body.dark-mode.page-home .privacy-table code,
+body.dark-mode.page-shoes-guide .privacy-table code,
+body.dark-mode.page-racket-beginner .privacy-table code,
+body.dark-mode.page-racket-tendinitis .privacy-table code,
+body.dark-mode.page-rules-guide .privacy-table code,
+body.dark-mode.page-privacy .privacy-table code { background: #0f172a; color: #f8fafc; padding: .1em .35em; border-radius: 4px; }
+body.dark-mode.page-home .error-code,
+body.dark-mode.page-shoes-guide .error-code,
+body.dark-mode.page-racket-beginner .error-code,
+body.dark-mode.page-racket-tendinitis .error-code,
+body.dark-mode.page-rules-guide .error-code,
+body.dark-mode.page-privacy .error-code { color: #1e3a5f; }
+body.dark-mode.page-home,
+body.dark-mode.page-shoes-guide,
+body.dark-mode.page-racket-beginner,
+body.dark-mode.page-racket-tendinitis,
+body.dark-mode.page-rules-guide,
+body.dark-mode.page-privacy { 
+    background-color: #0f172a; 
+    color: #f1f5f9; 
+}
+body.dark-mode.page-home .article-content h1,
+body.dark-mode.page-shoes-guide .article-content h1,
+body.dark-mode.page-racket-beginner .article-content h1,
+body.dark-mode.page-racket-tendinitis .article-content h1,
+body.dark-mode.page-rules-guide .article-content h1,
+body.dark-mode.page-privacy .article-content h1 {
+    color: #ffffff !important; 
+    font-weight: 800;
+}
+body.dark-mode.page-home .article-content h2,
+body.dark-mode.page-shoes-guide .article-content h2,
+body.dark-mode.page-racket-beginner .article-content h2,
+body.dark-mode.page-racket-tendinitis .article-content h2,
+body.dark-mode.page-rules-guide .article-content h2,
+body.dark-mode.page-privacy .article-content h2 { 
+    color: #f8fafc !important; 
+    border-bottom-color: #475569 !important; 
+}
+body.dark-mode.page-home .article-content h3,
+body.dark-mode.page-shoes-guide .article-content h3,
+body.dark-mode.page-racket-beginner .article-content h3,
+body.dark-mode.page-racket-tendinitis .article-content h3,
+body.dark-mode.page-rules-guide .article-content h3,
+body.dark-mode.page-privacy .article-content h3 { 
+    color: #38bdf8 !important; 
+    font-weight: 700;
+}
+body.dark-mode.page-home a,
+body.dark-mode.page-shoes-guide a,
+body.dark-mode.page-racket-beginner a,
+body.dark-mode.page-racket-tendinitis a,
+body.dark-mode.page-rules-guide a,
+body.dark-mode.page-privacy a { 
+    color: #38bdf8; 
+}
+body.dark-mode.page-home p,
+body.dark-mode.page-shoes-guide p,
+body.dark-mode.page-racket-beginner p,
+body.dark-mode.page-racket-tendinitis p,
+body.dark-mode.page-rules-guide p,
+body.dark-mode.page-privacy p,
+body.dark-mode.page-home li,
+body.dark-mode.page-shoes-guide li,
+body.dark-mode.page-racket-beginner li,
+body.dark-mode.page-racket-tendinitis li,
+body.dark-mode.page-rules-guide li,
+body.dark-mode.page-privacy li { 
+    color: #cbd5e1; 
+}
+body.dark-mode.page-home .img-caption,
+body.dark-mode.page-shoes-guide .img-caption,
+body.dark-mode.page-racket-beginner .img-caption,
+body.dark-mode.page-racket-tendinitis .img-caption,
+body.dark-mode.page-rules-guide .img-caption,
+body.dark-mode.page-privacy .img-caption,
+body.dark-mode.page-home .schema-caption,
+body.dark-mode.page-shoes-guide .schema-caption,
+body.dark-mode.page-racket-beginner .schema-caption,
+body.dark-mode.page-racket-tendinitis .schema-caption,
+body.dark-mode.page-rules-guide .schema-caption,
+body.dark-mode.page-privacy .schema-caption { 
+    color: #94a3b8; 
+}
+body.dark-mode.page-home .header,
+body.dark-mode.page-shoes-guide .header,
+body.dark-mode.page-racket-beginner .header,
+body.dark-mode.page-racket-tendinitis .header,
+body.dark-mode.page-rules-guide .header,
+body.dark-mode.page-privacy .header { background-color: #112240; border-bottom: 1px solid #2d3748; }
+body.dark-mode.page-home .footer,
+body.dark-mode.page-shoes-guide .footer,
+body.dark-mode.page-racket-beginner .footer,
+body.dark-mode.page-racket-tendinitis .footer,
+body.dark-mode.page-rules-guide .footer,
+body.dark-mode.page-privacy .footer { background-color: #112240; border-top: 1px solid #2d3748; }
+body.dark-mode.page-home .logo,
+body.dark-mode.page-shoes-guide .logo,
+body.dark-mode.page-racket-beginner .logo,
+body.dark-mode.page-racket-tendinitis .logo,
+body.dark-mode.page-rules-guide .logo,
+body.dark-mode.page-privacy .logo,
+body.dark-mode.page-home .nav-links a,
+body.dark-mode.page-shoes-guide .nav-links a,
+body.dark-mode.page-racket-beginner .nav-links a,
+body.dark-mode.page-racket-tendinitis .nav-links a,
+body.dark-mode.page-rules-guide .nav-links a,
+body.dark-mode.page-privacy .nav-links a,
+body.dark-mode.page-home .footer-links a,
+body.dark-mode.page-shoes-guide .footer-links a,
+body.dark-mode.page-racket-beginner .footer-links a,
+body.dark-mode.page-racket-tendinitis .footer-links a,
+body.dark-mode.page-rules-guide .footer-links a,
+body.dark-mode.page-privacy .footer-links a { color: #f7fafc; }
+body.dark-mode.page-home .theme-toggle-btn,
+body.dark-mode.page-shoes-guide .theme-toggle-btn,
+body.dark-mode.page-racket-beginner .theme-toggle-btn,
+body.dark-mode.page-racket-tendinitis .theme-toggle-btn,
+body.dark-mode.page-rules-guide .theme-toggle-btn,
+body.dark-mode.page-privacy .theme-toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode.page-home .sidebar-links a,
+body.dark-mode.page-shoes-guide .sidebar-links a,
+body.dark-mode.page-racket-beginner .sidebar-links a,
+body.dark-mode.page-racket-tendinitis .sidebar-links a,
+body.dark-mode.page-rules-guide .sidebar-links a,
+body.dark-mode.page-privacy .sidebar-links a { color: #63b3ed !important; }
+body.dark-mode.page-home .ad-banner-top,
+body.dark-mode.page-shoes-guide .ad-banner-top,
+body.dark-mode.page-racket-beginner .ad-banner-top,
+body.dark-mode.page-racket-tendinitis .ad-banner-top,
+body.dark-mode.page-rules-guide .ad-banner-top,
+body.dark-mode.page-privacy .ad-banner-top,
+body.dark-mode.page-home .ad-banner-bottom,
+body.dark-mode.page-shoes-guide .ad-banner-bottom,
+body.dark-mode.page-racket-beginner .ad-banner-bottom,
+body.dark-mode.page-racket-tendinitis .ad-banner-bottom,
+body.dark-mode.page-rules-guide .ad-banner-bottom,
+body.dark-mode.page-privacy .ad-banner-bottom,
+body.dark-mode.page-home .ad-in-content,
+body.dark-mode.page-shoes-guide .ad-in-content,
+body.dark-mode.page-racket-beginner .ad-in-content,
+body.dark-mode.page-racket-tendinitis .ad-in-content,
+body.dark-mode.page-rules-guide .ad-in-content,
+body.dark-mode.page-privacy .ad-in-content,
+body.dark-mode.page-home .ad-sidebar-placeholder,
+body.dark-mode.page-shoes-guide .ad-sidebar-placeholder,
+body.dark-mode.page-racket-beginner .ad-sidebar-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-sidebar-placeholder,
+body.dark-mode.page-rules-guide .ad-sidebar-placeholder,
+body.dark-mode.page-privacy .ad-sidebar-placeholder { background: #2d3748 !important; border-color: #4a5568 !important; color: #a0aec0 !important; }
+body.dark-mode.page-home .erreur-box,
+body.dark-mode.page-shoes-guide .erreur-box,
+body.dark-mode.page-racket-beginner .erreur-box,
+body.dark-mode.page-racket-tendinitis .erreur-box,
+body.dark-mode.page-rules-guide .erreur-box,
+body.dark-mode.page-privacy .erreur-box { background: linear-gradient(145deg, #4a1515 0%, #2d0e0e 100%); border-left-color: #fc8181; }
+body.dark-mode.page-home .erreur-box h2,
+body.dark-mode.page-shoes-guide .erreur-box h2,
+body.dark-mode.page-racket-beginner .erreur-box h2,
+body.dark-mode.page-racket-tendinitis .erreur-box h2,
+body.dark-mode.page-rules-guide .erreur-box h2,
+body.dark-mode.page-privacy .erreur-box h2 { color: #fed7d7; }
+body.dark-mode.page-home .erreur-box p,
+body.dark-mode.page-shoes-guide .erreur-box p,
+body.dark-mode.page-racket-beginner .erreur-box p,
+body.dark-mode.page-racket-tendinitis .erreur-box p,
+body.dark-mode.page-rules-guide .erreur-box p,
+body.dark-mode.page-privacy .erreur-box p { color: #feb2b2; }
+body.dark-mode.page-home .astuce-box,
+body.dark-mode.page-shoes-guide .astuce-box,
+body.dark-mode.page-racket-beginner .astuce-box,
+body.dark-mode.page-racket-tendinitis .astuce-box,
+body.dark-mode.page-rules-guide .astuce-box,
+body.dark-mode.page-privacy .astuce-box { background: linear-gradient(145deg, #1c4532 0%, #122b1f 100%); border-left-color: #68d391; }
+body.dark-mode.page-home .astuce-box h2,
+body.dark-mode.page-shoes-guide .astuce-box h2,
+body.dark-mode.page-racket-beginner .astuce-box h2,
+body.dark-mode.page-racket-tendinitis .astuce-box h2,
+body.dark-mode.page-rules-guide .astuce-box h2,
+body.dark-mode.page-privacy .astuce-box h2 { color: #c6f6d5; }
+body.dark-mode.page-home .astuce-box p,
+body.dark-mode.page-shoes-guide .astuce-box p,
+body.dark-mode.page-racket-beginner .astuce-box p,
+body.dark-mode.page-racket-tendinitis .astuce-box p,
+body.dark-mode.page-rules-guide .astuce-box p,
+body.dark-mode.page-privacy .astuce-box p { color: #9ae6b4; }
+body.dark-mode.page-home .recap-box,
+body.dark-mode.page-shoes-guide .recap-box,
+body.dark-mode.page-racket-beginner .recap-box,
+body.dark-mode.page-racket-tendinitis .recap-box,
+body.dark-mode.page-rules-guide .recap-box,
+body.dark-mode.page-privacy .recap-box { background: #3c2a1e; border-left-color: #ed8936; }
+body.dark-mode.page-home .recap-box h3,
+body.dark-mode.page-shoes-guide .recap-box h3,
+body.dark-mode.page-racket-beginner .recap-box h3,
+body.dark-mode.page-racket-tendinitis .recap-box h3,
+body.dark-mode.page-rules-guide .recap-box h3,
+body.dark-mode.page-privacy .recap-box h3 { color: #fbd38d; }
+body.dark-mode.page-home .recap-box p,
+body.dark-mode.page-shoes-guide .recap-box p,
+body.dark-mode.page-racket-beginner .recap-box p,
+body.dark-mode.page-racket-tendinitis .recap-box p,
+body.dark-mode.page-rules-guide .recap-box p,
+body.dark-mode.page-privacy .recap-box p { color: #f6ad55; }
+body.dark-mode.page-home .next-step-box,
+body.dark-mode.page-shoes-guide .next-step-box,
+body.dark-mode.page-racket-beginner .next-step-box,
+body.dark-mode.page-racket-tendinitis .next-step-box,
+body.dark-mode.page-rules-guide .next-step-box,
+body.dark-mode.page-privacy .next-step-box { background: #2a4365; border-color: #2b6cb0; }
+body.dark-mode.page-home .next-step-box h3,
+body.dark-mode.page-shoes-guide .next-step-box h3,
+body.dark-mode.page-racket-beginner .next-step-box h3,
+body.dark-mode.page-racket-tendinitis .next-step-box h3,
+body.dark-mode.page-rules-guide .next-step-box h3,
+body.dark-mode.page-privacy .next-step-box h3 { color: #90cdf4; }
+body.dark-mode.page-home .next-step-box p,
+body.dark-mode.page-shoes-guide .next-step-box p,
+body.dark-mode.page-racket-beginner .next-step-box p,
+body.dark-mode.page-racket-tendinitis .next-step-box p,
+body.dark-mode.page-rules-guide .next-step-box p,
+body.dark-mode.page-privacy .next-step-box p { color: #e2e8f0; }
+body.dark-mode.page-home .entry-card,
+body.dark-mode.page-shoes-guide .entry-card,
+body.dark-mode.page-racket-beginner .entry-card,
+body.dark-mode.page-racket-tendinitis .entry-card,
+body.dark-mode.page-rules-guide .entry-card,
+body.dark-mode.page-privacy .entry-card { background: #2d3748; border-color: #4a5568; }
+body.dark-mode.page-home .entry-card h4,
+body.dark-mode.page-shoes-guide .entry-card h4,
+body.dark-mode.page-racket-beginner .entry-card h4,
+body.dark-mode.page-racket-tendinitis .entry-card h4,
+body.dark-mode.page-rules-guide .entry-card h4,
+body.dark-mode.page-privacy .entry-card h4 { color: #f7fafc; }
+body.dark-mode.page-home .entry-card p,
+body.dark-mode.page-shoes-guide .entry-card p,
+body.dark-mode.page-racket-beginner .entry-card p,
+body.dark-mode.page-racket-tendinitis .entry-card p,
+body.dark-mode.page-rules-guide .entry-card p,
+body.dark-mode.page-privacy .entry-card p { color: #a0aec0; }
+body.dark-mode.page-home .tag-foam,
+body.dark-mode.page-shoes-guide .tag-foam,
+body.dark-mode.page-racket-beginner .tag-foam,
+body.dark-mode.page-racket-tendinitis .tag-foam,
+body.dark-mode.page-rules-guide .tag-foam,
+body.dark-mode.page-privacy .tag-foam,
+body.dark-mode.page-home .tag-chevron,
+body.dark-mode.page-shoes-guide .tag-chevron,
+body.dark-mode.page-racket-beginner .tag-chevron,
+body.dark-mode.page-racket-tendinitis .tag-chevron,
+body.dark-mode.page-rules-guide .tag-chevron,
+body.dark-mode.page-privacy .tag-chevron { background: #4a5568; color: #f7fafc; }
+body.dark-mode.page-home .tag-round,
+body.dark-mode.page-shoes-guide .tag-round,
+body.dark-mode.page-racket-beginner .tag-round,
+body.dark-mode.page-racket-tendinitis .tag-round,
+body.dark-mode.page-rules-guide .tag-round,
+body.dark-mode.page-privacy .tag-round,
+body.dark-mode.page-home .tag-mixte,
+body.dark-mode.page-shoes-guide .tag-mixte,
+body.dark-mode.page-racket-beginner .tag-mixte,
+body.dark-mode.page-racket-tendinitis .tag-mixte,
+body.dark-mode.page-rules-guide .tag-mixte,
+body.dark-mode.page-privacy .tag-mixte { background: #22543d; color: #c6f6d5; }
+body.dark-mode.page-home .tag-light,
+body.dark-mode.page-shoes-guide .tag-light,
+body.dark-mode.page-racket-beginner .tag-light,
+body.dark-mode.page-racket-tendinitis .tag-light,
+body.dark-mode.page-rules-guide .tag-light,
+body.dark-mode.page-privacy .tag-light,
+body.dark-mode.page-home .tag-omni,
+body.dark-mode.page-shoes-guide .tag-omni,
+body.dark-mode.page-racket-beginner .tag-omni,
+body.dark-mode.page-racket-tendinitis .tag-omni,
+body.dark-mode.page-rules-guide .tag-omni,
+body.dark-mode.page-privacy .tag-omni { background: #7b341e; color: #fbd38d; }
+body.dark-mode.page-home .product-card,
+body.dark-mode.page-shoes-guide .product-card,
+body.dark-mode.page-racket-beginner .product-card,
+body.dark-mode.page-racket-tendinitis .product-card,
+body.dark-mode.page-rules-guide .product-card,
+body.dark-mode.page-privacy .product-card { background: #2d3748; border-color: #2b6cb0; }
+body.dark-mode.page-home .product-title,
+body.dark-mode.page-shoes-guide .product-title,
+body.dark-mode.page-racket-beginner .product-title,
+body.dark-mode.page-racket-tendinitis .product-title,
+body.dark-mode.page-rules-guide .product-title,
+body.dark-mode.page-privacy .product-title { color: #f7fafc; }
+body.dark-mode.page-home .product-desc,
+body.dark-mode.page-shoes-guide .product-desc,
+body.dark-mode.page-racket-beginner .product-desc,
+body.dark-mode.page-racket-tendinitis .product-desc,
+body.dark-mode.page-rules-guide .product-desc,
+body.dark-mode.page-privacy .product-desc { color: #a0aec0; }
+body.dark-mode.page-home .schema-container,
+body.dark-mode.page-shoes-guide .schema-container,
+body.dark-mode.page-racket-beginner .schema-container,
+body.dark-mode.page-racket-tendinitis .schema-container,
+body.dark-mode.page-rules-guide .schema-container,
+body.dark-mode.page-privacy .schema-container { background: #2d3748; border-color: #4a5568; }
+body.dark-mode.page-home .schema-svg,
+body.dark-mode.page-shoes-guide .schema-svg,
+body.dark-mode.page-racket-beginner .schema-svg,
+body.dark-mode.page-racket-tendinitis .schema-svg,
+body.dark-mode.page-rules-guide .schema-svg,
+body.dark-mode.page-privacy .schema-svg { background: #1a202c; border-color: #4a5568; }
+body.dark-mode.page-home .schema-svg text,
+body.dark-mode.page-shoes-guide .schema-svg text,
+body.dark-mode.page-racket-beginner .schema-svg text,
+body.dark-mode.page-racket-tendinitis .schema-svg text,
+body.dark-mode.page-rules-guide .schema-svg text,
+body.dark-mode.page-privacy .schema-svg text { fill: #e2e8f0; }
+body.dark-mode.page-home .schema-svg line,
+body.dark-mode.page-shoes-guide .schema-svg line,
+body.dark-mode.page-racket-beginner .schema-svg line,
+body.dark-mode.page-racket-tendinitis .schema-svg line,
+body.dark-mode.page-rules-guide .schema-svg line,
+body.dark-mode.page-privacy .schema-svg line { stroke: #4a5568; }
+body.dark-mode.page-home .img-caption,
+body.dark-mode.page-shoes-guide .img-caption,
+body.dark-mode.page-racket-beginner .img-caption,
+body.dark-mode.page-racket-tendinitis .img-caption,
+body.dark-mode.page-rules-guide .img-caption,
+body.dark-mode.page-privacy .img-caption,
+body.dark-mode.page-home .schema-caption,
+body.dark-mode.page-shoes-guide .schema-caption,
+body.dark-mode.page-racket-beginner .schema-caption,
+body.dark-mode.page-racket-tendinitis .schema-caption,
+body.dark-mode.page-rules-guide .schema-caption,
+body.dark-mode.page-privacy .schema-caption { color: #a0aec0; }
+body.dark-mode.page-home .disclaimer-affiliation,
+body.dark-mode.page-shoes-guide .disclaimer-affiliation,
+body.dark-mode.page-racket-beginner .disclaimer-affiliation,
+body.dark-mode.page-racket-tendinitis .disclaimer-affiliation,
+body.dark-mode.page-rules-guide .disclaimer-affiliation,
+body.dark-mode.page-privacy .disclaimer-affiliation { background: #2d3748; border-color: #4a5568; color: #a0aec0; }
+body.dark-mode.page-home .sidebar,
+body.dark-mode.page-shoes-guide .sidebar,
+body.dark-mode.page-racket-beginner .sidebar,
+body.dark-mode.page-racket-tendinitis .sidebar,
+body.dark-mode.page-rules-guide .sidebar,
+body.dark-mode.page-privacy .sidebar {
+    background-color: transparent !important;
+}
+body.dark-mode.page-home .sidebar-widget,
+body.dark-mode.page-shoes-guide .sidebar-widget,
+body.dark-mode.page-racket-beginner .sidebar-widget,
+body.dark-mode.page-racket-tendinitis .sidebar-widget,
+body.dark-mode.page-rules-guide .sidebar-widget,
+body.dark-mode.page-privacy .sidebar-widget,
+body.dark-mode.page-home .ad-sidebar-placeholder,
+body.dark-mode.page-shoes-guide .ad-sidebar-placeholder,
+body.dark-mode.page-racket-beginner .ad-sidebar-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-sidebar-placeholder,
+body.dark-mode.page-rules-guide .ad-sidebar-placeholder,
+body.dark-mode.page-privacy .ad-sidebar-placeholder,
+body.dark-mode.page-home div[style*="background:#f0f4f8"],
+body.dark-mode.page-shoes-guide div[style*="background:#f0f4f8"],
+body.dark-mode.page-racket-beginner div[style*="background:#f0f4f8"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#f0f4f8"],
+body.dark-mode.page-rules-guide div[style*="background:#f0f4f8"],
+body.dark-mode.page-privacy div[style*="background:#f0f4f8"],
+body.dark-mode.page-home div[style*="background: #f0f4f8"],
+body.dark-mode.page-shoes-guide div[style*="background: #f0f4f8"],
+body.dark-mode.page-racket-beginner div[style*="background: #f0f4f8"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #f0f4f8"],
+body.dark-mode.page-rules-guide div[style*="background: #f0f4f8"],
+body.dark-mode.page-privacy div[style*="background: #f0f4f8"] {
+    background-color: #1e293b !important; 
+    border-color: #334155 !important;      
+    color: #94a3b8 !important;             
+}
+body.dark-mode.page-home .sidebar-widget h3,
+body.dark-mode.page-shoes-guide .sidebar-widget h3,
+body.dark-mode.page-racket-beginner .sidebar-widget h3,
+body.dark-mode.page-racket-tendinitis .sidebar-widget h3,
+body.dark-mode.page-rules-guide .sidebar-widget h3,
+body.dark-mode.page-privacy .sidebar-widget h3 {
+    color: #f8fafc !important;
+    border-bottom: 2px solid #334155 !important;
+    padding-bottom: 10px;
+}
+body.dark-mode.page-home .sidebar-widget p,
+body.dark-mode.page-shoes-guide .sidebar-widget p,
+body.dark-mode.page-racket-beginner .sidebar-widget p,
+body.dark-mode.page-racket-tendinitis .sidebar-widget p,
+body.dark-mode.page-rules-guide .sidebar-widget p,
+body.dark-mode.page-privacy .sidebar-widget p {
+    color: #cbd5e1 !important;
+}
+body.dark-mode.page-home div[style*="background: #fffaf0"],
+body.dark-mode.page-shoes-guide div[style*="background: #fffaf0"],
+body.dark-mode.page-racket-beginner div[style*="background: #fffaf0"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fffaf0"],
+body.dark-mode.page-rules-guide div[style*="background: #fffaf0"],
+body.dark-mode.page-privacy div[style*="background: #fffaf0"],
+body.dark-mode.page-home div[style*="background:#fffaf0"],
+body.dark-mode.page-shoes-guide div[style*="background:#fffaf0"],
+body.dark-mode.page-racket-beginner div[style*="background:#fffaf0"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#fffaf0"],
+body.dark-mode.page-rules-guide div[style*="background:#fffaf0"],
+body.dark-mode.page-privacy div[style*="background:#fffaf0"],
+body.dark-mode.page-home div[style*="background: #fdf8f6"],
+body.dark-mode.page-shoes-guide div[style*="background: #fdf8f6"],
+body.dark-mode.page-racket-beginner div[style*="background: #fdf8f6"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fdf8f6"],
+body.dark-mode.page-rules-guide div[style*="background: #fdf8f6"],
+body.dark-mode.page-privacy div[style*="background: #fdf8f6"] {
+    background-color: #1e293b !important; 
+    border-color: #334155 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+body.dark-mode.page-home .entry-card,
+body.dark-mode.page-shoes-guide .entry-card,
+body.dark-mode.page-racket-beginner .entry-card,
+body.dark-mode.page-racket-tendinitis .entry-card,
+body.dark-mode.page-rules-guide .entry-card,
+body.dark-mode.page-privacy .entry-card,
+body.dark-mode.page-home div[style*="background: #fff"],
+body.dark-mode.page-shoes-guide div[style*="background: #fff"],
+body.dark-mode.page-racket-beginner div[style*="background: #fff"],
+body.dark-mode.page-racket-tendinitis div[style*="background: #fff"],
+body.dark-mode.page-rules-guide div[style*="background: #fff"],
+body.dark-mode.page-privacy div[style*="background: #fff"],
+body.dark-mode.page-home div[style*="background:#fff"],
+body.dark-mode.page-shoes-guide div[style*="background:#fff"],
+body.dark-mode.page-racket-beginner div[style*="background:#fff"],
+body.dark-mode.page-racket-tendinitis div[style*="background:#fff"],
+body.dark-mode.page-rules-guide div[style*="background:#fff"],
+body.dark-mode.page-privacy div[style*="background:#fff"] {
+    background-color: #0f172a !important; 
+    border-color: #334155 !important;
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .entry-card h4,
+body.dark-mode.page-shoes-guide .entry-card h4,
+body.dark-mode.page-racket-beginner .entry-card h4,
+body.dark-mode.page-racket-tendinitis .entry-card h4,
+body.dark-mode.page-rules-guide .entry-card h4,
+body.dark-mode.page-privacy .entry-card h4 {
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .entry-card p,
+body.dark-mode.page-shoes-guide .entry-card p,
+body.dark-mode.page-racket-beginner .entry-card p,
+body.dark-mode.page-racket-tendinitis .entry-card p,
+body.dark-mode.page-rules-guide .entry-card p,
+body.dark-mode.page-privacy .entry-card p {
+    color: #94a3b8 !important;
+}
+body.dark-mode.page-home .breadcrumb,
+body.dark-mode.page-shoes-guide .breadcrumb,
+body.dark-mode.page-racket-beginner .breadcrumb,
+body.dark-mode.page-racket-tendinitis .breadcrumb,
+body.dark-mode.page-rules-guide .breadcrumb,
+body.dark-mode.page-privacy .breadcrumb { color: #cbd5e1; }
+body.dark-mode.page-home .breadcrumb a,
+body.dark-mode.page-shoes-guide .breadcrumb a,
+body.dark-mode.page-racket-beginner .breadcrumb a,
+body.dark-mode.page-racket-tendinitis .breadcrumb a,
+body.dark-mode.page-rules-guide .breadcrumb a,
+body.dark-mode.page-privacy .breadcrumb a { color: #7dd3fc; }
+body.dark-mode.page-home .u-panel-white,
+body.dark-mode.page-shoes-guide .u-panel-white,
+body.dark-mode.page-racket-beginner .u-panel-white,
+body.dark-mode.page-racket-tendinitis .u-panel-white,
+body.dark-mode.page-rules-guide .u-panel-white,
+body.dark-mode.page-privacy .u-panel-white { background-color: #1e293b !important; border-color: #334155 !important; color: #cbd5e1; }
+body.dark-mode.page-home .u-heading-primary,
+body.dark-mode.page-shoes-guide .u-heading-primary,
+body.dark-mode.page-racket-beginner .u-heading-primary,
+body.dark-mode.page-racket-tendinitis .u-heading-primary,
+body.dark-mode.page-rules-guide .u-heading-primary,
+body.dark-mode.page-privacy .u-heading-primary { color: #f8fafc !important; }
+body.dark-mode.page-home .u-link-blue-clean,
+body.dark-mode.page-shoes-guide .u-link-blue-clean,
+body.dark-mode.page-racket-beginner .u-link-blue-clean,
+body.dark-mode.page-racket-tendinitis .u-link-blue-clean,
+body.dark-mode.page-rules-guide .u-link-blue-clean,
+body.dark-mode.page-privacy .u-link-blue-clean { color: #63b3ed !important; }
+body.dark-mode.page-home .home-card,
+body.dark-mode.page-shoes-guide .home-card,
+body.dark-mode.page-racket-beginner .home-card,
+body.dark-mode.page-racket-tendinitis .home-card,
+body.dark-mode.page-rules-guide .home-card,
+body.dark-mode.page-privacy .home-card { background: #1e293b; border-color: #334155; }
+body.dark-mode.page-home .home-card-media,
+body.dark-mode.page-shoes-guide .home-card-media,
+body.dark-mode.page-racket-beginner .home-card-media,
+body.dark-mode.page-racket-tendinitis .home-card-media,
+body.dark-mode.page-rules-guide .home-card-media,
+body.dark-mode.page-privacy .home-card-media { background: #334155; color: #cbd5e1; }
+body.dark-mode.page-home .home-card-title,
+body.dark-mode.page-shoes-guide .home-card-title,
+body.dark-mode.page-racket-beginner .home-card-title,
+body.dark-mode.page-racket-tendinitis .home-card-title,
+body.dark-mode.page-rules-guide .home-card-title,
+body.dark-mode.page-privacy .home-card-title { color: #f8fafc; }
+body.dark-mode.page-home .home-card-text,
+body.dark-mode.page-shoes-guide .home-card-text,
+body.dark-mode.page-racket-beginner .home-card-text,
+body.dark-mode.page-racket-tendinitis .home-card-text,
+body.dark-mode.page-rules-guide .home-card-text,
+body.dark-mode.page-privacy .home-card-text { color: #cbd5e1; }
+body.dark-mode.page-home .home-card-cta,
+body.dark-mode.page-shoes-guide .home-card-cta,
+body.dark-mode.page-racket-beginner .home-card-cta,
+body.dark-mode.page-racket-tendinitis .home-card-cta,
+body.dark-mode.page-rules-guide .home-card-cta,
+body.dark-mode.page-privacy .home-card-cta { background: #2563eb; color: #fff; }
+body.dark-mode.page-home .ad-placeholder,
+body.dark-mode.page-shoes-guide .ad-placeholder,
+body.dark-mode.page-racket-beginner .ad-placeholder,
+body.dark-mode.page-racket-tendinitis .ad-placeholder,
+body.dark-mode.page-rules-guide .ad-placeholder,
+body.dark-mode.page-privacy .ad-placeholder { background: #1e293b !important; border-color: #334155 !important; color: #94a3b8 !important; }
+body.dark-mode.page-home .article-byline,
+body.dark-mode.page-shoes-guide .article-byline,
+body.dark-mode.page-racket-beginner .article-byline,
+body.dark-mode.page-racket-tendinitis .article-byline,
+body.dark-mode.page-rules-guide .article-byline,
+body.dark-mode.page-privacy .article-byline,
+body.dark-mode.page-home .article-byline-spaced,
+body.dark-mode.page-shoes-guide .article-byline-spaced,
+body.dark-mode.page-racket-beginner .article-byline-spaced,
+body.dark-mode.page-racket-tendinitis .article-byline-spaced,
+body.dark-mode.page-rules-guide .article-byline-spaced,
+body.dark-mode.page-privacy .article-byline-spaced,
+body.dark-mode.page-home .text-secondary-sm,
+body.dark-mode.page-shoes-guide .text-secondary-sm,
+body.dark-mode.page-racket-beginner .text-secondary-sm,
+body.dark-mode.page-racket-tendinitis .text-secondary-sm,
+body.dark-mode.page-rules-guide .text-secondary-sm,
+body.dark-mode.page-privacy .text-secondary-sm { color: #cbd5e1; }
+body.dark-mode.page-home .link-accent-strong,
+body.dark-mode.page-shoes-guide .link-accent-strong,
+body.dark-mode.page-racket-beginner .link-accent-strong,
+body.dark-mode.page-racket-tendinitis .link-accent-strong,
+body.dark-mode.page-rules-guide .link-accent-strong,
+body.dark-mode.page-privacy .link-accent-strong { color: #7dd3fc; }
+body.dark-mode.page-home .tag-rules,
+body.dark-mode.page-shoes-guide .tag-rules,
+body.dark-mode.page-racket-beginner .tag-rules,
+body.dark-mode.page-racket-tendinitis .tag-rules,
+body.dark-mode.page-rules-guide .tag-rules,
+body.dark-mode.page-privacy .tag-rules { background: #334155; color: #f8fafc; }
+body.dark-mode.page-home .tag-material,
+body.dark-mode.page-shoes-guide .tag-material,
+body.dark-mode.page-racket-beginner .tag-material,
+body.dark-mode.page-racket-tendinitis .tag-material,
+body.dark-mode.page-rules-guide .tag-material,
+body.dark-mode.page-privacy .tag-material { background: #78350f; color: #fef3c7; }
+body.dark-mode.page-home .tag-health,
+body.dark-mode.page-shoes-guide .tag-health,
+body.dark-mode.page-racket-beginner .tag-health,
+body.dark-mode.page-racket-tendinitis .tag-health,
+body.dark-mode.page-rules-guide .tag-health,
+body.dark-mode.page-privacy .tag-health { background: #7f1d1d; color: #fee2e2; }
+body.dark-mode.page-home .affiliate-disclosure,
+body.dark-mode.page-shoes-guide .affiliate-disclosure,
+body.dark-mode.page-racket-beginner .affiliate-disclosure,
+body.dark-mode.page-racket-tendinitis .affiliate-disclosure,
+body.dark-mode.page-rules-guide .affiliate-disclosure,
+body.dark-mode.page-privacy .affiliate-disclosure { background: #422006; border-color: #f59e0b; color: #fef3c7; }
+body.dark-mode.page-home .health-disclaimer,
+body.dark-mode.page-shoes-guide .health-disclaimer,
+body.dark-mode.page-racket-beginner .health-disclaimer,
+body.dark-mode.page-racket-tendinitis .health-disclaimer,
+body.dark-mode.page-rules-guide .health-disclaimer,
+body.dark-mode.page-privacy .health-disclaimer { background: #172554; border-color: #60a5fa; color: #dbeafe; }
+body.dark-mode.page-home .health-sources,
+body.dark-mode.page-shoes-guide .health-sources,
+body.dark-mode.page-racket-beginner .health-sources,
+body.dark-mode.page-racket-tendinitis .health-sources,
+body.dark-mode.page-rules-guide .health-sources,
+body.dark-mode.page-privacy .health-sources { background: #1e293b; border-color: #334155; }
+body.dark-mode.page-home .page-simple,
+body.dark-mode.page-shoes-guide .page-simple,
+body.dark-mode.page-racket-beginner .page-simple,
+body.dark-mode.page-racket-tendinitis .page-simple,
+body.dark-mode.page-rules-guide .page-simple,
+body.dark-mode.page-privacy .page-simple,
+body.dark-mode.page-home .page-contact,
+body.dark-mode.page-shoes-guide .page-contact,
+body.dark-mode.page-racket-beginner .page-contact,
+body.dark-mode.page-racket-tendinitis .page-contact,
+body.dark-mode.page-rules-guide .page-contact,
+body.dark-mode.page-privacy .page-contact {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #e2e8f0 !important;
+}
+body.dark-mode.page-home .page-simple h1,
+body.dark-mode.page-shoes-guide .page-simple h1,
+body.dark-mode.page-racket-beginner .page-simple h1,
+body.dark-mode.page-racket-tendinitis .page-simple h1,
+body.dark-mode.page-rules-guide .page-simple h1,
+body.dark-mode.page-privacy .page-simple h1,
+body.dark-mode.page-home .page-simple h2,
+body.dark-mode.page-shoes-guide .page-simple h2,
+body.dark-mode.page-racket-beginner .page-simple h2,
+body.dark-mode.page-racket-tendinitis .page-simple h2,
+body.dark-mode.page-rules-guide .page-simple h2,
+body.dark-mode.page-privacy .page-simple h2,
+body.dark-mode.page-home .page-simple h3,
+body.dark-mode.page-shoes-guide .page-simple h3,
+body.dark-mode.page-racket-beginner .page-simple h3,
+body.dark-mode.page-racket-tendinitis .page-simple h3,
+body.dark-mode.page-rules-guide .page-simple h3,
+body.dark-mode.page-privacy .page-simple h3,
+body.dark-mode.page-home .page-contact h1,
+body.dark-mode.page-shoes-guide .page-contact h1,
+body.dark-mode.page-racket-beginner .page-contact h1,
+body.dark-mode.page-racket-tendinitis .page-contact h1,
+body.dark-mode.page-rules-guide .page-contact h1,
+body.dark-mode.page-privacy .page-contact h1,
+body.dark-mode.page-home .page-contact h2,
+body.dark-mode.page-shoes-guide .page-contact h2,
+body.dark-mode.page-racket-beginner .page-contact h2,
+body.dark-mode.page-racket-tendinitis .page-contact h2,
+body.dark-mode.page-rules-guide .page-contact h2,
+body.dark-mode.page-privacy .page-contact h2,
+body.dark-mode.page-home .page-contact h3,
+body.dark-mode.page-shoes-guide .page-contact h3,
+body.dark-mode.page-racket-beginner .page-contact h3,
+body.dark-mode.page-racket-tendinitis .page-contact h3,
+body.dark-mode.page-rules-guide .page-contact h3,
+body.dark-mode.page-privacy .page-contact h3 {
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .page-simple p,
+body.dark-mode.page-shoes-guide .page-simple p,
+body.dark-mode.page-racket-beginner .page-simple p,
+body.dark-mode.page-racket-tendinitis .page-simple p,
+body.dark-mode.page-rules-guide .page-simple p,
+body.dark-mode.page-privacy .page-simple p,
+body.dark-mode.page-home .page-simple li,
+body.dark-mode.page-shoes-guide .page-simple li,
+body.dark-mode.page-racket-beginner .page-simple li,
+body.dark-mode.page-racket-tendinitis .page-simple li,
+body.dark-mode.page-rules-guide .page-simple li,
+body.dark-mode.page-privacy .page-simple li,
+body.dark-mode.page-home .page-contact p,
+body.dark-mode.page-shoes-guide .page-contact p,
+body.dark-mode.page-racket-beginner .page-contact p,
+body.dark-mode.page-racket-tendinitis .page-contact p,
+body.dark-mode.page-rules-guide .page-contact p,
+body.dark-mode.page-privacy .page-contact p,
+body.dark-mode.page-home .page-contact li,
+body.dark-mode.page-shoes-guide .page-contact li,
+body.dark-mode.page-racket-beginner .page-contact li,
+body.dark-mode.page-racket-tendinitis .page-contact li,
+body.dark-mode.page-rules-guide .page-contact li,
+body.dark-mode.page-privacy .page-contact li {
+    color: #cbd5e1 !important;
+}
+body.dark-mode.page-home .page-simple a,
+body.dark-mode.page-shoes-guide .page-simple a,
+body.dark-mode.page-racket-beginner .page-simple a,
+body.dark-mode.page-racket-tendinitis .page-simple a,
+body.dark-mode.page-rules-guide .page-simple a,
+body.dark-mode.page-privacy .page-simple a,
+body.dark-mode.page-home .page-contact a,
+body.dark-mode.page-shoes-guide .page-contact a,
+body.dark-mode.page-racket-beginner .page-contact a,
+body.dark-mode.page-racket-tendinitis .page-contact a,
+body.dark-mode.page-rules-guide .page-contact a,
+body.dark-mode.page-privacy .page-contact a {
+    color: #7dd3fc !important;
+}
+body.dark-mode.page-home .page-simple code,
+body.dark-mode.page-shoes-guide .page-simple code,
+body.dark-mode.page-racket-beginner .page-simple code,
+body.dark-mode.page-racket-tendinitis .page-simple code,
+body.dark-mode.page-rules-guide .page-simple code,
+body.dark-mode.page-privacy .page-simple code,
+body.dark-mode.page-home .page-contact code,
+body.dark-mode.page-shoes-guide .page-contact code,
+body.dark-mode.page-racket-beginner .page-contact code,
+body.dark-mode.page-racket-tendinitis .page-contact code,
+body.dark-mode.page-rules-guide .page-contact code,
+body.dark-mode.page-privacy .page-contact code {
+    color: #f8fafc;
+    background: #0f172a;
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+}
+body.dark-mode.page-home .erreur-box,
+body.dark-mode.page-shoes-guide .erreur-box,
+body.dark-mode.page-racket-beginner .erreur-box,
+body.dark-mode.page-racket-tendinitis .erreur-box,
+body.dark-mode.page-rules-guide .erreur-box,
+body.dark-mode.page-privacy .erreur-box {
+    padding: 18px 20px;
+    margin: 25px 0;
+}
+body.dark-mode.page-home .article-content .erreur-box h2,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h2,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h2,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h2,
+body.dark-mode.page-rules-guide .article-content .erreur-box h2,
+body.dark-mode.page-privacy .article-content .erreur-box h2,
+body.dark-mode.page-home .article-content .erreur-box h3,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h3,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h3,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h3,
+body.dark-mode.page-rules-guide .article-content .erreur-box h3,
+body.dark-mode.page-privacy .article-content .erreur-box h3,
+body.dark-mode.page-home .article-content .erreur-box h4,
+body.dark-mode.page-shoes-guide .article-content .erreur-box h4,
+body.dark-mode.page-racket-beginner .article-content .erreur-box h4,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box h4,
+body.dark-mode.page-rules-guide .article-content .erreur-box h4,
+body.dark-mode.page-privacy .article-content .erreur-box h4 {
+    margin: 0 0 12px;
+    padding: 0;
+    border: 0;
+    font-size: 1.1rem !important;
+    line-height: 1.4;
+}
+body.dark-mode.page-home .article-content .erreur-box p,
+body.dark-mode.page-shoes-guide .article-content .erreur-box p,
+body.dark-mode.page-racket-beginner .article-content .erreur-box p,
+body.dark-mode.page-racket-tendinitis .article-content .erreur-box p,
+body.dark-mode.page-rules-guide .article-content .erreur-box p,
+body.dark-mode.page-privacy .article-content .erreur-box p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+body.dark-mode.page-home .entry-card .entry-card-title-compact,
+body.dark-mode.page-shoes-guide .entry-card .entry-card-title-compact,
+body.dark-mode.page-racket-beginner .entry-card .entry-card-title-compact,
+body.dark-mode.page-racket-tendinitis .entry-card .entry-card-title-compact,
+body.dark-mode.page-rules-guide .entry-card .entry-card-title-compact,
+body.dark-mode.page-privacy .entry-card .entry-card-title-compact {
+    font-size: 1.25rem !important;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+body.dark-mode.page-home .affiliate-box,
+body.dark-mode.page-shoes-guide .affiliate-box,
+body.dark-mode.page-racket-beginner .affiliate-box,
+body.dark-mode.page-racket-tendinitis .affiliate-box,
+body.dark-mode.page-rules-guide .affiliate-box,
+body.dark-mode.page-privacy .affiliate-box {
+    background: linear-gradient(135deg, #172033 0%, #111827 100%) !important;
+    border-color: #d97706 !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28) !important;
+}
+body.dark-mode.page-home .affiliate-box h3,
+body.dark-mode.page-shoes-guide .affiliate-box h3,
+body.dark-mode.page-racket-beginner .affiliate-box h3,
+body.dark-mode.page-racket-tendinitis .affiliate-box h3,
+body.dark-mode.page-rules-guide .affiliate-box h3,
+body.dark-mode.page-privacy .affiliate-box h3,
+body.dark-mode.page-home .affiliate-box p,
+body.dark-mode.page-shoes-guide .affiliate-box p,
+body.dark-mode.page-racket-beginner .affiliate-box p,
+body.dark-mode.page-racket-tendinitis .affiliate-box p,
+body.dark-mode.page-rules-guide .affiliate-box p,
+body.dark-mode.page-privacy .affiliate-box p {
+    color: #f8fafc !important;
+}
+body.dark-mode.page-home .affiliate-box .product-card,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card,
+body.dark-mode.page-rules-guide .affiliate-box .product-card,
+body.dark-mode.page-privacy .affiliate-box .product-card {
+    background: #1e293b !important;
+    border-color: #475569 !important;
+    color: #e2e8f0 !important;
+}
+body.dark-mode.page-home .affiliate-box .product-name,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name,
+body.dark-mode.page-rules-guide .affiliate-box .product-name,
+body.dark-mode.page-privacy .affiliate-box .product-name,
+body.dark-mode.page-home .affiliate-box .product-name:link,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name:link,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name:link,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name:link,
+body.dark-mode.page-rules-guide .affiliate-box .product-name:link,
+body.dark-mode.page-privacy .affiliate-box .product-name:link,
+body.dark-mode.page-home .affiliate-box .product-name:visited,
+body.dark-mode.page-shoes-guide .affiliate-box .product-name:visited,
+body.dark-mode.page-racket-beginner .affiliate-box .product-name:visited,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-name:visited,
+body.dark-mode.page-rules-guide .affiliate-box .product-name:visited,
+body.dark-mode.page-privacy .affiliate-box .product-name:visited {
+    color: #f8fafc !important;
+    text-decoration-color: #94a3b8 !important;
+}
+body.dark-mode.page-home .affiliate-box .product-price,
+body.dark-mode.page-shoes-guide .affiliate-box .product-price,
+body.dark-mode.page-racket-beginner .affiliate-box .product-price,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-price,
+body.dark-mode.page-rules-guide .affiliate-box .product-price,
+body.dark-mode.page-privacy .affiliate-box .product-price {
+    color: #fca5a5 !important;
+}
+body.dark-mode.page-home .affiliate-box .btn-amazon-small,
+body.dark-mode.page-shoes-guide .affiliate-box .btn-amazon-small,
+body.dark-mode.page-racket-beginner .affiliate-box .btn-amazon-small,
+body.dark-mode.page-racket-tendinitis .affiliate-box .btn-amazon-small,
+body.dark-mode.page-rules-guide .affiliate-box .btn-amazon-small,
+body.dark-mode.page-privacy .affiliate-box .btn-amazon-small,
+body.dark-mode.page-home .affiliate-box .btn-amazon,
+body.dark-mode.page-shoes-guide .affiliate-box .btn-amazon,
+body.dark-mode.page-racket-beginner .affiliate-box .btn-amazon,
+body.dark-mode.page-racket-tendinitis .affiliate-box .btn-amazon,
+body.dark-mode.page-rules-guide .affiliate-box .btn-amazon,
+body.dark-mode.page-privacy .affiliate-box .btn-amazon,
+body.dark-mode.page-home .affiliate-box a.btn-amazon,
+body.dark-mode.page-shoes-guide .affiliate-box a.btn-amazon,
+body.dark-mode.page-racket-beginner .affiliate-box a.btn-amazon,
+body.dark-mode.page-racket-tendinitis .affiliate-box a.btn-amazon,
+body.dark-mode.page-rules-guide .affiliate-box a.btn-amazon,
+body.dark-mode.page-privacy .affiliate-box a.btn-amazon {
+    color: #111827 !important;
+}
+body.dark-mode.page-home .affiliate-box .product-card:hover,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card:hover,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card:hover,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card:hover,
+body.dark-mode.page-rules-guide .affiliate-box .product-card:hover,
+body.dark-mode.page-privacy .affiliate-box .product-card:hover,
+body.dark-mode.page-home .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-shoes-guide .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-racket-beginner .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-racket-tendinitis .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-rules-guide .affiliate-box .product-card:focus-visible,
+body.dark-mode.page-privacy .affiliate-box .product-card:focus-visible {
+    border-color: #60a5fa !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
+}
+body.dark-mode.page-home .privacy-update,
+body.dark-mode.page-shoes-guide .privacy-update,
+body.dark-mode.page-racket-beginner .privacy-update,
+body.dark-mode.page-racket-tendinitis .privacy-update,
+body.dark-mode.page-rules-guide .privacy-update,
+body.dark-mode.page-privacy .privacy-update { color: #cbd5e1; }
+body.dark-mode.page-home .privacy-table th,
+body.dark-mode.page-shoes-guide .privacy-table th,
+body.dark-mode.page-racket-beginner .privacy-table th,
+body.dark-mode.page-racket-tendinitis .privacy-table th,
+body.dark-mode.page-rules-guide .privacy-table th,
+body.dark-mode.page-privacy .privacy-table th { background: #1e293b; color: #f8fafc; border-color: #475569; }
+body.dark-mode.page-home .privacy-table td,
+body.dark-mode.page-shoes-guide .privacy-table td,
+body.dark-mode.page-racket-beginner .privacy-table td,
+body.dark-mode.page-racket-tendinitis .privacy-table td,
+body.dark-mode.page-rules-guide .privacy-table td,
+body.dark-mode.page-privacy .privacy-table td { color: #cbd5e1; border-color: #475569; }
+body.dark-mode.page-home .privacy-table code,
+body.dark-mode.page-shoes-guide .privacy-table code,
+body.dark-mode.page-racket-beginner .privacy-table code,
+body.dark-mode.page-racket-tendinitis .privacy-table code,
+body.dark-mode.page-rules-guide .privacy-table code,
+body.dark-mode.page-privacy .privacy-table code { background: #0f172a; color: #f8fafc; padding: .1em .35em; border-radius: 4px; }
+body.dark-mode.page-home .error-code,
+body.dark-mode.page-shoes-guide .error-code,
+body.dark-mode.page-racket-beginner .error-code,
+body.dark-mode.page-racket-tendinitis .error-code,
+body.dark-mode.page-rules-guide .error-code,
+body.dark-mode.page-privacy .error-code { color: #1e3a5f; }
+
+body.page-racket-beginner .racket-shape-table{border-collapse:collapse!important;border-spacing:0!important;width:100%!important;border:1px solid #cbd5e1!important}
+body.page-racket-beginner .racket-shape-table th,body.page-racket-beginner .racket-shape-table td{border:1px solid #cbd5e1!important}
+body.dark-mode .racket-shape-table tbody td{background:#0f172a;border-color:#64748b!important;color:#e2e8f0!important}
+body.dark-mode.page-racket-beginner .racket-shape-table,body.dark-mode.page-racket-beginner .racket-shape-table th,body.dark-mode.page-racket-beginner .racket-shape-table td{border:1px solid #64748b!important}
+body.dark-mode.page-racket-beginner .racket-shape-table thead th{background:#1e3a5f!important;color:#f8fafc!important}
+.is-filtered-out{display:none!important}
+/* Filet de securite sombre pour les composants locaux sans variante 8D explicite */
+body.dark-mode.page-rules-guide .starter-item,
+body.dark-mode.page-rules-guide .affiliate-box,
+body.dark-mode.page-rules-guide .next-step-box,
+body.dark-mode.page-racket-tendinitis .recap-box,
+body.dark-mode.page-racket-tendinitis .next-step-box,
+body.dark-mode.page-racket-tendinitis .schema-container,
+body.dark-mode.page-racket-tendinitis .product-card,
+body.dark-mode.page-shoes-guide .recap-box,
+body.dark-mode.page-shoes-guide .next-step-box,
+body.dark-mode.page-shoes-guide .schema-container,
+body.dark-mode.page-shoes-guide .product-card,
+body.dark-mode.page-racket-beginner .affiliate-box,
+body.dark-mode.page-racket-beginner .entry-card {
+ background:#1e293b !important; color:#e2e8f0 !important; border-color:#475569 !important;
+}
+body.dark-mode.page-rules-guide .starter-item strong,
+body.dark-mode.page-rules-guide .starter-item span,
+body.dark-mode.page-racket-tendinitis .recap-box p,
+body.dark-mode.page-racket-tendinitis .next-step-box p,
+body.dark-mode.page-shoes-guide .recap-box p,
+body.dark-mode.page-shoes-guide .next-step-box p { color:#e2e8f0 !important; }

@@ -1,2 +1,2 @@
 # Cloudflare Workers Static Assets handles HTML canonicalization automatically.
-# Example: /a-propos.html redirects to /a-propos, which serves a-propos.html.
+# /page.html redirects to /page, which serves page.html.
