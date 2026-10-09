@@ -1133,3 +1133,72 @@ body.dark-mode.page-racket-beginner .racket-shape-table .shape-icon {
     border-color: #60a5fa;
 }
 .is-filtered-out { display: none !important; }
+
+/* LOT 8E.3 : restauration ciblee des trois cartes de la page tendinite */
+.page-racket-tendinitis .entry-level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 2rem 0;
+}
+.page-racket-tendinitis .entry-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.04);
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s;
+}
+.page-racket-tendinitis .entry-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,.08);
+}
+.page-racket-tendinitis .entry-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: .75rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+.page-racket-tendinitis .tag-foam { background: #e2e8f0; color: #2d3748; }
+.page-racket-tendinitis .tag-light { background: #feebc8; color: #c05621; }
+.page-racket-tendinitis .tag-round { background: #c6f6d5; color: #276749; }
+.page-racket-tendinitis .entry-card h4 {
+    color: #1a365d;
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+}
+.page-racket-tendinitis .entry-card p {
+    font-size: .9rem;
+    color: #4a5568;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.page-racket-tendinitis .btn-amazon-small {
+    display: block;
+    background: #ff9900;
+    color: #111;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: .95rem;
+    transition: background .2s;
+}
+.page-racket-tendinitis .btn-amazon-small:hover { background: #e88b00; }
+body.dark-mode.page-racket-tendinitis .entry-card {
+    background: #2d3748;
+    border-color: #4a5568;
+}
+body.dark-mode.page-racket-tendinitis .entry-card h4 { color: #f7fafc; }
+body.dark-mode.page-racket-tendinitis .entry-card p { color: #cbd5e1; }
+body.dark-mode.page-racket-tendinitis .tag-foam { background: #4a5568; color: #f7fafc; }
+body.dark-mode.page-racket-tendinitis .tag-round { background: #22543d; color: #c6f6d5; }
+body.dark-mode.page-racket-tendinitis .tag-light { background: #7b341e; color: #fbd38d; }

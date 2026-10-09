@@ -48,6 +48,13 @@ if len(sb.select('body.page-racket-beginner table.racket-shape-table')) != 1:
     errors.append('hook tableau debutant absent ou non unique')
 if 'body.dark-mode.page-racket-beginner .racket-shape-table tbody td' not in css:
     errors.append('correctif contraste cible absent')
+# Lot 8E.3: ensure the tendinitis recommendation cards keep their page-scoped layout.
+st=BeautifulSoup(Path('raquette-padel-tendinite.html').read_text(),'html.parser')
+if len(st.select('body.page-racket-tendinitis .entry-level-grid .entry-card')) != 3:
+    errors.append('grille tendinite: 3 cartes attendues')
+css=Path('style.css').read_text()
+if '.page-racket-tendinitis .entry-level-grid' not in css or '.page-racket-tendinitis .entry-card' not in css:
+    errors.append('styles cibles des cartes tendinite absents')
 errors += missing+broken+amazon_bad
 print(f'Pages: {len(pages)}; styles locaux: {style_tags}; attributs style: {style_attrs}; scripts fonctionnels inline: {func_inline}')
 print(f'Canoniques: {len(canon)} uniques: {len(set(canon))}; beacons: {beacons}')
