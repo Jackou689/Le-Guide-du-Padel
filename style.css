@@ -3147,3 +3147,112 @@ html[data-theme="dark"] .amazon-dark-over,html.dark .amazon-dark-over,body.dark-
 html[data-theme="dark"] .amazon-dark-word,html.dark .amazon-dark-word,body.dark-mode .amazon-dark-word,body[data-theme="dark"] .amazon-dark-word{font:800 1.35rem/1 Arial,sans-serif;letter-spacing:-.055em;text-transform:lowercase;color:#111827!important}
 html[data-theme="dark"] .amazon-dark-smile,html.dark .amazon-dark-smile,body.dark-mode .amazon-dark-smile,body[data-theme="dark"] .amazon-dark-smile{display:block;color:#ff9900!important;font:900 1.7rem/.42 Arial,sans-serif;transform:scaleX(1.5);margin-top:2px}
 @media(max-width:640px){a.amazon-dual-theme:not(.product-card){min-height:62px!important}.amazon-light-word{font-size:1.4rem}}
+
+
+/* LOT 9C.7 - rendu Amazon propre et bascule fondee uniquement sur body.dark-mode */
+/* Neutralisation des anciennes variantes basees sur le theme du systeme. */
+.amazon-light-brand,
+.amazon-dark-brand {
+  box-sizing: border-box !important;
+}
+.amazon-light-over {
+  display: block !important;
+  margin-bottom: 3px !important;
+  font: 600 .78rem/1.05 Arial, sans-serif !important;
+  color: #cbd5e1 !important;
+  letter-spacing: .01em !important;
+}
+/* MODE CLAIR : style 13 sombre, avec Disponible sur. */
+body:not(.dark-mode) a.amazon-dual-theme:not(.product-card),
+body:not(.dark-mode) a.product-card.amazon-dual-theme .amazon-dual-label {
+  background: #131921 !important;
+  background-image: none !important;
+  border: 1px solid #273244 !important;
+  color: #fff !important;
+  box-shadow: 0 5px 14px rgba(15,23,42,.24) !important;
+  opacity: 1 !important;
+}
+body:not(.dark-mode) .amazon-light-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+body:not(.dark-mode) .amazon-dark-brand { display: none !important; }
+/* MODE SOMBRE : style 9 clair, opaque. */
+body.dark-mode a.amazon-dual-theme:not(.product-card),
+body.dark-mode a.product-card.amazon-dual-theme .amazon-dual-label {
+  background: #fff !important;
+  background-image: linear-gradient(180deg,#fff 0%,#f3f5f8 100%) !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #111827 !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,.38) !important;
+  opacity: 1 !important;
+}
+body.dark-mode .amazon-light-brand { display: none !important; }
+body.dark-mode .amazon-dark-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+/* CTA generiques : un seul bouton, aucun ancien fond vert/orange. */
+a.amazon-dual-theme:not(.product-card),
+body.page-shoes-guide a.amazon-dual-theme:not(.product-card),
+body.page-racket-tendinitis a.amazon-dual-theme:not(.product-card),
+body.page-rules-guide a.amazon-dual-theme:not(.product-card),
+body.page-racket-beginner a.amazon-dual-theme:not(.product-card),
+a.btn-affiliation.amazon-dual-theme,
+a.btn-amazon.amazon-dual-theme,
+a.btn-amazon-small.amazon-dual-theme,
+a.btn-amazon-full.amazon-dual-theme {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-height: 72px !important;
+  margin: 16px 0 !important;
+  padding: 10px 16px !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+/* Cartes debutant : la carte reste blanche/sombre; seul le bandeau final est Amazon. */
+body.page-racket-beginner a.product-card.amazon-dual-theme {
+  padding: 15px !important;
+  padding-bottom: 0 !important;
+  overflow: hidden !important;
+  background-image: none !important;
+}
+body.page-racket-beginner a.product-card.amazon-dual-theme .amazon-dual-label {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: calc(100% + 30px) !important;
+  min-height: 72px !important;
+  margin: 16px -15px 0 !important;
+  padding: 10px 14px !important;
+  border-radius: 0 0 8px 8px !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+/* Supprime tout ancien habillage orange sur les descendants CTA. */
+body.page-racket-beginner a.product-card.amazon-dual-theme .btn-amazon-small,
+body.page-racket-beginner a.product-card.amazon-dual-theme .btn-amazon,
+body.page-racket-beginner a.product-card.amazon-dual-theme .amazon-dual-label::before,
+body.page-racket-beginner a.product-card.amazon-dual-theme .amazon-dual-label::after {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  content: none !important;
+}
+body:not(.dark-mode) .amazon-light-word { color: #fff !important; }
+body:not(.dark-mode) .amazon-light-smile { color: #ff9900 !important; }
+body.dark-mode .amazon-dark-over { color: #475569 !important; }
+body.dark-mode .amazon-dark-word { color: #111827 !important; }
+body.dark-mode .amazon-dark-smile { color: #ff9900 !important; }
