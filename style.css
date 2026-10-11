@@ -3043,3 +3043,216 @@ body.dark-mode .page-simple li a:not([class]) {
     color: #7dd3fc;
     text-decoration-color: currentColor;
 }
+
+/* LOT 9C.2 - CTA commerciaux renforces */
+.btn-affiliation,
+.btn-amazon,
+.btn-amazon-small,
+.btn-amazon-full {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .55rem;
+    min-height: 48px;
+    font-weight: 800;
+    letter-spacing: .01em;
+    line-height: 1.25;
+    text-align: center;
+    border: 2px solid rgba(17, 24, 39, .18);
+    box-shadow: 0 5px 0 rgba(17, 24, 39, .18), 0 10px 20px rgba(255, 153, 0, .20);
+    transform: translateY(0);
+    transition: transform .16s ease, box-shadow .16s ease, background-color .16s ease;
+}
+.btn-affiliation:hover,
+.btn-amazon:hover,
+.btn-amazon-small:hover,
+.btn-amazon-full:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 0 rgba(17, 24, 39, .18), 0 14px 24px rgba(255, 153, 0, .26);
+}
+.btn-affiliation:active,
+.btn-amazon:active,
+.btn-amazon-small:active,
+.btn-amazon-full:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 rgba(17, 24, 39, .22), 0 5px 12px rgba(255, 153, 0, .18);
+}
+.cta-icon { flex: 0 0 auto; }
+.cta-primary { flex: 0 1 auto; }
+.cta-arrow { flex: 0 0 auto; font-size: 1.2em; transition: transform .16s ease; }
+.btn-affiliation:hover .cta-arrow,
+.btn-amazon:hover .cta-arrow,
+.btn-amazon-small:hover .cta-arrow,
+.btn-amazon-full:hover .cta-arrow { transform: translateX(3px); }
+@media (max-width: 640px) {
+    .btn-affiliation,
+    .btn-amazon,
+    .btn-amazon-full { width: 100%; box-sizing: border-box; }
+    .btn-amazon-small { width: 100%; box-sizing: border-box; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .btn-affiliation,
+    .btn-amazon,
+    .btn-amazon-small,
+    .btn-amazon-full,
+    .cta-arrow { transition: none; }
+}
+
+
+/* LOT 9C.6 - Style 13 clair / Style 9 sombre */
+a.amazon-dual-theme:not(.product-card){
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ width:100%!important;min-height:66px!important;box-sizing:border-box!important;
+ padding:10px 16px!important;border-radius:9px!important;text-decoration:none!important;
+ background:#131921!important;border:1px solid #273244!important;color:#fff!important;
+ box-shadow:0 5px 12px rgba(15,23,42,.24)!important;transform:none!important
+}
+a.amazon-dual-theme:not(.product-card):hover{background:#1b2638!important;border-color:#ff9900!important;box-shadow:0 7px 18px rgba(255,153,0,.2)!important;transform:translateY(-1px)!important}
+.amazon-light-brand{display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:.78;color:#fff}
+.amazon-light-word{font:800 1.55rem/1 Arial,sans-serif;letter-spacing:-.055em;text-transform:lowercase}
+.amazon-light-smile{display:block;color:#ff9900;font:900 1.95rem/.42 Arial,sans-serif;transform:scaleX(1.5);margin-top:3px}
+.amazon-dark-brand{display:none}
+/* Keep beginner product cards structurally intact. Only their lower CTA area changes. */
+a.product-card.amazon-dual-theme .amazon-dual-label{display:flex;align-items:center;justify-content:center;width:100%;min-height:64px;margin-top:auto;padding:9px 12px;box-sizing:border-box;border-radius:8px;background:#131921;border:1px solid #273244;box-shadow:0 4px 10px rgba(15,23,42,.2)}
+a.product-card.amazon-dual-theme .amazon-light-brand{display:flex}
+/* Explicit dark-mode selectors cover both OS preference and the site's manual dark mode. */
+@media (prefers-color-scheme: dark){
+ a.amazon-dual-theme:not(.product-card),
+ a.product-card.amazon-dual-theme .amazon-dual-label{
+  background:linear-gradient(180deg,#ffffff 0%,#f3f5f8 100%)!important;
+  border:1px solid #cbd5e1!important;color:#111827!important;
+  box-shadow:0 5px 14px rgba(0,0,0,.34)!important;opacity:1!important
+ }
+ .amazon-light-brand{display:none!important}
+ .amazon-dark-brand{display:flex!important;flex-direction:column;align-items:center;justify-content:center;line-height:.8;color:#111827!important;opacity:1!important}
+ .amazon-dark-over{font:600 .78rem/1.05 Arial,sans-serif;color:#475569!important;margin-bottom:2px}
+ .amazon-dark-word{font:800 1.35rem/1 Arial,sans-serif;letter-spacing:-.055em;text-transform:lowercase;color:#111827!important}
+ .amazon-dark-smile{display:block;color:#ff9900!important;font:900 1.7rem/.42 Arial,sans-serif;transform:scaleX(1.5);margin-top:2px}
+}
+html[data-theme="dark"] a.amazon-dual-theme:not(.product-card),
+html.dark a.amazon-dual-theme:not(.product-card),
+body.dark-mode a.amazon-dual-theme:not(.product-card),
+body[data-theme="dark"] a.amazon-dual-theme:not(.product-card),
+html[data-theme="dark"] a.product-card.amazon-dual-theme .amazon-dual-label,
+html.dark a.product-card.amazon-dual-theme .amazon-dual-label,
+body.dark-mode a.product-card.amazon-dual-theme .amazon-dual-label,
+body[data-theme="dark"] a.product-card.amazon-dual-theme .amazon-dual-label{
+ background:linear-gradient(180deg,#ffffff 0%,#f3f5f8 100%)!important;
+ border:1px solid #cbd5e1!important;color:#111827!important;
+ box-shadow:0 5px 14px rgba(0,0,0,.34)!important;opacity:1!important
+}
+html[data-theme="dark"] .amazon-light-brand,html.dark .amazon-light-brand,body.dark-mode .amazon-light-brand,body[data-theme="dark"] .amazon-light-brand{display:none!important}
+html[data-theme="dark"] .amazon-dark-brand,html.dark .amazon-dark-brand,body.dark-mode .amazon-dark-brand,body[data-theme="dark"] .amazon-dark-brand{display:flex!important;flex-direction:column;align-items:center;justify-content:center;line-height:.8;color:#111827!important;opacity:1!important}
+html[data-theme="dark"] .amazon-dark-over,html.dark .amazon-dark-over,body.dark-mode .amazon-dark-over,body[data-theme="dark"] .amazon-dark-over{font:600 .78rem/1.05 Arial,sans-serif;color:#475569!important;margin-bottom:2px}
+html[data-theme="dark"] .amazon-dark-word,html.dark .amazon-dark-word,body.dark-mode .amazon-dark-word,body[data-theme="dark"] .amazon-dark-word{font:800 1.35rem/1 Arial,sans-serif;letter-spacing:-.055em;text-transform:lowercase;color:#111827!important}
+html[data-theme="dark"] .amazon-dark-smile,html.dark .amazon-dark-smile,body.dark-mode .amazon-dark-smile,body[data-theme="dark"] .amazon-dark-smile{display:block;color:#ff9900!important;font:900 1.7rem/.42 Arial,sans-serif;transform:scaleX(1.5);margin-top:2px}
+@media(max-width:640px){a.amazon-dual-theme:not(.product-card){min-height:62px!important}.amazon-light-word{font-size:1.4rem}}
+
+
+/* LOT 9C.7 - rendu Amazon propre et bascule fondee uniquement sur body.dark-mode */
+/* Neutralisation des anciennes variantes basees sur le theme du systeme. */
+.amazon-light-brand,
+.amazon-dark-brand {
+  box-sizing: border-box !important;
+}
+.amazon-light-over {
+  display: block !important;
+  margin-bottom: 3px !important;
+  font: 600 .78rem/1.05 Arial, sans-serif !important;
+  color: #cbd5e1 !important;
+  letter-spacing: .01em !important;
+}
+/* MODE CLAIR : style 13 sombre, avec Disponible sur. */
+body:not(.dark-mode) a.amazon-dual-theme:not(.product-card),
+body:not(.dark-mode) a.product-card.amazon-dual-theme .amazon-dual-label {
+  background: #131921 !important;
+  background-image: none !important;
+  border: 1px solid #273244 !important;
+  color: #fff !important;
+  box-shadow: 0 5px 14px rgba(15,23,42,.24) !important;
+  opacity: 1 !important;
+}
+body:not(.dark-mode) .amazon-light-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+body:not(.dark-mode) .amazon-dark-brand { display: none !important; }
+/* MODE SOMBRE : style 9 clair, opaque. */
+body.dark-mode a.amazon-dual-theme:not(.product-card),
+body.dark-mode a.product-card.amazon-dual-theme .amazon-dual-label {
+  background: #fff !important;
+  background-image: linear-gradient(180deg,#fff 0%,#f3f5f8 100%) !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #111827 !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,.38) !important;
+  opacity: 1 !important;
+}
+body.dark-mode .amazon-light-brand { display: none !important; }
+body.dark-mode .amazon-dark-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+/* CTA generiques : un seul bouton, aucun ancien fond vert/orange. */
+a.amazon-dual-theme:not(.product-card),
+body.page-shoes-guide a.amazon-dual-theme:not(.product-card),
+body.page-racket-tendinitis a.amazon-dual-theme:not(.product-card),
+body.page-rules-guide a.amazon-dual-theme:not(.product-card),
+body.page-racket-beginner a.amazon-dual-theme:not(.product-card),
+a.btn-affiliation.amazon-dual-theme,
+a.btn-amazon.amazon-dual-theme,
+a.btn-amazon-small.amazon-dual-theme,
+a.btn-amazon-full.amazon-dual-theme {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-height: 72px !important;
+  margin: 16px 0 !important;
+  padding: 10px 16px !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+/* Cartes debutant : la carte reste blanche/sombre; seul le bandeau final est Amazon. */
+body.page-racket-beginner a.product-card.amazon-dual-theme {
+  padding: 15px !important;
+  padding-bottom: 0 !important;
+  overflow: hidden !important;
+  background-image: none !important;
+}
+body.page-racket-beginner a.product-card.amazon-dual-theme .amazon-dual-label {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: calc(100% + 30px) !important;
+  min-height: 72px !important;
+  margin: 16px -15px 0 !important;
+  padding: 10px 14px !important;
+  border-radius: 0 0 8px 8px !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+/* Supprime tout ancien habillage orange sur les descendants CTA. */
+body.page-racket-beginner a.product-card.amazon-dual-theme .btn-amazon-small,
+body.page-racket-beginner a.product-card.amazon-dual-theme .btn-amazon,
+body.page-racket-beginner a.product-card.amazon-dual-theme .amazon-dual-label::before,
+body.page-racket-beginner a.product-card.amazon-dual-theme .amazon-dual-label::after {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  content: none !important;
+}
+body:not(.dark-mode) .amazon-light-word { color: #fff !important; }
+body:not(.dark-mode) .amazon-light-smile { color: #ff9900 !important; }
+body.dark-mode .amazon-dark-over { color: #475569 !important; }
+body.dark-mode .amazon-dark-word { color: #111827 !important; }
+body.dark-mode .amazon-dark-smile { color: #ff9900 !important; }
