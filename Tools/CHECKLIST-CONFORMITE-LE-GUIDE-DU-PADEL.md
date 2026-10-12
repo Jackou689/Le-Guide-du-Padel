@@ -125,20 +125,20 @@ Indiquer qu’aucune annonce AdSense n’est actuellement chargée, et que la po
 
 ### Pages avec liens Amazon détectées
 
-- `balles-padel-guide.html`
-- `chaussures-padel-guide.html`
-- `coups-techniques-padel.html`
+- `balles-padel.html`
+- `chaussures-padel.html`
+- `techniques-padel.html`
 - `echauffement-padel.html`
-- `guide-raquette-padel-debutant.html`
-- `raquette-padel-tendinite.html`
-- `regles-du-padel.html`
-- `tactique-filet-padel.html`
+- `raquette-debutant.html`
+- `raquette-tendinite.html`
+- `regles-padel.html`
+- `tactique-filet.html`
 
 ---
 
 ## 6. Contenus santé et sécurité
 
-- [!] Ajouter un avertissement clair sur `raquette-padel-tendinite.html` indiquant que le contenu est informatif et ne remplace pas l’avis d’un professionnel de santé.
+- [!] Ajouter un avertissement clair sur `raquette-tendinite.html` indiquant que le contenu est informatif et ne remplace pas l’avis d’un professionnel de santé.
 - [!] Ajouter un avertissement adapté sur `echauffement-padel.html`.
 - [!] Ajouter une recommandation de consulter rapidement en cas de douleur persistante, importante, traumatisme, gonflement ou perte de fonction.
 - [!] Réviser les formulations médicales absolues ou non sourcées.

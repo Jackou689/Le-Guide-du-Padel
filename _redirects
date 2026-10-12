@@ -1,2 +1,9 @@
-# Cloudflare Workers Static Assets handles HTML canonicalization automatically.
-# /page.html redirects to /page, which serves page.html.
+# Redirections permanentes des anciennes URL vers les URL courtes.
+/guide-raquette-padel-debutant /raquette-debutant 301
+/chaussures-padel-guide /chaussures-padel 301
+/balles-padel-guide /balles-padel 301
+/raquette-padel-tendinite /raquette-tendinite 301
+/regles-du-padel /regles-padel 301
+/coups-techniques-padel /techniques-padel 301
+/tactique-filet-padel /tactique-filet 301
+/index.html / 301
