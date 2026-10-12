@@ -3256,3 +3256,28 @@ body:not(.dark-mode) .amazon-light-smile { color: #ff9900 !important; }
 body.dark-mode .amazon-dark-over { color: #475569 !important; }
 body.dark-mode .amazon-dark-word { color: #111827 !important; }
 body.dark-mode .amazon-dark-smile { color: #ff9900 !important; }
+
+/* LOT 10A.1 - contraste, visuels et maillage des guides enrichis */
+body.page-balls-guide .article-content{--guide-accent:#047857;--guide-soft:#d1fae5}
+body.page-warmup-guide .article-content{--guide-accent:#c2410c;--guide-soft:#ffedd5}
+body.page-techniques-guide .article-content{--guide-accent:#1d4ed8;--guide-soft:#dbeafe}
+.article-hero-visual{margin:1.25rem 0 2rem;border-radius:18px;overflow:hidden;background:#e2e8f0;box-shadow:0 12px 30px rgba(15,23,42,.13)}
+.article-hero-visual img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.article-hero-visual figcaption{padding:.75rem 1rem;color:#334155;background:#f8fafc;font-size:.92rem}
+body.page-balls-guide .coach-tip-box,body.page-balls-guide .astuce-box,body.page-warmup-guide .coach-tip-box,body.page-warmup-guide .astuce-box,body.page-techniques-guide .coach-tip-box,body.page-techniques-guide .astuce-box{background:var(--guide-soft)!important;color:#172033!important;border:1px solid var(--guide-accent)!important;border-left:6px solid var(--guide-accent)!important;box-shadow:0 7px 20px rgba(15,23,42,.08)}
+body.page-balls-guide .coach-tip-box *,body.page-balls-guide .astuce-box *,body.page-warmup-guide .coach-tip-box *,body.page-warmup-guide .astuce-box *,body.page-techniques-guide .coach-tip-box *,body.page-techniques-guide .astuce-box *{color:inherit!important}
+.balls-choice-table{width:100%!important;border-collapse:collapse!important;border:2px solid #64748b!important;background:#fff}
+.balls-choice-table th,.balls-choice-table td{border:1px solid #64748b!important;padding:.9rem!important;text-align:left!important;color:#1e293b!important}
+.balls-choice-table th{background:#d1fae5!important;color:#065f46!important}.balls-choice-table tbody tr:nth-child(even){background:#f1f5f9!important}
+.related-guides{margin:2.5rem 0 1.25rem;padding:1.25rem;border-radius:18px;background:linear-gradient(135deg,#eff6ff,#ecfeff);border:1px solid #60a5fa}
+.related-guides h2{margin-top:0!important}.related-guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.related-guide-card{display:flex;flex-direction:column;gap:.35rem;padding:1rem;border-radius:14px;background:#fff;border:1px solid #93c5fd;color:#1e3a8a!important;text-decoration:none!important;box-shadow:0 6px 16px rgba(30,64,175,.08)}
+.related-guide-card:hover{border-color:#1d4ed8;transform:translateY(-2px)}.related-guide-card strong{color:#1d4ed8;font-size:1.06rem}.related-guide-card span{color:#334155}
+.external-sources{margin:1.25rem 0 2rem;padding:1rem 1.15rem;border-radius:14px;background:#f8fafc;border:1px solid #cbd5e1}.external-sources h2{font-size:1.2rem!important;margin-top:0!important;color:#334155!important}
+body.dark-mode .article-hero-visual figcaption{background:#172033;color:#cbd5e1}
+body.dark-mode.page-balls-guide .coach-tip-box,body.dark-mode.page-balls-guide .astuce-box{background:#173b35!important;color:#f1f5f9!important;border-color:#34d399!important}
+body.dark-mode.page-warmup-guide .coach-tip-box,body.dark-mode.page-warmup-guide .astuce-box{background:#422314!important;color:#fff7ed!important;border-color:#fb923c!important}
+body.dark-mode.page-techniques-guide .coach-tip-box,body.dark-mode.page-techniques-guide .astuce-box{background:#172554!important;color:#eff6ff!important;border-color:#60a5fa!important}
+body.dark-mode .balls-choice-table{background:#111827!important;border-color:#94a3b8!important}body.dark-mode .balls-choice-table th{background:#064e3b!important;color:#ecfdf5!important}body.dark-mode .balls-choice-table td{color:#e2e8f0!important;border-color:#94a3b8!important}body.dark-mode .balls-choice-table tbody tr:nth-child(even){background:#1e293b!important}
+body.dark-mode .related-guides{background:linear-gradient(135deg,#172554,#164e63);border-color:#60a5fa}body.dark-mode .related-guide-card{background:#0f172a;border-color:#64748b}body.dark-mode .related-guide-card strong{color:#93c5fd}body.dark-mode .related-guide-card span{color:#dbeafe}body.dark-mode .external-sources{background:#172033;border-color:#475569}body.dark-mode .external-sources h2{color:#e2e8f0!important}
+@media(max-width:640px){.related-guide-grid{grid-template-columns:1fr}.article-hero-visual{border-radius:12px}}
