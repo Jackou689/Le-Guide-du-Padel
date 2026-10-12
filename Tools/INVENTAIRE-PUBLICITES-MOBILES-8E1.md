@@ -4,7 +4,7 @@ Les placeholders restent des maquettes. La sidebar passe sous le contenu sur mob
 
 ## Inventaire par page
 
-### `balles-padel-guide.html`
+### `balles-padel.html`
 
 - `ad-banner-top ad-placeholder` : contenu principal; sur mobile : dans le flux.
 - `ad-in-content ad-placeholder` : contenu principal; sur mobile : dans le flux.
@@ -12,7 +12,7 @@ Les placeholders restent des maquettes. La sidebar passe sous le contenu sur mob
 - `ad-sidebar-placeholder ad-sidebar-medium ad-placeholder` : sidebar; sur mobile : après le contenu.
 - `ad-sidebar-placeholder ad-sidebar-large ad-placeholder` : sidebar; sur mobile : masqué.
 
-### `chaussures-padel-guide.html`
+### `chaussures-padel.html`
 
 - `ad-banner-top ad-placeholder` : contenu principal; sur mobile : dans le flux.
 - `ad-in-content ad-placeholder` : contenu principal; sur mobile : dans le flux.
@@ -20,7 +20,7 @@ Les placeholders restent des maquettes. La sidebar passe sous le contenu sur mob
 - `ad-sidebar-placeholder ad-sidebar-medium ad-placeholder` : sidebar; sur mobile : après le contenu.
 - `ad-sidebar-placeholder ad-sidebar-large ad-placeholder` : sidebar; sur mobile : masqué.
 
-### `coups-techniques-padel.html`
+### `techniques-padel.html`
 
 - `ad-banner-top ad-placeholder` : contenu principal; sur mobile : dans le flux.
 - `ad-in-content ad-placeholder` : contenu principal; sur mobile : dans le flux.
@@ -36,7 +36,7 @@ Les placeholders restent des maquettes. La sidebar passe sous le contenu sur mob
 - `ad-sidebar-placeholder ad-sidebar-medium ad-placeholder` : sidebar; sur mobile : après le contenu.
 - `ad-sidebar-placeholder ad-sidebar-large ad-placeholder` : sidebar; sur mobile : masqué.
 
-### `guide-raquette-padel-debutant.html`
+### `raquette-debutant.html`
 
 - `ad-banner-top ad-placeholder` : contenu principal; sur mobile : dans le flux.
 - `ad-in-content ad-placeholder` : contenu principal; sur mobile : dans le flux.
@@ -50,7 +50,7 @@ Les placeholders restent des maquettes. La sidebar passe sous le contenu sur mob
 - `ad-sidebar-placeholder ad-sidebar-medium ad-placeholder` : sidebar; sur mobile : après le contenu.
 - `ad-sidebar-placeholder ad-sidebar-large ad-placeholder` : sidebar; sur mobile : masqué.
 
-### `raquette-padel-tendinite.html`
+### `raquette-tendinite.html`
 
 - `ad-banner-top ad-placeholder` : contenu principal; sur mobile : dans le flux.
 - `ad-in-content ad-placeholder` : contenu principal; sur mobile : dans le flux.
@@ -58,7 +58,7 @@ Les placeholders restent des maquettes. La sidebar passe sous le contenu sur mob
 - `ad-sidebar-placeholder ad-sidebar-medium ad-placeholder` : sidebar; sur mobile : après le contenu.
 - `ad-sidebar-placeholder ad-sidebar-large ad-placeholder` : sidebar; sur mobile : masqué.
 
-### `regles-du-padel.html`
+### `regles-padel.html`
 
 - `ad-banner-top ad-placeholder` : contenu principal; sur mobile : dans le flux.
 - `ad-in-content ad-placeholder` : contenu principal; sur mobile : dans le flux.
@@ -66,7 +66,7 @@ Les placeholders restent des maquettes. La sidebar passe sous le contenu sur mob
 - `ad-sidebar-placeholder ad-sidebar-medium ad-placeholder` : sidebar; sur mobile : après le contenu.
 - `ad-sidebar-placeholder ad-sidebar-large ad-placeholder` : sidebar; sur mobile : masqué.
 
-### `tactique-filet-padel.html`
+### `tactique-filet.html`
 
 - `ad-banner-top ad-placeholder` : contenu principal; sur mobile : dans le flux.
 - `ad-in-content ad-placeholder` : contenu principal; sur mobile : dans le flux.

@@ -5,8 +5,8 @@ Recette fonctionnelle de la base 8E.6, sans reprise des détails esthétiques re
 
 ## Anomalie corrigée
 Deux images héro externes servies par Unsplash renvoyaient HTTP 403 dans Chromium :
-- chaussures-padel-guide.html ;
-- raquette-padel-tendinite.html.
+- chaussures-padel.html ;
+- raquette-tendinite.html.
 
 Les deux URL externes ont été remplacées par les images locales responsives déjà incluses dans l’archive. Cette correction supprime une dépendance réseau et ne modifie ni le contenu, ni la structure, ni l’identité visuelle des pages.
 
