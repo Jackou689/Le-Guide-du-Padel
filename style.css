@@ -3310,3 +3310,10 @@ body.page-techniques-guide .technique-section:first-of-type .grip-guide{clear:bo
 body.page-warmup-guide:not(.dark-mode) .routine-step-2{background:#0f766e!important;color:#fff!important}
 body.page-warmup-guide:not(.dark-mode) .routine-step-2 *{color:#fff!important}
 @media(max-width:760px){body.page-techniques-guide .technique-section:first-of-type .technique-specific-visual{float:none;width:100%;margin:.75rem auto 1rem}}
+
+/* LOT 10A.7 - finitions editoriales, images techniques et contraste */
+.article-content .editorial-emphasis{font-family:var(--font-serif);font-weight:800;letter-spacing:.005em;color:#163b63}
+body.dark-mode .article-content .editorial-emphasis{color:#f8fafc}
+body.dark-mode.page-warmup-guide .article-content .warmup-step-title,
+body.dark-mode.page-warmup-guide .article-content .warmup-card-1 .warmup-step-title,
+body.dark-mode.page-warmup-guide .article-content .warmup-card-3 .warmup-step-title{color:#f8fafc!important}

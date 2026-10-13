@@ -40,7 +40,7 @@ wr=json.loads(Path('wrangler.jsonc').read_text())
 if wr.get('assets',{}).get('html_handling')!='auto-trailing-slash': errors.append('html_handling absent')
 if wr.get('assets',{}).get('not_found_handling')!='404-page': errors.append('404 handling absent')
 # Lot 8E.1: table contrast selector must be isolated.
-sb=BeautifulSoup(Path('guide-raquette-padel-debutant.html').read_text(),'html.parser')
+sb=BeautifulSoup(Path('raquette-debutant.html').read_text(),'html.parser')
 if len(sb.select('table.racket-shape-table')) != 1:
     errors.append('table racket-shape-table absente ou non unique')
 css=Path('style.css').read_text()
