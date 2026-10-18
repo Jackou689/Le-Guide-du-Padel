@@ -70,3 +70,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
+
+// 10A.16 : masque l'en-tete a la descente et le restaure a la remontee.
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.header');
+  if (!header) return;
+  let lastY = window.scrollY;
+  let ticking = false;
+  const updateHeader = () => {
+    const currentY = window.scrollY;
+    header.classList.toggle('header-scrolled', currentY > 16);
+    if (currentY > 120 && currentY > lastY + 6) header.classList.add('header-hidden');
+    else if (currentY < lastY - 4 || currentY <= 120) header.classList.remove('header-hidden');
+    lastY = Math.max(currentY, 0);
+    ticking = false;
+  };
+  window.addEventListener('scroll', () => {
+    if (!ticking) { window.requestAnimationFrame(updateHeader); ticking = true; }
+  }, { passive: true });
+});
