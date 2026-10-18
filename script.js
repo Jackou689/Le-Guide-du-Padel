@@ -71,21 +71,28 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-// 10A.16 : masque l'en-tete a la descente et le restaure a la remontee.
+
+// 10A.16 revisee : header fixe, compatible tactile et mobile.
 document.addEventListener('DOMContentLoaded', function () {
   const header = document.querySelector('.header');
   if (!header) return;
-  let lastY = window.scrollY;
+  let lastY = Math.max(window.pageYOffset || document.documentElement.scrollTop || 0, 0);
+  let accumulated = 0;
   let ticking = false;
-  const updateHeader = () => {
-    const currentY = window.scrollY;
-    header.classList.toggle('header-scrolled', currentY > 16);
-    if (currentY > 120 && currentY > lastY + 6) header.classList.add('header-hidden');
-    else if (currentY < lastY - 4 || currentY <= 120) header.classList.remove('header-hidden');
-    lastY = Math.max(currentY, 0);
-    ticking = false;
-  };
-  window.addEventListener('scroll', () => {
-    if (!ticking) { window.requestAnimationFrame(updateHeader); ticking = true; }
-  }, { passive: true });
+  function readY() { return Math.max(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0, 0); }
+  function update() {
+    const y = readY();
+    const delta = y - lastY;
+    if ((delta > 0 && accumulated < 0) || (delta < 0 && accumulated > 0)) accumulated = 0;
+    accumulated += delta;
+    header.classList.toggle('header-scrolled', y > 12);
+    if (y <= 90) { header.classList.remove('header-hidden'); accumulated = 0; }
+    else if (accumulated > 18) { header.classList.add('header-hidden'); accumulated = 0; }
+    else if (accumulated < -10) { header.classList.remove('header-hidden'); accumulated = 0; }
+    lastY = y; ticking = false;
+  }
+  function requestUpdate() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', requestUpdate, {passive:true});
+  window.addEventListener('touchmove', requestUpdate, {passive:true});
+  window.addEventListener('pageshow', function(){ header.classList.remove('header-hidden'); lastY=readY(); });
 });
