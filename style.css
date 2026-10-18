@@ -3591,3 +3591,17 @@ body.dark-mode .home-filters .category-btn{color:#dce7f2!important;background:#1
  .home-hero-v16{grid-template-columns:1fr!important;min-height:auto!important;padding:23px 18px 18px!important;gap:20px!important;border-radius:18px!important}.home-hero-v16 h1{font-size:2.15rem!important}.home-hero-visual-v16 picture{height:205px!important}.home-hero-visual-v16 img{height:100%!important;object-position:42% center!important}.hero-stat-v16{font-size:.76rem!important}.home-proof-v16{display:flex!important;overflow-x:auto!important;flex-wrap:nowrap!important;gap:14px!important}.home-proof-v16 li{white-space:nowrap!important}.home-proof-v16 li:last-child{grid-column:auto!important}
  .page-home .home-card-grid{grid-template-columns:1fr!important;gap:16px!important}.page-home .home-card,.page-home .home-card:first-child{grid-column:auto!important;display:flex!important;min-height:0!important}.page-home .home-card:first-child>div:first-child{display:flex!important}.page-home .home-card:first-child .home-card-media,.page-home .home-card-media{height:200px!important;min-height:200px!important}.page-home .home-card:first-child .home-card-body,.page-home .home-card-body{padding:18px 18px 10px!important}.page-home .home-card:first-child .home-card-title,.page-home .home-card-title{font-size:1.24rem!important}.page-home .home-card:first-child .home-card-text,.page-home .home-card-text{font-size:.94rem!important;line-height:1.58!important}.page-home .home-card:first-child .home-card-footer,.page-home .home-card-footer{padding:0 18px 17px!important}
 }
+
+/* 10A.16c - corrections logo, cartes, filtres et publicite haute */
+.brand-desktop-v17{background:transparent!important;filter:none!important;mix-blend-mode:normal!important}
+/* Une seule signature de categorie, sur le cote gauche. */
+.page-home .home-card{border-top:1px solid #dbe5ed!important;border-left:5px solid var(--card-accent,#1677c8)!important}
+.page-home .home-card:before{content:none!important;display:none!important}
+.page-home .home-card:first-child{border-left-width:6px!important}
+/* Le filtrage gagne sur toutes les regles de mise en page, y compris la carte vedette. */
+.page-home .home-card.is-filtered-out,.page-home .article-card.is-filtered-out{display:none!important}
+.page-home .home-card[hidden],.page-home .article-card[hidden]{display:none!important}
+/* Zone de securite sous le header fixe, notamment pour la premiere publicite. */
+.ad-banner-top{position:relative!important;z-index:1!important;margin-top:26px!important;margin-bottom:26px!important;scroll-margin-top:100px!important}
+.header+ .mobile-menu-overlay + .mobile-menu + .ad-banner-top{margin-top:26px!important}
+@media(max-width:767px){.ad-banner-top{margin-top:18px!important;margin-bottom:18px!important;scroll-margin-top:78px!important}.page-home .home-card{border-left-width:4px!important}}

@@ -42,35 +42,30 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Lot 8D : filtrage des categories de la page d accueil.
-document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('.category-btn');
-            const cards = document.querySelectorAll('.article-card');
-
-            buttons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Gestion de la classe active
-                    buttons.forEach(btn => {
-                        btn.classList.remove('active');
-                        btn.setAttribute('aria-pressed', 'false');
-                    });
-                    this.classList.add('active');
-                    this.setAttribute('aria-pressed', 'true');
-
-                    const filter = this.getAttribute('data-filter');
-
-                    cards.forEach(card => {
-                        const category = card.getAttribute('data-category');
-                        if (filter === 'all' || category === filter) {
-                            card.classList.remove('is-filtered-out');
-                        } else {
-                            card.classList.add('is-filtered-out');
-                        }
-                    });
-                });
-            });
-        });
-
+// 10A.16c : filtrage robuste des categories de la page d'accueil.
+document.addEventListener('DOMContentLoaded', function () {
+  const filterBar = document.querySelector('.categories-filter');
+  if (!filterBar) return;
+  const cards = Array.from(document.querySelectorAll('.article-card[data-category]'));
+  const buttons = Array.from(filterBar.querySelectorAll('.category-btn[data-filter]'));
+  filterBar.addEventListener('click', function (event) {
+    const button = event.target.closest('.category-btn[data-filter]');
+    if (!button || !filterBar.contains(button)) return;
+    event.preventDefault();
+    const filter = button.dataset.filter || 'all';
+    buttons.forEach(function (item) {
+      const selected = item === button;
+      item.classList.toggle('active', selected);
+      item.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    });
+    cards.forEach(function (card) {
+      const visible = filter === 'all' || card.dataset.category === filter;
+      card.hidden = !visible;
+      card.classList.toggle('is-filtered-out', !visible);
+      card.setAttribute('aria-hidden', visible ? 'false' : 'true');
+    });
+  });
+});
 
 // 10A.16 revisee : header fixe, compatible tactile et mobile.
 document.addEventListener('DOMContentLoaded', function () {
