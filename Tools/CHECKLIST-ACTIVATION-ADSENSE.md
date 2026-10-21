@@ -2,10 +2,10 @@
 
 Cette checklist reprend la configuration convenue : le message relatif aux réglementations européennes est géré dans Google AdSense. Le site n’ajoute pas de CMP artisanale et le lot 8C n’introduit pas de bouton « Tout refuser ».
 
-## Avant activation
+## Vérifications administratives et de conformité
 
-- [ ] Finaliser la micro-entreprise et le lot 8B.
-- [ ] Finaliser les mentions légales et l’identité de l’éditeur.
+- [x] Informations administratives et éléments du lot 8B intégrés au lot 10A.16.
+- [x] Mentions légales et identité de l’éditeur finalisées.
 - [ ] Vérifier le domaine `leguidedupadel.fr` dans AdSense.
 - [ ] Vérifier le fichier `ads.txt` généré ou demandé par AdSense.
 - [ ] Ouvrir **Confidentialité et messages > Réglementations européennes** dans AdSense.
@@ -13,7 +13,7 @@ Cette checklist reprend la configuration convenue : le message relatif aux régl
 - [ ] Ne pas ajouter de bouton « Tout refuser » dans le code du site.
 - [ ] Ne pas ajouter de second bandeau de consentement en parallèle.
 - [ ] Vérifier la liste des fournisseurs de technologie publicitaire.
-- [ ] Mettre à jour la politique de confidentialité avec la date réelle d’activation.
+- [x] Politique de confidentialité mise à jour pour refléter Google AdSense comme service actif.
 
 ## Ajout technique
 

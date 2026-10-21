@@ -2,11 +2,11 @@
 
 ## Avant publication
 
-- [ ] Terminer la micro-entreprise puis le lot 8B.
-- [ ] Vérifier les mentions légales définitives.
+- [x] Informations administratives et éléments du lot 8B intégrés au lot 10A.16.
+- [x] Mentions légales définitives vérifiées.
 - [ ] Déployer le contenu du dossier `padel_lot8a2`.
 - [ ] Vérifier que `_headers`, `_redirects` et `404.html` sont publiés.
-- [ ] Ne pas activer AdSense avant validation de la configuration prévue dans le compte.
+- [ ] Vérifier dans AdSense que le domaine, le message européen et les paramètres de diffusion sont correctement configurés.
 
 ## Contrôles après publication
 
