@@ -42,31 +42,52 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Lot 8D : filtrage des categories de la page d accueil.
-document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('.category-btn');
-            const cards = document.querySelectorAll('.article-card');
+// 10A.16c : filtrage robuste des categories de la page d'accueil.
+document.addEventListener('DOMContentLoaded', function () {
+  const filterBar = document.querySelector('.categories-filter');
+  if (!filterBar) return;
+  const cards = Array.from(document.querySelectorAll('.article-card[data-category]'));
+  const buttons = Array.from(filterBar.querySelectorAll('.category-btn[data-filter]'));
+  filterBar.addEventListener('click', function (event) {
+    const button = event.target.closest('.category-btn[data-filter]');
+    if (!button || !filterBar.contains(button)) return;
+    event.preventDefault();
+    const filter = button.dataset.filter || 'all';
+    buttons.forEach(function (item) {
+      const selected = item === button;
+      item.classList.toggle('active', selected);
+      item.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    });
+    cards.forEach(function (card) {
+      const visible = filter === 'all' || card.dataset.category === filter;
+      card.hidden = !visible;
+      card.classList.toggle('is-filtered-out', !visible);
+      card.setAttribute('aria-hidden', visible ? 'false' : 'true');
+    });
+  });
+});
 
-            buttons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Gestion de la classe active
-                    buttons.forEach(btn => {
-                        btn.classList.remove('active');
-                        btn.setAttribute('aria-pressed', 'false');
-                    });
-                    this.classList.add('active');
-                    this.setAttribute('aria-pressed', 'true');
-
-                    const filter = this.getAttribute('data-filter');
-
-                    cards.forEach(card => {
-                        const category = card.getAttribute('data-category');
-                        if (filter === 'all' || category === filter) {
-                            card.classList.remove('is-filtered-out');
-                        } else {
-                            card.classList.add('is-filtered-out');
-                        }
-                    });
-                });
-            });
-        });
+// 10A.16 revisee : header fixe, compatible tactile et mobile.
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.header');
+  if (!header) return;
+  let lastY = Math.max(window.pageYOffset || document.documentElement.scrollTop || 0, 0);
+  let accumulated = 0;
+  let ticking = false;
+  function readY() { return Math.max(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0, 0); }
+  function update() {
+    const y = readY();
+    const delta = y - lastY;
+    if ((delta > 0 && accumulated < 0) || (delta < 0 && accumulated > 0)) accumulated = 0;
+    accumulated += delta;
+    header.classList.toggle('header-scrolled', y > 12);
+    if (y <= 90) { header.classList.remove('header-hidden'); accumulated = 0; }
+    else if (accumulated > 18) { header.classList.add('header-hidden'); accumulated = 0; }
+    else if (accumulated < -10) { header.classList.remove('header-hidden'); accumulated = 0; }
+    lastY = y; ticking = false;
+  }
+  function requestUpdate() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', requestUpdate, {passive:true});
+  window.addEventListener('touchmove', requestUpdate, {passive:true});
+  window.addEventListener('pageshow', function(){ header.classList.remove('header-hidden'); lastY=readY(); });
+});
