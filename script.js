@@ -65,6 +65,39 @@
     var h = location.hostname;
     d.body.classList.toggle('preview-mode', h === 'localhost' || h === '127.0.0.1' || /\.workers\.dev$/.test(h));
 
+
+    /* En-tête : se masque en descendant, réapparaît en remontant */
+    var hd = d.querySelector('.lgp-header');
+    if (hd) {
+      var lastY = window.scrollY, ticking = false;
+      var setHidden = function (v) { hd.classList.toggle('is-hidden', v); };
+      var onScroll = function () {
+        var y = window.scrollY, dy = y - lastY;
+        var menuOpen = d.documentElement.classList.contains('lgp-lock');
+        if (y < hd.offsetHeight || menuOpen || hd.contains(d.activeElement)) setHidden(false);
+        else if (dy > 8) setHidden(true);
+        else if (dy < -8) setHidden(false);
+        if (Math.abs(dy) > 8 || y < hd.offsetHeight) lastY = y;
+        ticking = false;
+      };
+      window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+      hd.addEventListener('focusin', function () { setHidden(false); });
+    }
+
+    /* Barre de progression de lecture (articles) */
+    var art = d.querySelector('main.article-content');
+    if (art) {
+      var bar = d.createElement('div'); bar.className = 'lgp-progress'; bar.setAttribute('aria-hidden', 'true'); d.body.appendChild(bar);
+      var pt = false;
+      var upd = function () {
+        var r = art.getBoundingClientRect(), total = r.height - window.innerHeight;
+        var p = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 0;
+        bar.style.transform = 'scaleX(' + p + ')'; pt = false;
+      };
+      window.addEventListener('scroll', function () { if (!pt) { pt = true; requestAnimationFrame(upd); } }, { passive: true });
+      upd();
+    }
+
     /* Retour en haut */
     var top = d.getElementById('lgp-top');
     if (top) {
