@@ -28,7 +28,7 @@ html[data-theme="dark"] .lgp-header{background:#0B2A45}
 .lgp-header-in{max-width:var(--lgp-w);margin:0 auto;padding:0 20px;height:var(--lgp-head);display:flex;align-items:center;gap:20px}
 .lgp-brand{display:flex;align-items:center;flex:0 0 auto;text-decoration:none}
 .lgp-brand img{display:block;height:68px;width:auto}
-html[data-theme="dark"] .lgp-brand img,html[data-theme="dark"] .lgp-menu-top img{filter:drop-shadow(0 0 1px rgba(255,255,255,.55)) drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+/* logos sombres redessinés (raquette bleue, cadre blanc) : plus besoin de halo */
 .lgp-brand .b-dark,html[data-theme="dark"] .lgp-brand .b-light{display:none}
 html[data-theme="dark"] .lgp-brand .b-dark{display:block}
 .lgp-brand .b-mobile{display:none;height:56px}
@@ -248,3 +248,39 @@ html[data-theme="dark"] .lgp-header{box-shadow:0 1px 0 rgba(255,255,255,.06)}
 .lgp-key{font-weight:700;color:inherit;background:linear-gradient(transparent 58%,rgba(167,225,29,.55) 58%);padding:0 .14em;border-radius:2px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 html[data-theme="dark"] .lgp-key,body.dark-mode .lgp-key{color:#fff;background:linear-gradient(transparent 58%,rgba(167,225,29,.34) 58%)}
 @media print{.lgp-key{background:none;text-decoration:underline}}
+
+/* Correctif mobile : overflow-x:hidden sur html+body rendait body "scroll container" et cassait position:sticky (en-tête qui ne réapparaissait pas). clip ne crée pas de conteneur de défilement. */
+@media (max-width:767px){html,body{overflow-x:clip!important}}
+
+/* Liens de l'encadré « Notre démarche » (fond sombre) */
+.lgp-trust-grid a{color:#fff;text-decoration:underline;text-decoration-color:var(--lgp-lime);text-decoration-thickness:2px;text-underline-offset:3px}
+.lgp-trust-grid a:hover{color:var(--lgp-lime)}
+
+/* ===== Correctifs de contraste complémentaires (revue WCAG 2.1 AA, livraison 2) ===== */
+/* Mode clair uniquement : gris #718096 (3,8:1) -> #4A5568 (7,5:1) */
+html:not([data-theme="dark"]) body:not(.dark-mode) :is(.img-caption,.disclaimer-affiliation,.article-byline,.article-byline-spaced,.article-byline-spaced em,.starter-item span,.breadcrumb span,.contact-delay){color:#4A5568!important}
+html:not([data-theme="dark"]) body:not(.dark-mode) .entry-tag{color:#8C3F10!important}
+html:not([data-theme="dark"]) body:not(.dark-mode) .editorial-serif{color:#577300!important}
+html:not([data-theme="dark"]) body:not(.dark-mode) .editorial-key{color:#066A8C!important}
+html:not([data-theme="dark"]) body:not(.dark-mode) :is(.recap-box h3,.affiliate-box h3){color:#A5460F!important}
+html:not([data-theme="dark"]) body:not(.dark-mode) .product-price{color:#C53030!important}
+/* Barres d'équilibre : conteneur clair dans les deux modes */
+.balance-bars-container .balance-axis-label{color:#4A5568!important}
+.balance-bars-container .audited-style-08{color:#1F5FA8!important}
+.balance-bars-container .audited-style-09{color:#8A5A00!important}
+.balance-bars-container .audited-style-10{color:#C53030!important}
+/* Fonds colorés avec texte blanc : un peu plus foncés (>= 4,5:1) */
+.product-header{background-color:#2B6CB0!important}
+body.page-tactics-guide .sequence-box b{background:#B8470F!important;color:#fff!important}
+/* Surlignage des notions clés : encre foncée sur fond clair, blanc sur fond sombre */
+strong.lgp-key{color:#102033!important}
+html[data-theme="dark"] strong.lgp-key,body.dark-mode strong.lgp-key,.sequence-box strong.lgp-key,.tactic-summary strong.lgp-key{color:#FFFFFF!important}
+/* Mode sombre : texte foncé sur fond foncé dans certains encadrés */
+html[data-theme="dark"] .article-content h4,body.dark-mode .article-content h4{color:#F1F5F9!important}
+html[data-theme="dark"] .article-content strong:not(.lgp-key),body.dark-mode .article-content strong:not(.lgp-key){color:#F1F5F9!important}
+html[data-theme="dark"] .editorial-highlight,body.dark-mode .editorial-highlight{color:#FFFFFF!important;background:linear-gradient(transparent 45%,rgba(167,225,29,.34) 45%)!important}
+
+/* Zones tactiles (>= 44 px) sans changer la mise en page */
+.lgp-switch{position:relative}
+.lgp-switch::after{content:"";position:absolute;inset:-6px -4px}
+.breadcrumb a{display:inline-block;padding:10px 4px;margin:-10px -4px}
