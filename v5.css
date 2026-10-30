@@ -1,0 +1,170 @@
+/* Le Guide du Padel — v5 : couche « éditorial premium »
+   Chargée après style.css et redesign.css. Elle harmonise les articles (titres, encadrés, tableaux, cartes
+   produit, visuels d'étapes) et active les polices hébergées localement (Poppins + Lora, licence OFL).
+   Les boutons « Disponible sur amazon » ne sont pas modifiés : seuls leur gabarit et leur environnement le sont. */
+
+/* ===== 1. Polices hébergées (CSP : font-src 'self') ===== */
+@font-face{font-family:"LGP Display";src:url("/fonts/poppins-500.woff") format("woff");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"LGP Display";src:url("/fonts/poppins-700.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"LGP Serif";src:url("/fonts/lora-var.woff") format("woff");font-weight:400 700;font-style:normal;font-display:swap}
+:root{
+  --v5-head:"LGP Display","Poppins","Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif;
+  --v5-serif:"LGP Serif",Georgia,"Times New Roman",serif;
+}
+
+/* ===== 2. Accueil et pied de page : même voix typographique ===== */
+.lgp-home :is(h1,h2,h3){font-family:var(--v5-head)}
+.lgp-home h1{font-weight:700;letter-spacing:-.025em;line-height:1.08}
+.lgp-home h2{font-weight:700;letter-spacing:-.018em}
+.lgp-home h3{font-weight:700;letter-spacing:-.01em}
+.lgp-footer :is(h2,h3,h4){font-family:var(--v5-head);font-weight:500;letter-spacing:.02em}
+
+/* ===== 3. Jetons de design des articles (clair / sombre) ===== */
+main.article-content{
+  --v5-ink:#0B2A45;--v5-text:#1E3246;--v5-muted:#4A5568;--v5-line:#DCE4EE;
+  --v5-card:#FFFFFF;--v5-soft:#F3F6FA;--v5-blue:#0E5FD8;--v5-lime:#A7E11D;
+  --v5-badge-bg:#0B2A45;--v5-badge-fg:#A7E11D;--v5-th-bg:#0B2A45;
+  --v5-shadow:0 1px 2px rgba(11,42,69,.06),0 16px 36px -18px rgba(11,42,69,.24);
+}
+html[data-theme="dark"] main.article-content,body.dark-mode main.article-content{
+  --v5-ink:#F1F5F9;--v5-text:#D6E2EF;--v5-muted:#B2C1D2;--v5-line:#2B4764;
+  --v5-card:#12263D;--v5-soft:#0F2237;--v5-blue:#7DB8FF;
+  --v5-badge-bg:#A7E11D;--v5-badge-fg:#0B2A45;--v5-th-bg:#1B3A5C;
+  --v5-shadow:0 1px 2px rgba(0,0,0,.4),0 16px 36px -18px rgba(0,0,0,.6);
+}
+
+/* ===== 4. Typographie ===== */
+main.article-content :is(h1.editorial-guide-title,h1.tactics-title){
+  font-family:var(--v5-head)!important;font-weight:700!important;letter-spacing:-.025em!important;
+  line-height:1.12!important;font-size:clamp(1.9rem,4.2vw,2.85rem)!important;
+}
+main.article-content :is(h3,h4):not(.visual-label){font-family:var(--v5-head)}
+main.article-content :is(p.editorial-section-content,.editorial-list li,.editorial-section-content li){font-size:1.0625rem;line-height:1.75}
+main.article-content :is(.editorial-guide-lead,.tactics-lead,.article-lead,.lead-technique){
+  font-family:var(--v5-serif);font-size:clamp(1.12rem,1.6vw,1.24rem);line-height:1.72;color:var(--v5-ink);
+}
+/* Les phrases mises en avant utilisaient une serif non chargée (Times) : elles utilisent désormais Lora */
+main.article-content :is(.editorial-emphasis,.impact-word,.editorial-serif){font-family:var(--v5-serif)!important;font-weight:600;font-style:normal}
+
+/* ===== 5. Titres de section : une seule pastille, un seul filet ===== */
+main.article-content :is(h2.editorial-section-title,h2.tactics-section-title){
+  position:relative;display:block;font-family:var(--v5-head)!important;font-weight:700!important;
+  font-size:clamp(1.25rem,2vw,1.5rem)!important;line-height:1.28!important;letter-spacing:-.012em;
+  color:var(--v5-ink)!important;background:transparent!important;box-shadow:none!important;border:0!important;
+  border-bottom:1px solid var(--v5-line)!important;border-radius:0!important;
+  margin:3.4rem 0 1.3rem!important;padding:0 0 .95rem 3.6rem!important;min-height:2.6rem;
+}
+main.article-content :is(h2.editorial-section-title,h2.tactics-section-title)::before{
+  left:0!important;top:.05rem!important;transform:none!important;width:2.5rem!important;height:2.5rem!important;
+  border-radius:12px!important;background:var(--v5-badge-bg)!important;color:var(--v5-badge-fg)!important;
+  font:700 1.05rem/1 var(--v5-head)!important;
+}
+main.article-content :is(h2.editorial-section-title,h2.tactics-section-title)::after{
+  content:"";position:absolute;left:0;bottom:-1px;width:64px;height:3px;border-radius:3px;background:var(--v5-lime);
+}
+main.article-content h2.editorial-utility-title{font-family:var(--v5-head);font-weight:700;letter-spacing:-.01em;color:var(--v5-ink)}
+@media(max-width:700px){
+  main.article-content :is(h2.editorial-section-title,h2.tactics-section-title){padding-left:3.2rem!important;margin-top:2.6rem!important}
+  main.article-content :is(h2.editorial-section-title,h2.tactics-section-title)::before{width:2.2rem!important;height:2.2rem!important;font-size:.95rem!important}
+}
+
+/* ===== 6. Sommaire : pastilles sobres ===== */
+main.article-content :is(.editorial-jump-nav,.tactics-jump-nav){
+  background:var(--v5-soft)!important;border:1px solid var(--v5-line)!important;border-radius:18px!important;box-shadow:none!important;
+}
+main.article-content :is(.editorial-jump-nav,.tactics-jump-nav)>strong{font-family:var(--v5-head);font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;color:var(--v5-muted)!important}
+main.article-content :is(.editorial-jump-links,.tactics-jump-links) a{
+  background:var(--v5-card)!important;border:1px solid var(--v5-line)!important;color:var(--v5-ink)!important;
+  border-radius:999px!important;font-weight:600;font-size:.9rem;box-shadow:none!important;
+}
+main.article-content :is(.editorial-jump-links,.tactics-jump-links) a:hover{border-color:var(--v5-blue)!important;text-decoration:none}
+
+/* ===== 7. Modules, encadrés, figures : mêmes rayons, mêmes ombres ===== */
+main.article-content .editorial-module{border-radius:16px!important;box-shadow:var(--v5-shadow)!important}
+main.article-content :is(.coach-tip-box,.astuce-box,.erreur-box,.next-step-box,.reality-box,.key-takeaway,.tactic-key,.health-disclaimer,.affiliate-disclosure,.disclaimer-affiliation,.affiliate-box,.human-intro,.sequence-box,.tactic-summary){
+  border-radius:16px!important;
+}
+main.article-content :is(.ball-content-card,.technique-section,.warmup-card){
+  background:var(--v5-card)!important;border:1px solid var(--v5-line)!important;border-radius:18px!important;
+  box-shadow:var(--v5-shadow)!important;
+}
+main.article-content :is(.article-img-container,figure.editorial-section-content,.schema-container) img{border-radius:12px}
+main.article-content :is(.img-caption,.schema-caption,figcaption){font-size:.9rem;line-height:1.55}
+
+/* ===== 8. Tableaux ===== */
+main.article-content :is(table.editorial-data-table,table.racket-shape-table){
+  width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--v5-line);border-radius:14px;
+  overflow:hidden;background:var(--v5-card);font-size:.98rem;
+}
+main.article-content :is(table.editorial-data-table,table.racket-shape-table) th{
+  background:var(--v5-th-bg)!important;color:#fff!important;font-family:var(--v5-head);font-weight:500;
+  text-align:left;padding:.8rem 1rem;letter-spacing:.01em;
+}
+main.article-content :is(table.editorial-data-table,table.racket-shape-table) td{
+  padding:.8rem 1rem;border-top:1px solid var(--v5-line);color:var(--v5-text);background:var(--v5-card);
+}
+main.article-content :is(table.editorial-data-table,table.racket-shape-table) tbody tr:nth-child(even) td{background:var(--v5-soft)}
+
+/* ===== 9. Cartes produit : grilles régulières, images contenues ===== */
+main.article-content .products-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:1rem!important}
+@media(max-width:560px){main.article-content .products-grid{grid-template-columns:1fr!important}}
+main.article-content a.product-card{
+  display:flex!important;flex-direction:column;justify-content:space-between;gap:1rem;padding:1.1rem!important;
+  background:var(--v5-card)!important;border:1px solid var(--v5-line)!important;text-decoration:none;
+}
+main.article-content a.product-card img{display:block;margin:0 auto .6rem;width:auto!important;height:170px!important;max-width:100%;object-fit:contain}
+main.article-content a.product-card .product-name{font-family:var(--v5-head);font-weight:700;font-size:1rem;line-height:1.3}
+main.article-content a.product-card .product-price{font-weight:600}
+main.article-content .entry-level-grid{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(215px,1fr))!important;gap:1rem!important}
+main.article-content .entry-card{
+  display:flex!important;flex-direction:column;gap:.7rem;padding:1.15rem!important;
+  background:var(--v5-card)!important;border:1px solid var(--v5-line)!important;border-top:3px solid var(--v5-lime)!important;
+}
+main.article-content .entry-card .btn-amazon-small{margin-top:auto}
+main.article-content .product-header{
+  display:inline-block!important;width:auto!important;margin:0 auto 1rem!important;padding:.45rem 1rem!important;
+  border-radius:999px!important;background:var(--v5-badge-bg)!important;color:var(--v5-badge-fg)!important;
+  font:500 .76rem/1.2 var(--v5-head)!important;letter-spacing:.09em;text-transform:uppercase;
+}
+main.article-content .product-body{text-align:center}
+main.article-content img.product-image{display:block;margin:.4rem auto 1rem;width:auto!important;height:auto!important;max-width:min(100%,260px)!important;max-height:230px;object-fit:contain}
+main.article-content :is(.product-title,.product-desc){text-align:center}
+main.article-content .selection-note{
+  font-size:.95rem;line-height:1.65;color:var(--v5-muted);border-left:3px solid var(--v5-lime);padding:.2rem 0 .2rem 1rem;margin:1.2rem 0;
+}
+
+/* Boutons Amazon : le contenu et les couleurs ne changent pas ; seuls gabarit et forme sont ajustés */
+main.article-content a.amazon-dual-theme:not(.product-card){min-height:56px!important;border-radius:12px!important;max-width:340px;margin-inline:auto!important}
+main.article-content a.product-card.amazon-dual-theme .amazon-dual-label{min-height:54px!important;border-radius:12px!important}
+@media(prefers-reduced-motion:no-preference){
+  main.article-content a.product-card{transition:transform .18s ease,box-shadow .18s ease}
+  main.article-content a.product-card:hover{transform:translateY(-2px)}
+}
+
+/* ===== 10. Visuels : héros bas de gamme contenus, étapes d'échauffement agrandies ===== */
+main.article-content :is(.editorial-guide-hero,.article-hero-visual) img{width:100%;height:auto}
+main.article-content :is(.editorial-guide-hero,.article-hero-visual) img[src$="/bandeja.webp"]{width:auto;max-width:min(100%,595px);margin-inline:auto;display:block}
+main.article-content figure.step-visual{
+  display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:1.3rem;align-items:center;
+  padding:0!important;overflow:hidden;border-radius:16px!important;
+}
+main.article-content figure.step-visual img{width:100%!important;height:100%!important;aspect-ratio:3/2;object-fit:cover;border-radius:0!important}
+main.article-content figure.step-visual figcaption,main.article-content figure.step-visual>span:not(.visual-label){padding:1rem 1.2rem 1rem 0}
+@media(max-width:640px){
+  main.article-content figure.step-visual{grid-template-columns:1fr}
+  main.article-content figure.step-visual figcaption,main.article-content figure.step-visual>span:not(.visual-label){padding:0 1rem 1rem}
+}
+
+/* ===== 11. Barres latérales : puces sobres à la place des emojis ===== */
+aside a.u-link-blue-clean::before{
+  content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lgp-lime,#A7E11D);
+  margin-right:.6rem;vertical-align:middle;
+}
+aside :is(h2,h3,h4){font-family:var(--v5-head)}
+
+/* ===== 12. Finitions v5.1 ===== */
+main.article-content h2.editorial-utility-title{border-top:3px solid var(--v5-lime)!important}
+main.article-content .starter-pack-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:.9rem!important}
+@media(max-width:480px){main.article-content .starter-pack-grid{grid-template-columns:1fr!important}}
+main.article-content .selection-note{font-weight:400!important;color:var(--v5-muted)!important}
+main.article-content .selection-note strong{font-weight:700;color:var(--v5-ink)}

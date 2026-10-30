@@ -23,3 +23,9 @@
 
 /404.html
   Cache-Control: no-store
+
+/v5.css
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
