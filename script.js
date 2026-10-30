@@ -1,93 +1,115 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    if (!themeToggleBtn) return;
+/* Le Guide du Padel — script 2026 : thème, menu mobile, filtre d'accueil, retour en haut. Sans dépendance. */
+(function () {
+  var d = document, root = d.documentElement;
+  function ready(f) { d.readyState !== 'loading' ? f() : d.addEventListener('DOMContentLoaded', f); }
+  ready(function () {
+    /* Thème : slider (role=switch) */
+    var sw = d.getElementById('theme-toggle');
+    function apply(dark) {
+      root.setAttribute('data-theme', dark ? 'dark' : 'light');
+      d.body.classList.toggle('dark-mode', dark);
+      if (sw) sw.setAttribute('aria-checked', String(dark));
+    }
+    apply(root.getAttribute('data-theme') === 'dark');
+    if (sw) sw.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') !== 'dark';
+      apply(dark);
+      try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+    });
 
-    const setThemeButtonState = (isDark) => {
-        const nextAction = isDark ? 'Activer le mode clair' : 'Activer le mode sombre';
-        themeToggleBtn.setAttribute('aria-label', nextAction);
-        themeToggleBtn.setAttribute('title', nextAction);
-        themeToggleBtn.setAttribute('aria-pressed', String(isDark));
-        themeToggleBtn.innerHTML = `<span aria-hidden="true">${isDark ? '☀️' : '🌙'}</span>`;
-    };
-
-    let savedTheme = null;
-    try {
-        savedTheme = localStorage.getItem('theme');
-    } catch (error) {
-        console.warn('La préférence de thème ne peut pas être lue.', error);
+    /* Menu mobile accessible */
+    var b = d.getElementById('lgp-burger'), m = d.getElementById('lgp-menu'), o = d.getElementById('lgp-overlay'), c = d.getElementById('lgp-close');
+    if (b && m && o && c) {
+      var last = null;
+      var close = function () {
+        m.classList.remove('is-open'); o.hidden = true;
+        m.setAttribute('aria-hidden', 'true'); m.setAttribute('inert', '');
+        b.setAttribute('aria-expanded', 'false'); b.setAttribute('aria-label', 'Ouvrir le menu');
+        root.classList.remove('lgp-lock');
+        if (last) last.focus();
+      };
+      var open = function () {
+        last = d.activeElement; o.hidden = false; m.classList.add('is-open');
+        m.setAttribute('aria-hidden', 'false'); m.removeAttribute('inert');
+        b.setAttribute('aria-expanded', 'true'); b.setAttribute('aria-label', 'Fermer le menu');
+        root.classList.add('lgp-lock'); c.focus();
+      };
+      b.addEventListener('click', function () { m.classList.contains('is-open') ? close() : open(); });
+      c.addEventListener('click', close); o.addEventListener('click', close);
+      m.addEventListener('click', function (e) { if (e.target.closest('a')) close(); });
+      d.addEventListener('keydown', function (e) {
+        if (!m.classList.contains('is-open')) return;
+        if (e.key === 'Escape') { e.preventDefault(); close(); }
+        if (e.key === 'Tab') {
+          var q = m.querySelectorAll('a[href],button:not([disabled])'), f = q[0], l = q[q.length - 1];
+          if (e.shiftKey && d.activeElement === f) { e.preventDefault(); l.focus(); }
+          else if (!e.shiftKey && d.activeElement === l) { e.preventDefault(); f.focus(); }
+        }
+      });
+      window.addEventListener('resize', function () { if (innerWidth > 860 && m.classList.contains('is-open')) close(); });
     }
 
-    const isInitiallyDark = savedTheme === 'dark';
-    document.body.classList.toggle('dark-mode', isInitiallyDark);
-    setThemeButtonState(isInitiallyDark);
+    /* Filtre des guides (accueil) */
+    var bar = d.querySelector('.lgp-filters');
+    if (bar) {
+      var cards = [].slice.call(d.querySelectorAll('.lgp-card[data-category]')), btns = [].slice.call(bar.querySelectorAll('.lgp-filter'));
+      bar.addEventListener('click', function (e) {
+        var btn = e.target.closest('.lgp-filter'); if (!btn) return;
+        var f = btn.getAttribute('data-filter');
+        btns.forEach(function (x) { x.setAttribute('aria-pressed', String(x === btn)); });
+        cards.forEach(function (card) { card.hidden = !(f === 'all' || card.getAttribute('data-category') === f); });
+      });
+    }
 
-    themeToggleBtn.addEventListener('click', () => {
-        const isDark = document.body.classList.toggle('dark-mode');
-        setThemeButtonState(isDark);
-        try {
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        } catch (error) {
-            console.warn('La préférence de thème ne peut pas être enregistrée.', error);
-        }
-    });
-});
-
-document.addEventListener('DOMContentLoaded',()=>{const o=document.getElementById('mobile-menu-toggle'),c=document.getElementById('mobile-menu-close'),m=document.getElementById('mobile-menu'),v=document.getElementById('mobile-menu-overlay');if(!o||!c||!m||!v)return;let last=null;const close=()=>{m.classList.remove('is-open');v.classList.remove('is-open');m.setAttribute('aria-hidden','true');m.setAttribute('inert','');o.setAttribute('aria-expanded','false');o.setAttribute('aria-label','Ouvrir le menu');document.documentElement.classList.remove('mobile-menu-open');document.body.classList.remove('mobile-menu-open');setTimeout(()=>{v.hidden=true;if(last)last.focus()},200)},open=()=>{last=document.activeElement;v.hidden=false;m.classList.add('is-open');v.classList.add('is-open');m.setAttribute('aria-hidden','false');m.removeAttribute('inert');o.setAttribute('aria-expanded','true');o.setAttribute('aria-label','Fermer le menu');document.documentElement.classList.add('mobile-menu-open');document.body.classList.add('mobile-menu-open');requestAnimationFrame(()=>c.focus())};o.addEventListener('click',()=>m.classList.contains('is-open')?close():open());c.addEventListener('click',close);v.addEventListener('click',close);m.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('keydown',e=>{if(!m.classList.contains('is-open'))return;if(e.key==='Escape'){e.preventDefault();close()}if(e.key==='Tab'){const q=[...m.querySelectorAll('a[href],button:not([disabled])')],f=q[0],l=q[q.length-1];if(e.shiftKey&&document.activeElement===f){e.preventDefault();l.focus()}else if(!e.shiftKey&&document.activeElement===l){e.preventDefault();f.focus()}}});window.addEventListener('resize',()=>{if(innerWidth>=768&&m.classList.contains('is-open'))close()})});
-
-// Affiche les emplacements publicitaires de test uniquement en preview ou en local.
-document.addEventListener('DOMContentLoaded', () => {
-    const hostname = window.location.hostname;
-    const isPreview = hostname === 'localhost' || hostname === '127.0.0.1' || hostname.endsWith('.workers.dev');
-    document.body.classList.toggle('preview-mode', isPreview);
-});
+    /* Emplacements de test visibles uniquement en local / preview */
+    var h = location.hostname;
+    d.body.classList.toggle('preview-mode', h === 'localhost' || h === '127.0.0.1' || /\.workers\.dev$/.test(h));
 
 
-// 10A.16c : filtrage robuste des categories de la page d'accueil.
-document.addEventListener('DOMContentLoaded', function () {
-  const filterBar = document.querySelector('.categories-filter');
-  if (!filterBar) return;
-  const cards = Array.from(document.querySelectorAll('.article-card[data-category]'));
-  const buttons = Array.from(filterBar.querySelectorAll('.category-btn[data-filter]'));
-  filterBar.addEventListener('click', function (event) {
-    const button = event.target.closest('.category-btn[data-filter]');
-    if (!button || !filterBar.contains(button)) return;
-    event.preventDefault();
-    const filter = button.dataset.filter || 'all';
-    buttons.forEach(function (item) {
-      const selected = item === button;
-      item.classList.toggle('active', selected);
-      item.setAttribute('aria-pressed', selected ? 'true' : 'false');
-    });
-    cards.forEach(function (card) {
-      const visible = filter === 'all' || card.dataset.category === filter;
-      card.hidden = !visible;
-      card.classList.toggle('is-filtered-out', !visible);
-      card.setAttribute('aria-hidden', visible ? 'false' : 'true');
-    });
+    /* En-tête : se masque en descendant, réapparaît en remontant */
+    var hd = d.querySelector('.lgp-header');
+    if (hd) {
+      var lastY = window.scrollY, ticking = false;
+      var setHidden = function (v) { hd.classList.toggle('is-hidden', v); };
+      var onScroll = function () {
+        var y = window.scrollY, dy = y - lastY;
+        var menuOpen = d.documentElement.classList.contains('lgp-lock');
+        if (y < hd.offsetHeight || menuOpen || hd.contains(d.activeElement)) setHidden(false);
+        else if (dy > 8) setHidden(true);
+        else if (dy < -8) setHidden(false);
+        if (Math.abs(dy) > 8 || y < hd.offsetHeight) lastY = y;
+        ticking = false;
+      };
+      window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+      hd.addEventListener('focusin', function () { setHidden(false); });
+    }
+
+    /* Barre de progression de lecture (articles) */
+    var art = d.querySelector('main.article-content');
+    if (art) {
+      var bar = d.createElement('div'); bar.className = 'lgp-progress'; bar.setAttribute('aria-hidden', 'true'); d.body.appendChild(bar);
+      var pt = false;
+      var upd = function () {
+        var r = art.getBoundingClientRect(), total = r.height - window.innerHeight;
+        var p = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 0;
+        bar.style.transform = 'scaleX(' + p + ')'; pt = false;
+      };
+      window.addEventListener('scroll', function () { if (!pt) { pt = true; requestAnimationFrame(upd); } }, { passive: true });
+      upd();
+    }
+
+    /* Retour en haut */
+    var top = d.getElementById('lgp-top');
+    if (top) {
+      var tick = false;
+      window.addEventListener('scroll', function () {
+        if (tick) return; tick = true;
+        requestAnimationFrame(function () { top.classList.toggle('is-on', window.scrollY > 900); tick = false; });
+      }, { passive: true });
+      top.addEventListener('click', function () {
+        var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      });
+    }
   });
-});
-
-// 10A.16 revisee : header fixe, compatible tactile et mobile.
-document.addEventListener('DOMContentLoaded', function () {
-  const header = document.querySelector('.header');
-  if (!header) return;
-  let lastY = Math.max(window.pageYOffset || document.documentElement.scrollTop || 0, 0);
-  let accumulated = 0;
-  let ticking = false;
-  function readY() { return Math.max(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0, 0); }
-  function update() {
-    const y = readY();
-    const delta = y - lastY;
-    if ((delta > 0 && accumulated < 0) || (delta < 0 && accumulated > 0)) accumulated = 0;
-    accumulated += delta;
-    header.classList.toggle('header-scrolled', y > 12);
-    if (y <= 90) { header.classList.remove('header-hidden'); accumulated = 0; }
-    else if (accumulated > 18) { header.classList.add('header-hidden'); accumulated = 0; }
-    else if (accumulated < -10) { header.classList.remove('header-hidden'); accumulated = 0; }
-    lastY = y; ticking = false;
-  }
-  function requestUpdate() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
-  window.addEventListener('scroll', requestUpdate, {passive:true});
-  window.addEventListener('touchmove', requestUpdate, {passive:true});
-  window.addEventListener('pageshow', function(){ header.classList.remove('header-hidden'); lastY=readY(); });
-});
+})();
