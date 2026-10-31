@@ -1,0 +1,5 @@
+Polices hébergées localement (sous-ensemble latin, converties en WOFF) :
+- Poppins (500, 700) — © The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+- Lora (variable, romain et italique) — © The Lora Project Authors (https://github.com/cyrealtype/Lora-Cyrillic)
+Licence : SIL Open Font License 1.1 — https://openfontlicense.org
+Hébergement local : pas d'appel à Google Fonts (performance, RGPD).
