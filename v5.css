@@ -8,8 +8,8 @@
 @font-face{font-family:"LGP Display";src:url("/fonts/poppins-700.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:"LGP Serif";src:url("/fonts/lora-var.woff") format("woff");font-weight:400 700;font-style:normal;font-display:swap}
 :root{
-  --v5-head:"LGP Display","Poppins","Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif;
-  --v5-serif:"LGP Serif",Georgia,"Times New Roman",serif;
+  --v5-head:var(--font-head);
+  --v5-serif:var(--font-serif);
 }
 
 /* ===== 2. Accueil et pied de page : même voix typographique ===== */
@@ -97,7 +97,7 @@ main.article-content :is(table.editorial-data-table,table.racket-shape-table){
   overflow:hidden;background:var(--v5-card);font-size:.98rem;
 }
 main.article-content :is(table.editorial-data-table,table.racket-shape-table) th{
-  background:var(--v5-th-bg)!important;color:#fff!important;font-family:var(--v5-head);font-weight:500;
+  background:var(--v5-th-bg)!important;color:var(--c-white)!important;font-family:var(--v5-head);font-weight:500;
   text-align:left;padding:.8rem 1rem;letter-spacing:.01em;
 }
 main.article-content :is(table.editorial-data-table,table.racket-shape-table) td{
@@ -156,10 +156,7 @@ main.article-content figure.step-visual figcaption,main.article-content figure.s
 }
 
 /* ===== 11. Barres latérales : puces sobres à la place des emojis ===== */
-aside a.u-link-blue-clean::before{
-  content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lgp-lime,#A7E11D);
-  margin-right:.6rem;vertical-align:middle;
-}
+
 aside :is(h2,h3,h4){font-family:var(--v5-head)}
 
 /* ===== 12. Finitions v5.1 ===== */
@@ -192,19 +189,19 @@ html[data-theme="dark"] main.article-content,body.dark-mode main.article-content
   padding:10px 16px;border-radius:999px;color:var(--lgp-text);transition:background .18s ease,color .18s ease,box-shadow .18s ease;
 }
 .lgp-nav a:hover{background:rgba(26,99,224,.09);color:var(--lgp-link)}
-html[data-theme="dark"] .lgp-nav a{color:#E6EEF8}
-html[data-theme="dark"] .lgp-nav a:hover{background:rgba(255,255,255,.10);color:#fff}
+html[data-theme="dark"] .lgp-nav a{color:var(--lgp-brume)}
+html[data-theme="dark"] .lgp-nav a:hover{background:rgba(255,255,255,.10);color:var(--c-white)}
 .lgp-nav a:first-child{
-  background:var(--lgp-lime);color:#0B2A45!important;font-weight:700;margin-right:6px;
+  background:var(--lgp-lime);color:var(--lgp-navy)!important;font-weight:700;margin-right:6px;
   box-shadow:0 1px 0 rgba(11,42,69,.14),0 8px 18px -10px rgba(120,170,0,.9);
 }
-.lgp-nav a:first-child:hover{background:var(--lgp-lime-hover);color:#0B2A45!important;box-shadow:0 1px 0 rgba(11,42,69,.14),0 12px 22px -10px rgba(120,170,0,.95)}
+.lgp-nav a:first-child:hover{background:var(--lgp-lime-hover);color:var(--lgp-navy)!important;box-shadow:0 1px 0 rgba(11,42,69,.14),0 12px 22px -10px rgba(120,170,0,.95)}
 .lgp-nav a[aria-current]:not(:first-child){color:var(--lgp-link);background:rgba(26,99,224,.10);box-shadow:none;border-radius:999px}
 .lgp-nav a[aria-current]:not(:first-child)::after{content:"";position:absolute;left:50%;bottom:3px;width:18px;height:3px;margin-left:-9px;border-radius:3px;background:var(--lgp-lime)}
-html[data-theme="dark"] .lgp-nav a[aria-current]:not(:first-child){color:#fff;background:rgba(255,255,255,.12)}
+html[data-theme="dark"] .lgp-nav a[aria-current]:not(:first-child){color:var(--c-white);background:rgba(255,255,255,.12)}
 .lgp-nav a:focus-visible{outline:3px solid var(--lgp-focus);outline-offset:2px}
 /* menu mobile : seul le premier lien de la navigation principale devient bouton */
-.lgp-menu nav li:first-child a:not(#v6){background:var(--lgp-lime);color:#0B2A45;border:0;border-radius:14px;padding:14px 16px;margin:6px 0 10px;font-family:var(--v5-head);font-weight:700}
+.lgp-menu nav li:first-child a:not(#v6){background:var(--lgp-lime);color:var(--lgp-navy);border:0;border-radius:14px;padding:14px 16px;margin:6px 0 10px;font-family:var(--v5-head);font-weight:700}
 .lgp-menu li a:not(#v6){font-family:var(--v5-head);font-weight:500;color:var(--lgp-text)}
 .lgp-menu li a:not(#v6)::after{content:"→";float:right;color:var(--lgp-link);font-weight:700}
 .lgp-menu nav li:first-child a:not(#v6)::after{content:none}
@@ -223,7 +220,7 @@ main.article-content :is(h2.editorial-section-title,h2.tactics-section-title):no
 main.article-content :is(h2.editorial-section-title,h2.tactics-section-title):not(#v6)::before{
   position:static!important;transform:none!important;flex:0 0 2.8rem;width:2.8rem!important;height:2.8rem!important;
   display:grid!important;place-items:center;border-radius:13px!important;margin:0!important;
-  background:var(--v5-lime)!important;color:#0B2A45!important;font:700 1.2rem/1 var(--v5-head)!important;
+  background:var(--v5-lime)!important;color:var(--lgp-navy)!important;font:700 1.2rem/1 var(--v5-head)!important;
   box-shadow:0 0 0 4px rgba(167,225,29,.24);
 }
 main.article-content :is(h2.editorial-section-title,h2.tactics-section-title):not(#v6)::after{display:none}
@@ -250,7 +247,7 @@ main.article-content :is(.editorial-jump-links,.tactics-jump-links):not(#v6) a{
   font-weight:600;font-size:.95rem;line-height:1.3;box-shadow:none!important;transition:border-color .18s,transform .18s,box-shadow .18s;
 }
 main.article-content :is(.editorial-jump-links,.tactics-jump-links) a::before{
-  content:counter(jump);flex:0 0 1.9rem;height:1.9rem;display:grid;place-items:center;border-radius:9px;background:var(--v5-lime);color:#0B2A45;font:700 .85rem/1 var(--v5-head);
+  content:counter(jump);flex:0 0 1.9rem;height:1.9rem;display:grid;place-items:center;border-radius:9px;background:var(--v5-lime);color:var(--lgp-navy);font:700 .85rem/1 var(--v5-head);
 }
 main.article-content :is(.editorial-jump-links,.tactics-jump-links) a::after{content:"→";margin-left:auto;color:var(--v5-blue);font-weight:700;opacity:.75;transition:transform .18s,opacity .18s}
 main.article-content :is(.editorial-jump-links,.tactics-jump-links):not(#v6) a:hover{border-color:var(--v5-lime)!important;box-shadow:0 10px 22px -16px rgba(11,42,69,.6)!important;transform:translateY(-1px)}
@@ -289,7 +286,7 @@ main.article-content :is(.editorial-jump-links,.tactics-jump-links) a:hover::aft
 .lgp-gl:hover{background:var(--lgp-surface-2)}
 .lgp-gl-t{min-width:0}
 .lgp-gl.is-current{background:rgba(167,225,29,.2);box-shadow:inset 3px 0 0 var(--lgp-lime)}
-.lgp-here{margin-left:auto;flex:0 0 auto;padding:.2rem .5rem;border-radius:999px;background:var(--lgp-lime);color:#0B2A45;font:700 .72rem/1 var(--v5-head);letter-spacing:0}
+.lgp-here{margin-left:auto;flex:0 0 auto;padding:.2rem .5rem;border-radius:999px;background:var(--lgp-lime);color:var(--lgp-navy);font:700 .72rem/1 var(--v5-head);letter-spacing:0}
 .lgp-side-foot{margin:1.1rem 0 0;padding-top:.9rem;border-top:1px solid var(--lgp-line);font-size:.86rem;line-height:1.5;color:var(--lgp-muted)!important}
 .lgp-side-foot a{color:var(--lgp-link)!important;font-weight:600}
 
@@ -317,17 +314,17 @@ main.article-content :is(.coach-tip-box,.astuce-box,.practical-takeaway,.key-tak
 main.article-content :is(.coach-tip-box,.astuce-box,.practical-takeaway,.key-takeaway,.recap-box,.erreur-box,.affiliate-disclosure,.affiliate-box,.sequence-box,.health-disclaimer,.next-step-box,.human-note,.reality-box):not(#v7) :is(p,li):not(#v7){color:var(--v5-text)}
 
 /* Petite mention d'affiliation (sous les boutons Amazon et en tête d'article) : ambre léger, sans barre latérale */
-main.article-content .disclaimer-affiliation:not(#v7){background:rgba(245,158,11,.10)!important;border:1px solid rgba(245,158,11,.30)!important;border-radius:12px!important;color:#7A4B00!important;box-shadow:none!important}
+main.article-content .disclaimer-affiliation:not(#v7){background:rgba(245,158,11,.10)!important;border:1px solid rgba(245,158,11,.30)!important;border-radius:12px!important;color:var(--c-orange-38)!important;box-shadow:none!important}
 main.article-content .disclaimer-affiliation:not(#v7) :is(strong,em,span,a){color:inherit!important}
-html[data-theme="dark"] main.article-content .disclaimer-affiliation:not(#v7),body.dark-mode main.article-content .disclaimer-affiliation:not(#v7){background:rgba(245,158,11,.13)!important;border-color:rgba(245,158,11,.40)!important;color:#FCD34D!important}
+html[data-theme="dark"] main.article-content .disclaimer-affiliation:not(#v7),body.dark-mode main.article-content .disclaimer-affiliation:not(#v7){background:rgba(245,158,11,.13)!important;border-color:rgba(245,158,11,.40)!important;color:var(--c-amber-86)!important}
 
 /* Tags de catégorie : bleu (matériel), lime (règles et tactique), aqua (santé) */
-.lgp-tag{background:#E5EEFD;color:#174FA8}
-.lgp-tag.t-regles{background:rgba(167,225,29,.26);color:#3F5700}
-.lgp-tag.t-sante{background:rgba(24,182,164,.15);color:#0B5F56}
-html[data-theme="dark"] .lgp-tag{background:rgba(140,194,255,.16);color:#BBD9FF}
-html[data-theme="dark"] .lgp-tag.t-regles{background:rgba(167,225,29,.16);color:#C6F24E}
-html[data-theme="dark"] .lgp-tag.t-sante{background:rgba(24,182,164,.20);color:#7EE7D9}
+.lgp-tag{background:var(--c-cyan-92);color:var(--c-blue-35)}
+.lgp-tag.t-regles{background:rgba(167,225,29,.26);color:var(--c-lime-34)}
+.lgp-tag.t-sante{background:rgba(24,182,164,.15);color:var(--c-teal-36)}
+html[data-theme="dark"] .lgp-tag{background:rgba(140,194,255,.16);color:var(--c-cyan-86)}
+html[data-theme="dark"] .lgp-tag.t-regles{background:rgba(167,225,29,.16);color:var(--lgp-lime-hover)}
+html[data-theme="dark"] .lgp-tag.t-sante{background:rgba(24,182,164,.20);color:var(--c-teal-85)}
 
 /* Boutons et survols : lime de survol */
 .lgp-btn-primary:hover{background:var(--lgp-lime-hover)}
@@ -340,11 +337,26 @@ html[data-theme="dark"] main.article-content,body.dark-mode main.article-content
 /* Accents typographiques : lime texte, aqua, corail */
 main.article-content .editorial-serif:not(#v7){color:var(--lgp-lime-ink)!important}
 html[data-theme="dark"] main.article-content .editorial-serif:not(#v7),body.dark-mode main.article-content .editorial-serif:not(#v7){color:var(--lgp-lime)!important}
-main.article-content .editorial-key:not(#v7){color:#0B5F56!important}
-html[data-theme="dark"] main.article-content .editorial-key:not(#v7),body.dark-mode main.article-content .editorial-key:not(#v7){color:#7EE7D9!important}
-main.article-content :is(.product-price,.balance-bars-container .audited-style-10):not(#v7){color:#B42318!important}
-html[data-theme="dark"] main.article-content .product-price:not(#v7),body.dark-mode main.article-content .product-price:not(#v7){color:#FF9DA0!important}
+main.article-content .editorial-key:not(#v7){color:var(--c-teal-36)!important}
+html[data-theme="dark"] main.article-content .editorial-key:not(#v7),body.dark-mode main.article-content .editorial-key:not(#v7){color:var(--c-teal-85)!important}
+main.article-content :is(.product-price,.balance-bars-container .audited-style-10):not(#v7){color:var(--c-red-40)!important}
+html[data-theme="dark"] main.article-content .product-price:not(#v7),body.dark-mode main.article-content .product-price:not(#v7){color:var(--c-red-76)!important}
 main:is(.article-content,.page-simple) a:not([class]):not(#v7){color:var(--lgp-link);text-underline-offset:3px;text-decoration-thickness:1.5px}
 
 /* Barre latérale : les guides « santé » prennent l'aqua */
 .lgp-gicon.gi-chrono::after,.lgp-gicon.gi-coeur::after{background:var(--lgp-aqua)}
+
+
+/* ===== Cohérence typographique (v8) : Poppins pour les titres et tous les éléments d'interface, texte courant en police système, Lora pour l'emphase ===== */
+.lgp-btn,.lgp-chip,.lgp-tag,.lgp-filters button,.related-actions a,.breadcrumb,.lgp-skip,.lgp-footer h2,.lgp-footer h3,.lgp-footer h4{font-family:var(--font-head)}
+.lgp-btn,.related-actions a{font-weight:700}
+.lgp-chip,.lgp-tag,.breadcrumb{font-weight:500}
+
+
+/* ===== Santé & blessures : corail, teinte nettement distincte du bleu (matériel), du lime (règles et tactique) et de l'aqua (astuces) ===== */
+.lgp-tag.t-sante{background:rgba(229,72,77,.12);color:var(--lgp-coral-ink)}
+html[data-theme="dark"] .lgp-tag.t-sante{background:rgba(229,72,77,.20);color:var(--lgp-coral-soft)}
+.lgp-gicon.gi-chrono::after,.lgp-gicon.gi-coeur::after{background:var(--lgp-coral-soft)}
+
+/* Tous les titres du site (pages légales, 404, « À lire ensuite »…) suivent la même police de titres */
+h1,h2,h3,h4,h5,h6{font-family:var(--font-head)}
