@@ -360,3 +360,43 @@ html[data-theme="dark"] .lgp-tag.t-sante{background:rgba(229,72,77,.20);color:va
 
 /* Tous les titres du site (pages légales, 404, « À lire ensuite »…) suivent la même police de titres */
 h1,h2,h3,h4,h5,h6{font-family:var(--font-head)}
+
+
+/* ===== v10 — Lisibilité des articles (texte inchangé : mise en forme uniquement) =====
+   Bloc volontairement isolé et commenté : il sera fusionné proprement lors de la consolidation du CSS.
+   Objectifs : longueur de ligne confortable (≈ 70-78 caractères), même corps de texte dans les deux familles de
+   gabarits (editorial-* et tactics-*), meilleure coupe des lignes, petits libellés lisibles.
+   Les boutons « Disponible sur amazon » ne sont pas concernés. */
+main.article-content{--v10-measure:46rem}
+
+/* 1. Longueur de ligne : le texte courant ne dépasse plus ~46rem ; encadrés, tableaux et images gardent leur largeur */
+main.article-content :is(p,li):not(table *):not(.entry-card *):not(.ad-placeholder *):not([class*="amazon"] *){max-width:var(--v10-measure)}
+main.article-content :is(.editorial-guide-lead,.tactics-lead,.article-lead,.lead-technique){max-width:var(--v10-measure)}
+
+/* 2. Même corps de texte partout (les articles « tactics-* » restaient à 16 px) */
+main.article-content :is(p[class*="tactics-section-"],li[class*="tactics-section-"],.tactics-section-1-content,.clean-checklist li,.mistake-card-1,.mistake-card-2,.mistake-card-3,.mistake-card-4){
+  font-size:1.0625rem;line-height:1.75}
+@media (min-width:768px){
+  main.article-content :is(p.editorial-section-content,.editorial-list li,.editorial-section-content li,p[class*="tactics-section-"],.tactics-section-1-content li,.clean-checklist li){
+    font-size:1.125rem;line-height:1.78}
+}
+
+/* 3. Rythme vertical : respiration entre paragraphes et éléments de liste */
+main.article-content :is(p.editorial-section-content,p[class*="tactics-section-"]){margin-block:0 1.15em}
+main.article-content :is(.editorial-list,.clean-checklist) li+li{margin-top:.55em}
+
+/* 4. Coupe des lignes : évite les veuves et les titres déséquilibrés, sans toucher au texte */
+main.article-content :is(p,li,figcaption,.schema-caption){text-wrap:pretty}
+main.article-content :is(h1,h2,h3,h4){text-wrap:balance}
+
+/* 5. Petits libellés : 12 px minimum (étiquettes de catégorie, surtitres, badges) */
+main.article-content :is(.lgp-tag,.section-kicker,.intro-kicker,.guide-badge,.entry-tag){font-size:max(.75rem,12px)}
+main.article-content .entry-card :is(p,li){font-size:.95rem;line-height:1.6}
+main.article-content :is(.schema-caption,.img-caption,figcaption){font-size:.92rem;line-height:1.55}
+
+/* 6. Chiffres des tableaux : alignement régulier pour comparer d'un coup d'œil */
+main.article-content table :is(td,th){font-variant-numeric:tabular-nums}
+
+/* 7. Encadrés (astuce, erreur, conseil du coach, à retenir…) : interligne aéré, même corps de texte qu'avant */
+main.article-content :is(.astuce-box,.erreur-box,.coach-tip-box,.key-takeaway,.human-note,.human-intro,.practical-takeaway,.next-step-box,.product-card,.warmup-card,.reality-box):is(p,li),
+main.article-content :is(.astuce-box,.erreur-box,.coach-tip-box,.key-takeaway,.human-note,.human-intro,.practical-takeaway,.next-step-box,.product-card,.warmup-card,.reality-box) :is(p,li){line-height:1.7}
