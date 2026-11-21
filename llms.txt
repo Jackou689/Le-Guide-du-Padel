@@ -5,7 +5,9 @@
 
 ## Règles
 
-- [Règles du padel : guide simple et complet](https://leguidedupadel.fr/regles-padel): 
+- [Règles du padel : guide simple et complet](https://leguidedupadel.fr/regles-padel): terrain, service, rebonds, parois, comptage des points et fautes
+- [Comptage des points au padel : jeux, sets et point en or](https://leguidedupadel.fr/comptage-points-padel): 15-30-40, avantage, point en or, Star Point, tie-break et super tie-break (règlement FIP 2026)
+- [Le service au padel : règles, fautes et conseils](https://leguidedupadel.fr/service-padel): placement, geste, fautes, let, ordre de service et retour (règlement FIP 2026)
 
 ## Matériel
 
