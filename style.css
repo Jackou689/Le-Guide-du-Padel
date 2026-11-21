@@ -2369,13 +2369,10 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-head)}
 
 /* ===== v10 — Lisibilité des articles (texte inchangé : mise en forme uniquement) =====
    Bloc volontairement isolé et commenté : il sera fusionné proprement lors de la consolidation du CSS.
-   Objectifs : longueur de ligne confortable (≈ 70-78 caractères), même corps de texte dans les deux familles de
+   Objectifs : même corps de texte dans les deux familles de
    gabarits (editorial-* et tactics-*), meilleure coupe des lignes, petits libellés lisibles.
    Les boutons « Disponible sur amazon » ne sont pas concernés. */
-main.article-content{--v10-measure:46rem}
 
-main.article-content :is(p,li):not(table *):not(.entry-card *):not(.ad-placeholder *):not([class*="amazon"] *){max-width:var(--v10-measure)}
-main.article-content :is(.editorial-guide-lead,.tactics-lead,.article-lead,.lead-technique){max-width:var(--v10-measure)}
 
 main.article-content :is(p[class*="tactics-section-"],li[class*="tactics-section-"],.tactics-section-1-content,.clean-checklist li,.mistake-card-1,.mistake-card-2,.mistake-card-3,.mistake-card-4){
   font-size:1.0625rem;line-height:1.75}
