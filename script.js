@@ -113,26 +113,3 @@
     }
   });
 })();
-
-
-/* repli AVIF : si une source AVIF est introuvable, on retombe sur le WebP/JPEG de l'image */
-(function(){
-  function fallback(img){
-    var p=img.parentNode;
-    if(!p||p.nodeName!=='PICTURE')return;
-    var s=p.getElementsByTagName('source');
-    if(!s.length)return;
-    while(s.length){p.removeChild(s[0]);}
-    var ss=img.getAttribute('srcset'),sr=img.getAttribute('src');
-    if(ss){img.removeAttribute('srcset');img.setAttribute('srcset',ss);}
-    img.removeAttribute('src');img.setAttribute('src',sr);
-  }
-  var imgs=document.querySelectorAll('picture > img');
-  for(var i=0;i<imgs.length;i++){
-    (function(img){
-      if(img.complete&&img.naturalWidth===0&&img.currentSrc){fallback(img);return;}
-      var done=false;
-      img.addEventListener('error',function(){if(done)return;done=true;fallback(img);});
-    })(imgs[i]);
-  }
-})();
