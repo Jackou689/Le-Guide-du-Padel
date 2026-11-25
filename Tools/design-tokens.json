@@ -1,0 +1,42 @@
+{
+  "marque": {
+    "nuit": "#0B2A45",
+    "lime": "#A7E11D",
+    "brume": "#F1F5F9"
+  },
+  "palette": {
+    "bleu-court": "#1A63E0",
+    "lime-survol": "#BEEA45",
+    "lime-texte": "#4B6600",
+    "aqua": "#18B6A4",
+    "ivoire": "#FAF8F3",
+    "nuit-profonde": "#071626",
+    "surface-sombre": "#0F2540",
+    "ambre": "#F59E0B",
+    "corail": "#E5484D",
+    "corail-encre": "#B42318",
+    "corail-doux": "#FF9DA0"
+  },
+  "categories": {
+    "materiel": "bleu (216°)",
+    "regles-et-tactique": "lime (77°)",
+    "sante-et-blessures": "corail (4°)"
+  },
+  "typographie": {
+    "--font-head": "Poppins 500/700",
+    "--font-body": "pile système",
+    "--font-serif": "Lora variable"
+  },
+  "graisses": [
+    400,
+    500,
+    600,
+    700
+  ],
+  "rayons": {
+    "carte": "16-20 px",
+    "bouton": "12 px",
+    "pastille": "999 px"
+  },
+  "jetons-historiques": "141 jetons --c-<teinte>-<clarté> et --slate-<clarté> définis en tête de redesign.css"
+}

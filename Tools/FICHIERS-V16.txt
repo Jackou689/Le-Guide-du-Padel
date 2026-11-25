@@ -1,0 +1,33 @@
+Fichiers nouveaux / modifiés / supprimés entre la v15 et la v16 (le plus sûr : remplacer tout le dossier du dépôt).
+Si vous téléversez via le site GitHub : 100 fichiers maximum par envoi, et les suppressions ne sont pas prises en compte ; préférez git (git add -A, git commit, git push) ou GitHub Desktop.
+
+MODIFIÉ   404.html
+MODIFIÉ   a-propos.html
+MODIFIÉ   balles-padel.html
+MODIFIÉ   chaussures-padel.html
+MODIFIÉ   comptage-points-padel.html
+MODIFIÉ   confidentialite.html
+MODIFIÉ   contact.html
+MODIFIÉ   echauffement-padel.html
+MODIFIÉ   formes-raquette-padel.html
+MODIFIÉ   images/brand/logo-lgp-clair.webp
+MODIFIÉ   images/brand/logo-lgp-sombre-v3.webp
+MODIFIÉ   images/brand/logo-main-clair.webp
+MODIFIÉ   images/brand/logo-main-sombre-v3.webp
+MODIFIÉ   index.html
+MODIFIÉ   mentions-legales.html
+MODIFIÉ   padel-ou-tennis.html
+MODIFIÉ   raquette-debutant.html
+MODIFIÉ   raquette-tendinite.html
+MODIFIÉ   regles-padel.html
+MODIFIÉ   sac-padel-debutant.html
+MODIFIÉ   service-padel.html
+MODIFIÉ   sitemap.xml
+MODIFIÉ   tactique-filet.html
+MODIFIÉ   techniques-padel.html
+SUPPRIMÉ  .DS_Store
+SUPPRIMÉ  .DS_Store
+SUPPRIMÉ  logo-lgp-clair-opt.webp
+SUPPRIMÉ  logo-lgp-sombre-opt.webp
+SUPPRIMÉ  logo-main-clair-opt.webp
+SUPPRIMÉ  logo-main-sombre-opt.webp
