@@ -2395,3 +2395,6 @@ main.article-content table :is(td,th){font-variant-numeric:tabular-nums}
 
 main.article-content :is(.astuce-box,.erreur-box,.coach-tip-box,.key-takeaway,.human-note,.human-intro,.practical-takeaway,.next-step-box,.product-card,.warmup-card,.reality-box):is(p,li),
 main.article-content :is(.astuce-box,.erreur-box,.coach-tip-box,.key-takeaway,.human-note,.human-intro,.practical-takeaway,.next-step-box,.product-card,.warmup-card,.reality-box) :is(p,li){line-height:1.7}
+
+/* v19 : <picture> ne génère aucune boîte, la mise en page reste celle de l’<img> seule (carte à la une de l’accueil comprise) */
+picture{display:contents}
