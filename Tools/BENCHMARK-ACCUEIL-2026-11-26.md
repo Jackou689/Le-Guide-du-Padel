@@ -8,7 +8,10 @@ Simulation : Chromium, viewport 412×823, 4G lente (1,6 Mbit/s, 150 ms), CPU ×4
 | v17 | 1 176 ms | 1 176 ms | 30,1 | 126 | 10 |
 | v18 | 1 168 ms | 1 168 ms | 30,1 | 126 | 10 |
 | v19 (images 800w + AVIF) | 1 012 ms | 1 012 ms | 30,2 | 114 | 10 |
-| v19 + home.css (prototype, non appliqué) | 960 ms | 960 ms | 7,4 | 91 | 12 |
+| v19 + home.css (prototype, abandonné : fichier dupliqué) | 960 ms | 960 ms | 7,4 | 91 | 12 |
+| **v20 (CSS en couches : accueil = style.css seul)** | 968 ms | 968 ms | 13,2 | 97 | 10 |
 
 Constat : v17 et v18 sont identiques (écart de 8 ms = bruit). L'accueil n'utilise que 10 % du CSS qu'il charge (20 Ko sur 196 Ko).
-Prototype : Tools/prototype/home.css (26 Ko brut, 7 Ko gzip) rend l'accueil pixel pour pixel identique (4 captures). Pour l'adopter : dans index.html, remplacer /style.css?v=… par /home.css?v=… et déposer home.css à la racine. Contrepartie : deux fichiers CSS à maintenir.
+Décision : le CSS dédié à l'accueil dupliquait des règles dans deux fichiers à synchroniser. La séparation par couches (v20) donne presque le même gain (968 ms contre 960 ms) sans aucune duplication : articles.css (pages intérieures) + style.css (socle commun, seul fichier chargé par l'accueil).
+
+Pages intérieures (article « Règles ») : v19 FCP 1 376 / LCP 1 520 ms ; v20 FCP 1 400 / LCP 1 560 ms (écart dans le bruit, une requête CSS de plus en parallèle).
