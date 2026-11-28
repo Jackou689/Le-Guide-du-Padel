@@ -1,0 +1,29 @@
+Fichiers nouveaux / modifiés / supprimés entre la v17 et la v18.
+Le plus sûr : git add -A, git commit, git push (ou GitHub Desktop). Les suppressions (.woff) ne sont pas prises en compte par l'envoi via le site GitHub.
+
+MODIFIÉ   404.html
+MODIFIÉ   a-propos.html
+MODIFIÉ   balles-padel.html
+MODIFIÉ   chaussures-padel.html
+MODIFIÉ   comptage-points-padel.html
+MODIFIÉ   confidentialite.html
+MODIFIÉ   contact.html
+MODIFIÉ   echauffement-padel.html
+MODIFIÉ   formes-raquette-padel.html
+MODIFIÉ   index.html
+MODIFIÉ   mentions-legales.html
+MODIFIÉ   padel-ou-tennis.html
+MODIFIÉ   raquette-debutant.html
+MODIFIÉ   raquette-tendinite.html
+MODIFIÉ   regles-padel.html
+MODIFIÉ   sac-padel-debutant.html
+MODIFIÉ   script.js
+MODIFIÉ   service-padel.html
+MODIFIÉ   style.css
+MODIFIÉ   tactique-filet.html
+MODIFIÉ   techniques-padel.html
+NOUVEAU   Tools/CHANGELOG-V17.md
+NOUVEAU   Tools/FICHIERS-V17.txt
+SUPPRIMÉ  fonts/lora-var.woff
+SUPPRIMÉ  fonts/poppins-500.woff
+SUPPRIMÉ  fonts/poppins-700.woff

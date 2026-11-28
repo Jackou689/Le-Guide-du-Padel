@@ -2027,9 +2027,9 @@ html[data-theme="dark"] .editorial-highlight,body.dark-mode .editorial-highlight
 .breadcrumb a{display:inline-block;padding:10px 4px;margin:-10px -4px}
 
 /* ===== 1. Polices hébergées (CSP : font-src 'self') ===== */
-@font-face{font-family:"LGP Display";src:url("/fonts/poppins-500.woff") format("woff");font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:"LGP Display";src:url("/fonts/poppins-700.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"LGP Serif";src:url("/fonts/lora-var.woff") format("woff");font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:"LGP Display";src:url("/fonts/poppins-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"LGP Display";src:url("/fonts/poppins-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"LGP Serif";src:url("/fonts/lora-var.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
 :root{
   --v5-head:var(--font-head);
   --v5-serif:var(--font-serif);
@@ -2395,3 +2395,6 @@ main.article-content table :is(td,th){font-variant-numeric:tabular-nums}
 
 main.article-content :is(.astuce-box,.erreur-box,.coach-tip-box,.key-takeaway,.human-note,.human-intro,.practical-takeaway,.next-step-box,.product-card,.warmup-card,.reality-box):is(p,li),
 main.article-content :is(.astuce-box,.erreur-box,.coach-tip-box,.key-takeaway,.human-note,.human-intro,.practical-takeaway,.next-step-box,.product-card,.warmup-card,.reality-box) :is(p,li){line-height:1.7}
+
+/* v19 : <picture> ne génère aucune boîte, la mise en page reste celle de l’<img> seule (carte à la une de l’accueil comprise) */
+picture{display:contents}
